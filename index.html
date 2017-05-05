@@ -18,6 +18,7 @@
         <link rel="stylesheet" media="all" href="/assets/styles/styles.css" />
         <link rel="stylesheet" media="all" href="/assets/styles/new-template.css" />  
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+        <script src="https://use.fontawesome.com/c694372f78.js"></script>
         <!--[if lt IE 9]>
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
           </script>
@@ -32,6 +33,9 @@ body {
     letter-spacing: .075em;
     
 }
+
+/* -------------------------Globals----------------------*/
+
 h1{font-size:2.5em}
 h2{font-size:2.0em}
 h3{font-size:1.75em}
@@ -73,6 +77,9 @@ h5{font-size:1.25em}
     font-family: 'AileronThin'
 }
 .navbar a:link{
+    color:white;
+}
+.navbar a:visited{
     color:white;
 }
 .nav-1{
@@ -227,17 +234,16 @@ h5{font-size:1.25em}
 .feat-logo, .feat-details{
     margin-left:15px;
 }
-.team{
-    
+.team .container{
+    width:70%;
 }
 .team ul{
     list-style:none;
+    padding: 0px;
 }
 .team-pics img{
     width:80%;
-    position: absolute;
-    top: 120px;
-    right: 0;
+
     
 }
 .team-highlights ul{
@@ -257,15 +263,15 @@ background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /
 background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
 }
-#getStarted{
+.getStarted{
     background-color: #ed2428;
     border-radius: 50px;
     border: 0px;
     color: white;
-    padding: 15px 70px;
+    padding: 20px 70px;
     box-shadow: 1px 1px 0px rgba(0,0,0, .5);
 }
-#getStarted:hover{
+.getStarted:hover{
     margin-top:1px;
     transition: .95s;    
 }
@@ -346,16 +352,143 @@ select::-ms-expand {
 .blog2{
     margin-bottom:5px;
 }
+.questions{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+.questions .container{
+    width:50%;
+}
+.questions ul{
+    list-style: none;
+    line-height: 25px;   
+}
+ul.quest li:nth-child(-n+4) {
+    line-height: 35px;
+    font-family:'AileronThin';
+}
+ul.quest li:nth-child(5) {
+    font-family:'AileronThin';
+    font-size:12px;
+    line-height:18px;
+}
+.quest h3{
+    color: #ed2428;
+    font-weight:bold;
+    margin-top:0px;
+}
 
-
-
-
+.faq h3{
+    display: inline-block;
+    margin:0px;
+}
+.faq img{
+    display: inline-block;
+    width:75%;
+}
+.faq{
+    
+    height: 50px;
+    margin-bottom: 10px;
+}
+.faq:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+.faq > div{
+    display:inline-block;
+    vertical-align: middle;
+    text-align:center;
+}
+.answer-button{
+    background-image:url('/images/plus-red-25.png');
+    background-repeat: no-repeat;
+    border:none;
+    background-color: transparent;
+    width:25px;
+    height:26px;
+    cursor:pointer;
+}
+.answer-button:active,
+.answer-button:focus,
+.answer-button.active {
+  
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.answer{
+    clear:both; 
+    font-size: 12px; 
+    background-color:white; 
+    border-radius:5px; 
+    border:1px solid #dedede; 
+    padding:15px; 
+    box-shadow:0 0 5px rgba(0,0,0, 0.5); 
+    display:none; 
+    max-width:285px;
+}
+.footer{
+    color: white;
+    font-size: 12px;    
+    line-height:25px;
+}
+.footer li:nth-child(n+2){
+    font-family: 'AileronThin';
+}
+.footer .container{
+    width:70%;
+}
+.footer ul{
+    list-style:none;
+}
+.socials ul{
+    display: inline;
+    padding:0px;
+}
+.socials{
+    padding:0px;
+}
+.extras ul{
+    display:inline;
+}
+.socials li{
+    float:left;
+}
+.extras li{
+    float:left;
+    margin-right:15px;
+}
+.socials img{
+    width:60%;
+}
+.footer a:link{
+    color:white;
+}
+.footer a:visited{
+    color:white;
+}
+.socialsExtra{
+    margin-top:20px;
+}
+.section1{
+    line-height:35px;
+}
 /*  ---------------------------   media queries -------------------------------- */
 
 
 @media screen and (max-width:768px){
     .serv h3{
         font-size:14px;
+    }
+    .questions .container{
+        width:100%;
     }
 }
 
@@ -588,7 +721,7 @@ select::-ms-expand {
             </div>
         </div> 
         <div class="team fluid">
-            <div class="container" style="width:70%; overflow:hidden">
+            <div class="container">
                 <div class="row">
                     <div class="team-highlights col-md-7">
                     <h2>A Team that Makes <br> the Difference</h2>
@@ -635,7 +768,7 @@ select::-ms-expand {
                             <option value="/life.php">Auto Insurance</option>
                             <option value="/life.php">Disability Insurance</option>
                         </select>
-                        <button type="button" onClick="getStarted();" id="getStarted"><h3 style="margin:0px;">Get Started</h3></button>
+                        <button type="button" onClick="getStarted();" class="getStarted btn"><h3 style="margin:0px;">Get Started</h3></button>
                         <script>
                             function getStarted(){
                                 var x = document.getElementById("menu");
@@ -693,6 +826,136 @@ select::-ms-expand {
                 </div>
             </div>
         </div>
-        <div></div>
+        <div class="questions fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="quest">
+                            <li><h3>Questions here?</h3></li>
+                            <li>We're here for you.</li>
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
+                            <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>
+                            <li>Don't see your question?
+                            Not to worry. Just press Chat above,
+                            or call us to speak with one of our 
+                            helpul licensed insurance advisors.</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul style="float:right">
+                            <li class="faq">
+                                <div><h3>How does it work?</h3></div>                                     
+                                <div><input type="button" class="answer-button" alt=""></div>
+                            </li>
+                            <div class="answer">
+                                This is further information pertaining to the question. 
+                                This is further information pertaining to the question.
+                            </div>
+                            <li class="faq">
+                                <div><h3>How does it work?</h3></div>                                     
+                                <div><input type="button" class="answer-button" alt=""></div>
+                            </li>
+                            <div class="answer">
+                                This is further information pertaining to the question. 
+                                This is further information pertaining to the question.
+                            </div>      
+                            <li class="faq">
+                                <div><h3>How does it work?</h3></div>                                     
+                                <div><input type="button" class="answer-button" alt=""></div>
+                            </li>
+                            <div class="answer">
+                                This is further information pertaining to the question. 
+                                This is further information pertaining to the question.
+                            </div> 
+                            <li class="faq">
+                                <div><h3>How does it work?</h3></div>                                     
+                                <div><input type="button" class="answer-button" alt=""></div>
+                            </li>
+                            <div class="answer">
+                                This is further information pertaining to the question. 
+                                This is further information pertaining to the question.
+                            </div>                             
+                        </ul>
+                            <script>
+                            $(document).ready(function(){
+                                $('.answer-button').on("click", function(e) {
+                                  e.preventDefault();
+                                  $(this).parent().parent().next().slideToggle();
+                                });                                
+                            });
+                     </script>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer fluid" style="background-color:#ed2428; border-top:50px solid #be1d20">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 section1">
+                        <ul>
+                            <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
+                            <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
+                            <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
+                            <li><i>Mon-Friday | 9am-8pm PST</i></li>
+                            <li>Team@usuranace.biz</li>
+                            <li>24/7 We're here for you!</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>                                                
+                    </div>
+                    <div class="col-md-12 socialsExtra">
+                        <div class="col-md-4 socials">
+                            <ul>
+                                <li><img src="/images/facebook.png" alt=""></li>
+                                <li><img src="/images/google.png" alt=""></li>
+                                <li><img src="/images/pinterest.png" alt=""></li>
+                                <li><img src="/images/twitter.png" alt=""></li>
+                                <li><img src="/images/linkedin.png" alt=""></li>
+                            </ul>                            
+                        </div>
+                        <div class="col-md-8 extras">
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Value Teams</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
