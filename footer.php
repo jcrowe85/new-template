@@ -1,0 +1,70 @@
+        <div class="footer fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 section1">
+                        <ul>
+                            <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
+                            <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
+                            <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
+                            <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
+                            <li><i>Mon-Friday | 9am-8pm PST</i></li>
+                            <li>Team@usuranace.biz</li>
+                            <li>24/7 We're here for you!</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>                        
+                    </div>
+                    <div class="col-md-4">
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>
+                        <ul>
+                            <li><b>Insurance Product Guides</b></li>
+                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Something here</a></li>
+                        </ul>                                                
+                    </div>
+                    <div class="col-md-12 socialsExtra">
+                        <div class="col-md-4 socials">
+                            <ul>
+                                <li><img src="/images/facebook.png" alt=""></li>
+                                <li><img src="/images/google.png" alt=""></li>
+                                <li><img src="/images/pinterest.png" alt=""></li>
+                                <li><img src="/images/twitter.png" alt=""></li>
+                                <li><img src="/images/linkedin.png" alt=""></li>
+                            </ul>                            
+                        </div>
+                        <div class="col-md-8 extras">
+                            <ul>
+                                <li><a href="#">Our Story</a></li>
+                                <li><a href="#">Value Teams</a></li>
+                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">FAQ</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

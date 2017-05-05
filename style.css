@@ -1,0 +1,611 @@
+body {
+    font-size: 16px;
+    background-color: #fff;
+    font-family: 'AileronRegular'; 
+    font-weight: normal; 
+    font-style: normal;  
+    letter-spacing: .075em;
+    
+}
+
+/* -------------------------Globals----------------------*/
+
+h1{font-size:2.5em}
+h2{font-size:2.0em}
+h3{font-size:1.75em}
+h4{font-size:1.50em}
+h5{font-size:1.25em}
+
+
+.btn:active,
+.btn:focus,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.row{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.header{
+    background-color: #d52024;
+    padding-top: 15px;
+}
+ .logo img{
+    width:30px;
+    float:left;
+    margin-right:5px;
+    
+}
+.navbar{
+    border-radius: 0;
+    display: block;
+    margin:0px;
+}
+.navbar li{
+    display: inline;
+    font-size: 12px;
+    margin-right:5px;
+    font-family: 'AileronThin'
+}
+.navbar a:link{
+    color:white;
+}
+.navbar a:visited{
+    color:white;
+}
+.nav-1{
+   flex-grow:1 
+}
+.nav-2 button{
+    border-radius:18px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline:none;
+}
+.nav-2 button:hover{
+    margin-top:1px;
+    transition: .95s;
+}
+.logo span{
+    color:white;
+    font-size: 25px;
+}
+.logo{
+    float:left;
+}
+.title{
+    text-align:center;
+    color: white;
+    margin-top: 50px;
+}
+.title h1{
+    line-height: 1.2em;
+    font-family: 'AileronThin'; 
+    font-size:3.0em;
+}
+.title span{
+    font-family: 'AileronThinItalic';
+    font-size:18px;
+}
+.main{
+    background-image: url("/images/main-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 900px 484px;
+    background-color: #eb2b34;
+    background-position:center top;
+    border-bottom:1px solid #8b8b8b;
+}
+.services{
+    display: flex;
+    border: 1px solid #cac5c5;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    background-color: blue;
+    margin-top:50px;
+    width: 50%; 
+    margin: 0 auto;
+    margin-top:50px;
+    min-width: 300px;
+    height:90px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cacaca+0,cacaca+0,dedede+0,ffffff+53,dedede+100,cacaca+100 */
+    background: #cacaca; /* Old browsers */
+    background: -moz-linear-gradient(top, #cacaca 0%, #cacaca 0%, #dedede 0%, #ffffff 53%, #dedede 100%, #cacaca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */    
+}
+.serv {
+  text-align: center;
+  margin: auto; 
+  align-items: center;
+  justify-content: center;
+}
+.serv:hover{
+    color: red;
+}
+.divider{
+    background-image: url("images/vertical-divider.jpg");
+    background-repeat: repeat-y;
+    height:100%;
+    width:2px;
+}
+.carrier-logo{
+    display: flex;
+    margin: 0 auto;
+    width: 65%;
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+.c-logo{
+    margin: auto;
+}
+.c-logo img{
+    width:100%;
+}
+.why-us{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+81,ececec+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+.why-us:before{
+
+}
+.why-us h2{
+    text-align:center;
+}
+.features-container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.features{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.feat{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow:auto;
+    height:72px;
+    margin-bottom: 10px;
+    font: 0/0 a;    
+    background-color: white;
+}
+.feat:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+.feat-left{
+    background-color: #ed2428;
+    color:white;
+    float:left;
+    padding: 10px 15px;
+}
+.feat-left h1{
+    margin:0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+    font-size: 3em;
+}
+.feat-right, .feat-details, .feat-logo{
+    display: inline-block;
+}
+.feature-details{
+    text-align: center;
+}
+.feat-right, .feat-left{
+    display: inline-block;
+    vertical-align: middle;  
+    font: 16px/1 'AileronRegular'; ;
+}
+.feat-logo, .feat-details{
+    margin-left:15px;
+}
+.team .container{
+    width:70%;
+}
+.team ul{
+    list-style:none;
+    padding: 0px;
+}
+.team-pics img{
+    width:80%;
+
+    
+}
+.team-highlights ul{
+    margin-top: 40px;
+}
+.team-highlights h2{
+    border-bottom: 2px solid red;
+    width: 65%;
+    padding-bottom: 10px;
+}
+.get-started{
+    text-align:center;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+.getStarted{
+    background-color: #ed2428;
+    border-radius: 50px;
+    border: 0px;
+    color: white;
+    padding: 20px 70px;
+    box-shadow: 1px 1px 0px rgba(0,0,0, .5);
+}
+.getStarted:hover{
+    margin-top:1px;
+    transition: .95s;    
+}
+select {
+    border-radius: 0px;
+    margin: 50px;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    /* height: 34px; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
+
+}
+
+/* CAUTION: IE hackery ahead */
+
+
+select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    select {
+        background-image:none\9;
+        padding: 5px\9;
+    } 
+}
+.blog .container{
+    width:50%;
+}
+.blog-row {
+    margin-top: 25px;
+    display:inline-block;
+}
+.blog-row img{
+    width:100%;
+}
+.text{
+    
+    font-family: 'AileronThin';
+    font-size: 0px;
+    color:white;
+    position: absolute;
+    text-align:center;
+    left: 0;
+    bottom: 0;
+    height:1px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: font-size 2s; /* Safari */
+    transition: font-size 2s; 
+    -webkit-transition: height .5s; /* Safari */
+    transition: height .5s;    
+    
+}
+.title-animate{
+    position: relative;
+    margin-bottom:10px;
+}
+.title-animate:hover .text{
+    font-size:14px;
+    height:25%;
+    display: block;
+}
+.blog2{
+    margin-bottom:5px;
+}
+.questions{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+.questions .container{
+    width:60%;
+}
+.questions ul{
+    list-style: none;
+    line-height: 25px;   
+}
+ul.quest li:nth-child(-n+4) {
+    line-height: 35px;
+    font-family:'AileronThin';
+}
+ul.quest li:nth-child(5) {
+    font-family:'AileronThin';
+    font-size:12px;
+    line-height:18px;
+}
+.quest h3{
+    color: #ed2428;
+    font-weight:bold;
+    margin-top:0px;
+}
+
+.faq h3{
+    display: inline-block;
+    margin:0px;
+}
+.faq img{
+    display: inline-block;
+    width:75%;
+}
+.faq{
+    
+    height: 50px;
+    margin-bottom: 10px;
+}
+.faq:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+.faq > div{
+    display:inline-block;
+    vertical-align: middle;
+    text-align:center;
+    margin-right: 40px;
+}
+.faq li:nth-child(2){
+    margin-right:30px;
+}
+.answer-button{
+    background-image:url('/images/plus-red-25.png');
+    background-repeat: no-repeat;
+    border:none;
+    background-color: transparent;
+    width:25px;
+    height:26px;
+    cursor:pointer;
+}
+.answer-button:active,
+.answer-button:focus,
+.answer-button.active {
+  
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.answer{
+    clear:both; 
+    font-size: 12px; 
+    background-color:white; 
+    border-radius:5px; 
+    border:1px solid #dedede; 
+    padding:15px; 
+    box-shadow:0 0 5px rgba(0,0,0, 0.5); 
+    display:none; 
+    max-width:285px;
+}
+.footer{
+    color: white;
+    font-size: 12px;    
+    line-height:25px;
+    background-color:#ed2428; 
+    border-top:50px solid #be1d20    
+}
+.footer li:nth-child(n+2){
+    font-family: 'AileronThin';
+}
+.footer ul{
+     font-family: 'AileronThin';
+}
+.footer p{
+     font-family: 'AileronThin';
+}
+.footer .container{
+    width:70%;
+}
+.footer ul{
+    list-style:none;
+}
+.socials ul{
+    display: inline;
+    padding:0px;
+}
+.socials{
+    padding:0px;
+}
+.extras ul{
+    display:inline;
+}
+.socials li{
+    float:left;
+}
+.extras li{
+    float:left;
+    margin-right:15px;
+}
+.socials img{
+    width:60%;
+}
+.footer a:link{
+    color:white;
+}
+.footer a:visited{
+    color:white;
+}
+.socialsExtra{
+    margin-top:20px;
+}
+.section1{
+    line-height:35px;
+}
+
+/*  ---------------------------   quote page  -------------------------------- */
+
+#quote-page .header{
+    background-color:white;
+    padding:0px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d2d1d1;
+    position: relative;
+    padding: 10px 0px; 
+    
+}
+#quote-page .header img{
+    display: block;
+    margin: 0 auto;
+}
+#quote-page .header button{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: 5px 15px;
+    border-radius: 30px;
+    border: 1px solid lightgray;
+    background-color: white;    
+    
+}
+#quote-page .header button:hover{
+    background-color: lightgray;
+}
+.controls{
+    display: flex;
+}
+.controls div{
+    text-align: center;
+    margin: auto;
+    align-items: center;
+    justify-content: center;    
+}
+.adjustments {
+    background-color: #f4f5f7;    
+    font-family: 'AileronThin'
+}
+.adjustments .row{
+    padding:20px 0px;
+}
+#quote-page .title{
+    color: black;
+    font-family: 'AileronThin';
+    margin:0px;
+}
+.quotes .container{
+    width:70%;
+}
+.quote-container{
+    display: flex;
+    margin-top:50px;
+}
+.quote{
+    cursor: pointer;
+    margin: auto;
+    box-shadow: 0 0 17px rgba(0,0,0, 0.2);
+    text-align: center;
+    line-height: 60px;
+    padding: 35px 30px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #f2f2f2 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#f2f2f2 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#f2f2f2 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */    
+}
+
+.logo-name img{
+    display: block;
+    margin: 0 auto;    
+}
+.continue button{
+    border-radius: 30px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline: none;
+    border: 0px;
+    padding: 10px 35px;    
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dc4ff+0,0d9dee+100 */
+    background: #5dc4ff; /* Old browsers */
+    background: -moz-linear-gradient(top, #5dc4ff 0%, #0d9dee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #5dc4ff 0%,#0d9dee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #5dc4ff 0%,#0d9dee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dc4ff', endColorstr='#0d9dee',GradientType=0 ); /* IE6-9 */    
+}
+.continue h3{
+    margin:0px;
+}
+.details{
+    color:#c2c2c2;
+}
+.details img{
+    margin-right:5px;
+}
+.card{
+    margin:0 auto;
+}
+.sec-quote{
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    margin:0 auto;
+    padding: 25px 0;    
+}
+.sec-quote > div{
+    margin: 0 auto;
+}
+.sec-logo-name img{
+    width:30%;
+}
+.sec-continue button{
+    border-radius: 30px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline: none;
+    border: 0px;
+    padding: 10px 35px;    
+    background-color:orange;
+}
+.gray{
+    background-color: #f4f5f7;
+}
+.white{
+    background-color: #fff;
+}
+/*  ---------------------------   media queries -------------------------------- */
+
+
+@media screen and (max-width:768px){
+    .serv h3{
+        font-size:14px;
+    }
+    .questions .container{
+        width:100%;
+    }
+}
