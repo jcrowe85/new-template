@@ -70,40 +70,43 @@
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Blueshield</span>
+                                            <span><b>Health Insurance</b></span>
+                                            <p style="font-size:10px; color:lightgray">HMO Coverage<p/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b>L</b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/legal-and-general-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Legal & General</span>
+                                            <span><b>Life Insurance</b></span>
+                                            <p style="font-size:10px; color:lightgray">$100k/30-Year Term<p/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b>R</b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/mercury-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Mercury</span>
+                                            <span><b>Renters Insurance</b></span>
+                                            <p style="font-size:10px; color:lightgray">$1M Liability<p/>
                                         </div>
                                     </div>
                                 </div>
@@ -116,108 +119,111 @@
                         <div class="features">
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-check" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/home-purchase-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <p> Purchased<br> a Home</p>
+                                            <spa><b></b></spa>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-check" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/new-baby-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <p>Had a Baby</p>
+                                            <spa><b></b></spa>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-check" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/rip-candle-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <p>Recently Lost<br> a Loved One</p>
+                                            <spa><b></b></spa>
                                         </div>
                                     </div>
                                 </div>
                             </div>                            
                             <div class="feature-details">
-                                <h5>All of Your Policies in One Place</h5>
+                                <h5>The Right Coverage and Product</h5>
                                 <span><a hred="#">Learn more</a></span>
                             </div>                            
                         </div>
                         <div class="features">
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-plus" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/nationwide-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Nationwide</span>
+                                            <span><b>$34.99/mo</b></span>
+                                            <p style="font-size:10px; color:lightgray">monthly premium<p/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-plus" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/prudential-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Prudential</span>
+                                            <span><b>$18.12/mo</b></span>
+                                            <p style="font-size:10px; color:lightgray">monthly premium<p/>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="feat">
                                 <div class="feat-left">
-                                    <h1><b>H</b></h1>
+                                    <h1><b><i class="fa fa-plus" aria-hidden="true"></i></b></h1>
                                 </div>
                                 <div class="feat-right">
                                     <div class="feat-logo">
-                                        <img src="/images/blue-shield.png" alt="">
+                                        <img src="/images/ing-icon-25.png" alt="">
                                     </div>
                                     <div class="feat-right">
                                         <div class="feat-details">
-                                            <p>Blue shield</p>
-                                            <spa><b>$54.99/mo</b></spa>
+                                            <span style="display:block;">Ing Group</span>
+                                            <span><b>$17.55/mo</b></span>
+                                            <p style="font-size:10px; color:lightgray">monthly premium<p/>
                                         </div>
                                     </div>
                                 </div>
                             </div>                            
                             <div class="feature-details">
-                                <h5>All of Your Policies in One Place</h5>
+                                <h5>Get Quotes from Multiple Carriers</h5>
                                 <span><a hred="#">Learn more</a></span>
                             </div>                            
                         </div>                        
@@ -242,7 +248,7 @@
                         <ul>
                             <li>
                                 <h4><b>Salary Only, No Commissions</b></h4>
-                                <p>Receiving a salary and not a commission allows us to focus on what's best for you</p>
+                                <p>Receiving a salary and not a commission allows us to focus on what's best for you.</p>
                             </li>
                             <li>
                         </ul>
@@ -380,7 +386,7 @@
                             <div class="answer">
                                 This is further information pertaining to the question. 
                                 This is further information pertaining to the question.
-                            </div>                             
+                            </div>  
                         </ul>
                             <script>
                             $(document).ready(function(){

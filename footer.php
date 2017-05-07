@@ -15,30 +15,31 @@
                     <div class="col-md-4">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
+                            <li><a href="#">Life Insurance Guide</a></li>
+                            <li><a href="#">Health Insurance Guide</a></li>
+                            <li><a href="#">Home Insurance Guide</a></li>
+                            <li><a href="#">Auto Insurance Guide</a></li>
+                            <li><a href="#">Disability Insurance Guide</a></li>
                         </ul>
                         <ul>
-                            <li><b>Insurance Product Guides</b></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
+                            <li><b>Helpful Resources</b></li>
+                            <li><a href="#">Life Insurance Advice</a></li>
+                            <li><a href="#">Health Insurance Marketplace</a></li>
+                            <li><a href="#">Obamacare</a></li>
+                            <li><a href="#">Life Insurance Calculator</a></li>
                         </ul>                        
                     </div>
                     <div class="col-md-4">
                         <ul>
-                            <li><b>Insurance Product Guides</b></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
+                            <li><b>Insurance Product Advice</b></li>
+                            <li><a href="#">Insurance Advice</a></li>
+                            <li><a href="#">Life Advice</a></li>
+                            <li><a href="#">Work Advice</a></li>
+                            <li><a href="#">Money Advice</a></li>
+                            <li><a href="#">Parenting Advice</a></li>
                         </ul>
                         <ul>
-                            <li><b>Insurance Product Guides</b></li>
+                            <li><b>What Other Have to Say About Us</b></li>
                             <li><a href="#">Something here</a></li>
                             <li><a href="#">Something here</a></li>
                         </ul>                                                

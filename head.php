@@ -24,4 +24,14 @@
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
           </script>
         <![endif]-->
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+});
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+
     </head>
