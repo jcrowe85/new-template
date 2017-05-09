@@ -32,7 +32,7 @@
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv"><h3>Life</h3></div>
+                        <div class="serv"><h3><a href="/life.php">Life</a></h3></div>
                         <div class="divider"></div>
                         <div class="serv"><h3>Health</h3></div>
                         <div class="divider"></div>

@@ -1,3 +1,9 @@
+/*basic reset*/
+
+* {margin: 0; padding: 0;}
+
+
+
 /* -------------------------Globals----------------------*/
 body {
     font-size: 16px;
@@ -14,6 +20,21 @@ h3{font-size:1.75em}
 h4{font-size:1.50em}
 h5{font-size:1.25em}
 
+a:link {
+    text-decoration: none;
+    color: white;
+    
+}
+a:visited {
+    text-decoration: none;
+    color:black;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    text-decoration: none;
+}
 
 .btn:active,
 .btn:focus,
@@ -27,6 +48,13 @@ h5{font-size:1.25em}
     padding-top:50px;
     padding-bottom:50px;
 }
+
+#process-logo{
+    width:2%;
+}
+
+/* -------------------------  home page  ----------------------*/
+
 .header{
     background-color: #d52024;
     padding-top: 15px;
@@ -220,8 +248,6 @@ h5{font-size:1.25em}
 }
 .team-pics img{
     width:80%;
-
-    
 }
 .team-highlights ul{
     margin-top: 40px;
@@ -252,7 +278,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     margin-top:1px;
     transition: .95s;    
 }
-select {
+#home-page select {
     border-radius: 0px;
     margin: 50px;
     border: 1px solid #111;
@@ -271,20 +297,20 @@ select {
 /* CAUTION: IE hackery ahead */
 
 
-select::-ms-expand { 
+#home-page select::-ms-expand { 
     display: none; /* remove default arrow in IE 10 and 11 */
 }
 
 /* target Internet Explorer 9 to undo the custom arrow */
 @media screen and (min-width:0\0) {
-    select {
+    #home-page select {
         background:none\9;
         padding: 5px\9;
     }
 }
 /* target Internet Explorer 9 to undo the custom arrow */
 @media screen and (min-width:0\0) {
-    select {
+    #home-page select {
         background-image:none\9;
         padding: 5px\9;
     } 
@@ -474,30 +500,28 @@ ul.quest li:nth-child(5) {
 
 /*  ---------------------------   quote page  -------------------------------- */
 
-#quote-page .header{
+#quote-page .header, #life-page .header{
     background-color:white;
     padding:0px;
     margin: 0 auto;
     border-bottom: 1px solid #d2d1d1;
     position: relative;
     padding: 10px 0px; 
-    
 }
-#quote-page .header img{
+#quote-page .header img, #life-page .header img{
     display: block;
     margin: 0 auto;
 }
-#quote-page .header button{
+#quote-page .header button, #life-page .header button{
     position: absolute;
     top: 10%;
     right: 5%;
     padding: 5px 15px;
     border-radius: 30px;
     border: 1px solid lightgray;
-    background-color: white;    
-    
+    background-color: white;   
 }
-#quote-page .header button:hover{
+#quote-page .header button:hover, #life-page .header button:hover{
     background-color: lightgray;
 }
 .controls{
@@ -603,6 +627,16 @@ ul.quest li:nth-child(5) {
 .white{
     background-color: #fff;
 }
+
+
+/*  ---------------------------   life page -------------------------------- */
+
+
+
+
+
+
+/*  ---------------------------   loader css -------------------------------- */
 
 .loader {
 	position: fixed;

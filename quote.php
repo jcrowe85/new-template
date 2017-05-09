@@ -4,7 +4,7 @@
     <div class="header fluid">
         <div class="container">
             <header>
-                <img src="/images/logo-red-25.png" style="width:25px; height:25px;">
+                <img id="process-logo" src="/images/logo-full-size.png">
                 <button class="getHelp">Get Help</button>
             </header>
         </div>

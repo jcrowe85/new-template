@@ -12,7 +12,7 @@
         <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
-        <script src="/assets/js/main.js"></script>
+        <script src="main.js"></script>
         <script src="/assets/js/userinfo.js"></script>
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="viewport" content="width=device-width" />
