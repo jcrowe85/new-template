@@ -19,8 +19,15 @@
 .control-group {
 	display: block;
 }
+#life-page fieldset > div{
+    margin-top:25px;
+}
+#life-page input, #life-page select {
+     letter-spacing: 5px;
 
-fieldset:nth-child(2) .control-group,fieldset:nth-child(3) .control-group {
+}
+
+fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fieldset:nth-child(7) .control-group {
     display: inline-block;
 }
 .control {
@@ -81,7 +88,7 @@ fieldset:nth-child(2) .control-group,fieldset:nth-child(3) .control-group {
     font-family: 'AileronThin';
     border: none;
     height:20px;
-    max-width:100px;
+    max-width:130px;
     font-size:18px;
     color:white;  
 }
@@ -165,7 +172,11 @@ $('.BirthYear').keyup(function(){
     <div class="header fluid">
         <div class="container">
             <header>
-                <img id="process-logo" src="/images/logo-full-size.png">
+<<<<<<<<< saved version
+
+=========
+                 <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
+>>>>>>>>> local version
                 <button class="getHelp">Get Help</button>
             </header>
         </div>
@@ -222,6 +233,11 @@ $('.BirthYear').keyup(function(){
               <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
           </label>
       </div> 
+<<<<<<<<< saved version
+
+=========
+      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+>>>>>>>>> local version
   </fieldset> 
   <fieldset>
       <h1>What state do you live in?</h1>
@@ -394,3 +410,10 @@ $('.BirthYear').keyup(function(){
     <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%;">
        <p>Usurance, Inc.</p> 
     </div>
+<<<<<<<<< saved version
+
+=========
+    
+</body>
+</html>
+>>>>>>>>> local version
