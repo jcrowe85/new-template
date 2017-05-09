@@ -252,7 +252,6 @@ $('.getHelp').click(function() {
           </label>
       </div> 
       <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset> 
   <fieldset>
       <h1>What state do you live in?</h1>
@@ -431,6 +430,9 @@ $('.getHelp').click(function() {
     <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%; background-color:#be1d20;">
        <p>Usurance, Inc.</p> 
     </div>
-</html>
+
+    
 </body>
 </html>
+
+
