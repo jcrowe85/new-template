@@ -19,8 +19,15 @@
 .control-group {
 	display: block;
 }
+#life-page fieldset > div{
+    margin-top:25px;
+}
+#life-page input, #life-page select {
+     letter-spacing: 5px;
 
-fieldset:nth-child(2) .control-group,fieldset:nth-child(3) .control-group {
+}
+
+fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fieldset:nth-child(7) .control-group {
     display: inline-block;
 }
 .control {
@@ -81,7 +88,7 @@ fieldset:nth-child(2) .control-group,fieldset:nth-child(3) .control-group {
     font-family: 'AileronThin';
     border: none;
     height:20px;
-    max-width:100px;
+    max-width:130px;
     font-size:18px;
     color:white;  
 }
@@ -119,53 +126,74 @@ fieldset{
 #quick-quote fieldset:not(:first-of-type) {
 	display: none;
 }
+.back-arrow{
+    position:fixed; 
+    top:40%; 
+    left:2%;
+    ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);    
+}
+.back-arrow button{
+    background:none; 
+    border:none;
+    outline: none; 
+    pointer:cursor;    
+}
+.back-arrow img{
+    width:75%
+}
+
 
 </style>
 <script>
 $(document).ready(function(){
     
-var current_fs, next_fs, previous_fs; //fieldsets
-var left, opacity, scale; //fieldset properties which we will animate
-var animating; //flag to prevent quick multi-click glitches
   
-$('input[type=checkbox]').click(function(){
-      <?php include('slide.php') ?>
+$(':checkbox').click(function(){
+      <?php include('slide-next.php') ?>
 });
 
 $('select').change(function(){
-      <?php include('slide.php') ?>
+      <?php include('slide-next.php') ?>
 });
 
-$(".input").keyup(function(){
+$(':input').keyup(function(){
 	if (this.value.length == this.maxLength) {
 		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
 	}
 });
 
+$('.back-arrow').click(function(){
+      <?php include('slide-prev.php') ?>
+});
+
 $('#weight').keyup(function(){
-    if (this.value.length == "3"){<?php include('slide.php') ?>}
+    if (this.value.length == "3"){<?php include('slide-next.php') ?>}
 });
 
 $('.BirthYear').keyup(function(){
     var letters = $(".BirthYear").val().length;
     // if input = 4 move to next step
-    if (letters == 4){<?php include('slide.php') ?>}
+    if (letters == 4){<?php include('slide-next.php') ?>}
                             
 });
 
 
+// get help button display chat box
+
+$('.getHelp').click(function() {
+    <?php include_once('chat.php') ?>
 });
 
-
-
-
+});
 </script>
 <body id="life-page">
     <div class="se-pre-con"></div>
     <div class="header fluid">
         <div class="container">
             <header>
-                <img id="process-logo" src="/images/logo-full-size.png">
+                 <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
                 <button class="getHelp">Get Help</button>
             </header>
         </div>
@@ -196,19 +224,20 @@ $('.BirthYear').keyup(function(){
       <h1>What is your date of birth?</h1>
       <div class="control-group" id="dob">
           <label class="control-text">
-              <input type="text" name="BirthMonth" placeholder="Mo"/>
+              <input type="text" name="BirthMonth" placeholder="Mo" maxlength="2"/>
           </label>
       </div>	
       <div class="control-group">
           <label class="control-text">
-              <input type="text" name="Birthday" placeholder="Day"/>
+              <input type="text" name="Birthday" placeholder="Day" maxlength="2"/>
           </label>
       </div> 
       <div class="control-group">
           <label class="control-text">
-              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year"/>
+              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" maxlength="4"/>
           </label>
       </div>
+        <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>
   <fieldset>
       <h1>What is your height and weight?</h1>
@@ -222,6 +251,7 @@ $('.BirthYear').keyup(function(){
               <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
           </label>
       </div> 
+      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset> 
   <fieldset>
       <h1>What state do you live in?</h1>
@@ -287,6 +317,7 @@ $('.BirthYear').keyup(function(){
               <option value="56">Amer. Samoa</option>
           </select>
       </div>	
+      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset> 
   <fieldset>
       <h1>What is your health rating?</h1>
@@ -314,6 +345,7 @@ $('.BirthYear').keyup(function(){
               <div class="control__indicator">Bad</div>
           </label>
       </div>       
+      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>
   <fieldset>
       <h1>Do you use nicotine products?</h1>
@@ -328,13 +360,16 @@ $('.BirthYear').keyup(function(){
               <input type="checkbox" name="Smoker" value="N"/>
               <div class="control__indicator">No</div>
           </label>
-      </div>             
+      </div>      
+      <div class="back-arrow" >
+          <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+      </div>
   </fieldset>
   <fieldset>
       <h1>How much coverage and for how long?</h1>
       <div class="control-group">
           <label class="control-text">
-            <select name="FaceAmount">
+            <select name="FaceAmount" id="faceamount">
                 <option value="10000">$10,000</option>
                 <option value="25000">$25,000</option>
                 <option value="50000">$50,000</option>
@@ -380,17 +415,21 @@ $('.BirthYear').keyup(function(){
       <div class="control-group">
           <label class="control-text">
             <select name="NewCategory" class="form-control noBorder">
-                <option value="3">10 Year Term</option>
-                <option selected="selected" value="5">20 Year Term</option>
-                <option value="7">30 Year Term</option>
+                <option value="3">10-Year Term</option>
+                <option selected="selected" value="5">20-Year Term</option>
+                <option value="7">30-Year Term</option>
             </select> 
           </label>
-      </div>             
+      </div>    
+      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>    
 </form>
             </div>
         </div>
     </div>
-    <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%;">
+    <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%; background-color:#be1d20;">
        <p>Usurance, Inc.</p> 
     </div>
+    
+</body>
+</html>

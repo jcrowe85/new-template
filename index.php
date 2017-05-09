@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="header" style="display:flex;">
                     <div class="logo">
-                        <img src="/images/logo.png" alt="">
+                        <a href="/"><img src="/images/logo.png" alt=""></a>
                         <span>Usurance</span>
                     </div>
                     <div class="navbar nav-1">
