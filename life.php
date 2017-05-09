@@ -430,6 +430,15 @@ $('.getHelp').click(function() {
     <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%; background-color:#be1d20;">
        <p>Usurance, Inc.</p> 
     </div>
+<<<<<<< HEAD
     </body>
 </html>
 
+=======
+
+    
+</body>
+</html>
+
+
+>>>>>>> 0b5bbdf67d106930ca651ab941aa44f83e84cf25
