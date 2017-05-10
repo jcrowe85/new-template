@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compare Life Insurance Quotes | Usurance.com - Insurance Without the Agent</title>
+        <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <script src="https://rawgit.com/smalot/bootstrap-datetimepicker/master/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        <link rel='stylesheet' href="https://rawgit.com/smalot/bootstrap-datetimepicker/master/css/bootstrap-datetimepicker.css">
+        <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
+        <script src="../main.js"></script>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta name="viewport" content="width=device-width" />
+        <meta name="csrf-param" content="authenticity_token" />
+        <link rel="stylesheet" media="all" href="../style.css" />  
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+        <script src="https://use.fontawesome.com/c694372f78.js"></script>
+        <!--[if lt IE 9]>
+          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+          </script>
+        <![endif]-->
+<script type="text/javascript">
+$(window).load(function() {
+	$(".loader").fadeOut("slow");
+});
+	$(window).load(function() {
+		// Animate loader off screen
+		$(".se-pre-con").fadeOut("slow");;
+	});
+</script>
+<style>
+.logo-name img{
+    width: 65%;
+}
+.sec-logo-name img{
+   max-width: 15%;
+
+}
+  .sec-logo-name{
+   max-width: 415px;
+
+}
+</style>
+    </head>
+<body id="quote-page">
+      <!-- catch form feilds -->
+      <input type="hidden" name="ZipCode" value="$zipcode$">
+      <input type="hidden" name="DoingHealth" value="ON">
+      <input type="hidden" name="State" value="$origstate$">
+      <input type="hidden" name="Birthday" value="$origday$">
+      <input type="hidden" name="BirthMonth" value="$origmonth$">
+      <input type="hidden" name="BirthYear" value="$origyear$">
+      <input type="hidden" name="Health" value="$orighealth$">
+      <input type="hidden" name="FaceAmount" value="$newface$">
+      <input type="hidden" name="Sex" value="$origsex$">
+      <input type="hidden" name="Smoker" value="$origsmoker$">
+      <input type="hidden" name="NewCategory" value="$origcat$">
+      <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
+      <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+      <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
+      <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+      <input type="hidden" name="ModeUsed" value="$origmodeused$">
+      <input type="hidden" name="UserLocation" value="$userlocation$">
+      <input type="hidden" name="UserLocation" value="$userlocation$">
+      <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+      <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+      <input type="hidden" name="email" value="$email$">
+      <input type="hidden" name="css" value="$css$">    
+    <div class="se-pre-con"></div>
+    <div class="header fluid">
+        <div class="container">
+            <header>
+                <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
+                <button class="getHelp">Get Help</button>
+            </header>
+        </div>
+    </div>
+    <div class="adjustments fluid">
+        <div class="container">
+            <div class="row">
+                <div class="controls">
+                    <div>Adjust your policy</div>
+                    <div>Adjust your policy</div>
+                    <div>Adjust your policy</div>
+                    <div>Adjust your policy</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="quotes fluid">
+        <div class="container">
+            <div class="row" style="padding:0px;margin:0px; margin-top:25px;">
+                <h3 class="title">Alright! We got you matched with 11 policies.</h3>
+                <div class="quote-container">
+$prodline=3$                    
+                <div class="card-grid" style="margin:0 auto;">
+                    <div class="quote front">
+                        <div class="logo-name">
+                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                            <div style="line-height:18px; max-width: 175px;">$company$</div>
+                        </div>
+                        <div class="price">
+                            <h3>$$premium$<small>/mo</small></h3>
+                        </div>
+                        <div class="continue">
+                            <button class="btn btn-primary"><h3>Continue</h3></button>
+                        </div>
+                        <div class="details">
+                            <img src=""></img>
+                            <span><img src="../images/flip.png" alt="">details</span>
+                        </div>
+                    </div>
+                    <div class="quote back">
+                        <div class="logo-name">
+                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                            <div style="line-height:18px; max-width:175px;">$company$</div>
+                        </div>
+                        <div class="price">
+                            <h3>$$premium$<small>/mo</small></h3>
+                        </div>
+                        <div class="continue">
+                            <button class="btn btn-primary"><h3>Continue</h3></button>
+                        </div>
+                        <div class="details">
+                            <img src=""></img>
+                            <span><img src="../images/flip.png" alt="">details</span>
+                        </div>
+                    </div>                 
+                </div>
+$/prodline$                
+                    </div>
+                <script>
+                    $(".card-grid").flip({
+                      trigger: 'click'
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="secondary-quote fluid">
+$prodline=3$          
+            <div class="card-grid-sec" style="margin:0 auto;">
+                <div class="fluid front gray">
+                    <div class="container">
+                        <div class="sec-quote">
+                            <div class="details">
+                                <span><img src="/images/flip.png" alt="">details</span>
+                            </div>
+                            <div class="sec-logo-name">
+                                <img src="../images/logos/$COMP$.gif" alt="">
+                                <span>$company$</span>
+                            </div>
+                            <div class="price">
+                                <h3>$premium$<small>/mo</small></h3>
+                            </div>
+                            <div class="product-type">
+                                Term Life
+                            </div>
+                            <div class="sec-continue">
+                                <button type="button" class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div>
+                <div class="fluid back white">
+                    <div class="container">
+                        <div class="sec-quote">
+                            <div class="details">
+                                <span><img src="/images/flip.png" alt="">details</span>
+                            </div>
+                            <div class="sec-logo-name">
+                                <img src="../images/logos/$COMP$.gif" alt="">
+                                <span>$company$</span>
+                            </div>
+                            <div class="price">
+                                <h3>$premium$<small>/mo</small></h3>
+                            </div>
+                            <div class="product-type">
+                                Term Life
+                            </div>
+                            <div class="sec-continue">
+                                <button type="button" class="btn btn-primary">Continue</button>
+                            </div>
+                        </div>
+                    </div>    
+                </div> 
+            </div>
+$/prodline$
+        </div>
+    </div>
+    <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
+       <p>Usurance, Inc.</p> 
+    </div>
+    <script>
+        $(".card-grid-sec").flip({
+          axis: 'x',
+          trigger: 'click'
+        });
+    </script>
+  </body>    
+</html>

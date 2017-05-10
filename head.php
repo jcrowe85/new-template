@@ -24,6 +24,9 @@
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
           </script>
         <![endif]-->
+        
+<!-- favicon include -->
+<?php include_once('favicon.php') ?>
 <script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
@@ -33,5 +36,14 @@ $(window).load(function() {
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
-
+<!-- BEGIN PRIVY WIDGET CODE -->
+<script type='text/javascript'> var _d_site = _d_site || '064DEB5E90696299F8944986'; </script>
+<script src='//widget.privy.com/assets/widget.js'></script>
+<!-- END PRIVY WIDGET CODE -->
+<script>
+$(document).ready(function(){
+  ///
+     
+});
+</script>
     </head>

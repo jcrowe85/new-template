@@ -1,0 +1,448 @@
+               * * *  WARNING * * *
+
+This midmonth update is being provided with Version 8 
+data files.  
+
+These files are incompatible with past versions of 
+Compulife's Internet Engine.
+
+If you use the Windows version of Compulife, or the 
+webquote option, or Compulife Basic (the mobile edition),
+there is NOTHING that you have to do.  These services 
+are being updated automatically.  Ignore this warning.
+
+However, if you have Compulife's Internet Quote Engine,
+which mans that our quoting software is actually running 
+on your server, and you update the data files from your 
+Windows PC version of Compulife to your server, then 
+you will need to make sure that you do not place this 
+rate update on your server until you have and are ready 
+to implement the latest version of the quoting engine.
+
+IF you failed to read this, and updated your server
+without updating the engine, you can get the December
+monthly update AGAIN, and NOT get this midmonth update.
+The will give to the December 2016 version 7 data 
+files that can be uploaded to your server, and you 
+will not be able to implement this midmonth update
+until you get the version 8 internet engine.
+
+
+
+The following changes have been made to the December 2016  
+edition of the Compulife Quotation System:
+
+20.  MAPFRE Life Insurance - company/products added
+
+December 20th - MAPFRE Life Insurance is introducing
+their fully underwritten "Complete Term" series 
+which offers a 10, 15 and 20 year term variations
+on a fully underwritten basis.
+
+The company also has simplified term products for 
+which we have just received information.  We will
+try to get those added shortly.
+
+The fully underwritten products are only available
+in MA at this time.
+
+
+19.  VOYA Life Term - ANNOUNCEMENT
+
+December 19th - The following will affect the Reliasar
+and Reliastar of NY term and ROP term products in our
+software.
+
+  From a Voya Bulletin dated November 15, 2016:
+
+  Effective December 30, 2016, Voya will suspend Voya 
+  Indexed Universal Life-Guaranteed Death Benefit (IUL-GDB) 
+  and all level-term insurance sales while continuing to 
+  offer cash value life insurance products.
+
+followed by:
+
+  12/14/16 Last day to illustrate level-term products 
+  and IUL-GDB on Presents and other illustration software
+
+and
+
+  12/30/16 Last day Voya will accept formal applications
+
+and
+
+ 2/17/17 Last day to issue / reissue policies
+
+Compulife plans to pull the products in the update next 
+weekend unless anyone has any objections.
+
+Clearly the products cannot be sold after December 30th.
+
+
+18.  American Amicable Life Insurance Co - ROP products
+
+December 19th - We are advised that the company
+has introduced new ROP products/rates and further
+advised that the products ONLY return 75% of the 
+premiums at the end of the level period.
+
+As this is ROSP (Return of Some of the Premiums)
+or ROPP (Return of Partial Premiums), we will not 
+be including these products in our software.  
+
+
+17.  Occidential Life Insurance Co - ROP products
+
+December 19th - We are advised that the company
+has introduced new ROP products/rates and further
+advised that the products ONLY return 75% of the 
+premiums at the end of the level period.
+
+As this is ROSP (Return of Some of the Premiums)
+or ROPP (Return of Partial Premiums), we will not 
+be including these products in our software.  
+
+
+16.  US Life - waiver premium state correction
+
+December 14th - One of our subscribers reported late
+today that waiver premiums are NOT yet approved for
+US Life's new term products.
+
+These have been turned off, and a 10% coupon has been
+issued to the agent who reported the problem.
+
+
+15.  Lincoln National Life - state approval
+
+December 14th - Lincoln National's new no lapse UL 
+rates are now approved in OR.
+
+
+14.  Lincoln National Life - state approval
+
+December 14th - Lincoln National's new no lapse UL 
+rates are now approved in OR.
+
+
+13.  Pruco Life - state approval
+
+December 12th - Pruco's new no lapse UL rates are 
+now approved in FL.
+
+
+12.  American General Life - waiver correction
+
+December 12th - The minimum face amount for waiver
+of premium is $100,000, even though the company has 
+introduced new rates for $50,000.  The maximum face 
+amount for waiver is $5 million.  Table ratings, 
+which only apply to the "Special" rates found in
+the "other" category, are only available for $100,000
+and up.
+
+You can get Select-a-Term for $50,000 to $99,999, 
+you just can't get it with fries.
+
+
+11.  Independent Order of Foresters - non-med change
+
+December 12th - The maximum face amount for Forester's 
+non-med 20, 25 and 30 is now $400,000.
+
+
+10.  Lincoln National - quarterly mode back for UL
+
+December 8th - Lincoln Nation has now confirmed that 
+the quarterly mode for UL products is available, as 
+long as it is EFT.  
+
+The premiums were same for EFT and direct bill, so we
+have simply turned them back on.
+
+My last comment on this minor fiasco is that Lincoln
+offers quarterly, but ONLY as an EFT.  Where EFT is
+the rule, we quote EFT for ALL companies.  If annual 
+premiums are direct bill (VIRTUALLY ALL COMPANIES)
+then we quote that.
+
+
+9.  American General Life Insurance - rate correction
+
+December 7th - The following email instructions were
+received from the company:
+
+    An important validation was omitted in our recent 
+    communications regarding SAT 2016. To our knowledge, 
+    none of your systems are enforcing this new rule; 
+    it is critical that we do. It has already generated 
+    one issue that we’re having to resolve on an emergency 
+    basis.
+
+    The new validation is:  Do not allow FA 50k-99,999 
+    if insured is over 70 y/o (71-80)
+
+Let me translate this.  For 10 and 15 year term, the
+minimum face amount for ages 71 and older, is $100,000.
+
+For those who think what we do is easy, you can now 
+see the challenges.
+
+This has been fixed in this update.  I'm sorry if 
+the undocumented requirement for the new $50,000 
+band caught anyone.
+
+
+8.  Lincoln National - quarterly mode back
+
+December 7th - After we received a tip from a subscriber,
+that Lincoln no longer offers quarterly modes, we did
+what we always do, we checked with our contact at the
+company who confirmed the quarterly mode was gone.
+
+After another customer complained, today we received 
+this qualifying comment from the company contact:
+
+    Quarterly is still a payment option, but it’s 
+    required to be done via eft not direct bill. 
+    The modal factor is .262
+
+This was the same factor we used before.  The company
+wanted us to add a comment, that this is NOT direct
+billed, but EFT.  We don't issue such comments, and 
+think that is something you can get from the company
+yourself, assuming you need to know it.
+
+The company has still not advised if the quarterly
+premiums for their UL, which they previously provided
+were EFT or direct bill.  Until we hear about that, 
+quarterly will not be available for UL.
+
+As I said above, what we do is not that easy.
+
+
+7.  American General Life Insurance - state approval
+
+December 6th (2nd) - American General's new Select-a-Term
+product are now approved in FL.
+
+The old products have now been removed.
+
+
+6.  American General Life Insurance Company - new product
+
+December 6th - In addition to the new AG term rates, 
+the company has once again introduced a 35 year level
+premium option.  This udpate now has that option.
+
+As this required reinstating the 35 year term category,
+that category will not automatically be listed on the
+webquote or Compulife Basic versions of the internet 
+software.  If you need that category added to either, 
+please let us know by email at:
+
+service@compulife.com
+
+Moving forward it will be added to new sites/services.
+
+
+5.  Pacific Life Insurance Company - error corrected
+
+December 6th - I inadvertently dropped the new Pacific 
+Life PL Promise Term 10, 15, 20, 25 and 30 from the 
+December 5th midmonth update.  This is now corrected.
+
+
+4.  American General Life Insurance Company - new rates
+
+December 5th (2nd) - When I duplicated the OLD AG term 
+plans for FL, and set up new product codes, I neglected 
+to connect the renewal table files to those codes.  
+
+Many thanks to the subscriber who alerted us to the 
+problem.  It is now fixed.  A 10% coupon has been given.
+
+
+3.  American General Life Insurance Company - new rates
+
+December 5th - American General has introduced new rates 
+for its Select-a-Term product series.  
+
+The new rates are approved in all states except FL.
+
+
+2.  United States Life Insurance Company - new rates
+
+December 5th - US Life has introduced new rates for its
+Select-a-Term product series.  
+
+
+1.  Newest Version of Windows Program
+
+December 5th - Compulife is upgrading our data files
+from Version 7 to Version 8.  The new data format has
+been created to be introduced in conjunction with a new
+version of the Compulife internet quoting engine, designed 
+to the ongoing piracy of our software. 
+
+Yep, same crew, same ongoing problem.  The good news is
+that we are steadily getting closer to our day in court.
+
+If you are using the Windows PC version of Compulife,
+Compulife Basic (the mobile edition) or the $96 per year 
+web quote option on your website, there is NOTHING you
+need to do.  All these services are being updated
+AUTOMATICALLY.  
+
+
+
+
+================================================================
+
+The following changes were made and were included with the 
+December 2016 monthly update of the Compulife Quotation System:
+
+14.  Lincoln National - quarterly mode removed
+
+December Monthly Update - Lincoln National no longer 
+offers quarterly premium payment options for it's life
+insurance products.
+
+
+13.  Pacific Life Insurance Company - preferred health criteria
+
+November 28th (2nd) - We assumed Pacific Life was using 
+the same preferred health criteria for their new PL Promise
+Term as their Primer Term.  That is not correct.  It is
+quite different.
+
+We have now added the preferred health criteria for the
+PL Promise Term products.
+
+
+12.  Pacific Life Insurance Company - conversion correction
+
+November 28th - Pacific Life's new term series call PL 
+Promise Term is convertible for the lesser of the level
+premium period, or to age 70.  
+
+
+11.  John Hancock Life - state approval
+
+November 23rd - John Hancock's Vitality term is now 
+approved in AK, CT and MD.
+
+John Hancock wanted us to add a connection to the
+description of how the product works, to our system, 
+but we just don't have that sort of ability.  
+
+We would emphasize that the purpose of the software
+is not to give you exhaustive information about the 
+market, but rather is designed to give you a means 
+to quickly and easily compare similiar products by
+price.  After that, if you need further information
+about what a product offers, we STRONGLY recommend 
+you contact the Home Office or the distribution 
+channel that you use.
+
+Here is what John Hancock wanted you to see:
+
+http://www.jhredefininglife.com/how-it-works.php
+
+Copy the link and paste it into your browser.
+
+
+10.  A.M. Best Ratings
+
+November 18th - We rarely discuss other information we 
+update in our software, related to products and rates, 
+simply because discussing the VOLUME of such information 
+would make these bulletins more difficult to read than 
+it appears they are already.
+
+This update includes a number of A.M. Best changes I 
+was unable to process due to a week in Florida related
+to the copyright infringement lawsuit which Compulife
+has commenced in U.S. Federal Court.  
+
+I have now returned and A.M. Best and some other 
+changes to the software have been updated.
+
+
+9.  Pacific Life Insurance Company - new product
+
+November 17th - Pacific Life has introduced a new term 
+series call PL Promise Term 10, 15, 20, 25 and 30.  
+
+
+8.  New York Life - new rates
+
+November 8th - On November 2nd New York Life introduced
+new rates for their 10, 15 and 20 year level term plans.
+Compulife received the rates at about 5pm this evening.
+
+Previous to the last rate/product change, the company
+was still quoting their previous product in NY.  We
+have not yet learned if that product has been updated,
+so the new rates are in our software for all non-NY
+states.  We'll let you know when the company responds
+to our questions in that regard.
+
+
+7.  United Farm Family Life - product name change
+
+November 8th - Untited Farm Family has changed the name
+of its term plans from Express Iusse Term 20 and 30 to
+Simple Term 20 and 30.  It has also changed the name of
+its 20 year ROP term plan from Premier 20 to Simple 
+Term 20 ROP.  
+
+
+6.  United Home Life - product name change
+
+November 8th - Untited Home Life has changed the name
+of its term plans from Express Iusse Term 20 and 30 to
+Simple Term 20 and 30.  It has also changed the name of
+its 20 year ROP term plan from Premier 20 to Simple 
+Term 20 ROP.  
+
+
+5.  Nationwide Life Insurance - new No-Lapse UL rates
+
+November 7th - Nationwide has increased premiums for
+its no lapse UL products.  At the time of the release,
+the company was unable to provide 10 pay or single pay
+rates, so those payment options have been removed.
+
+
+4.  Sentinel Security Life - new company/product
+
+November 7th - We have added the Simplified Issue 
+Whole Life product for Sentinel Security Life.
+
+Our thanks to the subscriber who provided the product
+and rates information.  A 10% coupon has been given.
+
+
+3.  Security National Life - new company/product
+
+November 7th - We have added the Simplified Issue 
+Whole Life product for Security National.
+
+Our thanks to the subscriber who provided the product
+and rates information.  A 10% coupon has been given.
+
+
+2.  Mass Mutual Life - state approvals
+
+November 7th - Mass Mutual's new term rates are 
+approved in all states except OR.
+
+
+1.  American Continental Insurance Company - new rates
+
+November 2nd - American Continental has introduced new
+rates for its Final Expense product.
+
+Our thanks to the subscriber who brought that to our
+attention, and a 10% coupon has been given.

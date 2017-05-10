@@ -9,7 +9,7 @@ var animating; //flag to prevent quick multi-click glitches
 	next_fs = $(this).parents("fieldset").next();
 	
 	//hide back arrow
-	$('.back-arrow').hide();
+	$('.previous-step').fadeOut("fast");
 	
 	//show the next fieldset
 	next_fs.show(function(){
@@ -33,7 +33,7 @@ var animating; //flag to prevent quick multi-click glitches
 			current_fs.hide();
 			animating = false;
 			$('this, input:enabled:visible:first').focus();
-			$('.back-arrow').fadeIn();
+			$('.previous-step').fadeIn();
 		}, 
 		//this comes from the custom easing plugin
 		easing: 'easeInOutBack'

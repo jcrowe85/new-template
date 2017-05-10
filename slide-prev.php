@@ -31,7 +31,6 @@ var animating; //flag to prevent quick multi-click glitches
 		complete: function(){
 			current_fs.hide();
 			animating = false;
-			$('back-arrow').css({'left':'-100px'});
 			$('.back-arrow').fadeIn();
 			
 			
