@@ -227,7 +227,7 @@ fieldset{
     margin: 15px 0px;
 
 }
-#verified-sbmit{
+#verified-submit{
     font-size: 29px;
     border-radius: 50px;
     width: 100%;    
@@ -486,7 +486,7 @@ $(document).ready(function(){
                       </label>
                   </div>    
                   <div class="submit">
-                  <button type="submit" class="btn btn-warning btn-lg" id="verified">Verified</button>
+                  <button type="submit" class="btn btn-warning btn-lg" id="verified-submit">Verify</button>
                   </div>
               </fieldset> 
             </form>
