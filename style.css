@@ -63,8 +63,9 @@ a:active {
  .logo img{
     width:30px;
     float:left;
-    margin-right:5px;
-    
+}
+ .logo{
+    margin-right: 15px;
 }
 .navbar{
     border-radius: 0;
@@ -449,7 +450,7 @@ ul.quest li:nth-child(5) {
     font-size: 12px;    
     line-height:25px;
     background-color:#ed2428; 
-    border-top:50px solid #be1d20;   
+    border-top:5px solid #be1d20;   
 }
 .footer li:nth-child(n+2){
     font-family: 'AileronThin';
