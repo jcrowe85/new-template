@@ -53,6 +53,10 @@ fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fie
     font-family: 'AileronThin';
 }
 
+.control input:checked ~ .control__indicator {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
 .control--radio .control__indicator {
 	border-radius: 50%;
 }
@@ -65,7 +69,7 @@ fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fie
 /* Hover state whilst checked */
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
-    background-color: rgba(255, 255, 255, 0.6);
+    	background-color: rgba(255, 255, 255, 0.6);
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #fff;
@@ -126,7 +130,7 @@ fieldset{
 #quick-quote fieldset:not(:first-of-type) {
 	display: none;
 }
-.back-arrow{
+.previous-step{
     position:fixed; 
     top:40%; 
     left:2%;
@@ -134,13 +138,13 @@ fieldset{
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);    
 }
-.back-arrow button{
+.previous-step button{
     background:none; 
     border:none;
     outline: none; 
     pointer:cursor;    
 }
-.back-arrow img{
+.previous-step img{
     width:75%
 }
 
@@ -148,11 +152,16 @@ fieldset{
 </style>
 <script>
 $(document).ready(function(){
-    
+
   
 $(':checkbox').click(function(){
       <?php include('slide-next.php') ?>
 });
+
+$(':radio').click(function(){
+      <?php include('slide-next.php') ?>
+});
+
 
 $('select').change(function(){
       <?php include('slide-next.php') ?>
@@ -164,7 +173,7 @@ $(':input').keyup(function(){
 	}
 });
 
-$('.back-arrow').click(function(){
+$('.previous-step').click(function(){
       <?php include('slide-prev.php') ?>
 });
 
@@ -186,6 +195,16 @@ $('.getHelp').click(function() {
     <?php include_once('chat.php') ?>
 });
 
+// $('.verify').click(function(){
+
+// });
+
+
+// $('.control-group').parents("fieldset").show();
+// $('.control-group').parents("fieldset").unwrap();
+// $('fieldset').css("position", "relative");
+// $('.previous-step').hide();  
+
 });
 </script>
 <body id="life-page">
@@ -204,18 +223,18 @@ $('.getHelp').click(function() {
     <div class="process container" style="margin: 0 auto;">
         <div class="row">
             <div class="quick-quote" style="margin:auto; width:50%; text-align:center; display:block; position:relative;">
-<form id="quick-quote">
+<form id="quick-quote" method="post" action="/verify.php">
   <fieldset>
       <h1>What is your gender?</h1>
       <div class="control-group">
           <label class="control control--checkbox">
-              <input type="checkbox" name="Sex" value="M" class=""/>
+            <input type="radio" name="Sex" value="M"/>
               <div class="control__indicator">Male</div>
           </label>
       </div>	
       <div class="control-group">
-          <label class="control control">
-              <input type="checkbox" name"Sex" value="F"/>
+          <label class="control control--checkbox">
+              <input type="radio" name="Sex" value="F"/>
               <div class="control__indicator">Female</div>
           </label>
       </div> 
@@ -237,7 +256,7 @@ $('.getHelp').click(function() {
               <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" maxlength="4"/>
           </label>
       </div>
-        <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+        <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>
   <fieldset>
       <h1>What is your height and weight?</h1>
@@ -251,7 +270,7 @@ $('.getHelp').click(function() {
               <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
           </label>
       </div> 
-      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+      <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset> 
   <fieldset>
       <h1>What state do you live in?</h1>
@@ -317,53 +336,51 @@ $('.getHelp').click(function() {
               <option value="56">Amer. Samoa</option>
           </select>
       </div>	
-      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+      <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset> 
   <fieldset>
       <h1>What is your health rating?</h1>
       <div class="control-group">
           <label class="control control--checkbox">
-              <input type="checkbox" name="Health" value="PP" />
+              <input type="radio" name="Health" value="PP" />
               <div class="control__indicator">Very Good</div>
           </label>
       </div>	
       <div class="control-group">
           <label class="control control">
-              <input type="checkbox" name="Health" value="P"/>
+              <input type="radio" name="Health" value="P"/>
               <div class="control__indicator">Good</div>
           </label>
       </div>       
       <div class="control-group">
           <label class="control control">
-              <input type="checkbox"  name="Health" value="RP"/>
+              <input type="radio"  name="Health" value="RP"/>
               <div class="control__indicator">Average</div>
           </label>
       </div>
       <div class="control-group">
           <label class="control control">
-              <input type="checkbox" name="Health" value="R"/>
+              <input type="radio" name="Health" value="R"/>
               <div class="control__indicator">Bad</div>
           </label>
-      </div>       
-      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+      </div>      
+      <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>
   <fieldset>
       <h1>Do you use nicotine products?</h1>
       <div class="control-group">
           <label class="control control--checkbox">
-              <input type="checkbox" name="Smoker" value="Y"/>
+              <input type="radio" name="Smoker" value="Y"/>
               <div class="control__indicator">Yes</div>
           </label>
       </div>	
       <div class="control-group">
           <label class="control control">
-              <input type="checkbox" name="Smoker" value="N"/>
+              <input type="radio" name="Smoker" value="N"/>
               <div class="control__indicator">No</div>
           </label>
       </div>      
-      <div class="back-arrow" >
-          <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-      </div>
+          <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
   </fieldset>
   <fieldset>
       <h1>How much coverage and for how long?</h1>
@@ -421,15 +438,17 @@ $('.getHelp').click(function() {
             </select> 
           </label>
       </div>    
-      <div class="back-arrow" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-  </fieldset>    
+      <div>
+          <button type="submit" class="btn btn-warning">submit form</button>
+      </div>
+      <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+  </fieldset> 
 </form>
             </div>
         </div>
     </div>
-    <div class="footer" style="text-align:center; padding: 15px 0px; position:fixed; bottom:0; width:100%; background-color:#be1d20;">
+    <div class="footer" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#be1d20;">
        <p>Usurance, Inc.</p> 
     </div>
     </body>
 </html>
-

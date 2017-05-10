@@ -501,7 +501,7 @@ ul.quest li:nth-child(5) {
 
 /*  ---------------------------   quote page  -------------------------------- */
 
-#quote-page .header, #life-page .header{
+#quote-page .header, #life-page .header, #verify-page .header{
     background-color:white;
     padding:0px;
     margin: 0 auto;
@@ -509,11 +509,11 @@ ul.quest li:nth-child(5) {
     position: relative;
     padding: 10px 0px; 
 }
-#quote-page .header img, #life-page .header img{
+#quote-page .header img, #life-page .header img, #verify-page .header img{
     display: block;
     margin: 0 auto;
 }
-#quote-page .header button, #life-page .header button{
+#quote-page .header button, #life-page .header button, #verify-page .header button{
     position: absolute;
     top: 10%;
     right: 5%;
@@ -524,7 +524,7 @@ ul.quest li:nth-child(5) {
     background-color: white;
     color:black;
 }
-#quote-page .header button:hover, #life-page .header button:hover{
+#quote-page .header button:hover, #life-page .header button:hover, #verify-page .header button:hover{
     background-color: lightgray;
 }
 .controls{
