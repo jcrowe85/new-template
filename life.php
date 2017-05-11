@@ -424,6 +424,7 @@ $(document).ready(function(){
                             </select>
                           </label>
                       </div>	
+                <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>                      
                 </fieldset>      
                 <fieldset>
                     <h1>How long will you need coverage?</h1>

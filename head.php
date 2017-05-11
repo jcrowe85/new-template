@@ -27,6 +27,7 @@
         
 <!-- favicon include -->
 <?php include_once('favicon.php') ?>
+
 <script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");

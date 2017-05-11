@@ -257,7 +257,7 @@ $(document).ready(function(){
 
 </script>
 <body id="verify-page">
-    <div class="se-pre-con"></div>
+    <div class="wrap"><div class="se-pre-con"></div></div>
     <div class="header fluid">
         <div class="container">
             <header>
