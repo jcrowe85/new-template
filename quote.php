@@ -1,3 +1,10 @@
+<script>
+    $(document).ready(function(){
+        $('.getHelp').click(function() {
+            <?php include_once('chat.php'); ?>
+    });        
+    });
+</script>
 <?php include_once('head.php') ?>
 <body id="quote-page">
     <div class="se-pre-con"></div>
