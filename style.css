@@ -4,7 +4,9 @@
 
 
 
-/* -------------------------Globals----------------------*/
+/* -------------------------  universals  ----------------------*/
+
+
 body {
     font-size: 16px;
     background-color: #fff;
@@ -45,7 +47,7 @@ a:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.row{
+#home-page .row{
     padding-top:50px;
     padding-bottom:50px;
 }
@@ -54,397 +56,26 @@ a:active {
     width:2%;
 }
 
-/* -------------------------  home page  ----------------------*/
+/*  ---------------------------   loader css -------------------------------- */
 
-.header{
-    background-color: #d52024;
-    padding-top: 15px;
-}
- .logo img{
-    width:30px;
-    float:left;
-}
- .logo{
-    margin-right: 15px;
-}
-.navbar{
-    border-radius: 0;
-    display: block;
-    margin:0px;
-}
-.navbar li{
-    display: inline;
-    font-size: 12px;
-    margin-right:5px;
-    font-family: 'AileronThin'
-}
-.navbar a:link{
-    color:white;
-}
-.navbar a:visited{
-    color:white;
-}
-.nav-1{
-   flex-grow:1 
-}
-.nav-2 button{
-    border-radius:18px;
-    font-family: 'AileronThin';
-    letter-spacing: .09em;
-    font-size: 12px;
-    outline:none;
-}
-.nav-2 button:hover{
-    margin-top:1px;
-    transition: .95s;
-}
-.logo span{
-    color:white;
-    font-size: 25px;
-}
-.logo{
-    float:left;
-}
-.title{
-    text-align:center;
-    color: white;
-    margin-top: 50px;
-}
-.title h1{
-    line-height: 1.2em;
-    font-family: 'AileronThin'; 
-    font-size:3.0em;
-}
-.title span{
-    font-family: 'AileronThinItalic';
-    font-size:18px;
-}
-.main{
-    background-image: url("/images/home-page-bg.jpg");
-    background-repeat: no-repeat;
-    background-size: 2500px 888px;
-    background-color: #ea2931;
-    background-position:center top;
-    border-bottom:1px solid #8b8b8b;
-}
-.services{
-    display: flex;
-    border: 1px solid #cac5c5;
-    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
-    background-color: blue;
-    margin-top:50px;
-    width: 70%; 
-    margin: 0 auto;
-    margin-top:50px;
-    min-width: 300px;
-    height:90px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cacaca+0,cacaca+0,dedede+0,ffffff+53,dedede+100,cacaca+100 */
-    background: #cacaca; /* Old browsers */
-    background: -moz-linear-gradient(top, #cacaca 0%, #cacaca 0%, #dedede 0%, #ffffff 53%, #dedede 100%, #cacaca 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */    
-}
-.serv {
-  text-align: center;
-  margin: auto; 
-  align-items: center;
-  justify-content: center;
-}
-.serv:hover{
-    color: red;
-}
-.divider{
-    background-image: url("images/vertical-divider.jpg");
-    background-repeat: repeat-y;
-    height:100%;
-    width:2px;
-}
-.carrier-logo{
-    display: flex;
-    margin: 0 auto;
-    width: 70%;
-    margin-top: 50px;
-    padding-bottom: 25px;
-}
-.c-logo{
-    margin: auto;
-}
-.c-logo img{
-    width:100%;
-}
-.why-us{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+81,ececec+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
-}
-.why-us:before{
-
-}
-.why-us h2{
-    text-align:center;
-}
-.features-container{
-    display: flex;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-.features{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-.feat{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    overflow:auto;
-    height:72px;
-    margin-bottom: 10px;
-    font: 0/0 a;    
-    background-color: white;
-}
-.feat:before{
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;
-}
-.feat-left{
-    background-color: #ed2428;
-    color:white;
-    float:left;
-    padding: 10px 15px;
-    min-width: 65px;
-}
-.feat-left h1{
-    margin:0px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
-    font-size: 3em;
-}
-.feat-right, .feat-details, .feat-logo{
-    display: inline-block;
-}
-.feat-right{
-    text-align: center;
-}
-.feature-details{
-    text-align: center;
-        margin-top: 50px;
-}
-.feat-right, .feat-left{
-    display: inline-block;
-    vertical-align: middle;  
-    font: 16px/1.4 'AileronRegular'; ;
-}
-.feat-logo, .feat-details{
-    margin-left:15px;
-}
-.team .container{
-    width:70%;
-}
-.team ul{
-    list-style:none;
-    padding: 0px;
-}
-.team-pics img{
-    width:80%;
-}
-.team-highlights ul{
-    margin-top: 40px;
-}
-.team-highlights h2{
-    border-bottom: 2px solid red;
-    width: 65%;
-    padding-bottom: 10px;
-}
-.get-started{
-    text-align:center;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
-background: #ececec; /* Old browsers */
-background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
-}
-.getStarted{
-    background-color: #ed2428;
-    border-radius: 50px;
-    border: 0px;
-    color: white;
-    padding: 20px 70px;
-    box-shadow: 1px 1px 0px rgba(0,0,0, .5);
-}
-.getStarted:hover{
-    margin-top:1px;
-    transition: .95s;    
-}
-#home-page select {
-    border-radius: 0px;
-    margin: 50px;
-    border: 1px solid #111;
-    background: transparent;
-    padding: 10px 40px;
-    font-size: 25px;
-    border: 1px solid #ccc;
-    /* height: 34px; */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
-
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0;}
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(/images/Preloader_2.gif) center no-repeat #fff;
+	opacity: 0.8;
+	
 }
 
-/* CAUTION: IE hackery ahead */
 
 
-#home-page select::-ms-expand { 
-    display: none; /* remove default arrow in IE 10 and 11 */
-}
+/* -------------------------  footer  ----------------------*/
 
-/* target Internet Explorer 9 to undo the custom arrow */
-@media screen and (min-width:0\0) {
-    #home-page select {
-        background:none\9;
-        padding: 5px\9;
-    }
-}
-/* target Internet Explorer 9 to undo the custom arrow */
-@media screen and (min-width:0\0) {
-    #home-page select {
-        background-image:none\9;
-        padding: 5px\9;
-    } 
-}
-.blog .container{
-    width:50%;
-}
-.blog-row {
-    margin-top: 25px;
-    display:inline-block;
-}
-.blog-row img{
-    width:100%;
-}
-.text{
-    
-    font-family: 'AileronThin';
-    font-size: 0px;
-    color:white;
-    position: absolute;
-    text-align:center;
-    left: 0;
-    bottom: 0;
-    height:1px;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    -webkit-transition: font-size 2s; /* Safari */
-    transition: font-size 2s; 
-    -webkit-transition: height .5s; /* Safari */
-    transition: height .5s;    
-    
-}
-.title-animate{
-    position: relative;
-    margin-bottom:10px;
-}
-.title-animate:hover .text{
-    font-size:14px;
-    height:25%;
-    display: block;
-}
-.blog2{
-    margin-bottom:5px;
-}
-.questions{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
-background: #ececec; /* Old browsers */
-background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
-}
-.questions .container{
-    width:60%;
-}
-.questions ul{
-    list-style: none;
-    line-height: 25px;   
-    float:right;
-}
-ul.quest li:nth-child(-n+4) {
-    line-height: 35px;
-    font-family:'AileronThin';
-}
-ul.quest li:nth-child(5) {
-    font-family:'AileronThin';
-    font-size:12px;
-    line-height:18px;
-}
-.quest h3{
-    color: #ed2428;
-    font-weight:bold;
-    margin-top:0px;
-}
-
-.faq h3{
-    display: inline-block;
-    margin:0px;
-}
-.faq img{
-    display: inline-block;
-    width:75%;
-}
-.faq{
-    
-    height: 50px;
-    margin-bottom: 10px;
-}
-.faq:before{
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;
-}
-.faq > div{
-    display:inline-block;
-    vertical-align: middle;
-    text-align:center;
-    margin-right: 40px;
-}
-.faq li:nth-child(2){
-    margin-right:30px;
-}
-.faq h5{margin:0px;}
-.answer-button{
-    background-image:url('/images/plus-red-25.png');
-    background-repeat: no-repeat;
-    border:none;
-    background-color: transparent;
-    width:25px;
-    height:26px;
-    cursor:pointer;
-}
-.answer-button:active,
-.answer-button:focus,
-.answer-button.active {
-  
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-.answer{
-    clear:both; 
-    font-size: 12px; 
-    background-color:white; 
-    border-radius:5px; 
-    border:1px solid #dedede; 
-    padding:15px; 
-    box-shadow:0 0 5px rgba(0,0,0, 0.5); 
-    display:none; 
-    max-width:285px;
-}
 .footer{
     color: white;
     font-size: 12px;    
@@ -500,6 +131,398 @@ ul.quest li:nth-child(5) {
     line-height:35px;
 }
 
+/* -------------------------  home page  ----------------------*/
+
+#home-page .header{
+    background-color: #d52024;
+    padding-top: 15px;
+}
+ #home-page .logo img{
+    width:30px;
+    float:left;
+}
+ #home-page .logo{
+    margin-right: 15px;
+}
+#home-page .navbar{
+    border-radius: 0;
+    display: block;
+    margin:0px;
+}
+#home-page .navbar li{
+    display: inline;
+    font-size: 12px;
+    margin-right:5px;
+    font-family: 'AileronThin'
+}
+#home-page .navbar a:link{
+    color:white;
+}
+#home-page .navbar a:visited{
+    color:white;
+}
+#home-page .nav-1{
+   flex-grow:1 
+}
+#home-page .nav-2 button{
+    border-radius:18px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline:none;
+}
+#home-page .nav-2 button:hover{
+    margin-top:1px;
+    transition: .95s;
+}
+#home-page .logo span{
+    color:white;
+    font-size: 25px;
+}
+#home-page .logo{
+    float:left;
+}
+#home-page .title{
+    text-align:center;
+    color: white;
+    margin-top: 50px;
+}
+#home-page .title h1{
+    line-height: 1.2em;
+    font-family: 'AileronThin'; 
+    font-size:3.0em;
+}
+#home-page .title span{
+    font-family: 'AileronThinItalic';
+    font-size:18px;
+}
+#home-page .main{
+    background-image: url("/images/home-page-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 2500px 888px;
+    background-color: #ea2931;
+    background-position:center top;
+    border-bottom:1px solid #8b8b8b;
+}
+#home-page .services{
+    display: flex;
+    border: 1px solid #cac5c5;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.4);
+    background-color: blue;
+    margin-top:50px;
+    width: 70%; 
+    margin: 0 auto;
+    margin-top:50px;
+    min-width: 300px;
+    height:90px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cacaca+0,cacaca+0,dedede+0,ffffff+53,dedede+100,cacaca+100 */
+    background: #cacaca; /* Old browsers */
+    background: -moz-linear-gradient(top, #cacaca 0%, #cacaca 0%, #dedede 0%, #ffffff 53%, #dedede 100%, #cacaca 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cacaca 0%,#cacaca 0%,#dedede 0%,#ffffff 53%,#dedede 100%,#cacaca 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */    
+}
+#home-page .serv {
+  text-align: center;
+  margin: auto; 
+  align-items: center;
+  justify-content: center;
+}
+#home-page .serv:hover{
+    color: red;
+}
+#home-page .divider{
+    background-image: url("images/vertical-divider.jpg");
+    background-repeat: repeat-y;
+    height:100%;
+    width:2px;
+}
+#home-page .carrier-logo{
+    display: flex;
+    margin: 0 auto;
+    width: 70%;
+    margin-top: 50px;
+    padding-bottom: 25px;
+}
+#home-page .c-logo{
+    margin: auto;
+}
+#home-page .c-logo img{
+    width:100%;
+}
+#home-page .why-us{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+81,ececec+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+#home-page .why-us:before{
+
+}
+#home-page .why-us h2{
+    text-align:center;
+}
+#home-page .features-container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+#home-page .features{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#home-page .feat{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow:auto;
+    height:72px;
+    margin-bottom: 10px;
+    font: 0/0 a;    
+    background-color: white;
+}
+#home-page .feat:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+#home-page .feat-left{
+    background-color: #ed2428;
+    color:white;
+    float:left;
+    padding: 10px 15px;
+    min-width: 65px;
+}
+#home-page .feat-left h1{
+    margin:0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+    font-size: 3em;
+}
+#home-page .feat-right, .feat-details, .feat-logo{
+    display: inline-block;
+}
+#home-page .feat-right{
+    text-align: center;
+}
+#home-page .feature-details{
+    text-align: center;
+        margin-top: 50px;
+}
+#home-page .feat-right, .feat-left{
+    display: inline-block;
+    vertical-align: middle;  
+    font: 16px/1.4 'AileronRegular'; ;
+}
+#home-page .feat-logo, .feat-details{
+    margin-left:15px;
+}
+#home-page .team .container{
+    width:70%;
+}
+#home-page .team ul{
+    list-style:none;
+    padding: 0px;
+}
+#home-page .team-pics img{
+    width:80%;
+}
+#home-page .team-highlights ul{
+    margin-top: 40px;
+}
+#home-page .team-highlights h2{
+    border-bottom: 2px solid red;
+    width: 65%;
+    padding-bottom: 10px;
+}
+#home-page .get-started{
+    text-align:center;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+#home-page .getStarted{
+    background-color: #ed2428;
+    border-radius: 50px;
+    border: 0px;
+    color: white;
+    padding: 20px 70px;
+    box-shadow: 1px 1px 0px rgba(0,0,0, .5);
+}
+#home-page .getStarted:hover{
+    margin-top:1px;
+    transition: .95s;    
+}
+#home-page select {
+    border-radius: 0px;
+    margin: 50px;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    /* height: 34px; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
+
+}
+
+/* CAUTION: IE hackery ahead */
+
+
+#home-page select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    #home-page select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+    #home-page select {
+        background-image:none\9;
+        padding: 5px\9;
+    } 
+}
+#home-page .blog .container{
+    width:50%;
+}
+#home-page .blog-row {
+    margin-top: 25px;
+    display:inline-block;
+}
+#home-page .blog-row img{
+    width:100%;
+}
+#home-page .text{
+    
+    font-family: 'AileronThin';
+    font-size: 0px;
+    color:white;
+    position: absolute;
+    text-align:center;
+    left: 0;
+    bottom: 0;
+    height:1px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: font-size 2s; /* Safari */
+    transition: font-size 2s; 
+    -webkit-transition: height .5s; /* Safari */
+    transition: height .5s;    
+    
+}
+#home-page .title-animate{
+    position: relative;
+    margin-bottom:10px;
+}
+#home-page .title-animate:hover .text{
+    font-size:14px;
+    height:25%;
+    display: block;
+}
+#home-page .blog2{
+    margin-bottom:5px;
+}
+#home-page .questions{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+#home-page .questions .container{
+    width:60%;
+}
+#home-page .questions ul{
+    list-style: none;
+    line-height: 25px;   
+    float:right;
+}
+#home-page ul.quest li:nth-child(-n+4) {
+    line-height: 35px;
+    font-family:'AileronThin';
+}
+#home-page ul.quest li:nth-child(5) {
+    font-family:'AileronThin';
+    font-size:12px;
+    line-height:18px;
+}
+#home-page .quest h3{
+    color: #ed2428;
+    font-weight:bold;
+    margin-top:0px;
+}
+
+#home-page .faq h3{
+    display: inline-block;
+    margin:0px;
+}
+#home-page .faq img{
+    display: inline-block;
+    width:75%;
+}
+#home-page .faq{
+    
+    height: 50px;
+    margin-bottom: 10px;
+}
+#home-page .faq:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+#home-page .faq > div{
+    display:inline-block;
+    vertical-align: middle;
+    text-align:center;
+    margin-right: 40px;
+}
+#home-page .faq li:nth-child(2){
+    margin-right:30px;
+}
+#home-page .faq h5{margin:0px;}
+#home-page .answer-button{
+    background-image:url('/images/plus-red-25.png');
+    background-repeat: no-repeat;
+    border:none;
+    background-color: transparent;
+    width:25px;
+    height:26px;
+    cursor:pointer;
+}
+#home-page .answer-button:active,
+.answer-button:focus,
+.answer-button.active {
+  
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+#home-page .answer{
+    clear:both; 
+    font-size: 12px; 
+    background-color:white; 
+    border-radius:5px; 
+    border:1px solid #dedede; 
+    padding:15px; 
+    box-shadow:0 0 5px rgba(0,0,0, 0.5); 
+    display:none; 
+    max-width:285px;
+}
+
 /*  ---------------------------   quote page  -------------------------------- */
 
 #quote-page .header, #life-page .header, #verify-page .header{
@@ -510,11 +533,11 @@ ul.quest li:nth-child(5) {
     position: relative;
     padding: 10px 0px; 
 }
-#quote-page .header img, #life-page .header img, #verify-page .header img{
+#quote-page .header img, #life-page .header img, #verify-page .header img, #userinfo-page .header img{
     display: block;
     margin: 0 auto;
 }
-#quote-page .header button, #life-page .header button, #verify-page .header button{
+#quote-page .header button, #life-page .header button, #verify-page .header button, #userinfo-page .header button{
     position: absolute;
     top: 10%;
     right: 5%;
@@ -525,38 +548,39 @@ ul.quest li:nth-child(5) {
     background-color: white;
     color:black;
 }
-#quote-page .header button:hover, #life-page .header button:hover, #verify-page .header button:hover{
+#quote-page .header button:hover, #life-page .header button:hover, #verify-page .header button:hover, #userinfo-page .header button:hover{
     background-color: lightgray;
 }
-.controls{
+#quote-page .controls{
     display: flex;
 }
-.controls div{
+#quote-page .controls div{
     text-align: center;
     margin: auto;
     align-items: center;
     justify-content: center;    
 }
-.adjustments {
+#quote-page .adjustments {
     background-color: #f4f5f7;    
     font-family: 'AileronThin'
 }
-.adjustments .row{
+#quote-page .adjustments .row{
     padding:20px 0px;
 }
 #quote-page .title{
     color: black;
     font-family: 'AileronThin';
     margin:0px;
+    text-align: center;
 }
-.quotes .container{
+#quote-page .quotes .container{
     width:70%;
 }
-.quote-container{
+#quote-page .quote-container{
     display: flex;
     margin-top:50px;
 }
-.quote{
+#quote-page .quote{
     border-radius: 20px;
     cursor: pointer;
     margin: auto;
@@ -572,11 +596,11 @@ ul.quest li:nth-child(5) {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f2f2f2',GradientType=0 ); /* IE6-9 */    
 }
 
-.logo-name img{
+#quote-page .logo-name img{
     display: block;
     margin: 0 auto;    
 }
-.continue button{
+#quote-page .continue button{
     border-radius: 30px;
     font-family: 'AileronThin';
     letter-spacing: .09em;
@@ -584,40 +608,45 @@ ul.quest li:nth-child(5) {
     outline: none;
     border: 0px;
     padding: 10px 35px;    
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5dc4ff+0,0d9dee+100 */
-    background: #5dc4ff; /* Old browsers */
-    background: -moz-linear-gradient(top, #5dc4ff 0%, #0d9dee 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #5dc4ff 0%,#0d9dee 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #5dc4ff 0%,#0d9dee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5dc4ff', endColorstr='#0d9dee',GradientType=0 ); /* IE6-9 */    
+
 }
-.continue h3{
+#quote-page .continue button:hover{
+    border-radius: 30px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline: none;
+    border: 0px;
+    padding: 10px 35px;    
+    opacity: .7;
+}
+#quote-page .continue h3{
     margin:0px;
 }
-.details{
+#quote-page .details{
     color:#c2c2c2;
 }
-.details img{
+#quote-page .details img{
    margin-right:5px;
     width: 10%;
 }
-.card{
+#quote-page .card{
     margin:0 auto;
 }
-.sec-quote{
+#quote-page .sec-quote{
     display: flex;
     align-items: center;
     justify-content: center;    
     margin:0 auto;
     padding: 25px 0;    
 }
-.sec-quote > div{
+#quote-page .sec-quote > div{
     margin: 0 auto;
 }
-.sec-logo-name img{
+#quote-page .sec-logo-name img{
     width:30%;
 }
-.sec-continue button{
+#quote-page .sec-continue button{
     border-radius: 30px;
     font-family: 'AileronThin';
     letter-spacing: .09em;
@@ -627,49 +656,215 @@ ul.quest li:nth-child(5) {
     padding: 10px 35px;    
     background-color:orange;
 }
-.gray{
+#quote-page .sec-continue button:hover{
+    border-radius: 30px;
+    font-family: 'AileronThin';
+    letter-spacing: .09em;
+    font-size: 12px;
+    outline: none;
+    border: 0px;
+    padding: 10px 35px;    
+    opacity: .7;
+}
+#quote-page .gray{
     background-color: #f4f5f7;
 }
-.white{
+#quote-page .white{
     background-color: #fff;
 }
-
-
-/*  ---------------------------   life page -------------------------------- */
-
-
-
-
-
-
-/*  ---------------------------   loader css -------------------------------- */
-
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0;}
-.se-pre-con {
-	position: fixed;
-	left: 0px;
-	top: 0px;
-	width: 100%;
-	height: 100%;
-	z-index: 9999;
-	background: url(/images/Preloader_2.gif) center no-repeat #fff;
-	opacity: 0.8;
-	
+#quote-page .row:nth-child(n+2){
+    margin: 175px 0;
 }
-/*.wrap{*/
-/*    background-color: rgba(255,255,255, 1);*/
-/*    border-radius: 5px;*/
-/*    position: fixed;*/
-/*    width: 500px;*/
-/*    height: 200px;*/
-/*    top: 50%;*/
-/*    left: 50%;*/
-    margin-top: -100px; /* Negative half of height. */
-    margin-left: -250px; /* Negative half of width. */
-/*}*/
 
-/*  ---------------------------   responsive css -------------------------------- */
+/*  ---------------------------   userinfo page -------------------------------- */
+
+#userinfo-page .sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 18em;
+    padding: 2.25em;
+    color: #000;
+    border-right: 1px solid lightgray;  
+}    
+#userinfo-page .main{
+    margin-left: 18em;
+    background-color: white;
+    background-image: none;
+    border: 0px;
+}
+#userinfo-page .header{
+    background-color: white;
+    padding: 0px;
+    margin: 0 auto;
+    border-bottom: 1px solid #d2d1d1;
+    position: relative;
+    padding: 10px 0;
+    margin-left: 18em;
+    height: 3em;
+
+}
+#userinfo-page #process-logo{
+    width:20%;
+}
+#userinfo-page  .main{
+padding: 40px 40px 0px 40px;
+}
+
+
+/*  ---------------------------   life page  -------------------------------- */
+
+#life-page{
+    background-color: #9c292b;
+    color:white;
+    font-family: 'AileronThin';
+}
+#life-page .progress{
+    height:0px;
+}
+#life-page .bar{
+    width: 100%;
+    background: lightgray;
+    height: 10px;
+}
+#life-page .control-group {
+	display: block;
+}
+#life-page fieldset > div{
+    margin-top:25px;
+}
+#life-page input, #life-page select {
+     letter-spacing: 5px;
+}
+#life-page fieldset:nth-child(2) .control-group, #life-page fieldset:nth-child(3) .control-group,  #life-page fieldset:nth-child(7) .control-group {
+    display: inline-block;
+}
+
+
+
+/*  ---------------------------   life page input styling  -------------------------------- */
+
+.control {
+	font-size: 18px;
+	position: relative;
+	display: block;
+	margin-bottom: 15px;
+	cursor: pointer;
+}
+
+.control input {
+	position: absolute;
+	z-index: -1;
+	opacity: 0;
+}
+
+.control__indicator {
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 15px 45px;
+    text-align: center;
+    border-radius: 50px;
+    color:white;
+    font-family: 'AileronThin';
+}
+
+.control input:checked ~ .control__indicator {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+.control--radio .control__indicator {
+	border-radius: 50%;
+}
+/* Hover and focus states */
+.control:hover input ~ .control__indicator,
+.control input:focus ~ .control__indicator {
+	background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* Hover state whilst checked */
+.control:hover input:not([disabled]):checked ~ .control__indicator,
+.control input:checked:focus ~ .control__indicator {
+    	background-color: rgba(255, 255, 255, 0.6);
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #fff;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #fff;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #fff;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #fff;
+}
+.control-text input{
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 25px;
+    font-family: 'AileronThin';
+    border: none;
+    height:20px;
+    max-width:130px;
+    font-size:18px;
+    color:white; 
+    border-radius: 50px;
+}
+input[type=text]:focus{
+  border:black;
+  outline: none !important;
+  border:1px solid white;
+  box-shadow: none;
+}
+.control-text select {
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    color:white;
+    font-family: 'AileronThin';
+    background:none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 50px;
+}
+.control-text select:focus{
+  border:black;
+  outline: none !important;
+  border:1px solid white;
+  box-shadow: none;
+}
+fieldset{
+    letter-spacing: 0.2em;
+    position:absolute;
+    width:100%;
+}
+#quick-quote fieldset:not(:first-of-type) {
+	display: none;
+}
+.previous-step{
+    position:fixed; 
+    top:40%; 
+    left:2%;
+    ms-transform: rotate(90deg); 
+    -webkit-transform: rotate(90deg); 
+    transform: rotate(90deg);    
+}
+.previous-step button{
+    background:none; 
+    border:none;
+    outline: none; 
+    pointer:cursor;    
+}
+.previous-step img{
+    width:75%
+}
+
+
+
+/*  ---------------------------   responsive  -------------------------------- */
 
 
 @media screen and (max-width:768px){

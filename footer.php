@@ -1,7 +1,7 @@
         <div class="footer fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 section1">
+                    <div class="col-md-3 col-md-offset-1 section1">
                         <ul>
                             <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
                             <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
@@ -12,7 +12,7 @@
                             <li>24/7 We're here for you!</li>
                         </ul>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 col-md-offset-1">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
                             <li><a href="#">Life Insurance Guide</a></li>
@@ -29,7 +29,7 @@
                             <li><a href="#">Life Insurance Calculator</a></li>
                         </ul>                        
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-3 col-md-offset-1">
                         <ul>
                             <li><b>Insurance Product Advice</b></li>
                             <li><a href="#">Insurance Advice</a></li>
@@ -44,7 +44,7 @@
                             <li><a href="#">Something here</a></li>
                         </ul>                                                
                     </div>
-                    <div class="col-md-12 socialsExtra">
+                    <div class="col-md-11 col-md-offset-1 socialsExtra">
                         <div class="col-md-4 socials">
                             <ul>
                                 <li><img src="/images/facebook.png" alt=""></li>

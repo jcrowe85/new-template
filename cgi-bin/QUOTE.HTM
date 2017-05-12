@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -96,41 +97,57 @@ $(window).load(function() {
             <div class="row" style="padding:0px;margin:0px; margin-top:25px;">
                 <h3 class="title">Alright! We got you matched with 11 policies.</h3>
                 <div class="quote-container">
-$prodline=3$                    
-                <div class="card-grid" style="margin:0 auto;">
-                    <div class="quote front">
-                        <div class="logo-name">
-                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                            <div style="line-height:18px; max-width: 175px;">$company$</div>
-                        </div>
-                        <div class="price">
-                            <h3>$$premium$<small>/mo</small></h3>
-                        </div>
-                        <div class="continue">
-                            <button class="btn btn-primary"><h3>Continue</h3></button>
-                        </div>
-                        <div class="details">
-                            <span><img src="../images/flip.png" alt="">details</span>
-                        </div>
+                $prodline=3$      
+                    <div class="card-grid" style="margin:0 auto;">
+                        <form action="/userinfo.php" method="POST">
+                            <div class="quote front">
+                                <div class="logo-name">
+                                  <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                                    <div style="line-height:18px; max-width: 175px;">$company$</div>
+                                </div>
+                                <div class="price">
+                                    <h3>$$premium$<small>/mo</small></h3>
+                                </div>
+                                <div class="continue">
+                                    <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
+                                </div>
+                                <div class="details">
+                                    <span><img src="../images/flip.png" alt="">details</span>
+                                </div>
+                            </div>
+                            <div class="quote back">
+                                <div class="logo-name">
+                                  <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                                    <div style="line-height:18px; max-width:175px;">$company$</div>
+                                </div>
+                                <div class="price">
+                                    <h3>$$premium$<small>/mo</small></h3>
+                                </div>
+                                <div class="continue">
+                                    <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
+                                </div>
+                                <div class="details">
+                                    <span><img src="../images/flip.png" alt="">details</span>
+                                </div>
+                            </div>                 
+                            <input type="hidden" name="premium" value="$$premium$">
+                            <input type="hidden" name="company" value="$company$">
+                            <input type="hidden" name="Sex" value="$origsex$">
+                            <input type="hidden" name="Birthday" value="$origday$">
+                            <input type="hidden" name="BirthMonth" value="$origmonth$">
+                            <input type="hidden" name="BirthYear" value="$origyear$">
+                            <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
+                            <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+                            <input type="hidden" name="State" value="$origstate$">
+                            <input type="hidden" name="ZipCode" value="$zipcode$">
+                            <input type="hidden" name="Health" value="$orighealth$">
+                            <input type="hidden" name="Smoker" value="$origsmoker$">
+                            <input type="hidden" name="FaceAmount" value="$newface$">
+                            <input type="hidden" name="NewCategory" value="$origcat$"> 
+                        </form>   
                     </div>
-                    <div class="quote back">
-                        <div class="logo-name">
-                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                            <div style="line-height:18px; max-width:175px;">$company$</div>
-                        </div>
-                        <div class="price">
-                            <h3>$$premium$<small>/mo</small></h3>
-                        </div>
-                        <div class="continue">
-                            <button class="btn btn-primary"><h3>Continue</h3></button>
-                        </div>
-                        <div class="details">
-                            <span><img src="../images/flip.png" alt="">details</span>
-                        </div>
-                    </div>                 
+                $/prodline$                
                 </div>
-$/prodline$                
-                    </div>
                 <script>
                     $(".card-grid").flip({
                       trigger: 'click'
@@ -141,7 +158,8 @@ $/prodline$
     </div>
     <div class="row">
         <div class="secondary-quote fluid">
-$prodline=3$          
+$prodline=3$      
+        <form action="/userinfo.php" method="POST">
             <div class="card-grid-sec" style="margin:0 auto;">
                 <div class="fluid front gray">
                     <div class="container">
@@ -160,7 +178,7 @@ $prodline=3$
                                 Term Life
                             </div>
                             <div class="sec-continue">
-                                <button type="button" class="btn btn-primary">Continue</button>
+                                <button type="submit" class="btn btn-primary">Continue</button>
                             </div>
                         </div>
                     </div>    
@@ -182,12 +200,15 @@ $prodline=3$
                                 Term Life
                             </div>
                             <div class="sec-continue">
-                                <button type="button" class="btn btn-primary">Continue</button>
+                                <button type="submit" class="btn btn-primary">Continue</button>
                             </div>
                         </div>
                     </div>    
                 </div> 
             </div>
+            <input type="hidden" value="$$premium$" name="premium">
+            <input type="hidden" value="$company$" name="company">  
+        </form>
 $/prodline$
         </div>
     </div>
