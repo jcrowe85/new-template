@@ -1,4 +1,22 @@
 <?php include_once('head.php') ?>   
+<script>
+$(document).ready(function(){
+
+    $(':input').keyup(function(){
+    	if (this.value.length == this.maxLength) {
+    		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
+    	}
+    });
+    
+    // get help button display chat box
+    
+    $('.getHelp').click(function() {
+        <?php include_once('chat.php') ?>
+    });
+
+});
+
+</script>
     <body id="home-page">
         <div class="header fluid">
             <div class="container">
@@ -18,7 +36,7 @@
                     <div class="navbar nav-2">
                         <ul>
                             <li><a href="#">Contact</a></li>
-                            <button class="btn btn-primary">Get Help</button>
+                            <button class="btn btn-primary getHelp">Get Help</button>
                         </ul>                        
                     </div>
                 </div>

@@ -13,7 +13,6 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
         <script src="main.js"></script>
-        <script src="/assets/js/userinfo.js"></script>
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="viewport" content="width=device-width" />
         <meta name="csrf-param" content="authenticity_token" />
@@ -24,6 +23,10 @@
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
           </script>
         <![endif]-->
+        
+<!-- favicon include -->
+<?php include_once('favicon.php') ?>
+
 <script type="text/javascript">
 $(window).load(function() {
 	$(".loader").fadeOut("slow");
@@ -33,5 +36,14 @@ $(window).load(function() {
 		$(".se-pre-con").fadeOut("slow");;
 	});
 </script>
-
+<!-- BEGIN PRIVY WIDGET CODE -->
+<script type='text/javascript'> var _d_site = _d_site || '064DEB5E90696299F8944986'; </script>
+<script src='//widget.privy.com/assets/widget.js'></script>
+<!-- END PRIVY WIDGET CODE -->
+<script>
+$(document).ready(function(){
+  ///
+     
+});
+</script>
     </head>
