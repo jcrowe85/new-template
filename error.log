@@ -4962,3 +4962,59 @@
 [Fri May 12 10:00:21.310649 2017] [cgi:error] [pid 6517] [client 10.240.0.182:39600] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
 [Fri May 12 10:05:04.599552 2017] [:error] [pid 5567] [client 10.240.1.15:47474] script '/home/ubuntu/workspace/public_html/thankyou.php' not found or unable to stat, referer: https://usurance-new-template-jcrowe85.c9users.io/userdetails.php
 [Fri May 12 10:05:04.928536 2017] [core:info] [pid 5565] [client 10.240.1.60:51772] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon.ico, referer: https://usurance-new-template-jcrowe85.c9users.io/thankyou.php
+[Fri May 12 10:13:03.958461 2017] [cgi:error] [pid 8668] [client 10.240.1.60:54736] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:13:03.958516 2017] [cgi:error] [pid 8668] [client 10.240.1.60:54736] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:13:03.958528 2017] [cgi:error] [pid 8668] [client 10.240.1.60:54736] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:13:31.863321 2017] [cgi:error] [pid 8671] [client 10.240.1.20:42100] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:13:31.863386 2017] [cgi:error] [pid 8671] [client 10.240.1.20:42100] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:13:31.863405 2017] [cgi:error] [pid 8671] [client 10.240.1.20:42100] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:03.729736 2017] [cgi:error] [pid 8676] [client 10.240.0.110:35838] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:03.729796 2017] [cgi:error] [pid 8676] [client 10.240.0.110:35838] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:03.729814 2017] [cgi:error] [pid 8676] [client 10.240.0.110:35838] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:51.753863 2017] [cgi:error] [pid 8669] [client 10.240.0.69:38438] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:51.753915 2017] [cgi:error] [pid 8669] [client 10.240.0.69:38438] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:51.753928 2017] [cgi:error] [pid 8669] [client 10.240.0.69:38438] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:56.088766 2017] [cgi:error] [pid 8667] [client 10.240.0.69:38490] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:56.088820 2017] [cgi:error] [pid 8667] [client 10.240.0.69:38490] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:56.088839 2017] [cgi:error] [pid 8667] [client 10.240.0.69:38490] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:40:57.222709 2017] [core:info] [pid 8668] [client 10.240.0.186:53714] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Fri May 12 10:41:02.245807 2017] [cgi:error] [pid 8670] [client 10.240.0.69:38526] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:41:02.245861 2017] [cgi:error] [pid 8670] [client 10.240.0.69:38526] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:41:02.245874 2017] [cgi:error] [pid 8670] [client 10.240.0.69:38526] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:41:03.425156 2017] [core:info] [pid 8676] [client 10.240.1.17:45468] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Fri May 12 10:42:16.929489 2017] [cgi:error] [pid 8668] [client 10.240.1.64:60848] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:42:16.929542 2017] [cgi:error] [pid 8668] [client 10.240.1.64:60848] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:42:16.929560 2017] [cgi:error] [pid 8668] [client 10.240.1.64:60848] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:42:51.511415 2017] [cgi:error] [pid 8670] [client 10.240.0.186:54442] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:42:51.511464 2017] [cgi:error] [pid 8670] [client 10.240.0.186:54442] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:42:51.511476 2017] [cgi:error] [pid 8670] [client 10.240.0.186:54442] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:43:35.608481 2017] [core:info] [pid 9707] [client 10.240.1.60:40436] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon/android-icon-192x192.png, referer: https://usurance-new-template-jcrowe85.c9users.io/
+[Fri May 12 10:44:01.448297 2017] [cgi:error] [pid 9711] [client 10.240.0.179:49554] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:44:01.448353 2017] [cgi:error] [pid 9711] [client 10.240.0.179:49554] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:44:01.448365 2017] [cgi:error] [pid 9711] [client 10.240.0.179:49554] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:44:08.216486 2017] [cgi:error] [pid 9708] [client 10.240.0.179:49602] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:44:08.216552 2017] [cgi:error] [pid 9708] [client 10.240.0.179:49602] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Fri May 12 10:44:08.216574 2017] [cgi:error] [pid 9708] [client 10.240.0.179:49602] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sat May 13 02:29:32.738245 2017] [core:info] [pid 2314] [client 10.240.1.60:49592] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon/android-icon-192x192.png, referer: https://usurance-new-template-jcrowe85.c9users.io/life.php
+[Sat May 13 02:29:32.846952 2017] [core:info] [pid 1815] [client 10.240.0.119:43660] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/life.php
+[Sat May 13 02:30:25.507471 2017] [cgi:error] [pid 1817] [client 10.240.0.110:45016] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sat May 13 02:30:25.507535 2017] [cgi:error] [pid 1817] [client 10.240.0.110:45016] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sat May 13 02:30:25.507548 2017] [cgi:error] [pid 1817] [client 10.240.0.110:45016] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sat May 13 02:30:26.112793 2017] [core:info] [pid 1813] [client 10.240.1.15:35394] AH00128: File does not exist: /home/ubuntu/workspace/public_html/images/logos/PRIM.gif, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Sat May 13 02:30:26.282484 2017] [core:info] [pid 2314] [client 10.240.1.15:35400] AH00128: File does not exist: /home/ubuntu/workspace/public_html/images/logos/TIAA.gif, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Sun May 14 04:59:20.256266 2017] [core:info] [pid 8302] [client 10.240.1.60:45200] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon.ico, referer: https://usurance-new-template-jcrowe85.c9users.io/readme.html
+[Sun May 14 04:59:24.365165 2017] [core:info] [pid 8304] [client 10.240.0.204:46066] AH00128: File does not exist: /home/ubuntu/workspace/public_html/apple-touch-icon-precomposed.png
+[Sun May 14 04:59:24.508944 2017] [core:info] [pid 8305] [client 10.240.1.64:40876] AH00128: File does not exist: /home/ubuntu/workspace/public_html/apple-touch-icon.png
+[Sun May 14 04:59:24.646766 2017] [core:info] [pid 8306] [client 10.240.1.15:52636] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon.ico
+[Sun May 14 04:59:31.207400 2017] [core:info] [pid 8303] [client 10.240.0.187:45810] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon.ico, referer: https://usurance-new-template-jcrowe85.c9users.io/readme.html
+[Sun May 14 05:02:53.625537 2017] [core:info] [pid 8304] [client 10.240.1.64:43754] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon/android-icon-192x192.png, referer: https://usurance-new-template-jcrowe85.c9users.io/
+[Sun May 14 05:02:53.735674 2017] [core:info] [pid 8303] [client 10.240.1.64:43760] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/
+[Sun May 14 05:03:44.301339 2017] [cgi:error] [pid 8304] [client 10.240.1.32:39166] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sun May 14 05:03:44.301397 2017] [cgi:error] [pid 8304] [client 10.240.1.32:39166] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sun May 14 05:03:44.301408 2017] [cgi:error] [pid 8304] [client 10.240.1.32:39166] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Sun May 14 05:03:44.712835 2017] [core:info] [pid 8303] [client 10.240.0.204:49012] AH00128: File does not exist: /home/ubuntu/workspace/public_html/images/logos/ILLI.gif, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Sun May 14 05:03:44.953414 2017] [core:info] [pid 8394] [client 10.240.0.186:52736] AH00128: File does not exist: /home/ubuntu/workspace/public_html/images/logos/UTOM.gif, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Mon May 15 05:34:21.258318 2017] [cgi:error] [pid 3202] [client 10.240.0.187:58550] AH01215: , referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Mon May 15 05:34:21.262453 2017] [cgi:error] [pid 3202] [client 10.240.0.187:58550] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Mon May 15 05:34:21.262484 2017] [cgi:error] [pid 3202] [client 10.240.0.187:58550] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
+[Mon May 15 05:34:22.328358 2017] [core:info] [pid 3285] [client 10.240.0.110:54558] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi

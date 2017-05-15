@@ -581,10 +581,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     margin-top:50px;
 }
 #quote-page .quote{
-    border-radius: 20px;
+    border-radius: 60px;
     cursor: pointer;
     margin: auto;
-    box-shadow: 0 0 17px rgba(0,0,0, 0.16);
+    box-shadow: 0 0 1px rgba(0,0,0, 0.4);
     text-align: center;
     line-height: 60px;
     padding: 35px 30px;
@@ -710,6 +710,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 }
 #userinfo-page  .main{
 padding: 40px 40px 0px 40px;
+}
+
+#userinfo-page .sidebar p{
+    font-family: 'AileronLight';
+    font-size: 14px;
+    line-height: 25px;
 }
 
 
@@ -864,7 +870,7 @@ fieldset{
 
 
 
-/*  ---------------------------   responsive  -------------------------------- */
+/*  --------------------------   responsive  -------------------------------- */
 
 
 @media screen and (max-width:768px){
@@ -876,5 +882,6 @@ fieldset{
     }
     .quote-container{
         flex-direction: column;
+        margin-bottom:20px;
     }
 }
