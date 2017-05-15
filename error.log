@@ -5018,3 +5018,4 @@
 [Mon May 15 05:34:21.262453 2017] [cgi:error] [pid 3202] [client 10.240.0.187:58550] AH01215: <br>Error:%s, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
 [Mon May 15 05:34:21.262484 2017] [cgi:error] [pid 3202] [client 10.240.0.187:58550] AH01215: <br>: No such file or directory, referer: https://usurance-new-template-jcrowe85.c9users.io/verify.php
 [Mon May 15 05:34:22.328358 2017] [core:info] [pid 3285] [client 10.240.0.110:54558] AH00128: File does not exist: /home/ubuntu/workspace/public_html/assets/images/favicon.jpg, referer: https://usurance-new-template-jcrowe85.c9users.io/cgi-bin/cqsl.cgi
+[Mon May 15 22:38:11.537258 2017] [core:info] [pid 6380] [client 10.240.0.69:40082] AH00128: File does not exist: /home/ubuntu/workspace/public_html/favicon/android-icon-192x192.png, referer: https://usurance-new-template-jcrowe85.c9users.io/
