@@ -295,7 +295,7 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="footer" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
-       <p>Usurance, Inc.</p> 
+       <p style="font-weight:bold;">Usurance, Inc.</p> 
     </div>
     </body>
 </html>
