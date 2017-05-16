@@ -33,7 +33,6 @@ a:visited {
 }
 a:hover {
     text-decoration: none;
-    color: red;
 }
 a:active {
     text-decoration: none;
@@ -240,7 +239,6 @@ input::-webkit-contacts-auto-fill-button {
     margin: 0 auto;
     margin-top:50px;
     min-width: 300px;
-    height:90px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cacaca+0,cacaca+0,dedede+0,ffffff+53,dedede+100,cacaca+100 */
     background: #cacaca; /* Old browsers */
     background: -moz-linear-gradient(top, #cacaca 0%, #cacaca 0%, #dedede 0%, #ffffff 53%, #dedede 100%, #cacaca 100%); /* FF3.6-15 */
@@ -249,13 +247,21 @@ input::-webkit-contacts-auto-fill-button {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */    
 }
 #home-page .serv {
-  text-align: center;
-  margin: auto; 
-  align-items: center;
-  justify-content: center;
+    text-align: center;
+    margin: auto; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-right:1px solid lightgray;
+     padding: 15px;
+
 }
 #home-page .serv:hover{
-    color: red;
+    background-color: rgba(51, 122, 183, 1);
+    color:white;
+}
+#home-page .serv:hover h3{
+    color:white;
 }
 #home-page .divider{
     background-image: url("images/vertical-divider.jpg");
@@ -940,7 +946,15 @@ fieldset{
 .quote-container{
     flex-direction: column;
 }
-    
+#home-page .features-container{
+    flex-direction: column;
+}
+#home-page .features{
+    margin-bottom: 50px;
+}
+#home-page .feature-details{
+    margin-top: 25px;
+}
 }
 /* ------------ sm  ---------- */
 @media screen and (max-width:375px){
