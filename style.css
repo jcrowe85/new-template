@@ -581,10 +581,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     margin-top:50px;
 }
 #quote-page .quote{
-    border-radius: 60px;
+    border-radius: 20px;
     cursor: pointer;
     margin: auto;
-    box-shadow: 0 0 1px rgba(0,0,0, 0.4);
+    box-shadow: 0 0 17px rgba(0,0,0, 0.16);
     text-align: center;
     line-height: 60px;
     padding: 35px 30px;
@@ -710,12 +710,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 }
 #userinfo-page  .main{
 padding: 40px 40px 0px 40px;
-}
-
-#userinfo-page .sidebar p{
-    font-family: 'AileronLight';
-    font-size: 14px;
-    line-height: 25px;
 }
 
 
@@ -851,9 +845,9 @@ fieldset{
 	display: none;
 }
 .previous-step{
-    position:fixed; 
-    top:40%; 
-    left:2%;
+    position:absolute; 
+    top: 25rem; 
+    left: -39rem;
     ms-transform: rotate(90deg); 
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);    
@@ -868,9 +862,45 @@ fieldset{
     width:75%
 }
 
+/*  ---------------------------   life page input styling  -------------------------------- */
 
+.field_with_errors {
+  border: 1px solid red; }
 
-/*  -------------------------- responsive  -------------------------------- */
+  
+.form-inline label:after, .form-group label:after {
+    content: ":"; }
+
+.health label:after {
+  content: ""; }
+
+.formTitle {
+  display: block;
+  background-color: #e9e9e9;
+  padding: 7px; }
+
+.formContentWrap {
+  padding: 15px; }
+
+.noBorder {
+  border-radius: 0px;
+  border: 0px; }
+  
+.custom-size-header-box {
+    background-color: #fff !important;
+    height: 5rem;
+    font-weight: bold;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid darkgray;  
+}
+.form-inline, .form-group {
+  border: 1px solid lightgray;
+  border-radius: 5px 5px 4px 4px;
+  background-color: white;
+  margin-bottom: 15px; }
+
+/*  ---------------------------   responsive  -------------------------------- */
 
 
 @media screen and (max-width:768px){
@@ -882,6 +912,5 @@ fieldset{
     }
     .quote-container{
         flex-direction: column;
-        margin-bottom:20px;
     }
 }

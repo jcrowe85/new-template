@@ -26,10 +26,53 @@ $(document).ready(function(){
     });
     
     $('.BirthYear').keyup(function(){
-        var letters = $(".BirthYear").val().length;
+        var yearLength = $(".BirthYear").val().length;
+        var yearValue = $(".BirthYear").val();
+        var monthValue = $(".month").val();
+        var dayValue = $(".day").val();
+        if (dayValue == '') {
+            $(".day").focus();
+        }
+        if (monthValue == '') {
+            $(".month").focus();
+        }
+        
+        if (yearValue >= 1900) {
+            
+        }
+        else if (yearLength == 4 && yearValue <= 1900) {
+            $('.BirthYear').val('');
+            $('.BirthYear').focus();
+        }
         // if input = 4 move to next step
-        if (letters == 4){<?php include('slide-next.php') ?>}
+        if (yearLength == 4 && yearValue >= 1900) {
+            <?php include('slide-next.php') ?>
+        }
                                 
+    });
+    
+    $('.month').keyup(function(){
+        var monthValue = $(".month").val();
+        if(monthValue > 12) {
+            $(".month").val('');
+            $(".month").focus();
+        } 
+    });
+    
+    $('.day').keyup(function(){
+        var dayValue = $(".day").val();
+        var monthValue = $(".month").val();
+        if(dayValue > 31) {
+            $(".day").val('');
+            $(".day").focus();
+        } else if(monthValue == '2' && dayValue > 29) {
+            $(".day").val('');
+            $(".day").focus();
+        } else if((monthValue == '4' || monthValue == '6' || monthValue == '9' || monthValue == '11') && dayValue > 30) {
+            $(".day").val('');
+            $(".day").focus();
+        }  
+        
     });
     
     $('#weight').keyup(function(){
@@ -231,46 +274,50 @@ $(document).ready(function(){
                       <div class="control-group">
                           <label class="control-text">
                             <select name="FaceAmount" id="faceamount">
-                                <option selected="selected" value="">Select Coverage</option>
-                                <option value="10000">$10,000</option>
-                                <option value="25000">$25,000</option>
-                                <option value="50000">$50,000</option>
-                                <option value="50000">$50,000</option>
-                                <option value="75000">$75,000</option>
-                                <option value="100000">$100,000</option>
-                                <option value="125000">$125,000</option>
-                                <option value="150000">$150,000</option>
-                                <option value="175000">$175,000</option>
-                                <option value="200000">$200,000</option>
-                                <option value="225000">$225,000</option>
-                                <option value="250000">$250,000</option>
-                                <option value="300000">$300,000</option>
-                                <option value="350000">$350,000</option>
-                                <option value="400000">$400,000</option>
-                                <option value="450000">$450,000</option>
-                                <option value="500000">$500,000</option>
-                                <option value="550000">$550,000</option>
-                                <option value="600000">$600,000</option>
-                                <option value="650000">$650,000</option>
-                                <option value="700000">$700,000</option>
-                                <option value="750000">$750,000</option>
-                                <option value="800000">$800,000</option>
-                                <option value="900000">$900,000</option>
-                                <option value="1000000">$1,000,000</option>
-                                <option value="1100000">$1,100,000</option>
-                                <option value="1250000">$1,250,000</option>
-                                <option value="1500000">$1,500,000</option>
-                                <option value="1750000">$1,750,000</option>
-                                <option value="2000000">$2,000,000</option>
-                                <option value="2500000">$2,500,000</option>
-                                <option value="3000000">$3,000,000</option>
-                                <option value="4000000">$4,000,000</option>
-                                <option value="5000000">$5,000,000</option>
-                                <option value="6000000">$6,000,000</option>
-                                <option value="7000000">$7,000,000</option>
-                                <option value="8000000">$8,000,000</option>
-                                <option value="9000000">$9,000,000</option>
-                                <option value="10000000">$10,000,000</option>
+<<<<<<<<< saved version
+
+=========
+                                <option style="background-color:#808080;" selected="selected" value="">Select Coverage</option>
+                                <option style="background-color:#808080;" value="10000">$10,000</option>
+                                <option style="background-color:#808080;" value="25000">$25,000</option>
+                                <option style="background-color:#808080;" value="50000">$50,000</option>
+                                <option style="background-color:#808080;" value="50000">$50,000</option>
+                                <option style="background-color:#808080;" value="75000">$75,000</option>
+                                <option style="background-color:#808080;" value="100000">$100,000</option>
+                                <option style="background-color:#808080;" value="125000">$125,000</option>
+                                <option style="background-color:#808080;" value="150000">$150,000</option>
+                                <option style="background-color:#808080;" value="175000">$175,000</option>
+                                <option style="background-color:#808080;" value="200000">$200,000</option>
+                                <option style="background-color:#808080;" value="225000">$225,000</option>
+                                <option style="background-color:#808080;" value="250000">$250,000</option>
+                                <option style="background-color:#808080;" value="300000">$300,000</option>
+                                <option style="background-color:#808080;" value="350000">$350,000</option>
+                                <option style="background-color:#808080;" value="400000">$400,000</option>
+                                <option style="background-color:#808080;" value="450000">$450,000</option>
+                                <option style="background-color:#808080;" value="500000">$500,000</option>
+                                <option style="background-color:#808080;" value="550000">$550,000</option>
+                                <option style="background-color:#808080;" value="600000">$600,000</option>
+                                <option style="background-color:#808080;" value="650000">$650,000</option>
+                                <option style="background-color:#808080;" value="700000">$700,000</option>
+                                <option style="background-color:#808080;" value="750000">$750,000</option>
+                                <option style="background-color:#808080;" value="800000">$800,000</option>
+                                <option style="background-color:#808080;" value="900000">$900,000</option>
+                                <option style="background-color:#808080;" value="1000000">$1,000,000</option>
+                                <option style="background-color:#808080;" value="1100000">$1,100,000</option>
+                                <option style="background-color:#808080;" value="1250000">$1,250,000</option>
+                                <option style="background-color:#808080;" value="1500000">$1,500,000</option>
+                                <option style="background-color:#808080;" value="1750000">$1,750,000</option>
+                                <option style="background-color:#808080;" value="2000000">$2,000,000</option>
+                                <option style="background-color:#808080;" value="2500000">$2,500,000</option>
+                                <option style="background-color:#808080;" value="3000000">$3,000,000</option>
+                                <option style="background-color:#808080;" value="4000000">$4,000,000</option>
+                                <option style="background-color:#808080;" value="5000000">$5,000,000</option>
+                                <option style="background-color:#808080;" value="6000000">$6,000,000</option>
+                                <option style="background-color:#808080;" value="7000000">$7,000,000</option>
+                                <option style="background-color:#808080;" value="8000000">$8,000,000</option>
+                                <option style="background-color:#808080;" value="9000000">$9,000,000</option>
+                                <option style="background-color:#808080;" value="10000000">$10,000,000</option>
+>>>>>>>>> local version
                             </select>
                           </label>
                       </div>	
@@ -295,7 +342,11 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="footer" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
-       <p style="">Usurance, Inc.</p> 
+<<<<<<<<< saved version
+
+=========
+       <p>Usurance, Inc.</p> 
+>>>>>>>>> local version
     </div>
     </body>
 </html>
