@@ -27,7 +27,7 @@ $(document).ready(function(){
     });
     
     $('.BirthYear').keyup(function(){
-        var letters = $(".BirthYear").val().length;
+        var yearLength = $(".BirthYear").val().length;
         var yearValue = $(".BirthYear").val();
         var monthValue = $(".month").val();
         var dayValue = $(".day").val();
@@ -38,12 +38,15 @@ $(document).ready(function(){
             $(".month").focus();
         }
         
-        if (yearValue >= 1970) {
-            $(".BirthYear").val('');
-            $(".BirthYear").focus();
+        if (yearValue >= 1900) {
+            
+        }
+        else if (yearLength == 4 && yearValue <= 1900) {
+            $('.BirthYear').val('');
+            $('.BirthYear').focus();
         }
         // if input = 4 move to next step
-        if (letters == 4 && yearValue >= 1970) {
+        if (yearLength == 4 && yearValue >= 1900) {
             <?php include('slide-next.php') ?>
         }
                                 
@@ -138,7 +141,7 @@ $(document).ready(function(){
                       </div> 
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
+                              <input type="text" name="BirthYear" class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
                           </label>
                       </div>
                         <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
