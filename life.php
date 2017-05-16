@@ -1,4 +1,5 @@
 <?php include_once('head.php') ?>
+
 <script>
 $(document).ready(function(){
   
@@ -27,9 +28,49 @@ $(document).ready(function(){
     
     $('.BirthYear').keyup(function(){
         var letters = $(".BirthYear").val().length;
+        var yearValue = $(".BirthYear").val();
+        var monthValue = $(".month").val();
+        var dayValue = $(".day").val();
+        if (dayValue == '') {
+            $(".day").focus();
+        }
+        if (monthValue == '') {
+            $(".month").focus();
+        }
+        
+        if (yearValue >= 1970) {
+            $(".BirthYear").val('');
+            $(".BirthYear").focus();
+        }
         // if input = 4 move to next step
-        if (letters == 4){<?php include('slide-next.php') ?>}
+        if (letters == 4 && yearValue >= 1970) {
+            <?php include('slide-next.php') ?>
+        }
                                 
+    });
+    
+    $('.month').keyup(function(){
+        var monthValue = $(".month").val();
+        if(monthValue > 12) {
+            $(".month").val('');
+            $(".month").focus();
+        } 
+    });
+    
+    $('.day').keyup(function(){
+        var dayValue = $(".day").val();
+        var monthValue = $(".month").val();
+        if(dayValue > 31) {
+            $(".day").val('');
+            $(".day").focus();
+        } else if(monthValue == '2' && dayValue > 29) {
+            $(".day").val('');
+            $(".day").focus();
+        } else if((monthValue == '4' || monthValue == '6' || monthValue == '9' || monthValue == '11') && dayValue > 30) {
+            $(".day").val('');
+            $(".day").focus();
+        }  
+        
     });
     
     $('#weight').keyup(function(){
@@ -87,17 +128,17 @@ $(document).ready(function(){
                       <h1>What is your date of birth?</h1>
                       <div class="control-group" id="dob">
                           <label class="control-text">
-                              <input type="text" name="BirthMonth" placeholder="Mo" maxlength="2"/>
+                              <input type="text" class='month' name="BirthMonth" placeholder="Mo" maxlength="2"/>
                           </label>
                       </div>	
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="Birthday" placeholder="Day" maxlength="2"/>
+                              <input type="text" class='day' name="Birthday" placeholder="Day" maxlength="2"/>
                           </label>
                       </div> 
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" maxlength="4"/>
+                              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
                           </label>
                       </div>
                         <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
@@ -121,63 +162,63 @@ $(document).ready(function(){
                       <div class="control-group">
                         <label class="control-text">
                           <select name="State">
-                              <option selected value="">Select State</option>
-                              <option value="1">Alabama</option>
-                              <option value="2">Alaska</option>
-                              <option value="3">Arizona</option>
-                              <option value="4">Arkansas</option>
-                              <option value="5">California</option>
-                              <option value="6">Colorado</option>
-                              <option value="7">Connecticut</option>
-                              <option value="8">Delaware</option>
-                              <option value="9">Dist.Columbia</option>
-                              <option value="10">Florida</option>
-                              <option value="11">Georgia</option>
-                              <option value="12">Hawaii</option>
-                              <option value="13">Idaho</option>
-                              <option value="14">Illinois</option>
-                              <option value="15">Indiana</option>
-                              <option value="16">Iowa</option>
-                              <option value="17">Kansas</option>
-                              <option value="18">Kentucky</option>
-                              <option value="19">Louisiana</option>
-                              <option value="20">Maine</option>
-                              <option value="21">Maryland</option>
-                              <option value="22">Massachusetts</option>
-                              <option value="23">Michigan</option>
-                              <option value="24">Minnesota</option>
-                              <option value="25">Mississippi</option>
-                              <option value="26">Missouri</option>
-                              <option value="27">Montana</option>
-                              <option value="28">Nebraska</option>
-                              <option value="29">Nevada</option>
-                              <option value="30">New Hampshire</option>
-                              <option value="31">New Jersey</option>
-                              <option value="32">New Mexico</option>
-                              <option value="52">NY Non-Bus</option>
-                              <option value="33">NY Business</option>
-                              <option value="34">North Carolina</option>
-                              <option value="35">North Dakota</option>
-                              <option value="36">Ohio</option>
-                              <option value="37">Oklahoma</option>
-                              <option value="38">Oregon</option>
-                              <option value="39">Pennsylvania</option>
-                              <option value="40">Rhode Island</option>
-                              <option value="41">South Carolina</option>
-                              <option value="42">South Dakota</option>
-                              <option value="43">Tennessee</option>
-                              <option value="44">Texas</option>
-                              <option value="45">Utah</option>
-                              <option value="46">Vermont</option>
-                              <option value="47">Virginia</option>
-                              <option value="48">Washington</option>
-                              <option value="49">West Virginia</option>
-                              <option value="50">Wisconsin</option>
-                              <option value="51">Wyoming</option>
-                              <option value="53">Guam</option>
-                              <option value="54">Puerto Rico</option>
-                              <option value="55">Virgin Islands</option>
-                              <option value="56">Amer. Samoa</option>
+                              <option style="background-color:#808080;" selected value="">Select State</option>
+                              <option style="background-color:#808080;" value="1">Alabama</option>
+                              <option style="background-color:#808080;" value="2">Alaska</option>
+                              <option style="background-color:#808080;" value="3">Arizona</option>
+                              <option style="background-color:#808080;" value="4">Arkansas</option>
+                              <option style="background-color:#808080;" value="5">California</option>
+                              <option style="background-color:#808080;" value="6">Colorado</option>
+                              <option style="background-color:#808080;" value="7">Connecticut</option>
+                              <option style="background-color:#808080;" value="8">Delaware</option>
+                              <option style="background-color:#808080;" value="9">Dist.Columbia</option>
+                              <option style="background-color:#808080;" value="10">Florida</option>
+                              <option style="background-color:#808080;" value="11">Georgia</option>
+                              <option style="background-color:#808080;" value="12">Hawaii</option>
+                              <option style="background-color:#808080;" value="13">Idaho</option>
+                              <option style="background-color:#808080;" value="14">Illinois</option>
+                              <option style="background-color:#808080;" value="15">Indiana</option>
+                              <option style="background-color:#808080;" value="16">Iowa</option>
+                              <option style="background-color:#808080;" value="17">Kansas</option>
+                              <option style="background-color:#808080;" value="18">Kentucky</option>
+                              <option style="background-color:#808080;" value="19">Louisiana</option>
+                              <option style="background-color:#808080;" value="20">Maine</option>
+                              <option style="background-color:#808080;" value="21">Maryland</option>
+                              <option style="background-color:#808080;" value="22">Massachusetts</option>
+                              <option style="background-color:#808080;" value="23">Michigan</option>
+                              <option style="background-color:#808080;" value="24">Minnesota</option>
+                              <option style="background-color:#808080;" value="25">Mississippi</option>
+                              <option style="background-color:#808080;" value="26">Missouri</option>
+                              <option style="background-color:#808080;" value="27">Montana</option>
+                              <option style="background-color:#808080;" value="28">Nebraska</option>
+                              <option style="background-color:#808080;" value="29">Nevada</option>
+                              <option style="background-color:#808080;" value="30">New Hampshire</option>
+                              <option style="background-color:#808080;" value="31">New Jersey</option>
+                              <option style="background-color:#808080;" value="32">New Mexico</option>
+                              <option style="background-color:#808080;" value="52">NY Non-Bus</option>
+                              <option style="background-color:#808080;" value="33">NY Business</option>
+                              <option style="background-color:#808080;" value="34">North Carolina</option>
+                              <option style="background-color:#808080;" value="35">North Dakota</option>
+                              <option style="background-color:#808080;" value="36">Ohio</option>
+                              <option style="background-color:#808080;" value="37">Oklahoma</option>
+                              <option style="background-color:#808080;" value="38">Oregon</option>
+                              <option style="background-color:#808080;" value="39">Pennsylvania</option>
+                              <option style="background-color:#808080;" value="40">Rhode Island</option>
+                              <option style="background-color:#808080;" value="41">South Carolina</option>
+                              <option style="background-color:#808080;" value="42">South Dakota</option>
+                              <option style="background-color:#808080;" value="43">Tennessee</option>
+                              <option style="background-color:#808080;" value="44">Texas</option>
+                              <option style="background-color:#808080;" value="45">Utah</option>
+                              <option style="background-color:#808080;" value="46">Vermont</option>
+                              <option style="background-color:#808080;" value="47">Virginia</option>
+                              <option style="background-color:#808080;" value="48">Washington</option>
+                              <option style="background-color:#808080;" value="49">West Virginia</option>
+                              <option style="background-color:#808080;" value="50">Wisconsin</option>
+                              <option style="background-color:#808080;" value="51">Wyoming</option>
+                              <option style="background-color:#808080;" value="53">Guam</option>
+                              <option style="background-color:#808080;" value="54">Puerto Rico</option>
+                              <option style="background-color:#808080;" value="55">Virgin Islands</option>
+                              <option style="background-color:#808080;" value="56">Amer. Samoa</option>
                           </select>
                       </div>	
                       <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
@@ -186,8 +227,8 @@ $(document).ready(function(){
                       <h1>What is your health rating?</h1>
                       <div class="control-group">
                           <label class="control control--checkbox">
-                              <input type="radio" name="Health" value="PP" />
-                              <div class="control__indicator">Very Good</div>
+                              <input type="radio" name="Health" value="PP"/>
+                              <div  class="control__indicator">Very Good</div>
                           </label>
                       </div>	
                       <div class="control-group">
@@ -231,60 +272,59 @@ $(document).ready(function(){
                       <div class="control-group">
                           <label class="control-text">
                             <select name="FaceAmount" id="faceamount">
-                                <option selected="selected" value="">Select Coverage</option>
-                                <option value="10000">$10,000</option>
-                                <option value="25000">$25,000</option>
-                                <option value="50000">$50,000</option>
-                                <option value="50000">$50,000</option>
-                                <option value="75000">$75,000</option>
-                                <option value="100000">$100,000</option>
-                                <option value="125000">$125,000</option>
-                                <option value="150000">$150,000</option>
-                                <option value="175000">$175,000</option>
-                                <option value="200000">$200,000</option>
-                                <option value="225000">$225,000</option>
-                                <option value="250000">$250,000</option>
-                                <option value="300000">$300,000</option>
-                                <option value="350000">$350,000</option>
-                                <option value="400000">$400,000</option>
-                                <option value="450000">$450,000</option>
-                                <option value="500000">$500,000</option>
-                                <option value="550000">$550,000</option>
-                                <option value="600000">$600,000</option>
-                                <option value="650000">$650,000</option>
-                                <option value="700000">$700,000</option>
-                                <option value="750000">$750,000</option>
-                                <option value="800000">$800,000</option>
-                                <option value="900000">$900,000</option>
-                                <option value="1000000">$1,000,000</option>
-                                <option value="1100000">$1,100,000</option>
-                                <option value="1250000">$1,250,000</option>
-                                <option value="1500000">$1,500,000</option>
-                                <option value="1750000">$1,750,000</option>
-                                <option value="2000000">$2,000,000</option>
-                                <option value="2500000">$2,500,000</option>
-                                <option value="3000000">$3,000,000</option>
-                                <option value="4000000">$4,000,000</option>
-                                <option value="5000000">$5,000,000</option>
-                                <option value="6000000">$6,000,000</option>
-                                <option value="7000000">$7,000,000</option>
-                                <option value="8000000">$8,000,000</option>
-                                <option value="9000000">$9,000,000</option>
-                                <option value="10000000">$10,000,000</option>
+                                <option style="background-color:#808080;" selected="selected" value="">Select Coverage</option>
+                                <option style="background-color:#808080;" value="10000">$10,000</option>
+                                <option style="background-color:#808080;" value="25000">$25,000</option>
+                                <option style="background-color:#808080;" value="50000">$50,000</option>
+                                <option style="background-color:#808080;" value="50000">$50,000</option>
+                                <option style="background-color:#808080;" value="75000">$75,000</option>
+                                <option style="background-color:#808080;" value="100000">$100,000</option>
+                                <option style="background-color:#808080;" value="125000">$125,000</option>
+                                <option style="background-color:#808080;" value="150000">$150,000</option>
+                                <option style="background-color:#808080;" value="175000">$175,000</option>
+                                <option style="background-color:#808080;" value="200000">$200,000</option>
+                                <option style="background-color:#808080;" value="225000">$225,000</option>
+                                <option style="background-color:#808080;" value="250000">$250,000</option>
+                                <option style="background-color:#808080;" value="300000">$300,000</option>
+                                <option style="background-color:#808080;" value="350000">$350,000</option>
+                                <option style="background-color:#808080;" value="400000">$400,000</option>
+                                <option style="background-color:#808080;" value="450000">$450,000</option>
+                                <option style="background-color:#808080;" value="500000">$500,000</option>
+                                <option style="background-color:#808080;" value="550000">$550,000</option>
+                                <option style="background-color:#808080;" value="600000">$600,000</option>
+                                <option style="background-color:#808080;" value="650000">$650,000</option>
+                                <option style="background-color:#808080;" value="700000">$700,000</option>
+                                <option style="background-color:#808080;" value="750000">$750,000</option>
+                                <option style="background-color:#808080;" value="800000">$800,000</option>
+                                <option style="background-color:#808080;" value="900000">$900,000</option>
+                                <option style="background-color:#808080;" value="1000000">$1,000,000</option>
+                                <option style="background-color:#808080;" value="1100000">$1,100,000</option>
+                                <option style="background-color:#808080;" value="1250000">$1,250,000</option>
+                                <option style="background-color:#808080;" value="1500000">$1,500,000</option>
+                                <option style="background-color:#808080;" value="1750000">$1,750,000</option>
+                                <option style="background-color:#808080;" value="2000000">$2,000,000</option>
+                                <option style="background-color:#808080;" value="2500000">$2,500,000</option>
+                                <option style="background-color:#808080;" value="3000000">$3,000,000</option>
+                                <option style="background-color:#808080;" value="4000000">$4,000,000</option>
+                                <option style="background-color:#808080;" value="5000000">$5,000,000</option>
+                                <option style="background-color:#808080;" value="6000000">$6,000,000</option>
+                                <option style="background-color:#808080;" value="7000000">$7,000,000</option>
+                                <option style="background-color:#808080;" value="8000000">$8,000,000</option>
+                                <option style="background-color:#808080;" value="9000000">$9,000,000</option>
+                                <option style="background-color:#808080;" value="10000000">$10,000,000</option>
                             </select>
                           </label>
                       </div>	
-                <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>                      
                 </fieldset>      
                 <fieldset>
                     <h1>How long will you need coverage?</h1>
                       <div class="control-group">
                           <label class="control-text">
                             <select name="NewCategory" class="term">
-                                <option selected="selected" value="">Select Term</option>
-                                <option value="3">10-Year Term</option>
-                                <option value="5">20-Year Term</option>
-                                <option value="7">30-Year Term</option>
+                                <option style="background-color:#808080;" selected="selected" value="">Select Term</option>
+                                <option style="background-color:#808080;" value="3">10-Year Term</option>
+                                <option style="background-color:#808080;" value="5">20-Year Term</option>
+                                <option style="background-color:#808080;" value="7">30-Year Term</option>
                             </select> 
                           </label>
                       </div>    

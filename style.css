@@ -845,9 +845,9 @@ fieldset{
 	display: none;
 }
 .previous-step{
-    position:fixed; 
-    top:40%; 
-    left:2%;
+    position:absolute; 
+    top: 25rem; 
+    left: -39rem;
     ms-transform: rotate(90deg); 
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);    
@@ -861,6 +861,7 @@ fieldset{
 .previous-step img{
     width:75%
 }
+
 
 
 
