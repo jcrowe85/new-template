@@ -1,154 +1,5 @@
 <?php include_once('head.php') ?>
-<style>
-#process-logo{
-    width:2%;
-}
-#life-page{
-    background-color: #9c292b;
-    color:white;
-    font-family: 'AileronThin';
-}
-.progress{
-    height:0px;
-}
-.bar{
-    width: 100%;
-    background: lightgray;
-    height: 10px;
-}
-.control-group {
-	display: block;
-}
-#life-page fieldset > div{
-    margin-top:25px;
-}
-#life-page input, #life-page select {
-     letter-spacing: 5px;
 
-}
-
-fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fieldset:nth-child(7) .control-group {
-    display: inline-block;
-}
-.control {
-	font-size: 18px;
-	position: relative;
-	display: block;
-	margin-bottom: 15px;
-	cursor: pointer;
-}
-
-.control input {
-	position: absolute;
-	z-index: -1;
-	opacity: 0;
-}
-
-.control__indicator {
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 15px 45px;
-    text-align: center;
-    border-radius: 5px;
-    color:white;
-    font-family: 'AileronThin';
-}
-
-.control input:checked ~ .control__indicator {
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-.control--radio .control__indicator {
-	border-radius: 50%;
-}
-/* Hover and focus states */
-.control:hover input ~ .control__indicator,
-.control input:focus ~ .control__indicator {
-	background-color: rgba(255, 255, 255, 0.6);
-}
-
-/* Hover state whilst checked */
-.control:hover input:not([disabled]):checked ~ .control__indicator,
-.control input:checked:focus ~ .control__indicator {
-    	background-color: rgba(255, 255, 255, 0.6);
-}
-::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:    #fff;
-}
-:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-   color:    #fff;
-   opacity:  1;
-}
-::-moz-placeholder { /* Mozilla Firefox 19+ */
-   color:    #fff;
-   opacity:  1;
-}
-:-ms-input-placeholder { /* Internet Explorer 10-11 */
-   color:    #fff;
-}
-.control-text input{
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 25px;
-    border-radius: 5px;
-    font-family: 'AileronThin';
-    border: none;
-    height:20px;
-    max-width:130px;
-    font-size:18px;
-    color:white;  
-}
-input[type=text]:focus{
-  border:black;
-  outline: none !important;
-  border:1px solid white;
-  box-shadow: none;
-}
-.control-text select {
-    border-radius: 5px;
-    border: none;
-    padding: 15px;
-    font-size: 20px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color:white;
-    font-family: 'AileronThin';
-    background:none;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-.control-text select:focus{
-  border:black;
-  outline: none !important;
-  border:1px solid white;
-  box-shadow: none;
-}
-fieldset{
-    letter-spacing: 0.2em;
-    position:absolute;
-    width:100%;
-}
-#quick-quote fieldset:not(:first-of-type) {
-	display: none;
-}
-.previous-step{
-    position:absolute; 
-    top: 25rem; 
-    left: -39rem;
-    ms-transform: rotate(90deg); 
-    -webkit-transform: rotate(90deg); 
-    transform: rotate(90deg);    
-}
-.previous-step button{
-    background:none; 
-    border:none;
-    outline: none; 
-    pointer:cursor;    
-}
-.previous-step img{
-    width:75%
-}
-
-
-</style>
 <script>
 $(document).ready(function(){
   
@@ -176,7 +27,7 @@ $(document).ready(function(){
     });
     
     $('.BirthYear').keyup(function(){
-        var letters = $(".BirthYear").val().length;
+        var yearLength = $(".BirthYear").val().length;
         var yearValue = $(".BirthYear").val();
         var monthValue = $(".month").val();
         var dayValue = $(".day").val();
@@ -187,12 +38,15 @@ $(document).ready(function(){
             $(".month").focus();
         }
         
-        if (yearValue >= 1970) {
-            $(".BirthYear").val('');
-            $(".BirthYear").focus();
+        if (yearValue >= 1900) {
+            
+        }
+        else if (yearLength == 4 && yearValue <= 1900) {
+            $('.BirthYear').val('');
+            $('.BirthYear').focus();
         }
         // if input = 4 move to next step
-        if (letters == 4 && yearValue >= 1970) {
+        if (yearLength == 4 && yearValue >= 1900) {
             <?php include('slide-next.php') ?>
         }
                                 
@@ -287,7 +141,7 @@ $(document).ready(function(){
                       </div> 
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="BirthYear"class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
+                              <input type="text" name="BirthYear" class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
                           </label>
                       </div>
                         <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
@@ -484,7 +338,7 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="footer" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
-       <p style="">Usurance, Inc.</p> 
+       <p>Usurance, Inc.</p> 
     </div>
     </body>
 </html>
