@@ -1,3 +1,4 @@
+<script src="/userinfo.js"></script>
 <script>
 $(document).ready(function(){
     $('.getHelp').click(function() {

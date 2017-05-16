@@ -20,25 +20,36 @@ $(document).ready(function(){
     <body id="home-page">
         <div class="header fluid">
             <div class="container">
-                <div class="header" style="display:flex;">
+                <div class="col-md-3">
                     <div class="logo">
                         <a href="/"><img src="/images/logo.png" alt=""></a>
                         <span>Usurance</span>
                     </div>
-                    <div class="navbar nav-1">
-                        <ul>
-                            <li><a href="#">Why Usurance</a></li>
-                            <li><a href="#">Insurance Guides</a></li>
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="navbar nav-2">
-                        <ul>
-                            <li><a href="#">Contact</a></li>
-                            <button class="btn btn-primary getHelp">Get Help</button>
-                        </ul>                        
-                    </div>
+                </div>
+                <div class="col-md-6 col-md-offset-3">
+                    <nav class="navbar navbar-static-top" role="navigation">
+                        <div class="container">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                    
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="index.php">Why Usurance?</a></li>
+                                    <li><a href="about.php">Insurance Guides</a></li>
+                                    <li><a href="#portfolio">About Us</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                    <button class="btn btn-primary getHelp">Get Help</button>                                    
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -50,9 +61,11 @@ $(document).ready(function(){
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv"><h3><a href="/life.php">Life</a></h3></div>
+                        <div class="serv">
+                            <h3><a href="/life.php">Life</a></h3></div>
                         <div class="divider"></div>
-                        <div class="serv"><h3>Health</h3></div>
+                        <div class="serv">
+                            <h3>Health</h3></div>
                         <div class="divider"></div>
                         <div class="serv"><h3>Home</h3></div>
                         <div class="divider"></div>
