@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quote | Usurance.com - Insurance Without the Agent</title>
+  <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" media="all" href="/assets/styles/styles.css" data-turbolinks-track="true" />
+  <link rel="stylesheet" media="all" href="/assets/styles/custom.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://use.fontawesome.com/c694372f78.js"></script>  
+  <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
+  <script src="/assets/js/main.js" data-turbolinks-track="true"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <meta name="viewport" content="width=device-width" />
+  <meta name="csrf-param" content="authenticity_token" />
+  <meta name="csrf-token" content="4KNys2bM8YliZOlpk4y8plSN4o568sm9x8kGGU9Gb6gUR90chckxq0Edvuxyc87tn3DPB9EYSwSZaFzssYw0wQ==" />
+  <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->  
+  <script>
+    $(document).ready(function() {
+      if ($(window).width() < 768){
+        $('.sidebarLeft').css("height", "auto");
+      }
+      else if ($(window).width() > 768){
+        infoMainHeight = $('.main').innerHeight();
+        $('.sidebarLeft').css('min-height', infoMainHeight);
+      }
+      $(window).resize(function() {
+        if ($(window).width() <= 768){	
+          $('.sidebarLeft').css("height", "auto");
+        }
+        if ($(window).width() >= 768){
+         setHeight();
+        }
+      });
+    }); 
+  </script>
+<script>
+  $(document).ready(function(){
+    // updates quoteTitle/additionalQuotesTitle with number of policies
+    var quotes = $('.quote').length  
+      $('.quotesTitle > h4:nth-child(2)').html("We matched you with" + " " + quotes + " " + "polices out of 100 carriers");
+      $('.additionalQuotesTitle h3').text("You Have" + " " + quotes + " " +  "More Matches");
+      $('.best:nth-child(2) > h4').text("Second Best");
+    
+    // underwriting factors used to determine quote
+    
+    // age and sex
+    var currentDate = new Date().getFullYear()
+    var customerDob = $("input[name=BirthYear]").val();
+    var customerAge = currentDate - customerDob;
+    var customerHeight = $("input[name=Height]").val();
+      $('.quotesTitle > ul').append("<li>You are a" + " " + customerAge + " " + "year-old $sex$</li>");
+      
+    // height and weight
+    var customerHeight = $("input[name=parm2]").val();
+    var customerWeight = $("input[name=parm3]").val();
+      $('.quotesTitle > ul').append("<li> You're " + " " + customerHeight + " " + "who weighs" + " " + customerWeight + "lbs." + "</li>");      
+      
+    // health and smoker
+    var customerHealthAbbreviated = $("input[name=Health]").val();
+    if (customerHealthAbbreviated == "PP"){
+          customerHealthAbbreviated = "Very Good";
+      }
+    else if(customerHealthAbbreviated == "P"){
+            customerHealthAbbreviated = "Good";
+    }
+    else if(customerHealthAbbreviated == "RP"){
+            customerHealthAbbreviated = "Average";
+    }
+    else if(customerHealthAbbreviated == "R"){
+            customerHealthAbbreviated = "Bad";
+    };
+    var customerSmoker = $("input[name=Smoker]").val();
+    if (customerSmoker == "Y"){
+          customerSmoker = "but you do smoke"
+    }
+    else if (customerSmoker == "N"){
+              customerSmoker = "and you do <u>not</u> smoke"
+    };
+      $('.quotesTitle > ul').append("<li> Your overall health is " + " " + customerHealthAbbreviated + " " +  customerSmoker + "</li>");
+    
+    // faceamount and term
+    var customerFaceamount = $("input[name=FaceAmount]").val();
+    var customerTerm = $("input[name=NewCategory]").val();
+    if (customerTerm == "3"){customerTerm = "10 years"}
+    else if(customerTerm == "5"){
+      customerTerm = "20 years"
+    }
+    else if(customerTerm == "7"){
+      customerTerm = "30 years"
+    };
+      $('.quotesTitle > ul').append("<li>You selected $" + customerFaceamount + " " + "in coverage for" + " " + customerTerm + "</li>");
+    
+});
+</script>  
+</head>
+<body>
+  <input type="hidden" name="ZipCode" value="$zipcode$">
+  <input type="hidden" name="DoingHealth" value="ON">
+  <input type="hidden" name="State" value="$origstate$">
+  <input type="hidden" name="Birthday" value="$origday$">
+  <input type="hidden" name="BirthMonth" value="$origmonth$">
+  <input type="hidden" name="BirthYear" value="$origyear$">
+  <input type="hidden" name="Health" value="$orighealth$">
+  <input type="hidden" name="FaceAmount" value="$newface$">
+  <input type="hidden" name="Sex" value="$origsex$">
+  <input type="hidden" name="Smoker" value="$origsmoker$">
+  <input type="hidden" name="NewCategory" value="$origcat$">
+  <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
+  <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+  <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
+  <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+  <input type="hidden" name="ModeUsed" value="$origmodeused$">
+  <input type="hidden" name="UserLocation" value="$userlocation$">
+  <input type="hidden" name="UserLocation" value="$userlocation$">
+  <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+  <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+  <input type="hidden" name="email" value="$email$">
+  <input type="hidden" name="css" value="$css$">  
+  <header class="navbar navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="col-xs-5 col-sm-4 col-md-4">
+        <a id="logo" href="/">Usurance</a>
+      </div><!-- col-md-4 -->
+      <div class="col-xs-7 col-sm-8 col-md-8">
+        <nav>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/quote">Quotes</a></li>
+            <li><a href="/resources">Resources</a></li>
+            <li><a href="/blog">Blog</a></li>
+          </ul>
+        </nav>
+      </div><!-- col-md-8 -->
+    </div><!-- container -->
+  </header>
+<div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 main" style="margin-left:0px; padding:0px 0px;">
+          <!-- left sidebar -->
+            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-2 sidebarLeft" style="padding-top:40px;">
+              <div class="policyAdjust">
+                <h4>Adjust your policy</h4>
+                <p style="font-size: 1.3rem">Use the controls below to change your coverage and term.</p>
+<!-- adjust faceamount -->                
+<script>
+  $(document).ready(function(){
+    $('.adjustPolicy input[name=FaceAmount]').change(function(){
+      $(".adjustPolicy").submit();
+    });
+    var faceAmountValue = $("input[name=FaceAmount]").val();
+    $(".adjustPolicy input[name=FaceAmount]").val(faceAmountValue);
+  });
+</script>
+<script>
+  $( document ).ready(function() {
+    function coverageUpdate(x) {
+      var parts = x.toString().split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      i = "$" + parts.join(".");
+      return i;
+    }
+    var faceAmountValue = document.querySelector('[name="FaceAmount"]').value;
+    document.querySelector('#coverage').value = coverageUpdate(faceAmountValue);
+    });
+</script>
+<script>
+    function coverageUpdate(x) {
+      var parts = x.toString().split(".");
+      parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      document.querySelector('#coverage').value = "$" + parts.join(".");
+    }
+</script>
+<!-- adjust term period -->
+<script>
+    // submit new value on term period change
+    $(document).ready(function(){
+      $('.adjustPolicy input[name=NewCategory]').change(function(){
+        $(".adjustPolicy").submit();
+      });
+    // set term value on reload
+      var termPeriod = $("input[name=NewCategory]").val();
+      $(".adjustPolicy input[name=NewCategory]").val(termPeriod);
+    });
+</script>
+<script>
+    // display term period
+    $(document).ready(function(){
+      var termPeriod = $("input[name=NewCategory]").val();
+      document.querySelector('#term').value = termPeriod + " " + "Years";
+    });
+    function termUpdate(term){
+      document.querySelector('#term').value = term + " " + "Years";
+    }
+</script>
+                <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST">
+                    <label for="coverage" style="color:gray" >Coverage</label>
+                    <output for="coverage" id="coverage" class="coverage"></output>
+                    <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="1000000" value="100000" step="50000" oninput="coverageUpdate(value)">
+                    <label for="term" style="color:gray" >Term</label>
+                    <output for="term" id="term"></output>
+                    <input type="range" name="NewCategory"  id="term" min="10" max="30" step="10" oninput="termUpdate(value)" >
+                    <input type="hidden" name="ZipCode" value="$zipcode$">
+                    <input type="hidden" name="DoingHealth" value="ON">
+                    <input type="hidden" name="State" value="$origstate$">
+                    <input type="hidden" name="Birthday" value="$origday$">
+                    <input type="hidden" name="BirthMonth" value="$origmonth$">
+                    <input type="hidden" name="BirthYear" value="$origyear$">
+                    <input type="hidden" name="Health" value="$orighealth$">
+                    <input type="hidden" name="Sex" value="$origsex$">
+                    <input type="hidden" name="Smoker" value="$origsmoker$">
+                    <input type="hidden" name="NewCategory" value="$origcat$">
+                    <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
+                    <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+                    <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
+                    <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+                    <input type="hidden" name="ModeUsed" value="$origmodeused$">
+                    <input type="hidden" name="UserLocation" value="$userlocation$">
+                    <input type="hidden" name="UserLocation" value="$userlocation$">
+                    <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+                    <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+                    <input type="hidden" name="email" value="$email$">
+                    <input type="hidden" name="css" value="$css$">   
+                </form>  
+              </div> 
+              <hr>
+              <div class="paymentMode">
+                <h4>Show Prices</h4>
+                <form>
+                  <div class="formContentWrap">
+                    <label for="monthly">Monthly</label>
+                    <input type="radio" name="paymentMode" value="option1" checked></input>
+                  </div>
+                  <div class="formContentWrap">
+                    <label for="annually">Annually</label>
+                    <input type="radio" name="paymentMode" value="option2"></input> 
+                  </div>
+                </form>
+              </div>
+              <hr>
+              <div class="edit">
+                <button class="btn btn-warning btn-lg" type="submit" id="whyUs" onclick="history.go(-1);return true;">Edit my info</button>
+              </div>
+              <hr>
+              <div class="saveWhy">
+                    <button class="btn btn-warning btn-lg" type="submit" id="save">Save</button>
+                    <button class="btn btn-warning btn-lg" type="submit" id="whyUs">Why Us?</button>
+               </div>             
+            </div>
+            <!-- main -->
+              <div class="col-sm-9 col-md-9 col-lg-10">
+                 <div class="infoMain">
+                 <div class="quotesTitle">
+                   <h2>Alright, $parm1$! Time to Choose your policy
+                   <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
+                   </h2>
+                    <h4><!-- jquery --></h4>
+                    <br>
+                    <h4>How did we determine your rate?<small> It was based on your <u>Underwriting Class</u></small></h4>
+                    <p>Here are the primary factors considered by the insurance carriers:</p>
+                    <ul>
+                      <!-- jquery append li -->
+                    </ul>
+                    <br>
+                    <p onclick="history.go(-1);return true;"><a style="color:gray"><u>Edit this info</u></a><u></u></p>
+                 </div>
+                <div class="row topQuotes">
+                  <div class="col-md-12">
+                  $prodline=2$   
+                  <form action="/userinfo.php" method="POST">
+                    <div class="col-md-4 best">
+                      <h4 style="text-align:center">Best price</h4>
+                      <div class="quoteBox" style="border:1px solid lightgray; border-radius:5px;">
+                        <div class="quotePrice" style="border-radius:5px 5px 0 0; padding: 1rem 0">
+                          <h1 style="margin:0px">$$premium$/mo</h1>
+                        </div>
+                        <div class="quoteDetails" style="padding:0 15px">
+                          <div class="carrierTitle">
+                            <h1 style="margin-bottom:0px;">$company$</h1>
+                            <h4 style="margin-top:0px;"><a href="#"><u><small>More about this carrier</small></u></a></h4>
+                          </div>
+                          <div class="ratings">
+                            <h3 style="margin-bottom:0px"><small>Ratings</small></h3>
+                            <div class="amBest">
+                              <h4>$amb$<small> A.M. Best</small></h4>
+                            <div class="bbb">
+                              <h4>A <small>Better Business Bureau</small></h4>
+                            </div>                            
+                              <h4 style="margin-top:0px; margin-bottom:25px;"><a href="#"><u><small>What are these?</small></u></a></h4>
+                            </div>
+                          </div>
+                          <a href=""><button class="btn btn-warning btn-lg" type="submit" id="whyUs" style="box-shadow: 0px 2px 1px gray;">Continue</button></a>
+                          <h4 style="text-align:center"><a href="#"><u><small>save for later</small></u></a></h4>
+                        </div>
+                      </div>
+                    </div>
+                    <input type="hidden" name="premium" value="$$premium$">
+                    <input type="hidden" name="company" value="$company$">
+                    <input type="hidden" name="Sex" value="$origsex$">
+                    <input type="hidden" name="Birthday" value="$origday$">
+                    <input type="hidden" name="BirthMonth" value="$origmonth$">
+                    <input type="hidden" name="BirthYear" value="$origyear$">
+                    <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
+                    <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+                    <input type="hidden" name="State" value="$origstate$">
+                    <input type="hidden" name="ZipCode" value="$zipcode$">
+                    <input type="hidden" name="Health" value="$orighealth$">
+                    <input type="hidden" name="Smoker" value="$origsmoker$">
+                    <input type="hidden" name="FaceAmount" value="$newface$">
+                    <input type="hidden" name="NewCategory" value="$origcat$">                          
+                    </form>
+                  $/prodline$                    
+                    <div class="col-md-4 whyUsBox">
+                      <h4 style="text-align:center">Why Us?</h4>
+                      <div class="quoteBox" style="border:1px solid lightgray; border-radius:5px;">
+                        <div class="quotePrice" style="border-radius:5px 5px 0 0; padding: 1rem 0">
+                           <h1 style="margin:0px">Usurance</h1>
+                        </div>   
+                        <div class="quoteDetails" style="padding:0 15px">                           
+                           <h3>So why choose us?</h3>
+                           <ul>
+                             <li>We've shopped <u>all</u> the carriers for you</li>
+                             <li>Prices are regulated. You pay the same here or there.</li>
+                             <li>Regardless of where you get quotes, quotes are dependent on your health</li>
+                             <li>Get life insurance without medical exam for a higher premium (Quote is what you pay)</li>
+                           </ul>
+                           <!--<p>In reality, you're not choosing us. You're choosing a carrier. Insurance prices are regulated, there's no difference in cost-->
+                           <!--buying from us or directly through a salesman or back office admin working for the carrier. The only difference is convenience -->
+                           <!--in the purchasing process. -->
+                           <!--</p>                        -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--<div class="row valueProp boxBorder" style="padding: 10px 15px; margin-top:15px">-->
+                <!--   <h3>So why choose us?</h3>-->
+                <!--   <ol>-->
+                <!--     <li>We've shopped <u>all</u> the carriers for you</li>-->
+                <!--     <li>Prices are regulated. You pay the same here or there.</li>-->
+                <!--     <li>Regardless of where you get quotes, quotes are dependent on your health</li>-->
+                <!--     <li>Get life insurance without medical exam for a higher premium (Quote is what you pay)</li>-->
+                <!--   </ol>-->
+                <!--   <p>In reality, you're not choosing us. You're choosing a carrier. Insurance prices are regulated, there's no difference in cost-->
+                <!--   buying from us or directly through a salesman or back office admin working for the carrier. The only difference is convenience -->
+                <!--   in the purchasing process. -->
+                <!--   </p>-->
+                <!--</div>-->
+              </div>
+              <div class="row additionalQuotes">
+                <div class="additionalQuotesTitle" style="text-align:center; padding: 3rem;">
+                  <h3><!-- jquery title insert --></h3>
+                  <img style="width:3%" src="/assets/images/expand-arrow22.png" alt="">
+                </div>
+                <div class="additionalQuotesMenu">
+                  <div class="box1" style="">
+                    <h4>Quote</h4>
+                  </div>
+                  <div class="box1" style="">
+                    <h4>Insurer</h4>
+                  </div>
+                  <div class="box1" style="">
+                    <h4>Financial Strength</h4>
+                  </div>
+                  <div class="box1" style="">
+                    <h4>Customer Satisfaction</h4>
+                  </div>     
+                  <div class="box1" style="">
+                    <!-- blank to distribute width proportionately -->
+                  </div>                      
+                </div>
+                $prodline=20$
+                <form action="/userinfo.php" method="POST">
+                <div class="quote">
+                  <div class="premium" style="">
+                    <h2>$$premium$<small>/mo</small></h2>
+                  </div>
+                  <div class="insurerName" style="">
+                    <p><img src="/images/logos/$COMP$.gif" valign="middle" align="center" alt="logo" border="0" vspace="3" hspace="3"></p>
+                  </div>
+                  <div class="strength" style="">
+                     <h4>A.M. Best</h4>
+                     <h3>$amb$</h>
+                  </div>
+                  <div class="satisfaction" style="">
+                    <h4>BBB</h4>
+                    <h3>A</h3>
+                  </div>
+                  <div class="continue">
+                    <button class="btn btn-warning btn-lg" type="submit" id="whyUs" style="box-shadow: 0px 2px 1px gray;">Continue</button>
+                  </div>
+                </div>
+                    <input type="hidden" value="$$premium$" name="premium">
+                    <input type="hidden" value="$company$" name="company">                
+                </form>
+                $/prodline$
+              </div>
+              <div class="row otherCarriers infoMain">
+                <div class="otherCarriersTitle boxBorder" style="text-align:center;">
+                  <h3>What about <i>all</i> the <u>other</u> carriers?</h3>
+                  <p>Some of these carriers did not have policies matching your personal situation. For more details press <a>Why?</a></p>      
+                  <div class="logos">
+                    <img src="/assets/images/pru.png" alt="Pru" />
+                    <img src="/assets/images/aig.png" alt="Aig" />
+                    <img src="/assets/images/metlife.png" alt="Metlife" />
+                    <img src="/assets/images/banner.png" alt="Banner" />
+                    <img src="/assets/images/protective.png" alt="Protective" />
+                    <img src="/assets/images/principal.png" alt="Principa" />
+                    <img src="/assets/images/lincoln.png" alt="Lincoln" />
+                    <img src="/assets/images/transamerica.png" alt="Transamerica" />
+                    <img src="/assets/images/nationwide.jpg" alt="Nationwide" />
+                    <img src="/assets/images/northamerican.jpg" alt="Northamerican" />
+                    <img src="/assets/images/unitedomaha.png" alt="Unitedomaha" />
+                    <img src="/assets/images/americanNational.jpg" alt="Americannational" />
+                    <img src="/assets/images/ohioNational.jpg" alt="Ohionational" />
+                    <img src="/assets/images/pacificLife.png" alt="Pacificlife" />   
+                    <img src="/assets/images/axa.png" alt="Axa" />
+                    <img src="/assets/images/newYorkLife.jpg" alt="Newyorklife" />
+                    <img src="/assets/images/accordia.jpg" alt="Accordia" />
+                    <img src="/assets/images/minnesotaLife.png" alt="Minnesotalife " />                       
+                    </div>
+                </div>
+              </div>
+              <div class="securityLogos logos">
+                <img style="width:25%" src="/assets/images/trust-logos.png" alt="Trust logos" />
+              </div>
+          </div>
+      </div>
+  </div>
+
+</div>
+<div class="col-md-12" style="border: 1px solid lightgray;"></div>  
+  <footer class="col-md-12">
+      <div class="col-md-8 footer-left">
+          <div class="col-md-4 footer-logo">
+              <img src="/assets/images/logo-solid-white.png" />
+              <div class="col-md-12">
+                  <ul>
+                      <li>"At Usurance, we believe insurance is more than a payment. 
+                      We believe it's the foundation of life's protection. 
+                      We believe it should be easy to learn and easy to buy."
+                      </li>
+                      <li>Usurance, Inc.</li>
+                      <li>3300 Irvine Ave. Suite 150</br>Newport Beach, Ca 92660</li>                            
+                  </ul>
+              </div>
+          </div>
+          <div class="col-md-8">
+              <div class="col-md-4 footer-resources">
+                  <ul>
+                      <li><i class="fa fa-comments" aria-hidden="true"></i><i><a href="">Live Chat</a></i></li>
+                      <li><i class="fa fa-phone" aria-hidden="true"></i><i>949-438-3433</i></li>
+                      <li><i>Monday-Friday 9am-8pm PST<br>Friday 9am-6pm</i></li>
+                      <br>
+                      <li><i class="fa fa-envelope" aria-hidden="true"></i>Contact@usurance.biz</li>
+                      <li>We're available 24/7 via email for all of your needs.</li>
+                  </ul>
+              </div>
+              <div class="col-md-4 footer-contact">
+                  <ul>
+                      <li><a href="">About Usurance</a></li>
+                      <li><a href="">Contact Us</a></li>
+                      <li><a href="">Help</a></li>
+                      <li><a href="">Speak with a Consultant</a></li>                              
+                      <li><a href="">Careers</a></li>
+                  </ul>
+              </div>
+              <div class="col-md-4 footer-social">
+                  <ul>
+                      <li><a href=""><i class="fa fa-facebook" aria-hidden="true"></i>Facebook</a></li>
+                      <li><a href=""><i class="fa fa-google-plus" aria-hidden="true"></i></i>Google +</a></li>
+                      <li><a href=""><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
+                      <li><a href=""><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+                  </ul>
+              </div>                    
+          </div>
+      </div>
+      <div class="col-md-4 footer-right">
+          <h2>How Much Life Insurance Do You Need?</h2>
+          <p stlye="font-weight:normal">We don't ask for your name, email or phone number. Get a quote without giving away your personal identity.</p>
+          <form class="new_user" id="new_user" name="myForm" action"/info.php" method="POST"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="ltqHSGwT5ZHS2kcJaG33uSGP6SdNtqHPPhfipA/YWFliPijnjxYls/GjEIyJkoXy6nLEruZcI3ZgtrhR8RIDMA==" />
+          <input type="hidden" name="TEMPLATEFILE" value="QUOTE.HTM">
+              <div class="form-group col-md-12">
+                  <div class="col-md-6">
+                      <select name="FaceAmount" class="form-control noBorder">
+                          <option value="10000">$10,000</option>
+                          <option value="25000">$25,000</option>
+                          <option value="50000">$50,000</option>
+                          <option value="50000">$50,000</option>
+                          <option value="75000">$75,000</option>
+                          <option value="100000">$100,000</option>
+                          <option value="125000">$125,000</option>
+                          <option value="150000">$150,000</option>
+                          <option value="175000">$175,000</option>
+                          <option value="200000">$200,000</option>
+                          <option value="225000">$225,000</option>
+                          <option value="250000">$250,000</option>
+                          <option value="300000">$300,000</option>
+                          <option value="350000">$350,000</option>
+                          <option value="400000">$400,000</option>
+                          <option value="450000">$450,000</option>
+                          <option selected value="500000">$500,000</option>
+                          <option value="550000">$550,000</option>
+                          <option value="600000">$600,000</option>
+                          <option value="650000">$650,000</option>
+                          <option value="700000">$700,000</option>
+                          <option value="750000">$750,000</option>
+                          <option value="800000">$800,000</option>
+                          <option value="900000">$900,000</option>
+                          <option value="1000000">$1,000,000</option>
+                          <option value="1100000">$1,100,000</option>
+                          <option value="1250000">$1,250,000</option>
+                          <option value="1500000">$1,500,000</option>
+                          <option value="1750000">$1,750,000</option>
+                          <option value="2000000">$2,000,000</option>
+                          <option value="2500000">$2,500,000</option>
+                          <option value="3000000">$3,000,000</option>
+                          <option value="4000000">$4,000,000</option>
+                          <option value="5000000">$5,000,000</option>
+                          <option value="6000000">$6,000,000</option>
+                          <option value="7000000">$7,000,000</option>
+                          <option value="8000000">$8,000,000</option>
+                          <option value="9000000">$9,000,000</option>
+                          <option value="10000000">$10,000,000</option>
+                      </select>
+                  </div>
+                  <div class="col-md-6">
+                      <select name="NewCategory" class="form-control noBorder">
+                          <option value="3">10 Year Term</option>
+                          <option selected="selected" value="5">20 Year Term</option>
+                          <option value="7">30 Year Term</option>
+                      </select>  
+                  </div>
+              </div>
+              <button class="btn btn-primary" type="submit" style="display:block; width:100%; font-size:18px;">Get Quote</button>
+           </form>
+      </div>
+  </footer> 
+</body>
+</html>

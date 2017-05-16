@@ -1,0 +1,7 @@
+0000000000000000000000000000000000000000 783edd46cae411a8c08430c41224cb292f0e0bd8 Josh <jcrowe120485@gmail.com> 1494891106 +0000	clone: from git@github.com:jcrowe85/new-template.git
+783edd46cae411a8c08430c41224cb292f0e0bd8 8ad659d679a926ece9e19a4cde6bfa5c31b263f1 Josh <jcrowe120485@gmail.com> 1494891192 +0000	commit: life.php
+8ad659d679a926ece9e19a4cde6bfa5c31b263f1 8ffc4b8c1aa7663076a9653306b76704b768c0cf Josh <jcrowe120485@gmail.com> 1494891196 +0000	checkout: moving from master to issue-15
+8ffc4b8c1aa7663076a9653306b76704b768c0cf 8ad659d679a926ece9e19a4cde6bfa5c31b263f1 Josh <jcrowe120485@gmail.com> 1494891429 +0000	checkout: moving from issue-15 to master
+8ad659d679a926ece9e19a4cde6bfa5c31b263f1 8ffc4b8c1aa7663076a9653306b76704b768c0cf Josh <jcrowe120485@gmail.com> 1494891437 +0000	checkout: moving from master to issue-15
+8ffc4b8c1aa7663076a9653306b76704b768c0cf 8ad659d679a926ece9e19a4cde6bfa5c31b263f1 Josh <jcrowe120485@gmail.com> 1494891444 +0000	checkout: moving from issue-15 to master
+8ad659d679a926ece9e19a4cde6bfa5c31b263f1 8ad659d679a926ece9e19a4cde6bfa5c31b263f1 Josh <jcrowe120485@gmail.com> 1494891467 +0000	checkout: moving from master to bugs/fixes
