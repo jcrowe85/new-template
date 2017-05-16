@@ -14,8 +14,11 @@ $(document).ready(function(){
         <?php include_once('chat.php') ?>
     });
 
+    $(".serv").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
 });
-
 </script>
     <body id="home-page">
         <div class="header fluid">
@@ -61,17 +64,11 @@ $(document).ready(function(){
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv">
-                            <h3><a href="/life.php">Life</a></h3></div>
-                        <div class="divider"></div>
-                        <div class="serv">
-                            <h3>Health</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Home</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Auto</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Disability</h3></div>                        
+                        <div class="serv"><a href="/life.php"><h3>Life</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Health</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Home</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Auto</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Disability</h3></a></div>                        
                     </div>
                 </div>
             </div>
