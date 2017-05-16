@@ -22,11 +22,6 @@ $(document).ready(function () {
         })
       })
   .change();
-
-    
-
-    
-    
     $('#primaryfullname').on('keyup blur', function () {
         if ($('#primaryfullname').val().length > 0 && ($('#primarymale').is(':checked') || $('#primaryfemale').is(':checked'))) {
             $('#submitForm').prop('disabled', false);

@@ -1,5 +1,5 @@
 
-                    <form class="new_user" id="userDetailForm" autocomplete="on" name="myForm" action="" method="POST"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="ltqHSGwT5ZHS2kcJaG33uSGP6SdNtqHPPhfipA/YWFliPijnjxYls/GjEIyJkoXy6nLEruZcI3ZgtrhR8RIDMA=="/>
+                    <form class="new_user" id="userDetailForm" autocomplete="on" name="myForm" action="/application-submit.php" method="POST"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="authenticity_token" value="ltqHSGwT5ZHS2kcJaG33uSGP6SdNtqHPPhfipA/YWFliPijnjxYls/GjEIyJkoXy6nLEruZcI3ZgtrhR8RIDMA=="/>
 
                         <div class="step1">
 

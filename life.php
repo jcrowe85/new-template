@@ -1,5 +1,4 @@
 <?php include_once('head.php') ?>
-
 <script>
 $(document).ready(function(){
   
@@ -39,7 +38,7 @@ $(document).ready(function(){
         }
         
         if (yearValue >= 1900) {
-            
+         
         }
         else if (yearLength == 4 && yearValue <= 1900) {
             $('.BirthYear').val('');
@@ -141,9 +140,9 @@ $(document).ready(function(){
                       </div> 
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="BirthYear" class="BirthYear" placeholder="Year" autocomplete="off" maxlength="4"/>
+                              <input type="text" class="BirthYear" name="BirthYear" placeholder="Day" maxlength="4"/>
                           </label>
-                      </div>
+                      </div> 
                         <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset>
                   <fieldset>

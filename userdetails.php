@@ -1,4 +1,5 @@
 <?php include_once('application-submit.php'); ?>
+<script src="/userinfo.js"></script>
 <script>
 $(document).ready(function(){
     $('.getHelp').click(function() {
