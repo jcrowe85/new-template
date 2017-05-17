@@ -1,6 +1,39 @@
 <?php include_once('head.php') ?>   
 <script>
 $(document).ready(function(){
+    
+    $(document).scroll(function(){
+        console.log($(document).scrollTop())
+    });
+    
+    $(document).scroll(function() {
+    if ($(window).width() > 549) {
+        if($(window).scrollTop() > 60) {
+            
+         firstAnimation();
+         
+        }
+        
+    }
+   
+    });
+    var firstAnimation = function () {
+        $('.features').show();
+        $('.features .feat').each(function(){
+            function(){
+                $(this).show().delay(500).animate({
+                    opacity: 1;
+                })
+            });
+
+    }
+    
+    
+    
+      
+        
+    
+    
 
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
@@ -13,6 +46,7 @@ $(document).ready(function(){
     $('.getHelp').click(function() {
         <?php include_once('chat.php') ?>
     });
+
     
     $( "#whyus" ).click(function() {
         $('html,body').animate({
@@ -45,6 +79,16 @@ $(document).ready(function(){
     });
 });
 
+
+    $(".serv").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+    
+
+
+
+});
 </script>
     <body id="home-page">
         <div class="header navbar-fixed-top fluid">
@@ -66,7 +110,6 @@ $(document).ready(function(){
                                     <span class="icon-bar"></span>
                                 </button>
                             </div>
-                    
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
@@ -90,17 +133,11 @@ $(document).ready(function(){
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv">
-                            <h3><a href="/life.php">Life</a></h3></div>
-                        <div class="divider"></div>
-                        <div class="serv">
-                            <h3>Health</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Home</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Auto</h3></div>
-                        <div class="divider"></div>
-                        <div class="serv"><h3>Disability</h3></div>                        
+                        <div class="serv"><a href="/life.php"><h3>Life</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Health</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Home</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Auto</h3></a></div>
+                        <div class="serv"><a href="/life.php"><h3>Disability</h3></a></div>                        
                     </div>
                 </div>
             </div>
