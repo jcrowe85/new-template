@@ -32,7 +32,7 @@ var animating; //flag to prevent quick multi-click glitches
 		complete: function(){
 			current_fs.hide();
 			animating = false;
-			$('this, input:enabled:visible:first').focus();
+			$('this, input:text:enabled:visible:first').focus();
 			$('.previous-step').fadeIn();
 		}, 
 		//this comes from the custom easing plugin
