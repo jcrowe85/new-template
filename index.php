@@ -2,39 +2,35 @@
 <script>
 $(document).ready(function(){
     
-    $(document).scroll(function(){
-        console.log($(document).scrollTop())
-    });
+
+    // $(document).scroll(function(){
+    //     console.log($(document).scrollTop())
+    // });
     
-    $(document).scroll(function() {
-    if ($(window).width() > 549) {
-        if($(window).scrollTop() > 60) {
+    // $(document).scroll(function() {
+    // if ($(window).width() > 549) {
+    //     if($(window).scrollTop() > 60) {
             
-         firstAnimation();
+    //      firstAnimation();
          
-        }
+    //     }
         
-    }
+    // }
    
-    });
-    var firstAnimation = function () {
-        $('.features').show();
-        $('.features .feat').each(function(){
-            function(){
-                $(this).show().delay(500).animate({
-                    opacity: 1;
-                })
-            });
+    // });
+    // var firstAnimation = function () {
+    //     $('.features').show();
+    //     $('.features .feat').each(function(){
+    //         function(){
+    //             $(this).show().delay(500).animate({
+    //                 opacity: 1;
+    //             })
+    //         });
 
-    }
+    // }
     
-    
-    
-      
+     
         
-    
-    
-
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
@@ -77,7 +73,6 @@ $(document).ready(function(){
             scrollTop: $(".why-us").offset().top - 60},
         'slow');
     });
-});
 
 
     $(".serv").click(function() {
@@ -85,9 +80,6 @@ $(document).ready(function(){
       return false;
     });
     
-
-
-
 });
 </script>
     <body id="home-page">
