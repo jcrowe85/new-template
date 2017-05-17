@@ -1,6 +1,39 @@
 <?php include_once('head.php') ?>   
 <script>
 $(document).ready(function(){
+    
+    $(document).scroll(function(){
+        console.log($(document).scrollTop())
+    });
+    
+    $(document).scroll(function() {
+    if ($(window).width() > 549) {
+        if($(window).scrollTop() > 60) {
+            
+         firstAnimation();
+         
+        }
+        
+    }
+   
+    });
+    var firstAnimation = function () {
+        $('.features').show();
+        $('.features .feat').each(function(){
+            function(){
+                $(this).show().delay(500).animate({
+                    opacity: 1;
+                })
+            });
+
+    }
+    
+    
+    
+      
+        
+    
+    
 
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
@@ -18,6 +51,9 @@ $(document).ready(function(){
       window.location = $(this).find("a").attr("href"); 
       return false;
     });
+    
+
+
 });
 </script>
     <body id="home-page">
@@ -31,26 +67,24 @@ $(document).ready(function(){
                 </div>
                 <div class="col-md-6 col-md-offset-3">
                     <nav class="navbar navbar-static-top" role="navigation">
-                        <div class="container">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                    
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <li><a href="index.php">Why Usurance?</a></li>
-                                    <li><a href="about.php">Insurance Guides</a></li>
-                                    <li><a href="#portfolio">About Us</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <button class="btn btn-primary getHelp">Get Help</button>                                    
-                                </ul>
-                            </div>
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="index.php">Why Usurance?</a></li>
+                                <li><a href="about.php">Insurance Guides</a></li>
+                                <li><a href="#portfolio">About Us</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <button class="btn btn-primary getHelp">Get Help</button>                                    
+                            </ul>
                         </div>
                     </nav>
                 </div>
