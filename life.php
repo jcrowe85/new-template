@@ -22,6 +22,9 @@ $(document).ready(function(){
     });
     
     $('.previous-step').click(function(){
+          $(this).parents("fieldset").find('input').each(function (elem) {
+               $('#'+$(this).parents("fieldset").find('input')[elem].id).val('');
+          });   
           <?php include('slide-prev.php') ?>
     });
     
@@ -40,7 +43,7 @@ $(document).ready(function(){
         if (yearValue >= 1900) {
          
         }
-        else if (yearLength == 4 && yearValue <= 1900) {
+        else if (yearLength == 4 && yearValue <= 1900 || isNaN(yearValue)) {
             $('.BirthYear').val('');
             $('.BirthYear').focus();
         }
@@ -53,7 +56,7 @@ $(document).ready(function(){
     
     $('.month').keyup(function(){
         var monthValue = $(".month").val();
-        if(monthValue > 12) {
+        if(monthValue > 12 || isNaN(monthValue)) {
             $(".month").val('');
             $(".month").focus();
         } 
@@ -62,7 +65,7 @@ $(document).ready(function(){
     $('.day').keyup(function(){
         var dayValue = $(".day").val();
         var monthValue = $(".month").val();
-        if(dayValue > 31) {
+        if(dayValue > 31 && isNaN(dayValue)) {
             $(".day").val('');
             $(".day").focus();
         } else if(monthValue == '2' && dayValue > 29) {
@@ -91,8 +94,26 @@ $(document).ready(function(){
     $('#faceAmount').change(function(){
         event.preventDefault();
     });
+    
+    $('#height').keyup(function(event){
+        var value =  $('#height').val();
+        if(event.keyCode != 8){
+            if (value.length === 1) {
+                value += "\'";
+            } else if(value[2] != 1) {
+                value += "\"";
+                $('#weight').focus();
+            } else if (value.length === 4) {
+                value += "\"";
+                $('#weight').focus();
+            }
+        }
+        
+         $('#height').val(value);
+    });
 
 });
+
 </script>
 <body id="life-page">
     <div class="se-pre-con"></div>
@@ -130,17 +151,17 @@ $(document).ready(function(){
                       <h1>What is your date of birth?</h1>
                       <div class="control-group" id="dob">
                           <label class="control-text">
-                              <input type="text" class='month' name="BirthMonth" placeholder="Mo" maxlength="2"/>
+                              <input type="text" class='month' id="month" name="BirthMonth" placeholder="Mo" maxlength="2"/>
                           </label>
                       </div>	
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" class='day' name="Birthday" placeholder="Day" maxlength="2"/>
+                              <input type="text" class='day' name="Birthday" id="day" placeholder="Day" maxlength="2"/>
                           </label>
                       </div> 
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" class="BirthYear" name="BirthYear" placeholder="Day" maxlength="4"/>
+                              <input type="text" class="BirthYear" name="BirthYear" id="year" placeholder="Year" maxlength="4"/>
                           </label>
                       </div> 
                         <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
@@ -149,7 +170,7 @@ $(document).ready(function(){
                       <h1>What is your height and weight?</h1>
                       <div class="control-group" id="height-weight">
                           <label class="control-text">
-                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="4" id="height">
+                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="5" id="height">
                           </label>
                       </div>	
                       <div class="control-group">

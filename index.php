@@ -13,12 +13,41 @@ $(document).ready(function(){
     $('.getHelp').click(function() {
         <?php include_once('chat.php') ?>
     });
-
+    
+    $( "#whyus" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".why-us").offset().top - 60},
+        'slow');
+    });
+    
+    $( "#guide" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".get-started").offset().top - 60},
+        'slow');
+    });
+    
+    $( "#about" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".team").offset().top - 60},
+        'slow');
+    });
+    
+    $( "#contact" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".questions").offset().top - 60},
+        'slow');
+    });
+    
+    $( "#downArrow" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".why-us").offset().top - 60},
+        'slow');
+    });
 });
 
 </script>
     <body id="home-page">
-        <div class="header fluid">
+        <div class="header navbar-fixed-top fluid">
             <div class="container">
                 <div class="col-md-3">
                     <div class="logo">
@@ -41,11 +70,11 @@ $(document).ready(function(){
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li><a href="index.php">Why Usurance?</a></li>
-                                    <li><a href="about.php">Insurance Guides</a></li>
-                                    <li><a href="#portfolio">About Us</a></li>
-                                    <li><a href="#">Contact</a></li>
-                                    <button class="btn btn-primary getHelp">Get Help</button>                                    
+                                    <li><a id="whyus" href="#">Why Usurance?</a></li>
+                                    <li><a id="guide" href="#">Insurance Guides</a></li>
+                                    <li><a id="about" href="#">About Us</a></li>
+                                    <li><a id="contact" href="#">Contact</a></li>
+                                    <li id='getHelp'><button class="btn btn-primary getHelp">Get Help</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -79,7 +108,7 @@ $(document).ready(function(){
                 <div class="c-logo"><img src="/images/nyl.png" alt=""></div>
                 <div class="c-logo"><img src="/images/prudential-white.png" alt=""></div>
                 <div class="c-logo"><img src="/images/legal-general.png" alt=""></div>
-                <div class="c-logo"><img src="/images/down-arrow.png" alt=""></div>
+                <div class="c-logo" id='downArrow'><a href='#'><img src="/images/down-arrow.png" alt=""></a></div>
                 <div class="c-logo"><img src="/images/aig.png" alt=""></div>
                 <div class="c-logo"><img src="/images/nationwide.png" alt=""></div>
                 <div class="c-logo"><img src="/images/paclife.png" alt=""></div>
@@ -310,7 +339,7 @@ $(document).ready(function(){
                             <option value="/life.php">Auto Insurance</option>
                             <option value="/life.php">Disability Insurance</option>
                         </select>
-                        <button type="button" onClick="getStarted();" class="getStarted btn"><h3 style="margin:0px;">Get Started</h3></button>
+                        <button type="button" onClick="getStarted();" class="buttonSpl getStarted btn">Get Started</button>
                         <script>
                             function getStarted(){
                                 var x = document.getElementById("menu");
