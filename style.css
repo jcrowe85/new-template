@@ -555,7 +555,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     display:none; 
     max-width:285px;
 }
-
+.nav:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
 /*  ---------------------------   quote page  -------------------------------- */
 
 #quote-page .header, #life-page .header, #verify-page .header{
