@@ -228,6 +228,7 @@ input::-webkit-contacts-auto-fill-button {
     background-color: #ea2931;
     background-position:center top;
     border-bottom:1px solid #8b8b8b;
+    margin-top: 66px;
 }
 #home-page .services{
     display: flex;
@@ -555,12 +556,34 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     display:none; 
     max-width:285px;
 }
-.nav:before{
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;
+
+
+#home-page #getHelp {
+    padding-top: 1rem;
 }
+
+#home-page .buttonSpl {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #d52024;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+#home-page .buttonSpl:hover {background-color: #d52024}
+
+#home-page .buttonSpl:active {
+  background-color: #d52024;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
 /*  ---------------------------   quote page  -------------------------------- */
 
 #quote-page .header, #life-page .header, #verify-page .header{
@@ -793,6 +816,16 @@ padding: 40px 40px 0px 40px;
 }
 #life-page fieldset:nth-child(2) .control-group, #life-page fieldset:nth-child(3) .control-group,  #life-page fieldset:nth-child(7) .control-group {
     display: inline-block;
+}
+
+@media screen and (max-width: 768px) {
+    #life-page .header {
+        height: 42px !important;
+    }
+    
+    #life-page #process-logo{
+        width:7%;
+    }
 }
 
 
