@@ -16,9 +16,9 @@
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="viewport" content="width=device-width" />
         <meta name="csrf-param" content="authenticity_token" />
-        <link rel="stylesheet" media="all" href="style.css" />  
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
         <script src="https://use.fontawesome.com/c694372f78.js"></script>
+        <link rel="stylesheet" media="all" href="style.css" />
         <!--[if lt IE 9]>
           <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
           </script>

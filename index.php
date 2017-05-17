@@ -2,6 +2,7 @@
 <script>
 $(document).ready(function(){
     
+<<<<<<< HEAD
     // $(document).scroll(function(){
     //     console.log($(document).scrollTop())
     // });
@@ -27,6 +28,33 @@ $(document).ready(function(){
     //         });
 
     // }
+=======
+    $(document).scroll(function(){
+        console.log($(document).scrollTop())
+    });
+    
+    $(document).scroll(function() {
+    if ($(window).width() > 549) {
+        if($(window).scrollTop() > 60) {
+            
+         firstAnimation();
+         
+        }
+        
+    }
+   
+    });
+    var firstAnimation = function () {
+        $('.features').show();
+        $('.features .feat').each(function(){
+            function(){
+                $(this).show().delay(500).animate({
+                    opacity: 1;
+                })
+            });
+
+    }
+>>>>>>> 055563c5fce681a71941b239f9386c0cb6745c6c
     
     
     
@@ -78,11 +106,21 @@ $(document).ready(function(){
         'slow');
     });
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 055563c5fce681a71941b239f9386c0cb6745c6c
     $(".serv").click(function() {
       window.location = $(this).find("a").attr("href"); 
       return false;
     });
     
+<<<<<<< HEAD
+=======
+
+
+
+>>>>>>> 055563c5fce681a71941b239f9386c0cb6745c6c
 });
 </script>
     <body id="home-page">

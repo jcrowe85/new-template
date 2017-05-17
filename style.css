@@ -33,7 +33,6 @@ a:visited {
 }
 a:hover {
     text-decoration: none;
-    color: red;
 }
 a:active {
     text-decoration: none;
@@ -241,7 +240,6 @@ input::-webkit-contacts-auto-fill-button {
     margin: 0 auto;
     margin-top:50px;
     min-width: 300px;
-    height:90px;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cacaca+0,cacaca+0,dedede+0,ffffff+53,dedede+100,cacaca+100 */
     background: #cacaca; /* Old browsers */
     background: -moz-linear-gradient(top, #cacaca 0%, #cacaca 0%, #dedede 0%, #ffffff 53%, #dedede 100%, #cacaca 100%); /* FF3.6-15 */
@@ -250,13 +248,21 @@ input::-webkit-contacts-auto-fill-button {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cacaca', endColorstr='#cacaca',GradientType=0 ); /* IE6-9 */    
 }
 #home-page .serv {
-  text-align: center;
-  margin: auto; 
-  align-items: center;
-  justify-content: center;
+    text-align: center;
+    margin: auto; 
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-right:1px solid lightgray;
+     padding: 15px;
+
 }
 #home-page .serv:hover{
-    color: red;
+    background-color: rgba(51, 122, 183, 1);
+    color:white;
+}
+#home-page .serv:hover h3{
+    color:white;
 }
 #home-page .divider{
     background-image: url("images/vertical-divider.jpg");
@@ -727,8 +733,24 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 }
 #quote-page .row:nth-child(n+2){
     margin: 175px 0;
-}
+} 
 
+#quote-page output{
+    display: inline-block;
+    padding-top: 0px; 
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+}
+#quote-page .coverage, #quote-page .term-title {
+    float:left;
+}
+#quote-page #coverage, #quote-page #term{
+    float:right;
+}
+#quote-page input[name=ModeUsed] {
+    margin-right:5px;
+}
 /*  ---------------------------   userinfo page -------------------------------- */
 
 #userinfo-page .sidebar{
@@ -962,7 +984,10 @@ fieldset{
   border-radius: 5px 5px 4px 4px;
   background-color: white;
   margin-bottom: 15px; }
-
+#home-page .features{
+    margin-bottom: 50px;
+    
+}
 /*  ---------------------------   responsive  -------------------------------- */
 
 /* ------------ md ---------- */
@@ -976,10 +1001,26 @@ fieldset{
 .quote-container{
     flex-direction: column;
 }
-    
+#home-page .features-container{
+    flex-direction: column;
+}
+#home-page .features{
+    margin-bottom: 50px;
+}
+#home-page .feature-details{
+    margin-top: 25px;
+}
+#userinfo-page #process-logo, #life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
+    width:4%;
+}
+
+
 }
 /* ------------ sm  ---------- */
 @media screen and (max-width:375px){
+    
+    
+/*------------------------------------------ home small responsive --------------------------------*/
 
 #home-page .services{
     flex-direction:column;
@@ -1030,4 +1071,96 @@ display: inline-block;
     margin-right:10px;
 }
 
+/*------------------------------------------   --------------------------------*/
+
+#userinfo-page #process-logo, #life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
+    width:8%;
+}
+
+#quote-page .monthly-annually, #quote-page .adjust-title{
+    display:none;
+}
+
+
+}
+
+
+/* iphone6 plus portrait*/
+@media only screen 
+    and (min-device-width:414px) 
+    and (max-device-width:736px)
+    and (device-width:414px)
+    and (device-height:736px)
+    and (orientation:portrait) 
+    and (-webkit-min-device-pixel-ratio:3) 
+    and (-webkit-device-pixel-ratio:3)
+{
+#home-page .services{
+    flex-direction:column;
+    height: 100%;
+    width: 100%;
+    }
+#home-page .title h1{
+    font-size: 2.0em;
+}
+#home-page .features-container{
+    flex-direction: column;
+}
+#home-page .features{
+    margin-bottom: 50px;
+}
+#home-page .feature-details{
+    margin-top: 25px;
+}
+#home-page select{
+    margin: 10px 0px;
+}
+#home-page .faq > div{
+    margin:0px;
+}
+#home-page .questions ul{
+    list-style: none;
+line-height: 25px;
+/* float: right; */
+display: inline-block;
+}
+#home-page .questions{
+        text-align: center;
+}
+#home-page .questions .container{
+        width:70%;
+}
+#home-page .serv{
+    border-bottom: 1px solid lightgray;
+    width: 100%;
+}
+#home-page .carrier-logo{
+    width: 90%;
+}
+#home-page .carrier-logo div:nth-child(4){
+    display: none;
+}
+#home-page .c-logo{
+    margin-right:10px;
+}   
+#home-page .features-container{
+    width:90% ;
+}
+    
+}
+
+/* iphone6 plus landscape */
+
+@media only screen 
+    and (min-device-width:414px) 
+    and (max-device-width:736px) 
+    and (orientation:landscape) 
+    and (-webkit-min-device-pixel-ratio:3) 
+{ 
+
+#home-page .features-container{
+    flex-direction: column;
+    width: 50%;
+} 
+ 
 }
