@@ -27,10 +27,10 @@ $(document).ready(function(){
     //             })
     //         });
 
+
     // }
     
-     
-        
+    
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();

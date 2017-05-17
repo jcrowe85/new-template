@@ -557,6 +557,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     max-width:285px;
 }
 
+
 #home-page #getHelp {
     padding-top: 1rem;
 }
@@ -581,6 +582,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 
 /*  ---------------------------   quote page  -------------------------------- */
 
