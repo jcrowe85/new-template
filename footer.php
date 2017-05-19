@@ -12,7 +12,7 @@
                             <li>24/7 We're here for you!</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="col-md-3 col-md-offset-1 section2">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
                             <li><a href="#">Life Insurance Guide</a></li>
@@ -29,7 +29,7 @@
                             <li><a href="#">Life Insurance Calculator</a></li>
                         </ul>                        
                     </div>
-                    <div class="col-md-3 col-md-offset-1">
+                    <div class="col-md-3 col-md-offset-1 section3" >
                         <ul>
                             <li><b>Insurance Product Advice</b></li>
                             <li><a href="#">Insurance Advice</a></li>
@@ -44,7 +44,7 @@
                             <li><a href="#">Something here</a></li>
                         </ul>                                                
                     </div>
-                    <div class="col-md-11 col-md-offset-1 socialsExtra">
+                    <div class="col-md-11 col-md-offset-1 section4">
                         <div class="col-md-4 socials">
                             <ul>
                                 <li><img src="/images/facebook.png" alt=""></li>

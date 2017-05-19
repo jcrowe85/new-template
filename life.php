@@ -345,9 +345,13 @@ $(document).ready(function(){
                           <label class="control-text">
                             <select name="NewCategory" class="term">
                                 <option style="background-color:#808080;" selected="selected" value="">Select Term</option>
+                                <option style="background-color:#808080;" value="2">5-Year Term</option>
                                 <option style="background-color:#808080;" value="3">10-Year Term</option>
+                                <option style="background-color:#808080;" value="4">15-Year Term</option>
                                 <option style="background-color:#808080;" value="5">20-Year Term</option>
+                                <option style="background-color:#808080;" value="6">25-Year Term</option>
                                 <option style="background-color:#808080;" value="7">30-Year Term</option>
+                                <option style="background-color:#808080;" value="9">35-Year Term</option>      
                             </select> 
                           </label>
                       </div>    

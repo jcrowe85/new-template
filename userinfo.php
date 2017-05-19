@@ -1,3 +1,5 @@
+<?php include_once('register.php'); ?>
+<?php include_once('head.php') ?>
 <script src="/userinfo.js"></script>
 <script>
 $(document).ready(function(){
@@ -6,8 +8,6 @@ $(document).ready(function(){
     });        
 });
 </script>
-<?php include_once('register.php'); ?>
-<?php include_once('head.php') ?>
 <body id="userinfo-page">
     <div class="header fluid">
         <div class="container">
@@ -18,7 +18,7 @@ $(document).ready(function(){
     </div>
     <div class="main container">
         <div class="row">
-            <div class="col-sm-12 col-md-5">
+            <div class="col-sm-12 col-md-7">
                   <h3>First things first...
                   <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
                   </h3>
@@ -136,7 +136,7 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="sidebar">
-        <img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4>
+         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>
             <br><br>
             <h3>Welcome to the application Process.</h3>
             <br>
