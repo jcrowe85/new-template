@@ -1,5 +1,5 @@
-
 <!DOCTYPE html>
+
 <html>
     <head>
         <title>Compare Life Insurance Quotes | Usurance.com - Insurance Without the Agent</title>
@@ -41,9 +41,17 @@ $(window).load(function() {
    max-width: 15%;
 
 }
-  .sec-logo-name{
+.sec-logo-name{
    max-width: 415px;
-
+}
+.secondary-quote:nth-child(2){
+    background-color:black;
+}
+.card-grid-sec{
+ border: 1px solid rgba(218, 218, 218, .4);
+}
+.secondary-quotes{
+    margin-bottom:20px;
 }
 </style>
 <script>
@@ -61,11 +69,19 @@ $(document).ready(function(){
     
     //term: show term years from inital submit
     var term = $('input[name=NewCategory]').val();
-    $('#term').val(term + " " + "Years");
+    var term = $('#term-range').val();
+     if (term == '2'){$('#term').html('5-years');}
+     if (term == '3'){$('#term').html('10-years');}
+     if (term == '4'){$('#term').html('15-years');}
+     if (term == '5'){$('#term').html('20-years');}
+     if (term == '6'){$('#term').html('25-years');}
+     if (term == '7'){$('#term').html('30-years');}
+     if (term == '9'){$('#term').html('35-years');}
+    // $('#term').val(term + " " + "Years");
     
     //term: set term years to subsequent submits
     var term = $('input[name=NewCategory]').val();
-    $('#range').val(term);
+    $('#term-range').val(term);
     
     // set annual/monthly from initial submit
     var  ModeUsed = $('input[name=ModeUsed]').val();
@@ -78,7 +94,47 @@ $(document).ready(function(){
     $('input[type=radio][name=ModeUsed]').change(function(){
         $('.adjustPolicy').submit();
     });
-   
+    
+    // count quotes and update title
+    var primaryQuotes = $('.primary-quotes').length;
+    var secondaryQuotes = $('.secondary-quotes').length;
+    var totalQuotes = primaryQuotes + secondaryQuotes;
+    $('.quote-count').html(totalQuotes);
+    
+    // offset background to secondary quotes
+    $('.secondary-quote').find('.front:even').css({"background" : "#f4f5f7"});
+    
+    // set premium mode to mo (monthly) or year (annually) 
+     var modeUsed = $('input[name=ModeUsed]').val();
+     if (modeUsed == "A"){
+         modeUsed = "/yr";
+         $('.premium-mode').html(modeUsed);
+     }
+     else if (modeUsed = "M"){
+         modeUsed = "/mo";
+         $('.premium-mode').html(modeUsed);
+     }
+     
+     // submit form after adjusting coverage/term
+     $('#faceAmount').change(function(){
+         $('.adjustPolicy').submit();
+     });
+     
+     $('#term-range').change(function(){
+        $('.adjustPolicy').submit();
+     });
+     
+     
+     var term = $('#term-range').val();
+     if (term == '2'){$('#term').html('5-years');}
+     if (term == '3'){$('#term').html('10-years');}
+     if (term == '4'){$('#term').html('15-years');}
+     if (term == '5'){$('#term').html('20-years');}
+     if (term == '6'){$('#term').html('25-years');}
+     if (term == '7'){$('#term').html('30-years');}
+     if (term == '9'){$('#term').html('35-years');}
+     
+
 });
 
     //coverage: update coverage while sliding and submit form on change
@@ -86,15 +142,20 @@ $(document).ready(function(){
       var parts = x.toString().split(".");
       parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
       document.querySelector('#coverage').value = "$" + parts.join(".");
-      $('.adjustPolicy').submit();
     }
     
     //term: update term whie sliding and submit form on change
     function termUpdate(x){
-            $('#term').val(x + " " + "Years");
-            $('.adjustPolicy').submit();
+    var term = x;
+     if (term == '2'){$('#term').html('5-years');}
+     if (term == '3'){$('#term').html('10-years');}
+     if (term == '4'){$('#term').html('15-years');}
+     if (term == '5'){$('#term').html('20-years');}
+     if (term == '6'){$('#term').html('25-years');}
+     if (term == '7'){$('#term').html('30-years');}
+     if (term == '9'){$('#term').html('35-years');}            
     }
-
+    
 </script>
     </head>
 <body id="quote-page">
@@ -144,7 +205,7 @@ $(document).ready(function(){
                     <div class="term">
                             <label for="term" style="color:gray" class="term-title">Term</label>
                             <output for="term" id="term"></output>
-                            <input type="range" name="NewCategory"  id="range" min="10" max="30" step="5" oninput="termUpdate(value)" >
+                            <input type="range" name="NewCategory" id="term-range" min="1" max="10" step="1" oninput="termUpdate(value)" >
                     </div>                         
                     <div class="monthly-annually">
                         <label for="mode">Show Prices</label>
@@ -180,58 +241,58 @@ $(document).ready(function(){
     <div class="quotes fluid">
         <div class="container">
             <div class="row" style="padding:0px;margin:0px; margin-top:25px;">
-                <h3 class="title">Alright! We got you matched with 11 policies.</h3>
+                <h3 class="title">Alright! We got you matched with <span class="quote-count"></span> policies.</h3>
                 <div class="quote-container">
-                $prodline=3$      
-                    <div class="card-grid" style="margin:0 auto;">
-                        <form action="/userinfo.php" method="POST">
-                            <div class="quote front">
-                                <div class="logo-name">
-                                  <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                    <div style="line-height:18px; max-width: 175px;">$company$</div>
+$prodline=3$      
+                    <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes">
+                        <div class="card-grid" >
+                                <div class="quote front">
+                                    <div class="logo-name">
+                                      <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                                        <div style="line-height:18px; max-width: 175px;">$company$</div>
+                                    </div>
+                                    <div class="price">
+                                        <h3>$$premium$<small class="premium-mode"></small></h3>
+                                    </div>
+                                    <div class="continue">
+                                        <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
+                                    </div>
+                                    <div class="details">
+                                        <span><img src="../images/flip.png" alt="">details</span>
+                                    </div>
                                 </div>
-                                <div class="price">
-                                    <h3>$$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="continue">
-                                    <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                </div>
-                                <div class="details">
-                                    <span><img src="../images/flip.png" alt="">details</span>
-                                </div>
-                            </div>
-                            <div class="quote back">
-                                <div class="logo-name">
-                                  <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                    <div style="line-height:18px; max-width:175px;">$company$</div>
-                                </div>
-                                <div class="price">
-                                    <h3>$$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="continue">
-                                    <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                </div>
-                                <div class="details">
-                                    <span><img src="../images/flip.png" alt="">details</span>
-                                </div>
-                            </div>                 
-                            <input type="hidden" name="premium" value="$$premium$">
-                            <input type="hidden" name="company" value="$company$">
-                            <input type="hidden" name="Sex" value="$origsex$">
-                            <input type="hidden" name="Birthday" value="$origday$">
-                            <input type="hidden" name="BirthMonth" value="$origmonth$">
-                            <input type="hidden" name="BirthYear" value="$origyear$">
-                            <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                            <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                            <input type="hidden" name="State" value="$origstate$">
-                            <input type="hidden" name="ZipCode" value="$zipcode$">
-                            <input type="hidden" name="Health" value="$orighealth$">
-                            <input type="hidden" name="Smoker" value="$origsmoker$">
-                            <input type="hidden" name="FaceAmount" value="$newface$">
-                            <input type="hidden" name="NewCategory" value="$origcat$"> 
-                        </form>   
-                    </div>
-                $/prodline$                
+                                <div class="quote back">
+                                    <div class="logo-name">
+                                      <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
+                                        <div style="line-height:18px; max-width:175px;">$company$</div>
+                                    </div>
+                                    <div class="price">
+                                        <h3>$$premium$<small class="premium-mode"></small></h3>
+                                    </div>
+                                    <div class="continue">
+                                        <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
+                                    </div>
+                                    <div class="details">
+                                        <span><img src="../images/flip.png" alt="">details</span>
+                                    </div>
+                                </div>                 
+                                <input type="hidden" name="premium" value="$$premium$">
+                                <input type="hidden" name="company" value="$company$">
+                                <input type="hidden" name="Sex" value="$origsex$">
+                                <input type="hidden" name="Birthday" value="$origday$">
+                                <input type="hidden" name="BirthMonth" value="$origmonth$">
+                                <input type="hidden" name="BirthYear" value="$origyear$">
+                                <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
+                                <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+                                <input type="hidden" name="State" value="$origstate$">
+                                <input type="hidden" name="ZipCode" value="$zipcode$">
+                                <input type="hidden" name="Health" value="$orighealth$">
+                                <input type="hidden" name="Smoker" value="$origsmoker$">
+                                <input type="hidden" name="FaceAmount" value="$newface$">
+                                <input type="hidden" name="NewCategory" value="$origcat$"> 
+                        </div>        
+                    </form>   
+$/prodline$                
                 </div>
                 <script>
                     $(".card-grid").flip({
@@ -243,10 +304,10 @@ $(document).ready(function(){
     </div>
     <div class="row">
         <div class="secondary-quote fluid">
-$prodline=3$      
-        <form action="/userinfo.php" method="POST">
+$prodline=20$      
+        <form action="/userinfo.php" method="POST" class="secondary-quotes">
             <div class="card-grid-sec" style="margin:0 auto;">
-                <div class="fluid front gray">
+                <div class="fluid front">
                     <div class="container">
                         <div class="sec-quote">
                             <div class="details">
@@ -268,7 +329,7 @@ $prodline=3$
                         </div>
                     </div>    
                 </div>
-                <div class="fluid back white">
+                <div class="fluid back">
                     <div class="container">
                         <div class="sec-quote">
                             <div class="details">
