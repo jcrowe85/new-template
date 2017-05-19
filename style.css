@@ -130,13 +130,12 @@ input::-webkit-contacts-auto-fill-button {
 .footer a:visited{
     color:white;
 }
-.socialsExtra{
-    margin-top:20px;
-}
 .section1{
     line-height:35px;
 }
-
+.section4{
+    margin-top:20px;
+}
 /* -------------------------  home page  ----------------------*/
 
 
@@ -1268,6 +1267,12 @@ display: inline-block;
     width:100%;
 
 }
+
+/* footer */
+.section2, .section3, .section4{
+    display: none;
+}
+
 
 }
 
