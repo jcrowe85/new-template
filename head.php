@@ -8,7 +8,7 @@
         <!--  min.js -->
         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!-- * -->
         
-        <!-- resolve multiple jquery scripts on page -->
+        <!-- resolve multiple jquery loads -->
         <script> $.noConflict();</script>
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -24,9 +24,7 @@
 
         <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-
-        <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
+    
         
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="viewport" content="width=device-width" />
@@ -38,7 +36,10 @@
         <link rel="stylesheet" media="all" href="/style.css" />
         
         <!-- easing js plugin -->
-        <script src="/easing.js"></script>
+        <script src="/js/easing.js"></script>
+        
+        <!-- sitewide js -->
+        <script src="/js/main.js"></script>
 
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -47,13 +48,15 @@
     
         <!-- favicon include -->
         <?php include_once('favicon.php') ?>
+        
+        <!-- page loader -->
         <script type="text/javascript">
-        $(window).load(function() {
-        	$(".loader").fadeOut("slow");
-        });
-        	$(window).load(function() {
-        		// Animate loader off screen
-        		$(".se-pre-con").fadeOut("slow");;
-        	});
+            $(window).load(function() {
+            	$(".loader").fadeOut("slow");
+            });
+            	$(window).load(function() {
+            		// Animate loader off screen
+            		$(".se-pre-con").fadeOut("slow");;
+            	});
         </script>
     </head>    

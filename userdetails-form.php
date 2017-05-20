@@ -423,7 +423,7 @@
                             <div class="step2">
                             <h3>Financial information</h3>
 
-                            <h4>The insurer will review the suitability of the coverage amount requested based on your financial status</h4>
+                            <span>The insurer will review the suitability of the coverage amount requested based on your financial status</span>
 
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
@@ -520,7 +520,7 @@
                                     <div class="form-group">
                                         <div class="col-md-12 padding-bottom-2">
                                             <h4>Do you have any history of the health below?</h4>
-                                            <span>A follow-up with a PolicyGenius expert may be required to ensure an accurate quote and to select the best insurer based on your needs.</span>
+                                            <span>A follow-up with a Usurance expert may be required to ensure an accurate quote and to select the best insurer based on your needs.</span>
                                         </div>
                                         <hr class='hr-border' />
                                         <div class="row">

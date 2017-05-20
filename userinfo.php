@@ -1,18 +1,13 @@
+<!-- register user on submit -->
 <?php include_once('register.php'); ?>
+
 <?php include_once('head.php') ?>
-<script src="/userinfo.js"></script>
-<script>
-$(document).ready(function(){
-    $('.getHelp').click(function() {
-        <?php include_once('chat.php'); ?>
-    });        
-});
-</script>
+<script src="/js/userinfo.js"></script>
 <body id="userinfo-page">
     <div class="header fluid">
         <div class="container">
             <header>
-                <button class="getHelp">Get Help</button>
+                <button class="getHelp" onClick="getHelp()">Get Help</button>
             </header>
         </div>
     </div>

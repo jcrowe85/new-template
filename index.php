@@ -38,12 +38,6 @@ $(document).ready(function(){
     	}
     });
     
-    // get help button display chat box
-    
-    $('.getHelp').click(function() {
-        <?php include_once('chat.php') ?>
-    });
-
     
     $( "#whyus" ).click(function() {
         $('html,body').animate({
@@ -110,7 +104,7 @@ $(document).ready(function(){
                                     <li><a id="guide" href="#">Insurance Guides</a></li>
                                     <li><a id="about" href="#">About Us</a></li>
                                     <li><a id="contact" href="#">Contact</a></li>
-                                    <li id='getHelp'><button class="btn btn-primary getHelp">Get Help</button></li>
+                                    <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -477,11 +471,12 @@ $(document).ready(function(){
                             <p>
                             We're an independent insurance broker, meaning we do get paid a commission by the insurance carrier for each sale. However, 
                             all the prices are the same whether you go directly to the insurance carrier or to us, as those carriers also have agents who 
-                            will receive that same commission. So rest assured, you aren’t paying more for our services.
-                             
+                            will receive that same commission. So rest assured, you aren't paying more for our services.
+                            </p>
+                            <p>
                             Now onto the most common question we get asked if we state that we receive a commission. Are there any conflicts of interest? No,
                             because we don't get paid by any insurance company to represent their products better than any other product on the market. 
-                            We give every user the opportunity to buy from whomever they want. We also don’t pressure you into doing anything you're not ready to do.    
+                            We give every user the opportunity to buy from whomever they want. We also don't pressure you into doing anything you're not ready to do.    
                             </p>
                             </div> 
                             <li class="faq">
@@ -490,7 +485,7 @@ $(document).ready(function(){
                             </li>
                             <div class="answer">
                             <p>
-                            We work with only companies that have a solid history AND solid financial ratings. We don’t want you to worry that a company doesn't have 
+                            We work with only companies that have a solid history AND solid financial ratings. We don't want you to worry that a company doesn't have 
                             enough money to pay claims or goes bankrupt.
                             </p>
                             <p>

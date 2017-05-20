@@ -82,12 +82,6 @@ $(document).ready(function(){
         if (this.value.length == "3"){<?php include('slide-next.php') ?>}
     });
     
-    // get help button display chat box
-    
-    $('.getHelp').click(function() {
-        <?php include_once('chat.php') ?>
-    });
-    
     $('.term').change(function(){
         $('#quick-quote').submit();
     });
@@ -121,7 +115,7 @@ $(document).ready(function(){
         <div class="container">
             <header>
                  <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
-                <button class="getHelp">Get Help</button>
+                <button class="getHelp" onClick="getHelp()">Get Help</button>
             </header>
         </div>
     </div>    
