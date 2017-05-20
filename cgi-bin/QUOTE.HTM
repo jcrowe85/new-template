@@ -1,59 +1,80 @@
 <!DOCTYPE html>
-
 <html>
     <head>
         <title>Compare Life Insurance Quotes | Usurance.com - Insurance Without the Agent</title>
+        <!--  bootstrap -->
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        
+        <!--  min.js -->
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!-- * -->
+        
+        <!-- resolve multiple jquery loads -->
+        <script> $.noConflict();</script>
+        
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+        <!--  date/time plugin -->
         <script src="https://rawgit.com/smalot/bootstrap-datetimepicker/master/js/bootstrap-datetimepicker.min.js"></script>
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
         <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+        
+
+        <!--  quote page product flip js/css -->
         <link rel='stylesheet' href="https://rawgit.com/smalot/bootstrap-datetimepicker/master/css/bootstrap-datetimepicker.css">
+
         <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <link rel="shortcut icon" href="/assets/images/favicon.jpg" />
-        <script src="../main.js"></script>
+    
+        
         <meta name="viewport" content="width=device-width, user-scalable=no">
         <meta name="viewport" content="width=device-width" />
         <meta name="csrf-param" content="authenticity_token" />
-        <link rel="stylesheet" media="all" href="../style.css" />  
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
-        <script src="https://use.fontawesome.com/c694372f78.js"></script>
-        <!--[if lt IE 9]>
-          <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
-          </script>
-        <![endif]-->
-<script type="text/javascript">
-$(window).load(function() {
-	$(".loader").fadeOut("slow");
-});
-	$(window).load(function() {
-		// Animate loader off screen
-		$(".se-pre-con").fadeOut("slow");;
-	});
-</script>
-<style>
-.logo-name img{
-    width: 65%;
-}
-.sec-logo-name img{
-   max-width: 15%;
 
-}
-.sec-logo-name{
-   max-width: 415px;
-}
-.secondary-quote:nth-child(2){
-    background-color:black;
-}
-.card-grid-sec{
- border: 1px solid rgba(218, 218, 218, .4);
-}
-.secondary-quotes{
-    margin-bottom:20px;
-}
-</style>
+        <!--  icon plugin -->
+        <script src="https://use.fontawesome.com/c694372f78.js"></script>
+        <link rel="stylesheet" media="all" href="/style.css" />
+        
+        <!-- easing js plugin -->
+        <script src="/easing.js"></script>
+
+        <!-- sitewide js -->
+        <script src="/js/main.js"></script>        
+
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+      </script>
+    <![endif]-->
+    
+        <!-- favicon include -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/images/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+        
+        <!-- page loader -->
+        <script type="text/javascript">
+            $(window).load(function() {
+            	$(".loader").fadeOut("slow");
+            });
+            	$(window).load(function() {
+            		// Animate loader off screen
+            		$(".se-pre-con").fadeOut("slow");;
+            	});
+        </script>
 <script>
 $(document).ready(function(){
     
@@ -187,7 +208,7 @@ $(document).ready(function(){
         <div class="container">
             <header>
                 <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
-                <button class="getHelp">Get Help</button>
+                <button class="getHelp" onClick="getHelp()">Get Help</button>
             </header>
         </div>
     </div>
@@ -358,7 +379,7 @@ $prodline=20$
 $/prodline$
         </div>
     </div>
-    <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
+    <div class="footer">
        <p>Usurance, Inc.</p> 
     </div>
     <script>

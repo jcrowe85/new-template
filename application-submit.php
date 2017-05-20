@@ -8,7 +8,6 @@
    $count = mysqli_num_rows($res); 
    if( $count == 1 ) {
     $_SESSION['user'] = $row['userId'];
-    
    } else {
     $errMSG = "Incorrect Credentials, Try again...";
    }

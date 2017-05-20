@@ -1,54 +1,13 @@
+<!-- update user's info with application data -->
 <?php include_once('application-submit.php'); ?>
+
 <?php include_once('head.php') ?>
-<script>
-$(document).ready(function(){
-    $('.getHelp').click(function() {
-        <?php include_once('chat.php'); ?>
-    });        
-});
-
-</script>
-<style>
-.sidebar{
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 18em;
-    padding: 2.25em;
-    color: #000;
-    border-right: 1px solid lightgray;  
-}    
-#userinfo-page .main{
-    margin-left: 18em;
-    background-color: white;
-    background-image: none;
-    border: 0px;
-}
-#userinfo-page .header{
-    background-color: white;
-    padding: 0px;
-    margin: 0 auto;
-    border-bottom: 1px solid #d2d1d1;
-    position: relative;
-    padding: 10px 0;
-    margin-left: 18em;
-    height: 3em;
-
-}
-#userinfo-page #process-logo{
-    width:20%;
-}
-#userinfo-page  .main{
-padding: 40px 40px 0px 40px;
-}
-</style>
-<script src="/userinfo.js"></script>
-<body id="userinfo-page">
+<script src="/js/userinfo.js"></script>
+<body id="userdetails-page">
     <div class="header fluid">
         <div class="container">
             <header>
-                <button class="getHelp">Get Help</button>
+                <button class="getHelp" onClick="getHelp()">Get Help</button>
             </header>
         </div>
     </div>
