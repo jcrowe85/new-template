@@ -157,6 +157,7 @@ input::-webkit-contacts-auto-fill-button {
 }
  #home-page .logo{
     margin-right: 15px;
+    padding-top: 6px;
 }
 
 #home-page .navbar-toggle {
@@ -587,9 +588,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-#home-page .features{
-    margin-bottom: 50px;
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    #home-page .services {
+        width: 76%;
+    }
 }
+
+@media screen and (min-width: 376px) and (max-width: 541px) {
+    #home-page .services {
+        width: 100%;
+    }
+}
+
 
 /*  ---------------------------   quote page  -------------------------------- */
 
@@ -926,7 +938,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     padding: 25px;
     font-family: 'AileronThin';
     border: none;
-    height:20px;
+    /*height:20px;*/
     max-width:130px;
     font-size:12px;
     color:white; 

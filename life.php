@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
     
     $('.previous-step').click(function(){
-          $(this).parents("fieldset").find('input').each(function (elem) {
+          $(this).parents("fieldset").prev().find('input').each(function (elem) {
                $('#'+$(this).parents("fieldset").find('input')[elem].id).val('');
           });   
           <?php include('slide-prev.php') ?>
@@ -79,6 +79,12 @@ $(document).ready(function(){
     });
     
     $('#weight').keyup(function(){
+        var value =  $('#weight').val();
+        if(isNaN(value[0]) || value[0] === '0') {
+            $('#weight').val('');
+            $('#weight').focus();
+            return;
+        }
         if (this.value.length == "3"){<?php include('slide-next.php') ?>}
     });
     
@@ -91,6 +97,11 @@ $(document).ready(function(){
     
     $('#height').keyup(function(event){
         var value =  $('#height').val();
+        if(isNaN(value[0]) || value[0] === '0') {
+            $('#height').val('');
+            $('#height').focus();
+            return;
+        }
         if(event.keyCode != 8){
             if (value.length === 1) {
                 value += "\'";
