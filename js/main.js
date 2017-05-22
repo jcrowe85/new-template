@@ -1,6 +1,13 @@
 $(document).ready(function(){
     
-
+// set sidebar height to window height
+    var height = $('.main').outerHeight()
+    $('.sidebar').css("height", height);  
+    
+    $('.main').resize(function(){
+        var height = $(this).outerHeight()
+        $('#userinfo-page').css("height", height);    
+    });    
     
 });
 

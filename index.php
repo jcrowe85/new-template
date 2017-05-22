@@ -47,7 +47,7 @@ $(document).ready(function(){
     
     $( "#guide" ).click(function() {
         $('html,body').animate({
-            scrollTop: $(".get-started").offset().top - 60},
+            scrollTop: $(".footer").offset().top - 60},
         'slow');
     });
     
