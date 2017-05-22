@@ -4,9 +4,9 @@ $(document).ready(function(){
     var height = $('.main').outerHeight()
     $('.sidebar').css("height", height);  
     
-    $('.main').resize(function(){
-        var height = $(this).outerHeight()
-        $('#userinfo-page').css("height", height);    
+    $(window).resize(function(){
+        var height = $('.main').outerHeight()
+        $('.sidebar').css("height", height);    
     });    
     
 });
