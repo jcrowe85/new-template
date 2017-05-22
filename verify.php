@@ -106,7 +106,7 @@ fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fie
     border-radius: 5px;
     font-family: 'AileronThin';
     border: none;
-    height:20px;
+    /*height:20px;*/
     max-width:130px;
     font-size:18px;
     color:white;  
@@ -193,7 +193,7 @@ fieldset{
     border-radius: 5px;
     font-family: 'AileronThin';
     border: none;
-    height: 20px;
+    /*height: 20px;*/
     max-width: 130px;
     font-size: 18px;
     color: white;
@@ -262,8 +262,61 @@ $(document).ready(function(){
     $('.getHelp').click(function() {
         <?php include_once('chat.php') ?>
     });
+    
+    $('#weight').keyup(function(){
+        var value =  $('#weight').val();
+        if(isNaN(value[0]) || value[0] === '0') {
+            $('#weight').val('');
+            $('#weight').focus();
+            return;
+        }
+    });
+    
+    $(document).on('keyup', '#height', function (event) {
+        var value =  $('#height').val();
+        if(isNaN(value[0]) || value[0] === '0') {
+            $('#height').val('');
+            $('#height').focus();
+            return;
+        }
+        if(event.keyCode != 8){
+            if (value.length === 1) {
+                value += "\'";
+            } else if(value[2] != 1) {
+                value += "\"";
+                $('#weight').focus();
+            } else if (value.length === 4) {
+                value += "\"";
+                $('#weight').focus();
+            }
+        }
+        
+         $('#height').val(value);
+    });
 
 });
+
+function changeHeight(height) {
+    var value =  height.value;
+        if(isNaN(value[0]) || value[0] === '0') {
+            $('#height').val('');
+            $('#height').focus();
+            return;
+        }
+        if(event.keyCode != 8){
+            if (value.length === 1) {
+                value += "\'";
+            } else if(value[2] != 1) {
+                value += "\"";
+                $('#weight').focus();
+            } else if (value.length === 4) {
+                value += "\"";
+                $('#weight').focus();
+            }
+        }
+        
+         $('#height').val(value);
+}
 
 </script>
 <body id="verify-page">
@@ -394,7 +447,7 @@ $(document).ready(function(){
                       <h1>Height/Weight</h1>
                       <div class="control-group" id="height-weight">
                           <label class="control-text">
-                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="4" id="height" value="<?php echo $height ?>" />
+                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="4" onkeyup='changeHeight(this)' id="height" value="<?php echo $height ?>" />
                           </label>
                       </div>	
                       <div class="control-group">
