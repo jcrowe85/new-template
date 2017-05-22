@@ -8,7 +8,6 @@
    $count = mysqli_num_rows($res); 
    if( $count == 1 ) {
     $_SESSION['user'] = $row['userId'];
-    
    } else {
     $errMSG = "Incorrect Credentials, Try again...";
    }
@@ -147,7 +146,7 @@ expyear ='$expyear'
 WHERE userId='$user'";
  
  if ($conn->query($sql) === TRUE) {
-     header('Location: thankyou.php');
+     header('Location: /index.php');
  } else {
      echo "Error updating record: " . $conn->error;
  }

@@ -88,12 +88,6 @@ $(document).ready(function(){
         if (this.value.length == "3"){<?php include('slide-next.php') ?>}
     });
     
-    // get help button display chat box
-    
-    $('.getHelp').click(function() {
-        <?php include_once('chat.php') ?>
-    });
-    
     $('.term').change(function(){
         $('#quick-quote').submit();
     });
@@ -132,7 +126,7 @@ $(document).ready(function(){
         <div class="container">
             <header>
                  <a href="/"><img id="process-logo" src="/images/logo-full-size.png"></a>
-                <button class="getHelp">Get Help</button>
+                <button class="getHelp" onClick="getHelp()">Get Help</button>
             </header>
         </div>
     </div>    
@@ -356,9 +350,13 @@ $(document).ready(function(){
                           <label class="control-text">
                             <select name="NewCategory" class="term">
                                 <option style="background-color:#808080;" selected="selected" value="">Select Term</option>
+                                <option style="background-color:#808080;" value="2">5-Year Term</option>
                                 <option style="background-color:#808080;" value="3">10-Year Term</option>
+                                <option style="background-color:#808080;" value="4">15-Year Term</option>
                                 <option style="background-color:#808080;" value="5">20-Year Term</option>
+                                <option style="background-color:#808080;" value="6">25-Year Term</option>
                                 <option style="background-color:#808080;" value="7">30-Year Term</option>
+                                <option style="background-color:#808080;" value="9">35-Year Term</option>      
                             </select> 
                           </label>
                       </div>    
