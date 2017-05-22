@@ -624,7 +624,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     width:100%;
     padding-left: 15px;
     padding-right: 15px;
-    
 }
 #quote-page .controls div{
     text-align: center;
@@ -633,7 +632,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     justify-content: center;    
 }
 #quote-page .adjust-title{
-    margin-top:25px;
+    margin-top:35px;
 }
 #quote-page .adjustments {
       
@@ -800,6 +799,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     padding: 2.25em;
     color: #000;
     border-right: 1px solid lightgray;  
+
 }    
 #userinfo-page .main, #userdetails-page .main{
     border: 0px;
