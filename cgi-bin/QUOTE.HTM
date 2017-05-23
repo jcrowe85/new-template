@@ -225,7 +225,7 @@ $(document).ready(function(){
                             <input type="range" name="NewCategory" id="term-range" min="1" max="10" step="1" oninput="termUpdate(value)" >
                         </div>                         
                         <div class="monthly-annually">
-                            <label for="mode" style="display:block;">Show Prices</label>
+                            <label for="mode" style="display:block" style="display:block;">Show Prices</label>
                            <input type="radio" name="ModeUsed" class="M" value="M">Monthly
                            <input type="radio" name="ModeUsed" class="A" value="A">Annually
                         </div>        
@@ -378,8 +378,20 @@ $(document).ready(function(){
                             
                         </div> 
                     </div>
-                    <input type="hidden" value="$$premium$" name="premium">
-                    <input type="hidden" value="$company$" name="company">  
+                        <input type="hidden" name="premium" value="$$premium$">
+                        <input type="hidden" name="company" value="$company$">
+                        <input type="hidden" name="Sex" value="$origsex$">
+                        <input type="hidden" name="Birthday" value="$origday$">
+                        <input type="hidden" name="BirthMonth" value="$origmonth$">
+                        <input type="hidden" name="BirthYear" value="$origyear$">
+                        <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
+                        <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+                        <input type="hidden" name="State" value="$origstate$">
+                        <input type="hidden" name="ZipCode" value="$zipcode$">
+                        <input type="hidden" name="Health" value="$orighealth$">
+                        <input type="hidden" name="Smoker" value="$origsmoker$">
+                        <input type="hidden" name="FaceAmount" value="$newface$">
+                        <input type="hidden" name="NewCategory" value="$origcat$"> 
                 </form>
                 $/prodline$
             </div>

@@ -4,9 +4,9 @@
                         <div class="step1">
 
                             <div class='row'>
-                                <div class='col-md-6 col-sm-12 col-xs-12'>
+                                <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" name="address1" value='Address (line1)' readonly/>
+                                        <label class="form-control noBorder custom-size-header-box" name="address1" value='Address (line1)' readonly/>Address</label>
                                         <input 
                                             class="form-control noBorder custom-size-input-box" 
                                             id="address1text" 
@@ -18,24 +18,24 @@
                                             data-validation-length="max127"/>
                                     </div>
                                 </div>
-                                <div class='col-md-6 col-sm-12 col-xs-12'>
-                                    <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" name="address1" value='Address (line2)' readonly/>
-                                        <input 
-                                            class="form-control noBorder custom-size-input-box" 
-                                            id="address2text" 
-                                            placeholder="Enter address" 
-                                            type="text" 
-                                            name="address2text" 
-                                            tabindex='2'/>
-                                    </div>
-                                </div>
+                                <!--<div class='col-md-6 col-sm-12 col-xs-12'>-->
+                                <!--    <div class="form-group">-->
+                                <!--        <label class="form-control noBorder custom-size-header-box" name="address1" value='Address (line1)' readonly/>Address</label>-->
+                                <!--        <input -->
+                                <!--            class="form-control noBorder custom-size-input-box" -->
+                                <!--            id="address2text" -->
+                                <!--            placeholder="Enter address" -->
+                                <!--            type="text" -->
+                                <!--            name="address2text" -->
+                                <!--            tabindex='2'/>-->
+                                <!--    </div>-->
+                                <!--</div>-->
                             </div>
 
                             <div class='row'>
                                 <div class='col-md-6 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" name="city" value='City' readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" name="city" value='City' readonly/>City</label>
                                         <input 
                                             class="form-control noBorder custom-size-input-box" 
                                             id="citytext" 
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" name="zipcode" value='Zip code' readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" name="zipcode" value='Zip code' readonly/>Zip Code</label>
                                         <input 
                                             class="form-control noBorder custom-size-input-box" 
                                             id="zipcodetext"
@@ -67,72 +67,72 @@
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input 
-                                        type="text" class="form-control noBorder custom-size-header-box" value='State' readonly/>
+                                        <label 
+                                        type="text" class="form-control noBorder custom-size-header-box" value='State' readonly/>State</label>
                                         <select 
                                             name="state"
                                             class="form-control noBorder custom-size-input-box" 
                                             tabindex='4'
-                                            data-validation="required number length"
+                                            data-validation="required"
                                             data-validation-length="max20"
                                             data-validation-error-msg=" ">
                                         <option value="">--Select a state--</option>    
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Alaska</option>
-                                        <option value="3">Arizona</option>
-                                        <option value="4">Arkansas</option>
-                                        <option value="5">California</option>
-                                        <option value="6">Colorado</option>
-                                        <option value="7">Connecticut</option>
-                                        <option value="8">Delaware</option>
-                                        <option value="9">Dist.Columbia</option>
-                                        <option value="10">Florida</option>
-                                        <option value="11">Georgia</option>
-                                        <option value="12">Hawaii</option>
-                                        <option value="13">Idaho</option>
-                                        <option value="14">Illinois</option>
-                                        <option value="15">Indiana</option>
-                                        <option value="16">Iowa</option>
-                                        <option value="17">Kansas</option>
-                                        <option value="18">Kentucky</option>
-                                        <option value="19">Louisiana</option>
-                                        <option value="20">Maine</option>
-                                        <option value="21">Maryland</option>
-                                        <option value="22">Massachusetts</option>
-                                        <option value="23">Michigan</option>
-                                        <option value="24">Minnesota</option>
-                                        <option value="25">Mississippi</option>
-                                        <option value="26">Missouri</option>
-                                        <option value="27">Montana</option>
-                                        <option value="28">Nebraska</option>
-                                        <option value="29">Nevada</option>
-                                        <option value="30">New Hampshire</option>
-                                        <option value="31">New Jersey</option>
-                                        <option value="32">New Mexico</option>
-                                        <option value="52">NY Non-Bus</option>
-                                        <option value="33">NY Business</option>
-                                        <option value="34">North Carolina</option>
-                                        <option value="35">North Dakota</option>
-                                        <option value="36">Ohio</option>
-                                        <option value="37">Oklahoma</option>
-                                        <option value="38">Oregon</option>
-                                        <option value="39">Pennsylvania</option>
-                                        <option value="40">Rhode Island</option>
-                                        <option value="41">South Carolina</option>
-                                        <option value="42">South Dakota</option>
-                                        <option value="43">Tennessee</option>
-                                        <option value="44">Texas</option>
-                                        <option value="45">Utah</option>
-                                        <option value="46">Vermont</option>
-                                        <option value="47">Virginia</option>
-                                        <option value="48">Washington</option>
-                                        <option value="49">West Virginia</option>
-                                        <option value="50">Wisconsin</option>
-                                        <option value="51">Wyoming</option>
-                                        <option value="53">Guam</option>
-                                        <option value="54">Puerto Rico</option>
-                                        <option value="55">Virgin Islands</option>
-                                        <option value="56">Amer. Samoa</option>
+                                        <option value="Alabama">Alabama</option>
+                                        <option value="Alaska">Alaska</option>
+                                        <option value="Arizona">Arizona</option>
+                                        <option value="Arkansas">Arkansas</option>
+                                        <option value="California">California</option>
+                                        <option value="Colorado">Colorado</option>
+                                        <option value="Connecticut">Connecticut</option>
+                                        <option value="Delaware">Delaware</option>
+                                        <option value="Dist.Columbia">Dist.Columbia</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Hawaii">Hawaii</option>
+                                        <option value="Idaho">Idaho</option>
+                                        <option value="Illinois">Illinois</option>
+                                        <option value="Indiana">Indiana</option>
+                                        <option value="Iowa">Iowa</option>
+                                        <option value="Kansas">Kansas</option>
+                                        <option value="Kentucky">Kentucky</option>
+                                        <option value="Louisiana">Louisiana</option>
+                                        <option value="Maine">Maine</option>
+                                        <option value="Maryland">Maryland</option>
+                                        <option value="Massachusetts">Massachusetts</option>
+                                        <option value="Michigan">Michigan</option>
+                                        <option value="Minnesota">Minnesota</option>
+                                        <option value="Mississippi">Mississippi</option>
+                                        <option value="Missouri">Missouri</option>
+                                        <option value="Montana">Montana</option>
+                                        <option value="Nebraska">Nebraska</option>
+                                        <option value="Nevada">Nevada</option>
+                                        <option value="Nw Hampshire">Nw Hampshire</option>
+                                        <option value="New Jersey">New Jersey</option>
+                                        <option value="New Mexico">New Mexico</option>
+                                        <option value="Non-Bus">Non-Bus</option>
+                                        <option value="NY Business">NY Business</option>
+                                        <option value="North Carolina">North Carolina</option>
+                                        <option value="North Dakota">North Dakota</option>
+                                        <option value="Ohio">Ohio</option>
+                                        <option value="Oklahoma">Oklahoma</option>
+                                        <option value="Oregon">Oregon</option>
+                                        <option value="Pennsylvania">Pennsylvania</option>
+                                        <option value="Rhode Island">Rhode Island</option>
+                                        <option value="South Carolina">South Carolina</option>
+                                        <option value="South Dakota">South Dakota</option>
+                                        <option value="Tennessee">Tennessee</option>
+                                        <option value="Texas">Texas</option>
+                                        <option value="Utah">Utah</option>
+                                        <option value="Vermont">Vermont</option>
+                                        <option value="Virginia">Virginia</option>
+                                        <option value="Washington">Washington</option>
+                                        <option value="West Virginia">West Virginia</option>
+                                        <option value="Wisconsin">Wisconsin</option>
+                                        <option value="Wyoming">Wyoming</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Virgin Islands">Virgin Islands</option>
+                                        <option value="Amer. Samoa">Amer. Samoa</option>
                                   </select>
                                     </div>
                                 </div>
@@ -141,7 +141,7 @@
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" value='Country of birth' readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" value='Country of birth' readonly/>Country of birth</label>
                                         <select 
                                             name="country" 
                                             class="form-control noBorder custom-size-input-box" 
@@ -406,14 +406,14 @@
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" value='Residency status' readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" value='Residency status' readonly/>Residency Status</label>
                                         <select id="residency" class="form-control noBorder custom-size-input-box" tabindex='4' name="residency" data-validation="required">
                                              <option value="">--Select a status--</option>
-                                             <option value="2">Citizen</option>
-                                             <option value="3">Permanent resident</option>
-                                             <option value="4">Visitor</option>
-                                             <option value="5">Student visa</option>
-                                             <option value="6">Employee visitor</option>
+                                             <option value="citizen">Citizen</option>
+                                             <option value="permanent resident">Permanent resident</option>
+                                             <option value="visitor">Visitor</option>
+                                             <option value="student visa">Student visa</option>
+                                             <option value="employee visitor">Employee visitor</option>
                                          </select>
                                     </div>
                                 </div>
@@ -429,7 +429,7 @@
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
                                         <div class="input-group noBorder">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" value='Individual income' readonly/>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" value='Individual income' readonly/>Individual Income</label>
                                             <span class="input-group-addon noBorder transparent-bg" id="basic-addon1"><i class="glyphicon glyphicon-question-sign" aria-hidden="true"></i></span>
                                         </div>
                                         <div class="input-group noBorder">
@@ -453,7 +453,7 @@
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
                                         <div class="input-group noBorder">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" value='Assets' readonly/>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" value='Assets' readonly/>Assets</label>
                                             <span class="input-group-addon noBorder transparent-bg" id="basic-addon1"><i class="glyphicon glyphicon-question-sign" aria-hidden="true"></i></span>
                                         </div>
 
@@ -478,7 +478,7 @@
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
                                         <div class="input-group noBorder">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" value='Liabilities' readonly/>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" value='Liabilities' readonly/>Liabilities</label>
                                             <span class="input-group-addon noBorder transparent-bg" id="basic-addon1"><i class="glyphicon glyphicon-question-sign" aria-hidden="true"></i></span>
                                         </div>
                                         <div class="input-group noBorder">
@@ -501,11 +501,11 @@
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" value='Reason for applying' readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" value='Reason for applying' readonly/>Reason for applying</label>
                                         <select id="reasonforapplying" class="form-control noBorder custom-size-input-box" name="reasonforapplying" tabindex='7'>
                                      <option value="1">--Select reason for applying--</option>
-                                     <option value="2">Personal</option>
-                                     <option value="3">Family protection</option>
+                                     <option value="personal">Personal</option>
+                                     <option value="family protection">Family protection</option>
                                  </select>
                                     </div>
                                 </div>
@@ -517,7 +517,7 @@
 
                             <div class='row'>
                                 <div class='col-md-12'>
-                                    <div class="form-group">
+                                    <div class="form-group container" id="medical-conditions">
                                         <div class="col-md-12 padding-bottom-2">
                                             <h4>Do you have any history of the health below?</h4>
                                             <span>A follow-up with a Usurance expert may be required to ensure an accurate quote and to select the best insurer based on your needs.</span>
@@ -526,10 +526,10 @@
                                         <div class="row">
                                             <div class='col-md-6 col-sm-12 col-xs-12 padding-left-3'>
                                                 <input id="alzheimer" class="checkbox-custom" name="alzheimer" type="checkbox" tabindex='7'>
-                                                <label for="alzheimer" class="checkbox-custom-label">Alzheimer's disease</label>
+                                                <label for="alzheimer" class="checkbox-custom-label" value="alzheimer's disease">Alzheimer's disease</label>
                                             </div>
                                             <div class='col-md-6 col-sm-12 col-xs-12 padding-left-3'>
-                                                <input id="backproblem" class="checkbox-custom" name="backproblem" type="checkbox" tabindex='7'>
+                                                <input id="backproblem" class="checkbox-custom" name="backproblem" type="checkbox" value="back problems" tabindex='7'>
                                                 <label for="backproblem" class="checkbox-custom-label">Back problems</label>
                                             </div>
                                         </div>
@@ -537,7 +537,7 @@
                                         <div class="row">
                                             <div class='col-md-6 col-sm-12 col-xs-12 padding-left-3'>
                                                 <input id="basal" class="checkbox-custom" name="basal" type="checkbox" tabindex='7'>
-                                                <label for="basal" class="checkbox-custom-label">Basal cell skin cancer</label>
+                                                <label for="basal" class="checkbox-custom-label" value="basal cell skin cancer">Basal cell skin cancer</label>
                                             </div>
                                             <div class='col-md-6 col-sm-12 col-xs-12 padding-left-3'>
                                                 <input id="cancer" class="checkbox-custom" name="cancer" type="checkbox" tabindex='7'>
@@ -649,7 +649,7 @@
                             <h3>Activities</h3>
                             <div class='row'>
                                 <div class='col-md-12'>
-                                    <div class="form-group">
+                                    <div class="form-group container" id="activities">
                                         <div class="col-md-12 padding-bottom-2">
                                             <h4>Which, if any, of the following activities do you participate in?</h4>
                                             <span>The insurer may modify your policy based on whether you participate in activities that carry a higher than normal risk of injury. This could result in a change in your quoted premium.</span>
@@ -734,7 +734,7 @@
                                         <div class='row' style="padding-top: 1rem;">
                                             <div class='col-md-12 col-sm-12 col-xs-12'>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" name="fullname" value='Full name' readonly/>
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" name="fullname" value='Full name' readonly/>Full Name</label>
                                                     <input 
                                                         class="form-control noBorder custom-size-input-box" 
                                                         id="primaryfullname" 
@@ -771,32 +771,35 @@
                                         <div class="row">
                                             <div class='col-md-12 col-sm-12 col-xs-12'>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value='Relationship' readonly/>
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value='Relationship' readonly/>Relationship</label>
                                                     <select id="primaryrelation" class="form-control noBorder custom-size-input-box" name="primaryrelation" tabindex='10'>
-                                                         <option value="1">Brother</option>
-                                                         <option selected="selected" value="2">Creditor</option>
-                                                         <option value="3">Daughter</option>
-                                                         <option  value="4">Domestic partner</option>
-                                                         <option  value="5">Ex-spouse</option>
-                                                         <option  value="6">Father</option>
-                                                         <option  value="7">Friend or relative</option>
-                                                         <option  value="8">Granddaughter</option>
-                                                         <option  value="9">Grandfather</option>
-                                                         <option  value="10">Grandson</option>
-                                                         <option  value="11">Mother</option>
-                                                         <option  value="12">Niece</option>
-                                                         <option  value="13">Nephew</option>
-                                                         <option  value="14">Other</option>
-                                                         <option  value="15">Sister</option>
-                                                         <option  value="16">Son</option>
-                                                         <option  value="17">Spouse</option>
-                                                         <option  value="18">Stepdaughter</option>
-                                                         <option  value="19">Stepfather</option>
-                                                         <option  value="20">Stepmother</option>
-                                                         <option  value="21">Stepson</option>
-                                                         <option  value="22">Trust</option>
-                                                         <option  value="23">Business</option>
-                                                         <option selected="selected" value="24">Unknown</option>
+                                                         <option  value="spouse">Spouse</option>
+                                                         <option  value="ex-spouse">Ex-spouse</option>    
+                                                         <option  value="husband">Husband</option>
+                                                         <option  value="wife">Wife</option>
+                                                         <option  value="domestic partner">Domestic partner</option>
+                                                         <option  value="fatehr">Father</option>
+                                                         <option  value="mother">Mother</option>
+                                                         <option  value="brother">Brother</option>
+                                                         <option  value="sister">Sister</option>
+                                                         <option  value="son">Son</option>
+                                                         <option  value="daughter">Daughter</option>
+                                                         <option  value="newphew">Nephew</option>                                                         
+                                                         <option  value="niece">Niece</option>
+                                                         <option  value="grandfather">Grandfather</option>
+                                                         <option  value="grandmother">Grandmother</option>  
+                                                         <option  value="grandson">Grandson</option>
+                                                         <option  value="granddaughter">Granddaughter</option>
+                                                         <option  value="stepfather">Stepfather</option>
+                                                         <option  value="stepmother">Stepmother</option>    
+                                                         <option  value="stepson">Stepson</option>
+                                                         <option  value="stepdaughter">Stepdaughter</option>
+                                                         <option  value="friend of relative">Friend or relative</option>
+                                                         <option  value="trust">Trust</option>
+                                                         <option  value="business">Business</option>
+                                                         <option  value="creditor">Creditor</option>
+                                                         <option  value="other">Other</option>
+                                                         <option selected="selected" value="unknown">Unknown</option>
                                                      </select>
                                                 </div>
                                             </div>
@@ -805,7 +808,7 @@
                                         <div class="row">
                                             <div class='col-md-12 col-sm-12 col-xs-12'>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value="Date of birth" readonly/>
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value="Date of birth" readonly/>Date of birth</label>
                                                     <div class="row">
                                                         <div class="col-md-4">
                                                             <!--<input type="text" 
@@ -816,18 +819,19 @@
                                                                 data-validation-help="Please provide your month of birth" 
                                                                  data-validation-regexp="^([A-Za-z]+)$"
                                                                 data-suggestions="January, February, March, April, May, June, July, August, September, October, November, December"/>-->
-                                                            <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'><option value="1">January</option>
-                                                                        <option value="2">February</option>
-                                                                        <option value="3">March</option>
-                                                                        <option value="4">April</option>
-                                                                        <option value="5">May</option>
-                                                                        <option value="6">June</option>
-                                                                        <option value="7">July</option>
-                                                                        <option value="8">August</option>
-                                                                        <option value="9">September</option>
-                                                                        <option value="10">October</option>
-                                                                        <option value="11">November</option>
-                                                                        <option selected="selected" value="12">December</option>
+                                                            <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'>
+                                                                        <option value="January" selected="selected">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="April">April</option>
+                                                                        <option value="May">May</option>
+                                                                        <option value="June">June</option>
+                                                                        <option value="July">July</option>
+                                                                        <option value="August">August</option>
+                                                                        <option value="September">September</option>
+                                                                        <option value="October">October</option>
+                                                                        <option value="November">November</option>
+                                                                        <option value="December">December</option>
                                                             </select>
                                                         </div>
                                                         <div class="col-md-4">
@@ -838,10 +842,11 @@
                                                                 data-validation='required number length'
                                                                 data-validation-help="Please provide your date of birth"
                                                                  data-validation-length="max2"/>-->
-                                                            <select id="form_dob_date" class="form-control" name="Birthday" tabindex='10'><option value="1">1</option>
+                                                            <select id="form_dob_date" class="form-control" name="Birthday" tabindex='10'>
+                                                                            <option value="1" selected="selected" >1</option>
                                                                             <option value="2">2</option>
                                                                             <option value="3">3</option>
-                                                                            <option selected="selected" value="4">4</option>
+                                                                            <option value="4">4</option>
                                                                             <option value="5">5</option>
                                                                             <option value="6">6</option>
                                                                             <option value="7">7</option>
@@ -879,318 +884,13 @@
                                                                 data-validation='required number'
                                                                 data-validation-help="Please provide your year of birth"
                                                                 data-validation-length="max4"/>-->
-                                                            <select id="form_dob_year" class="form-control" name="BirthYear" tabindex='10'><option value="2011">2011</option>
-                                                                        <option value="2010">2010</option>
-                                                                        <option value="2009">2009</option>
-                                                                        <option value="2008">2008</option>
-                                                                        <option value="2007">2007</option>
-                                                                        <option value="2006">2006</option>
-                                                                        <option value="2005">2005</option>
-                                                                        <option value="2004">2004</option>
-                                                                        <option value="2003">2003</option>
-                                                                        <option value="2002">2002</option>
-                                                                        <option value="2001">2001</option>
-                                                                        <option value="2000">2000</option>
-                                                                        <option value="1999">1999</option>
-                                                                        <option value="1998">1998</option>
-                                                                        <option value="1997">1997</option>
-                                                                        <option value="1996">1996</option>
-                                                                        <option value="1995">1995</option>
-                                                                        <option value="1994">1994</option>
-                                                                        <option value="1993">1993</option>
-                                                                        <option value="1992">1992</option>
-                                                                        <option value="1991">1991</option>
-                                                                        <option value="1990">1990</option>
-                                                                        <option value="1989">1989</option>
-                                                                        <option value="1988">1988</option>
-                                                                        <option value="1987">1987</option>
-                                                                        <option value="1986">1986</option>
-                                                                        <option selected="selected" value="1985">1985</option>
-                                                                        <option value="1984">1984</option>
-                                                                        <option value="1983">1983</option>
-                                                                        <option value="1982">1982</option>
-                                                                        <option value="1981">1981</option>
-                                                                        <option value="1980">1980</option>
-                                                                        <option value="1979">1979</option>
-                                                                        <option value="1978">1978</option>
-                                                                        <option value="1977">1977</option>
-                                                                        <option value="1976">1976</option>
-                                                                        <option value="1975">1975</option>
-                                                                        <option value="1974">1974</option>
-                                                                        <option value="1973">1973</option>
-                                                                        <option value="1972">1972</option>
-                                                                        <option value="1971">1971</option>
-                                                                        <option value="1970">1970</option>
-                                                                        <option value="1969">1969</option>
-                                                                        <option value="1968">1968</option>
-                                                                        <option value="1967">1967</option>
-                                                                        <option value="1966">1966</option>
-                                                                        <option value="1965">1965</option>
-                                                                        <option value="1964">1964</option>
-                                                                        <option value="1963">1963</option>
-                                                                        <option value="1962">1962</option>
-                                                                        <option value="1961">1961</option>
-                                                                        <option value="1960">1960</option>
-                                                                        <option value="1959">1959</option>
-                                                                        <option value="1959">1958</option>
-                                                                        <option value="1959">1957</option>
-                                                                        <option value="1959">1956</option>
-                                                                        <option value="1959">1955</option>
-                                                                        <option value="1959">1954</option>
-                                                                        <option value="1959">1953</option>
-                                                                        <option value="1959">1952</option>
-                                                                        <option value="1959">1951</option>
-                                                                        <option value="1959">1950</option>
-                                                                        <option value="1959">1949</option>
-                                                                        <option value="1959">1948</option>
-                                                                        <option value="1959">1947</option>
-                                                                        <option value="1959">1946</option>
-                                                                        <option value="1959">1945</option>
-                                                                        <option value="1959">1944</option>
-                                                                        <option value="1959">1943</option>
-                                                                        <option value="1959">1942</option>
-                                                                        <option value="1959">1941</option>
-                                                                        <option value="1959">1940</option>
-                                                                        <option value="1959">1939</option>
-                                                                        <option value="1959">1938</option>
-                                                                        <option value="1959">1937</option>
-                                                                        <option value="1959">1936</option>
-                                                                        <option value="1959">1935</option>
-                                                                        <option value="1959">1934</option>
-                                                                        <option value="1959">1933</option>
-                                                                        <option value="1959">1932</option>
-                                                                        <option value="1959">1931</option>
-                                                                        <option value="1959">1930</option>
-                                                                        <option value="1959">1929</option>
-                                                                        <option value="1959">1928</option>
-                                                                        <option value="1959">1927</option>
-                                                                        <option value="1959">1926</option>
-                                                                        <option value="1959">1925</option>
-                                                                        <option value="1959">1924</option>
-                                                                        <option value="1959">1923</option>
-                                                                        <option value="1959">1922</option>
-                                                                        <option value="1959">1921</option>
-                                                                        <option value="1959">1920</option>
-                                                                        <option value="1959">1919</option>
-                                                                        <option value="1959">1918</option>
-                                                                        <option value="1959">1917</option>
-                                                                        <option value="1959">1916</option>
-                                                                    </select>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="row">
-                                            <div class='col-md-12 col-sm-12 col-xs-12'>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value='Percentage' readonly/>
-                                                    <select id="primarypercentage" class="form-control noBorder custom-size-input-box 1-100" name="primarypercentage" tabindex='10'>
-                                                     </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class='row'>
-                                            <div class='col-md-12 col-sm-12 col-xs-12'>
-                                                <div class="form-group">
-                                                    <button type="button" name="submitForm" id="submitForm" class="btn btn-warning btn-block" tabindex='10'>Save This Beneficiary</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                            </div>
-
-
-                            <div class="step6">
-                            <h3>Contingent beneficiaries</h3>
-
-                            <div class="row">
-                                <div class="col-md-12 padding-bottom-2">
-                                    You may also designate contingent beneficiaries, who will receive the proceeds of your insaurance if none of your primary beneficiaries are alive. You don't have to designate any contingent beneficiaries but if you do,<strong>make sure the percentage across all contingent
-                                     beneficiaries add up to 100.</strong>
-                                </div>
-                                <div class="col-md-12 beneficiary padding-bottom-2" id='openAddContingentBeneficiaryForm'>
-
-                                    <div class="row">
-                                        <div class="col-md-4"></div>
-                                        <div class="col-md-4 beneficiary-plus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></div>
-                                        <div class="col-md-4"></div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col-md-3 col-sm-12 col-xs-12"></div>
-                                        <div class="col-md-8 col-sm-12 col-xs-12" style='color:darkgray;'><strong>Add contingent beneficiary</strong></div>
-                                        <div class="col-md-1 col-sm-12 col-xs-12"></div>
-                                    </div>
-                                </div>
-                                
-                                 <div class="col-md-12  padding-bottom-2" id='contingentBeneficiaryDisplay'>
-                                    <!--<button type="button" onClick="closeAddedContingentBeneficiary()" class="btn btn-default btn-circle pull-right"><i class="glyphicon glyphicon-remove"></i></button>-->
-                                    <!--<table id='contingentBeneficiaryTable' width="100%" cellpadding="50" cellspacing="0">-->
-                                    <!--</table>-->
-                                </div>
-                            </div>
-                            <div id='addContingentBeneficiary' class="custom-border container">
-                                    <button type="button" onClick="closeContingentBeneficiary()" class="btn btn-default btn-circle pull-right"><i class="glyphicon glyphicon-remove"></i></button>
-                                    <div id='contingentBeneficiary'>
-                                        <div class='row' style="padding-top: 1rem;">
-                                            <div class='col-md-12 col-sm-12 col-xs-12'>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" name="fullname" value='Full name' readonly/>
-                                                    <input 
-                                                        class="form-control noBorder custom-size-input-box" 
-                                                        maxlength='35'
-                                                        id="contingentfullname" 
-                                                        placeholder="Enter your last name here"
-                                                        type="text" 
-                                                        name="contingentfullname"
-                                                        tabindex='10'
-                                                        data-validation='required length'
-                                                        data-validation-length="max35"/>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-12 quick-question container padding-bottom-2">
-                    
-                                            <div class="col-md-12 padding-bottom-2">
-                                                <h5>Gender</h5>
-                                            </div>
-                    
-                                            <div class="col-md-12 padding-bottom-2">
-                                                <div class="btn-group col-md-12 col-sm-12 col-xs-12" data-toggle="buttons">
-                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12">
-                                                                <input type="radio" name="contingentgender" id="contingentmale" autocomplete="off" tabindex='10'> Male
-                                                            </label>
-                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12 hidden-sm hidden-xs" style="margin-left: 12px;">
-                                                                 <input type="radio" name="contingentgender" id="contingentfemale" autocomplete="off" tabindex='10'> Female
-                                                            </label>
-                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12 visible-sm visible-xs">    
-                                                                <input type="radio" name="contingentgender" id="contingentfemale" autocomplete="off" tabindex='10'> Female
-                                                            </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="row">
-                                            <div class='col-md-12 col-sm-12 col-xs-12'>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value='Relationship' readonly/>
-                                                    <select id="contingentrelation" class="form-control noBorder custom-size-input-box" name="contingentrelation" tabindex='10'>
-                                                         <option value="1">Brother</option>
-                                                         <option selected="selected" value="2">Creditor</option>
-                                                         <option selected="selected" value="3">Daughter</option>
-                                                         <option selected="selected" value="4">Domestic partner</option>
-                                                         <option selected="selected" value="5">Ex-spouse</option>
-                                                         <option selected="selected" value="6">Father</option>
-                                                         <option selected="selected" value="7">Friend or relative</option>
-                                                         <option selected="selected" value="8">Granddaughter</option>
-                                                         <option selected="selected" value="9">Grandfather</option>
-                                                         <option selected="selected" value="10">Grandson</option>
-                                                         <option selected="selected" value="11">Mother</option>
-                                                         <option selected="selected" value="12">Niece</option>
-                                                         <option selected="selected" value="13">Nephew</option>
-                                                         <option selected="selected" value="14">Other</option>
-                                                         <option selected="selected" value="15">Sister</option>
-                                                         <option selected="selected" value="16">Son</option>
-                                                         <option selected="selected" value="17">Spouse</option>
-                                                         <option selected="selected" value="18">Stepdaughter</option>
-                                                         <option selected="selected" value="19">Stepfather</option>
-                                                         <option selected="selected" value="20">Stepmother</option>
-                                                         <option selected="selected" value="21">Stepson</option>
-                                                         <option selected="selected" value="22">Trust</option>
-                                                         <option selected="selected" value="23">Business</option>
-                                                         <option selected="selected" value="24">Unknown</option>
-                                                     </select>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="row">
-                                            <div class='col-md-12 col-sm-12 col-xs-12'>
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value="Date of birth" readonly/>
-                                                    <div class="row">
-                                                        <div class="col-md-4">
-                                                            <!--<input type="text" 
-                                                                name="contingent_dob_month"
-                                                                id='contingent_dob_month'
-                                                                class='form-control'
-                                                                data-validation='required custom'
-                                                                data-validation-help="Please provide your month of birth" 
-                                                                data-validation-regexp="^([A-Za-z]+)$"
-                                                                data-suggestions="January, February, March, April, May, June, July, August, September, October, November, December"/>-->
-                                                            <select id="contingent_dob_month" class="form-control" name="BirthMonth" tabindex='10'>
-                                                                        <option value="0">--Select--</option>
-                                                                        <option value="1">January</option>
-                                                                        <option value="2">February</option>
-                                                                        <option value="3">March</option>
-                                                                        <option value="4">April</option>
-                                                                        <option value="5">May</option>
-                                                                        <option value="6">June</option>
-                                                                        <option value="7">July</option>
-                                                                        <option value="8">August</option>
-                                                                        <option value="9">September</option>
-                                                                        <option value="10">October</option>
-                                                                        <option value="11">November</option>
-                                                                        <option value="12">December</option>
-                                                                    </select>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <!--<input type="text" 
-                                                                name="contingent_dob_date"
-                                                                id='contingent_dob_date'
-                                                                class='form-control'
-                                                                data-validation='required number length'
-                                                                data-validation-help="Please provide your date of birth"
-                                                                data-validation-length="max2"/>-->
-                                                            <select id="contingent_dob_date" class="form-control" name="Birthday" tabindex='10'>
-                                                                            <option value="0">--Select--</option>
-                                                                            <option value="1">1</option>
-                                                                            <option value="2">2</option>
-                                                                            <option value="3">3</option>
-                                                                            <option value="4">4</option>
-                                                                            <option value="5">5</option>
-                                                                            <option value="6">6</option>
-                                                                            <option value="7">7</option>
-                                                                            <option value="8">8</option>
-                                                                            <option value="9">9</option>
-                                                                            <option value="10">10</option>
-                                                                            <option value="11">11</option>
-                                                                            <option value="12">12</option>
-                                                                            <option value="13">13</option>
-                                                                            <option value="14">14</option>
-                                                                            <option value="15">15</option>
-                                                                            <option value="16">16</option>
-                                                                            <option value="17">17</option>
-                                                                            <option value="18">18</option>
-                                                                            <option value="19">19</option>
-                                                                            <option value="20">20</option>
-                                                                            <option value="21">21</option>
-                                                                            <option value="22">22</option>
-                                                                            <option value="23">23</option>
-                                                                            <option value="24">24</option>
-                                                                            <option value="25">25</option>
-                                                                            <option value="26">26</option>
-                                                                            <option value="27">27</option>
-                                                                            <option value="28">28</option>
-                                                                            <option value="29">29</option>
-                                                                            <option value="30">30</option>
-                                                                            <option value="31">31</option>
-                                                                        </select>
-                                                        </div>
-                                                        <div class="col-md-4">
-                                                            <!--<input type="text" 
-                                                                name="contingent_dob_year"
-                                                                id='contingent_dob_year'
-                                                                class='form-control'
-                                                                data-validation='required number'
-                                                                data-validation-help="Please provide your year of birth"
-                                                                data-validation-length="max4"/>-->
-                                                            <select id="contingent_dob_year" class="form-control" name="BirthYear" tabindex='10'>
-                                                                        <option value="1">--Select--</option>
+                                                            <select id="form_dob_year" class="form-control" name="BirthYear" tabindex='10'>
+                                                                        <option value="2005" selected="selected">2017</option>
+                                                                        <option value="2004">2016</option>
+                                                                        <option value="2003">2015</option>
+                                                                        <option value="2002">2014</option>
+                                                                        <option value="2001">2013</option>
+                                                                        <option value="2000">2012</option>                                                                
                                                                         <option value="2011">2011</option>
                                                                         <option value="2010">2010</option>
                                                                         <option value="2009">2009</option>
@@ -1297,7 +997,324 @@
                                         <div class="row">
                                             <div class='col-md-12 col-sm-12 col-xs-12'>
                                                 <div class="form-group">
-                                                    <input type="text" class="form-control noBorder custom-size-header-box" value='Percentage' readonly/>
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value='Percentage' readonly/>Percentage</label>
+                                                    <select id="primarypercentage" class="form-control noBorder custom-size-input-box 1-100" name="primarypercentage" tabindex='10'>
+                                                     </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class='row'>
+                                            <div class='col-md-12 col-sm-12 col-xs-12'>
+                                                <div class="form-group">
+                                                    <button type="button" name="submitForm" id="submitForm" class="btn btn-warning btn-block" tabindex='10'>Save This Beneficiary</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            </div>
+
+
+                            <div class="step6">
+                            <h3>Contingent beneficiaries</h3>
+
+                            <div class="row">
+                                <div class="col-md-12 padding-bottom-2">
+                                    You may also designate contingent beneficiaries, who will receive the proceeds of your insaurance if none of your primary beneficiaries are alive. You don't have to designate any contingent beneficiaries but if you do,<strong>make sure the percentage across all contingent
+                                     beneficiaries add up to 100.</strong>
+                                </div>
+                                <div class="col-md-12 beneficiary padding-bottom-2" id='openAddContingentBeneficiaryForm'>
+
+                                    <div class="row">
+                                        <div class="col-md-4"></div>
+                                        <div class="col-md-4 beneficiary-plus"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-3 col-sm-12 col-xs-12"></div>
+                                        <div class="col-md-8 col-sm-12 col-xs-12" style='color:darkgray;'><strong>Add contingent beneficiary</strong></div>
+                                        <div class="col-md-1 col-sm-12 col-xs-12"></div>
+                                    </div>
+                                </div>
+                                
+                                 <div class="col-md-12  padding-bottom-2" id='contingentBeneficiaryDisplay'>
+                                    <!--<button type="button" onClick="closeAddedContingentBeneficiary()" class="btn btn-default btn-circle pull-right"><i class="glyphicon glyphicon-remove"></i></button>-->
+                                    <!--<table id='contingentBeneficiaryTable' width="100%" cellpadding="50" cellspacing="0">-->
+                                    <!--</table>-->
+                                </div>
+                            </div>
+                            <div id='addContingentBeneficiary' class="custom-border container">
+                                    <button type="button" onClick="closeContingentBeneficiary()" class="btn btn-default btn-circle pull-right"><i class="glyphicon glyphicon-remove"></i></button>
+                                    <div id='contingentBeneficiary'>
+                                        <div class='row' style="padding-top: 1rem;">
+                                            <div class='col-md-12 col-sm-12 col-xs-12'>
+                                                <div class="form-group">
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" name="fullname" value='Full name' readonly/>Full name</label>
+                                                    <input 
+                                                        class="form-control noBorder custom-size-input-box" 
+                                                        maxlength='35'
+                                                        id="contingentfullname" 
+                                                        placeholder="Enter your last name here"
+                                                        type="text" 
+                                                        name="contingentfullname"
+                                                        tabindex='10'
+                                                        data-validation='required length'
+                                                        data-validation-length="max35"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-12 quick-question container padding-bottom-2">
+                    
+                                            <div class="col-md-12 padding-bottom-2">
+                                                <h5>Gender</h5>
+                                            </div>
+                    
+                                            <div class="col-md-12 padding-bottom-2">
+                                                <div class="btn-group col-md-12 col-sm-12 col-xs-12" data-toggle="buttons">
+                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12">
+                                                                <input type="radio" name="contingentgender" id="contingentmale" autocomplete="off" tabindex='10'> Male
+                                                            </label>
+                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12 hidden-sm hidden-xs" style="margin-left: 12px;">
+                                                                 <input type="radio" name="contingentgender" id="contingentfemale" autocomplete="off" tabindex='10'> Female
+                                                            </label>
+                                                    <label class="btn btn-default col-md-5 col-sm-12 col-xs-12 visible-sm visible-xs">    
+                                                                <input type="radio" name="contingentgender" id="contingentfemale" autocomplete="off" tabindex='10'> Female
+                                                            </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="row">
+                                            <div class='col-md-12 col-sm-12 col-xs-12'>
+                                                <div class="form-group">
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value='Relationship' readonly/>Relationship</label>
+                                                    <select id="contingentrelation" class="form-control noBorder custom-size-input-box" name="contingentrelation" tabindex='10'>
+                                                         <option  value="spouse">Spouse</option>
+                                                         <option  value="ex-spouse">Ex-spouse</option>    
+                                                         <option  value="husband">Husband</option>
+                                                         <option  value="wife">Wife</option>
+                                                         <option  value="domestic partner">Domestic partner</option>
+                                                         <option  value="fatehr">Father</option>
+                                                         <option  value="mother">Mother</option>
+                                                         <option  value="brother">Brother</option>
+                                                         <option  value="sister">Sister</option>
+                                                         <option  value="son">Son</option>
+                                                         <option  value="daughter">Daughter</option>
+                                                         <option  value="newphew">Nephew</option>                                                         
+                                                         <option  value="niece">Niece</option>
+                                                         <option  value="grandfather">Grandfather</option>
+                                                         <option  value="grandmother">Grandmother</option>  
+                                                         <option  value="grandson">Grandson</option>
+                                                         <option  value="granddaughter">Granddaughter</option>
+                                                         <option  value="stepfather">Stepfather</option>
+                                                         <option  value="stepmother">Stepmother</option>    
+                                                         <option  value="stepson">Stepson</option>
+                                                         <option  value="stepdaughter">Stepdaughter</option>
+                                                         <option  value="friend of relative">Friend or relative</option>
+                                                         <option  value="trust">Trust</option>
+                                                         <option  value="business">Business</option>
+                                                         <option  value="creditor">Creditor</option>
+                                                         <option  value="other">Other</option>
+                                                         <option selected="selected" value="unknown">Unknown</option>
+                                                     </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="row">
+                                            <div class='col-md-12 col-sm-12 col-xs-12'>
+                                                <div class="form-group">
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value="Date of birth" readonly/>Date of birth</label>
+                                                    <div class="row">
+                                                        <div class="col-md-4">
+                                                            <!--<input type="text" 
+                                                                name="contingent_dob_month"
+                                                                id='contingent_dob_month'
+                                                                class='form-control'
+                                                                data-validation='required custom'
+                                                                data-validation-help="Please provide your month of birth" 
+                                                                data-validation-regexp="^([A-Za-z]+)$"
+                                                                data-suggestions="JanuaryJune February, March, April, May, June, July, August, September, October, November, December"/>-->
+                                                            <select id="contingent_dob_mo" class="form-control" name="BirthMonth" tabindex='10'>
+                                                                        <option value="January" selected="selected">January</option>
+                                                                        <option value="February">February</option>
+                                                                        <option value="March">March</option>
+                                                                        <option value="April">April</option>
+                                                                        <option value="May">May</option>
+                                                                        <option value="June">June</option>
+                                                                        <option value="July">July</option>
+                                                                        <option value="August">August</option>
+                                                                        <option value="September">September</option>
+                                                                        <option value="October">October</option>
+                                                                        <option value="November">November</option>
+                                                                        <option value="December">December</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <!--<input type="text" 
+                                                                name="contingent_dob_date"
+                                                                id='contingent_dob_date'
+                                                                class='form-control'
+                                                                data-validation='required number length'
+                                                                data-validation-help="Please provide your date of birth"
+                                                                data-validation-length="max2"/>-->
+                                                            <select id="contingent_dob_date" class="form-control" name="Birthday" tabindex='10'>
+                                                                            <option value="1" selected="selected" >1</option>
+                                                                            <option value="2">2</option>
+                                                                            <option value="3">3</option>
+                                                                            <option value="4">4</option>
+                                                                            <option value="5">5</option>
+                                                                            <option value="6">6</option>
+                                                                            <option value="7">7</option>
+                                                                            <option value="8">8</option>
+                                                                            <option value="9">9</option>
+                                                                            <option value="10">10</option>
+                                                                            <option value="11">11</option>
+                                                                            <option value="12">12</option>
+                                                                            <option value="13">13</option>
+                                                                            <option value="14">14</option>
+                                                                            <option value="15">15</option>
+                                                                            <option value="16">16</option>
+                                                                            <option value="17">17</option>
+                                                                            <option value="18">18</option>
+                                                                            <option value="19">19</option>
+                                                                            <option value="20">20</option>
+                                                                            <option value="21">21</option>
+                                                                            <option value="22">22</option>
+                                                                            <option value="23">23</option>
+                                                                            <option value="24">24</option>
+                                                                            <option value="25">25</option>
+                                                                            <option value="26">26</option>
+                                                                            <option value="27">27</option>
+                                                                            <option value="28">28</option>
+                                                                            <option value="29">29</option>
+                                                                            <option value="30">30</option>
+                                                                            <option value="31">31</option>
+                                                                        </select>
+                                                        </div>
+                                                        <div class="col-md-4">
+                                                            <!--<input type="text" 
+                                                                name="contingent_dob_year"
+                                                                id='contingent_dob_year'
+                                                                class='form-control'
+                                                                data-validation='required number'
+                                                                data-validation-help="Please provide your year of birth"
+                                                                data-validation-length="max4"/>-->
+                                                            <select id="contingent_dob_year" class="form-control" name="BirthYear" tabindex='10'>
+                                                                        <option value="2005" selected="selected">2017</option>
+                                                                        <option value="2004">2016</option>
+                                                                        <option value="2003">2015</option>
+                                                                        <option value="2002">2014</option>
+                                                                        <option value="2001">2013</option>
+                                                                        <option value="2000">2012</option>                                                                
+                                                                        <option value="2011">2011</option>
+                                                                        <option value="2010">2010</option>
+                                                                        <option value="2009">2009</option>
+                                                                        <option value="2008">2008</option>
+                                                                        <option value="2007">2007</option>
+                                                                        <option value="2006">2006</option>
+                                                                        <option value="2005">2005</option>
+                                                                        <option value="2004">2004</option>
+                                                                        <option value="2003">2003</option>
+                                                                        <option value="2002">2002</option>
+                                                                        <option value="2001">2001</option>
+                                                                        <option value="2000">2000</option>
+                                                                        <option value="1999">1999</option>
+                                                                        <option value="1998">1998</option>
+                                                                        <option value="1997">1997</option>
+                                                                        <option value="1996">1996</option>
+                                                                        <option value="1995">1995</option>
+                                                                        <option value="1994">1994</option>
+                                                                        <option value="1993">1993</option>
+                                                                        <option value="1992">1992</option>
+                                                                        <option value="1991">1991</option>
+                                                                        <option value="1990">1990</option>
+                                                                        <option value="1989">1989</option>
+                                                                        <option value="1988">1988</option>
+                                                                        <option value="1987">1987</option>
+                                                                        <option value="1986">1986</option>
+                                                                        <option value="1985">1985</option>
+                                                                        <option value="1984">1984</option>
+                                                                        <option value="1983">1983</option>
+                                                                        <option value="1982">1982</option>
+                                                                        <option value="1981">1981</option>
+                                                                        <option value="1980">1980</option>
+                                                                        <option value="1979">1979</option>
+                                                                        <option value="1978">1978</option>
+                                                                        <option value="1977">1977</option>
+                                                                        <option value="1976">1976</option>
+                                                                        <option value="1975">1975</option>
+                                                                        <option value="1974">1974</option>
+                                                                        <option value="1973">1973</option>
+                                                                        <option value="1972">1972</option>
+                                                                        <option value="1971">1971</option>
+                                                                        <option value="1970">1970</option>
+                                                                        <option value="1969">1969</option>
+                                                                        <option value="1968">1968</option>
+                                                                        <option value="1967">1967</option>
+                                                                        <option value="1966">1966</option>
+                                                                        <option value="1965">1965</option>
+                                                                        <option value="1964">1964</option>
+                                                                        <option value="1963">1963</option>
+                                                                        <option value="1962">1962</option>
+                                                                        <option value="1961">1961</option>
+                                                                        <option value="1960">1960</option>
+                                                                        <option value="1959">1959</option>
+                                                                        <option value="1959">1958</option>
+                                                                        <option value="1959">1957</option>
+                                                                        <option value="1959">1956</option>
+                                                                        <option value="1959">1955</option>
+                                                                        <option value="1959">1954</option>
+                                                                        <option value="1959">1953</option>
+                                                                        <option value="1959">1952</option>
+                                                                        <option value="1959">1951</option>
+                                                                        <option value="1959">1950</option>
+                                                                        <option value="1959">1949</option>
+                                                                        <option value="1959">1948</option>
+                                                                        <option value="1959">1947</option>
+                                                                        <option value="1959">1946</option>
+                                                                        <option value="1959">1945</option>
+                                                                        <option value="1959">1944</option>
+                                                                        <option value="1959">1943</option>
+                                                                        <option value="1959">1942</option>
+                                                                        <option value="1959">1941</option>
+                                                                        <option value="1959">1940</option>
+                                                                        <option value="1959">1939</option>
+                                                                        <option value="1959">1938</option>
+                                                                        <option value="1959">1937</option>
+                                                                        <option value="1959">1936</option>
+                                                                        <option value="1959">1935</option>
+                                                                        <option value="1959">1934</option>
+                                                                        <option value="1959">1933</option>
+                                                                        <option value="1959">1932</option>
+                                                                        <option value="1959">1931</option>
+                                                                        <option value="1959">1930</option>
+                                                                        <option value="1959">1929</option>
+                                                                        <option value="1959">1928</option>
+                                                                        <option value="1959">1927</option>
+                                                                        <option value="1959">1926</option>
+                                                                        <option value="1959">1925</option>
+                                                                        <option value="1959">1924</option>
+                                                                        <option value="1959">1923</option>
+                                                                        <option value="1959">1922</option>
+                                                                        <option value="1959">1921</option>
+                                                                        <option value="1959">1920</option>
+                                                                        <option value="1959">1919</option>
+                                                                        <option value="1959">1918</option>
+                                                                        <option value="1959">1917</option>
+                                                                        <option value="1959">1916</option>
+                                                                    </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                    
+                                        <div class="row">
+                                            <div class='col-md-12 col-sm-12 col-xs-12'>
+                                                <div class="form-group">
+                                                    <label type="text" class="form-control noBorder custom-size-header-box" value='Percentage' readonly/>Percentage</label>
                                                     <select id="contingentpercentage" class="form-control noBorder custom-size-input-box 1-100" name="contingentpercentage" tabindex='10'>
                                                      </select>
                                                 </div>
@@ -1591,7 +1608,7 @@
                                     <div class="form-group">
                                         <!--<input type="text" class="form-control noBorder custom-size-header-box" value='Social security number' readonly/>-->
                                         <div class="input-group">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" placeholder="Social security number" aria-describedby="basic-addon2" readonly>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" placeholder="Social security number" aria-describedby="basic-addon2" readonly>Social Security Number</label>
                                             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
                                         </div>
                                         <input type="text" class="form-control noBorder custom-size-input-box" placeholder="Enter the number" id="ssn" name="ssntext" aria-describedby="basic-addon1" tabindex='10'>
@@ -1604,7 +1621,7 @@
                                     <div class="form-group">
                                         <!--<input type="text" class="form-control noBorder custom-size-header-box" value="Driver's  license number" readonly/>-->
                                         <div class="input-group">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" placeholder="Driver's  license number" aria-describedby="basic-addon2" readonly>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" placeholder="Driver's  license number" aria-describedby="basic-addon2" readonly>Driver's License Number</label>
                                             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
                                         </div>
                                         <input type="text" class="form-control noBorder custom-size-input-box" placeholder="Enter the number" id="licenseno" name="licenseno" aria-describedby="basic-addon1" tabindex='10'>
@@ -1617,7 +1634,7 @@
                                     <div class="form-group">
                                         <!--<input type="text" class="form-control noBorder custom-size-header-box" value="Driver license's state" readonly required/>-->
                                         <div class="input-group">
-                                            <input type="text" class="form-control noBorder custom-size-header-box" placeholder="Driver license's state" aria-describedby="basic-addon2" readonly>
+                                            <label type="text" class="form-control noBorder custom-size-header-box" placeholder="Driver license's state" aria-describedby="basic-addon2" readonly>Driver's License State</label>
                                             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
                                         </div>
                                         <select id="driverlicense" class="form-control noBorder custom-size-input-box" name="driverlicense" tabindex='10'>
@@ -1685,10 +1702,11 @@
                             <div class='row padding-bottom-2'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <input type="text" class="form-control noBorder custom-size-header-box" value="Driver's  license expiry date" readonly/>
+                                        <label type="text" class="form-control noBorder custom-size-header-box"  readonly/>Driver's License Expiration Date</label>
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'><option value="1">January</option>
+                                                <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'>
+                                                    <option value="1" selected="selected" >January</option>
                                                     <option value="2">February</option>
                                                     <option value="3">March</option>
                                                     <option value="4">April</option>
@@ -1699,14 +1717,15 @@
                                                     <option value="9">September</option>
                                                     <option value="10">October</option>
                                                     <option value="11">November</option>
-                                                    <option selected="selected" value="12">December</option>
+                                                    <option value="12">December</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <select id="form_dob_year" class="form-control" name="Birthday" tabindex='10'><option value="1">1</option>
+                                                <select id="form_dob_year" class="form-control" name="Birthday" tabindex='10'>
+                                                        <option value="1" selected="selected" >1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
-                                                        <option selected="selected" value="4">4</option>
+                                                        <option value="4">4</option>
                                                         <option value="5">5</option>
                                                         <option value="6">6</option>
                                                         <option value="7">7</option>
@@ -1737,7 +1756,14 @@
                                                     </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <select id="dob_month" class="form-control" name="BirthYear" tabindex='10'><option value="2011">2011</option>
+                                                <select id="dob_month" class="form-control" name="BirthYear" tabindex='10'>
+                                                    <option value="2005" selected="selected">2017</option>
+                                                    <option value="2004">2016</option>
+                                                    <option value="2003">2015</option>
+                                                    <option value="2002">2014</option>
+                                                    <option value="2001">2013</option>
+                                                    <option value="2000">2012</option>                                                     
+                                                    <option value="2011">2011</option>
                                                     <option value="2010">2010</option>
                                                     <option value="2009">2009</option>
                                                     <option value="2008">2008</option>
@@ -1763,7 +1789,7 @@
                                                     <option value="1988">1988</option>
                                                     <option value="1987">1987</option>
                                                     <option value="1986">1986</option>
-                                                    <option selected="selected" value="1985">1985</option>
+                                                    <option value="1985">1985</option>
                                                     <option value="1984">1984</option>
                                                     <option value="1983">1983</option>
                                                     <option value="1982">1982</option>
@@ -1842,10 +1868,10 @@
                             </div>
 
                             <div class="step9">
-                            <div class='row padding-bottom-2'>
-                                <input id="overphone" class="checkbox-custom" name="overphone" type="checkbox" tabindex='10'>
-                                <label for="overphone" class="checkbox-custom-label">I would feel more comfortable providing this information over the phone.</label>
-                            </div>
+                            <!--<div class='row padding-bottom-2'>-->
+                            <!--    <input id="overphone" class="checkbox-custom" name="overphone" type="checkbox" tabindex='10'>-->
+                            <!--    <label for="overphone" class="checkbox-custom-label">I would feel more comfortable providing this information over the phone.</label>-->
+                            <!--</div>-->
 
                             <div class="col-md-12 padding-bottom-2">
                                 <h2>We'll take it from here!</h2>
