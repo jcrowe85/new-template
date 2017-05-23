@@ -27,7 +27,14 @@ $(document).ready(function(){
           });   
           <?php include('slide-prev.php') ?>
     });
-    
+      
+    $('.previousmobile').click(function(){
+      $(this).parents("fieldset").prev().find('input').each(function (elem) {
+         $('#'+$(this).parents("fieldset").find('input')[elem].id).val('');
+         });   
+        <?php include('slide-prev.php') ?>
+    });
+
     $('.BirthYear').keyup(function(){
         var yearLength = $(".BirthYear").val().length;
         var yearValue = $(".BirthYear").val();
@@ -169,7 +176,8 @@ $(document).ready(function(){
                               <input type="text" class="BirthYear" name="BirthYear" id="year" placeholder="Year" maxlength="4"/>
                           </label>
                       </div> 
-                        <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                      <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset>
                   <fieldset>
                       <h1>What is your height and weight?</h1>
@@ -183,6 +191,7 @@ $(document).ready(function(){
                               <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
                           </label>
                       </div> 
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
                   <fieldset>
@@ -248,7 +257,8 @@ $(document).ready(function(){
                               <option style="background-color:#808080;" value="55">Virgin Islands</option>
                               <option style="background-color:#808080;" value="56">Amer. Samoa</option>
                           </select>
-                      </div>	
+                      </div>
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
                   <fieldset>
@@ -276,7 +286,8 @@ $(document).ready(function(){
                               <input type="radio" name="Health" value="R"/>
                               <div class="control__indicator">Bad</div>
                           </label>
-                      </div>      
+                      </div>  
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset>
                   <fieldset>
@@ -292,7 +303,8 @@ $(document).ready(function(){
                               <input type="radio" name="Smoker" value="N"/>
                               <div class="control__indicator">No</div>
                           </label>
-                      </div>      
+                      </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                           <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset>
                   <fieldset>
@@ -342,7 +354,9 @@ $(document).ready(function(){
                                 <option style="background-color:#808080;" value="10000000">$10,000,000</option>
                             </select>
                           </label>
-                      </div>	
+                      </div>
+                        <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                        <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                 </fieldset>      
                 <fieldset>
                     <h1>How long will you need coverage?</h1>
@@ -359,14 +373,15 @@ $(document).ready(function(){
                                 <option style="background-color:#808080;" value="9">35-Year Term</option>      
                             </select> 
                           </label>
-                      </div>    
+                      </div>
+                       <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
                 </form>
             </div>
         </div>
     </div>
-    <div class="footer" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
+    <div class="footer hidden-xs hidden-sm" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
        <p>Usurance, Inc.</p> 
     </div>
     </body>
