@@ -45,7 +45,7 @@
                                             tabindex='3'
                                             data-validation="required custom length"
                                             data-validation-length="max40"
-                                            data-validation-regexp="^([a-zA-Z]+)$"/>
+                                            data-validation-regexp="^([a-zA-Z\s]+)$"/>
                                     </div>
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12'>
@@ -1440,166 +1440,144 @@
                                           <div class='input-group date' id="time-end">
                                             <input type='text' class="form-control" placeholder="End Time" readonly>
                                             <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>     </div>
-                                        </div>
-                                  
-                                        
+                                        </div> 
                                 </div><br><br>
-                            </div>    
-                            <!--    <h3>Location</h3>-->
-                            <!--    <div class="row">-->
-                            <!--                <div class='col-md-12 col-sm-12 col-xs-12 padding-left-3'>-->
-                            <!--                    <input id="addresslisted" class="checkbox-custom" name="addressoption" type="radio" tabindex='12' checked>-->
-                            <!--                    <label for="addresslisted" class="checkbox-custom-label">[Address listed]</label>-->
-                            <!--                </div>-->
-                            <!--                <div class='col-md-12 col-sm-12 col-xs-12 padding-left-3'>-->
-                            <!--                    <input id="otheraddress" class="checkbox-custom" name="addressoption" type="radio" tabindex='12'>-->
-                            <!--                    <label for="otheraddress" class="checkbox-custom-label">Other</label>-->
-                            <!--                </div>-->
-                            <!--    </div>-->
-                            <!--    <br>-->
-                            <!--    <div class='row' id='otherlocation'>-->
-                                    
-                            <!--        <div class='row'>-->
-                            <!--            <div class='col-md-6 col-sm-12 col-xs-12'>-->
-                            <!--                <div class="form-group">-->
-                            <!--                    <input type="text" class="form-control noBorder custom-size-header-box" name="address1" value='Address (line1)' readonly/>-->
-                            <!--                    <input -->
-                            <!--                        class="form-control noBorder custom-size-input-box" -->
-                            <!--                        id="otheraddress1text" -->
-                            <!--                        placeholder="Enter address" -->
-                            <!--                        type="text" -->
-                            <!--                        name="address1text" -->
-                            <!--                        tabindex='13' -->
-                            <!--                        data-validation="required"-->
-                            <!--                        data-validation-length="max127"/>-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <div class='col-md-6 col-sm-12 col-xs-12'>-->
-                            <!--                <div class="form-group">-->
-                            <!--                    <input type="text" class="form-control noBorder custom-size-header-box" name="address1" value='Address (line2)' readonly/>-->
-                            <!--                    <input -->
-                            <!--                        class="form-control noBorder custom-size-input-box" -->
-                            <!--                        id="otheraddress2text" -->
-                            <!--                        placeholder="Enter address" -->
-                            <!--                        type="text" -->
-                            <!--                        name="address2text" -->
-                            <!--                        tabindex='13'-->
-                            <!--                        data-validation="required length"-->
-                            <!--                        data-validation-length="max128"/>-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--        </div>-->
+                            </div>  
+                                <h3>Location</h3>
+                                <div class="row">
+                                    <div class='col-md-12 col-sm-12 col-xs-12 padding-left-3'>
+                                        <input id="addresslisted" class="checkbox-custom" name="addressoption" type="radio" tabindex='12' checked>
+                                        <label for="addresslisted" class="checkbox-custom-label" id='sameaddress'></label>
+                                    </div>
+                                    <div class='col-md-12 col-sm-12 col-xs-12 padding-left-3'>
+                                        <input id="otheraddress" class="checkbox-custom" name="addressoption" type="radio" tabindex='12'>
+                                        <label for="otheraddress" class="checkbox-custom-label">Other</label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class='row' id='otherlocation'>
+                                    <div class='row'>
+                                        <div class='col-md-12 col-sm-12 col-xs-12'>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control noBorder custom-size-header-box" name="address1" value='Address' readonly/>
+                                                <input 
+                                                    class="form-control noBorder custom-size-input-box" 
+                                                    id="otheraddress2text" 
+                                                    placeholder="Enter address" 
+                                                    type="text" 
+                                                    name="address2text" 
+                                                    tabindex='13'
+                                                    data-validation="required length"
+                                                    data-validation-length="max128"/>
+                                            </div>
+                                        </div>
+                                    </div>
         
-                            <!--        <div class='row'>-->
-                            <!--            <div class='col-md-6 col-sm-12 col-xs-12'>-->
-                            <!--                <div class="form-group">-->
-                            <!--                    <input type="text" class="form-control noBorder custom-size-header-box" name="city" value='City' readonly/>-->
-                            <!--                    <input -->
-                            <!--                        class="form-control noBorder custom-size-input-box" -->
-                            <!--                        id="othercitytext" -->
-                            <!--                        placeholder="Enter city" -->
-                            <!--                        type="text" -->
-                            <!--                        name="citytext" -->
-                            <!--                        tabindex='13'-->
-                            <!--                        data-validation="required custom length"-->
-                            <!--                        data-validation-length="max40"-->
-                            <!--                        data-validation-regexp="^([a-z]+)$"/>-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--            <div class='col-md-6 col-sm-12 col-xs-12'>-->
-                            <!--                <div class="form-group">-->
-                            <!--                    <input type="text" class="form-control noBorder custom-size-header-box" name="zipcode" value='Zip code' readonly/>-->
-                            <!--                    <input -->
-                            <!--                        class="form-control noBorder custom-size-input-box" -->
-                            <!--                        id="otherzipcodetext"-->
-                            <!--                        placeholder="Enter zip code" -->
-                            <!--                        type="text" -->
-                            <!--                        name="zipcodetext" -->
-                            <!--                        tabindex='14'-->
-                            <!--                        data-validation="required length number" -->
-                            <!--                        data-validation-length="max20"/>-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--        </div>-->
+                                    <div class='row'>
+                                        <div class='col-md-12 col-sm-12 col-xs-12'>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control noBorder custom-size-header-box" name="city" value='City' readonly/>
+                                                <input 
+                                                    class="form-control noBorder custom-size-input-box" 
+                                                    id="othercitytext" 
+                                                    placeholder="Enter city" 
+                                                    type="text" 
+                                                    name="citytext" 
+                                                    tabindex='13'
+                                                    data-validation="required custom length"
+                                                    data-validation-length="max40"
+                                                    data-validation-regexp="^([a-z]+)$"/>
+                                            </div>
+                                        </div>
+                                        <div class='col-md-12 col-sm-12 col-xs-12'>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control noBorder custom-size-header-box" name="zipcode" value='Zip code' readonly/>
+                                                <input 
+                                                    class="form-control noBorder custom-size-input-box" 
+                                                    id="otherzipcodetext"
+                                                    placeholder="Enter zip code" 
+                                                    type="text" 
+                                                    name="zipcodetext" 
+                                                    tabindex='14'
+                                                    data-validation="required length number" 
+                                                    data-validation-length="max20"/>
+                                            </div>
+                                        </div>
+                                    </div>
         
-                            <!--        <div class='row'>-->
-                            <!--            <div class='col-md-12 col-sm-12 col-xs-12'>-->
-                            <!--                <div class="form-group">-->
-                            <!--                    <input -->
-                            <!--                    type="text" class="form-control noBorder custom-size-header-box" value='State' readonly/>-->
-                            <!--                    <select -->
-                            <!--                        name="otherstate"-->
-                            <!--                        class="form-control noBorder custom-size-input-box" -->
-                            <!--                        tabindex='15'-->
-                            <!--                        data-validation="required number length"-->
-                            <!--                        data-validation-length="max20">-->
-                            <!--                    <option value="">--Select a state--</option>    -->
-                            <!--                    <option value="1">Alabama</option>-->
-                            <!--                    <option value="2">Alaska</option>-->
-                            <!--                    <option value="3">Arizona</option>-->
-                            <!--                    <option value="4">Arkansas</option>-->
-                            <!--                    <option value="5">California</option>-->
-                            <!--                    <option value="6">Colorado</option>-->
-                            <!--                    <option value="7">Connecticut</option>-->
-                            <!--                    <option value="8">Delaware</option>-->
-                            <!--                    <option value="9">Dist.Columbia</option>-->
-                            <!--                    <option value="10">Florida</option>-->
-                            <!--                    <option value="11">Georgia</option>-->
-                            <!--                    <option value="12">Hawaii</option>-->
-                            <!--                    <option value="13">Idaho</option>-->
-                            <!--                    <option value="14">Illinois</option>-->
-                            <!--                    <option value="15">Indiana</option>-->
-                            <!--                    <option value="16">Iowa</option>-->
-                            <!--                    <option value="17">Kansas</option>-->
-                            <!--                    <option value="18">Kentucky</option>-->
-                            <!--                    <option value="19">Louisiana</option>-->
-                            <!--                    <option value="20">Maine</option>-->
-                            <!--                    <option value="21">Maryland</option>-->
-                            <!--                    <option value="22">Massachusetts</option>-->
-                            <!--                    <option value="23">Michigan</option>-->
-                            <!--                    <option value="24">Minnesota</option>-->
-                            <!--                    <option value="25">Mississippi</option>-->
-                            <!--                    <option value="26">Missouri</option>-->
-                            <!--                    <option value="27">Montana</option>-->
-                            <!--                    <option value="28">Nebraska</option>-->
-                            <!--                    <option value="29">Nevada</option>-->
-                            <!--                    <option value="30">New Hampshire</option>-->
-                            <!--                    <option value="31">New Jersey</option>-->
-                            <!--                    <option value="32">New Mexico</option>-->
-                            <!--                    <option value="52">NY Non-Bus</option>-->
-                            <!--                    <option value="33">NY Business</option>-->
-                            <!--                    <option value="34">North Carolina</option>-->
-                            <!--                    <option value="35">North Dakota</option>-->
-                            <!--                    <option value="36">Ohio</option>-->
-                            <!--                    <option value="37">Oklahoma</option>-->
-                            <!--                    <option value="38">Oregon</option>-->
-                            <!--                    <option value="39">Pennsylvania</option>-->
-                            <!--                    <option value="40">Rhode Island</option>-->
-                            <!--                    <option value="41">South Carolina</option>-->
-                            <!--                    <option value="42">South Dakota</option>-->
-                            <!--                    <option value="43">Tennessee</option>-->
-                            <!--                    <option value="44">Texas</option>-->
-                            <!--                    <option value="45">Utah</option>-->
-                            <!--                    <option value="46">Vermont</option>-->
-                            <!--                    <option value="47">Virginia</option>-->
-                            <!--                    <option value="48">Washington</option>-->
-                            <!--                    <option value="49">West Virginia</option>-->
-                            <!--                    <option value="50">Wisconsin</option>-->
-                            <!--                    <option value="51">Wyoming</option>-->
-                            <!--                    <option value="53">Guam</option>-->
-                            <!--                    <option value="54">Puerto Rico</option>-->
-                            <!--                    <option value="55">Virgin Islands</option>-->
-                            <!--                    <option value="56">Amer. Samoa</option>-->
-                            <!--              </select>-->
-                            <!--                </div>-->
-                            <!--            </div>-->
-                            <!--        </div>-->
-                                    
-                            <!--    </div>-->
-                                
-                           
-                            <!--</div>-->
-
+                                    <div class='row'>
+                                        <div class='col-md-12 col-sm-12 col-xs-12'>
+                                            <div class="form-group">
+                                                <input 
+                                                type="text" class="form-control noBorder custom-size-header-box" value='State' readonly/>
+                                                <select 
+                                                    name="otherstate"
+                                                    class="form-control noBorder custom-size-input-box" 
+                                                    tabindex='15'
+                                                    data-validation="required number length"
+                                                    data-validation-length="max20">
+                                                <option value="">--Select a state--</option>    
+                                                <option value="1">Alabama</option>
+                                                <option value="2">Alaska</option>
+                                                <option value="3">Arizona</option>
+                                                <option value="4">Arkansas</option>
+                                                <option value="5">California</option>
+                                                <option value="6">Colorado</option>
+                                                <option value="7">Connecticut</option>
+                                                <option value="8">Delaware</option>
+                                                <option value="9">Dist.Columbia</option>
+                                                <option value="10">Florida</option>
+                                                <option value="11">Georgia</option>
+                                                <option value="12">Hawaii</option>
+                                                <option value="13">Idaho</option>
+                                                <option value="14">Illinois</option>
+                                                <option value="15">Indiana</option>
+                                                <option value="16">Iowa</option>
+                                                <option value="17">Kansas</option>
+                                                <option value="18">Kentucky</option>
+                                                <option value="19">Louisiana</option>
+                                                <option value="20">Maine</option>
+                                                <option value="21">Maryland</option>
+                                                <option value="22">Massachusetts</option>
+                                                <option value="23">Michigan</option>
+                                                <option value="24">Minnesota</option>
+                                                <option value="25">Mississippi</option>
+                                                <option value="26">Missouri</option>
+                                                <option value="27">Montana</option>
+                                                <option value="28">Nebraska</option>
+                                                <option value="29">Nevada</option>
+                                                <option value="30">New Hampshire</option>
+                                                <option value="31">New Jersey</option>
+                                                <option value="32">New Mexico</option>
+                                                <option value="52">NY Non-Bus</option>
+                                                <option value="33">NY Business</option>
+                                                <option value="34">North Carolina</option>
+                                                <option value="35">North Dakota</option>
+                                                <option value="36">Ohio</option>
+                                                <option value="37">Oklahoma</option>
+                                                <option value="38">Oregon</option>
+                                                <option value="39">Pennsylvania</option>
+                                                <option value="40">Rhode Island</option>
+                                                <option value="41">South Carolina</option>
+                                                <option value="42">South Dakota</option>
+                                                <option value="43">Tennessee</option>
+                                                <option value="44">Texas</option>
+                                                <option value="45">Utah</option>
+                                                <option value="46">Vermont</option>
+                                                <option value="47">Virginia</option>
+                                                <option value="48">Washington</option>
+                                                <option value="49">West Virginia</option>
+                                                <option value="50">Wisconsin</option>
+                                                <option value="51">Wyoming</option>
+                                                <option value="53">Guam</option>
+                                                <option value="54">Puerto Rico</option>
+                                                <option value="55">Virgin Islands</option>
+                                                <option value="56">Amer. Samoa</option>
+                                          </select>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                </div>
                             <div class="step8">
                             <h3>We know this is sensitive...</h3>
 
