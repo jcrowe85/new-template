@@ -271,27 +271,7 @@ $(document).ready(function(){
         }
     });
     
-    $(document).on('keyup', '#height', function (event) {
-        var value =  $('#height').val();
-        if(isNaN(value[0]) || value[0] === '0') {
-            $('#height').val('');
-            $('#height').focus();
-            return;
-        }
-        if(event.keyCode != 8){
-            if (value.length === 1) {
-                value += "\'";
-            } else if(value[2] != 1) {
-                value += "\"";
-                $('#weight').focus();
-            } else if (value.length === 4) {
-                value += "\"";
-                $('#weight').focus();
-            }
-        }
-        
-         $('#height').val(value);
-    });
+
 
 });
 
