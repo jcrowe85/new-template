@@ -253,6 +253,13 @@ $(document).ready(function () {
        }
     });
    
+   // focus input when selecting form-group label
+
+    $('label').click(function(){
+	var value = $(this).next().focus();
+	console.log(value);
+    });   
+   
     
 });    
 

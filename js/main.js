@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-// set sidebar height to window height
+// set sidebar height to main height
     var height = $('.main').outerHeight()
     $('.sidebar').css("height", height);  
     
@@ -38,3 +38,9 @@ function getHelp(){
 
     });
 }
+
+function getStarted(){
+    var x = document.getElementById("menu");
+    var y = x.options[x.selectedIndex].value;
+    window.document.location.href=(y);
+} 

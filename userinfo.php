@@ -32,7 +32,7 @@
               <div class='row'>
                   <div class='col-md-6 col-sm-12 col-xs-12'>
                        <div class="form-group">
-                            <input type="text" class="form-control noBorder custom-size-header-box" name="firstNametext" value='First Name' readonly/>
+                            <label type="text" class="form-control noBorder custom-size-header-box" name="firstNametext" value='First Name' readonly/>First Name</label>
                             <input 
                                 class="form-control noBorder custom-size-input-box" 
                                 id="firstName" 
@@ -45,7 +45,7 @@
                   </div>
                   <div class='col-md-6 col-sm-12 col-xs-12'>
                         <div class="form-group">
-                            <input type="text" class="form-control noBorder custom-size-header-box" name="middlename" value='Middle Name' readonly/>
+                            <label type="text" class="form-control noBorder custom-size-header-box" name="middlename" value='Middle Name' readonly/>Middle Name</label>
                             <input 
                                 class="form-control noBorder custom-size-input-box" 
                                 id="middleName" 
@@ -60,7 +60,7 @@
               <div class='row'>
                   <div class='col-md-12 col-sm-12 col-xs-12'>
                       <div class="form-group">
-                                <input type="text" class="form-control noBorder custom-size-header-box" name="lastname" value='Last Name' readonly/>
+                                <label type="text" class="form-control noBorder custom-size-header-box" name="lastname" value='Last Name' readonly/>Last Name</label>
                                 <input 
                                     class="form-control noBorder custom-size-input-box" 
                                     id="lastName" 
@@ -75,7 +75,7 @@
               <div class='row'>
                   <div class='col-md-6 col-sm-12 col-xs-12'>
                        <div class="form-group">
-                            <input type="number" class="form-control noBorder custom-size-header-box" name="phonetype" value='Phone Number' readonly/>
+                            <label type="number" class="form-control noBorder custom-size-header-box" name="phonetype" value='Phone Number' readonly/>Choose Phone Type</label>
                              <select id="phoneType" 
                                 class="form-control noBorder custom-size-input-box" 
                                 name="BirthMonth" 
@@ -83,13 +83,13 @@
                                 data-validation="required">
                                 <option value="">--Select--</option>
                                 <option value="1">Mobile</option>
-                                <option selected="selected" value="mobile">Telephone</option>
+                                <option selected="selected" value="mobile">Home</option>
                              </select>
                        </div>
                   </div>
                   <div class='col-md-6 col-sm-12 col-xs-12'>
                         <div class="form-group">
-                            <input type="text" class="form-control noBorder custom-size-header-box" name="bestphone" value='Best phone number to call' readonly/>
+                            <label type="text" class="form-control noBorder custom-size-header-box" name="bestphone" value='Best phone number to call' readonly/>Phone Number</label>
                             <input type="tel" class="form-control noBorder custom-size-input-box" id="fieldPhone" placeholder="Enter phone number" maxlength="10" name="bestphonetext" tabindex='1' data-validation="required number"/>
                        </div>
                   </div>
@@ -97,7 +97,7 @@
               <div class='row'>
                   <div class='col-md-12 col-sm-12 col-xs-12'>
                       <div class="form-group">
-                                <input type="text" class="form-control noBorder custom-size-header-box" name="email" value='Your email' readonly/>
+                                <label type="text" class="form-control noBorder custom-size-header-box" name="email" value='Your email' />Your Email</label>
                                 <input class="form-control noBorder custom-size-input-box" id="emailtext" placeholder="Enter your email" type="email" name="emailtext" tabindex='1' data-validation="required email"/>
                        </div>
                   </div>       
@@ -105,7 +105,7 @@
               <div class='row'>
                   <div class='col-md-12 col-sm-12 col-xs-12'>
                       <div class="form-group">
-                                <input type="text" class="form-control noBorder custom-size-header-box" name="password" value='Minimum 8 characters' readonly/>
+                                <label type="text" class="form-control noBorder custom-size-header-box" name="password"  readonly/>Password (Minimum 8 Characters)</label>
                                 <input class="form-control noBorder custom-size-input-box" id="passwordtext" type="password" name="passwordtext" tabindex='1' data-validation="required length" data-validation-length="min8"/>
                        </div>
                   </div>       
@@ -114,7 +114,7 @@
                   <div class='col-md-12 col-sm-12 col-xs-12'>
                       <div class="form-group">
                                <!--<button type="submit" name="continue" value="Continue To Full Application" id="btnContinue" class="btn btn-warning btn-block" tabindex='1'>Continue To Full Application</button>-->
-                               <input type="submit" name="continue" value="Continue To Full Application" id="btnContinue" class="btn btn-warning btn-block" tabindex='1'>
+                               <input type="submit" name="continue" value="Continue To Full Application" id="btnContinue" class="btn btn-warning btn-block"  tabindex='1'>
                        </div>
                   </div>       
               </div>

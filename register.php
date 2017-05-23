@@ -20,7 +20,8 @@
     $pass = mysqli_real_escape_string($conn, $_POST ['passwordtext']);
     $premium = mysqli_real_escape_string($conn, $_POST ['premium']);
     $company = mysqli_real_escape_string($conn, $_POST ['company']);
-    $Sex = mysqli_real_escape_string($conn, $_POST ['sex']);
+    $sex = mysqli_real_escape_string($conn, $_POST ['Sex']);
+    $smoker = mysqli_real_escape_string($conn, $_POST ['Smoker']);
     $address1text = mysqli_real_escape_string($conn, $_POST ['address1text']);   
     
   
@@ -55,8 +56,8 @@
   // if there's no error, continue to signup
   if( !$error ) {
    
-    $query = "INSERT INTO main (firstnametext, middlenametext, lastnametext, bestphonetext, emailtext, passwordtext, company, premium, Sex)
-    VALUES ('$firstnametext', '$middlenametext', '$lastnametext', '$bestphonetext', '$email', '$pass', '$company', '$premium', '$Sex')";
+    $query = "INSERT INTO main (firstnametext, middlenametext, lastnametext, bestphonetext, emailtext, passwordtext, company, premium, sex, smoker)
+    VALUES ('$firstnametext', '$middlenametext', '$lastnametext', '$bestphonetext', '$email', '$pass', '$company', '$premium', '$sex', '$smoker')";
     $res = mysqli_query($conn, $query);
     
    if ($res) {
