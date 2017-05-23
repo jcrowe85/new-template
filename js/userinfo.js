@@ -77,11 +77,12 @@ $(document).ready(function () {
         }
     });
     
-    $( "#residency" ).change(function() {
-        $('html,body').animate({
-            scrollTop: $(".step2").offset().top - 80},
-        'slow');
-    });
+   $( "#residency" ).change(function() {
+    $('html,body').animate({
+        scrollTop: $(".step2").offset().top - 80},
+    'slow');
+    $('#sameaddress').text($('#address1text').val());
+   });
     
      $( "#reasonforapplying" ).change(function() {
         $('html,body').animate({
