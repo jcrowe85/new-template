@@ -57,8 +57,7 @@
                                 placeholder="Enter your middle name here" 
                                 type="text" 
                                 name="middlenametext" 
-                                tabindex='1'
-                                data-validation="required"/>
+                                tabindex='1'/>
                        </div>
                   </div>
               </div>

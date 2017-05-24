@@ -2,6 +2,8 @@
 
 * {margin: 0; padding: 0;}
 
+
+
 /* -------------------------  universals  ----------------------*/
 
 
@@ -27,7 +29,7 @@ p{
     letter-spacing: .05em;
 
 }    
-    
+
 a:link {
     text-decoration: none;
     color:black;
@@ -51,6 +53,10 @@ a:active {
   outline: 0;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+#home-page .row{
+    padding-top:50px;
+    padding-bottom:50px;
 }
 
 #process-logo{
@@ -508,6 +514,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 #home-page .questions ul{
     list-style: none;
     line-height: 25px;   
+    float:right;
 }
 #home-page ul.quest li:nth-child(-n+4) {
     line-height: 35px;
@@ -523,7 +530,44 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     font-weight:bold;
     margin-top:0px;
 }
+
+#home-page .faq h3{
+    display: inline-block;
+    margin:0px;
+}
+#home-page .faq h5{
+    font-size: 1em;
+ 
+}
+#home-page .faq img{
+    display: inline-block;
+    width:75%;
+}
+#home-page .faq{
+    margin-bottom: 15px;
+}
+#home-page .faq:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+#home-page .faq div:nth-child(1){
+    display:inline-block;
+    vertical-align: middle;
+     max-width: 300px;
+
+}
+#home-page .faq div:nth-child(2){
+    display: inline-block;
+    vertical-align: middle;
+}
+#home-page .faq li:nth-child(2){
+    margin-right:30px;
+}
+#home-page .faq h5{margin:0px;}
 #home-page .answer-button{
+
     cursor:pointer;
 }
 #home-page .answer-button:active,
@@ -565,6 +609,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
 #home-page .row{
     padding-top:50px;
     padding-bottom:50px;
@@ -586,14 +631,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     
 }
 
-
-
-
-
-
-
-
-
 @media screen and (min-width: 768px) and (max-width: 992px) {
     #home-page .services {
         width: 76%;
@@ -606,7 +643,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     }
 }
 
-
+.back{
+    position:absolute;
+    top:0px;
+    left:-83px;
+    font-family: inherit;
+    
+}
 /*  ---------------------------   quote page  -------------------------------- */
 
 #life-page .header, #verify-page .header{
@@ -1183,7 +1226,7 @@ hr.vertical
     font-weight: bold;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
-    border-bottom: 1px solid lightgray;  
+    border-bottom: 1px solid darkgray;  
 }
 .form-inline, .form-group {
   border: 1px solid lightgray;
@@ -1203,9 +1246,8 @@ label.error,div.error{
     font-weight:normal;
     color:#f1713c !important;
 }    
-.form-control{
-    padding: 15px 12px;
-}
+    
+
 
 
 /*  ---------------------------   verify page  -------------------------------- */
@@ -1257,6 +1299,7 @@ label.error,div.error{
 #userinfo-page #process-logo, #life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
     width:4%;
 }
+
 #userinfo-page .sidebar, #userdetails-page .sidebar{
     display: none;
 }
@@ -1306,8 +1349,10 @@ label.error,div.error{
 }
 
 
+}
 /* ------------ sm  ---------- */
 @media screen and (max-width:375px){
+    
 
 #home-page .services{
     flex-direction:column;
@@ -1419,9 +1464,6 @@ label.error,div.error{
 }
 }
 
-
-
-
 /* iphone6 plus portrait*/
 @media only screen 
     and (min-device-width:414px) 
@@ -1482,18 +1524,12 @@ display: inline-block;
 }   
 #home-page .features-container{
     width:90%;
-
 }
-
 #quote-page .monthly-annually, #quote-page .adjust-title{
     display:none;
 }
-
-
-
+  
 }
-
-
 
 
 /* iphone6 plus landscape */
@@ -1516,22 +1552,4 @@ display: inline-block;
     
 } 
  
-}
-
-
-
-/* ipad horizontal */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) { 
-    
-#userdetails-page #main{
-    width:100%;    
-}    
-    
-    
-    
-    
-    
 }
