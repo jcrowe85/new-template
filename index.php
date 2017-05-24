@@ -197,7 +197,7 @@ $(document).ready(function(){
                             </div>                            
                             <div class="feature-details">
                                 <h5>All of Your Policies in One Place</h5>
-                                <span><a hred="#">Learn more</a></span>
+                                <!--<span><a hred="#">Learn more</a></span>-->
                             </div>                            
                         </div>
                         <div class="features">
@@ -251,7 +251,7 @@ $(document).ready(function(){
                             </div>                            
                             <div class="feature-details">
                                 <h5>The Right Coverage and Product</h5>
-                                <span><a hred="#">Learn more</a></span>
+                                <!--<span><a hred="#">Learn more</a></span>-->
                             </div>                            
                         </div>
                         <div class="features">
@@ -308,7 +308,7 @@ $(document).ready(function(){
                             </div>                            
                             <div class="feature-details">
                                 <h5>Get Quotes from Multiple Carriers</h5>
-                                <span><a hred="#">Learn more</a></span>
+                                <!--<span><a hred="#">Learn more</a></span>-->
                             </div>                            
                         </div>                        
                     </div>    

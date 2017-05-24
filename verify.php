@@ -172,14 +172,7 @@ fieldset{
 #verify-page h1{
     margin-top:0px;
 }
-#verify-page .control-group, #verify-page h1{
-    display:inline-block;
-}
-#verify-page fieldset h1{
-    font-size:15px;
-    width:20%;
-    letter-spacing:1px;
-}
+
 #verify-page .control__indicator{
     font-size: 18px;
     letter-spacing: 2px;    
@@ -222,30 +215,8 @@ fieldset{
 #verify-page div:last{
     margin-bottom:25px;
 }
-#verify-page .submit{
-    margin: 15px 0px;
 
-}
-#verified-submit{
-    font-size: 29px;
-    border-radius: 50px;
-    width: 100%;    
-}
-#verify-page .quick-quote{
-        
-        margin:auto; 
-        width:55%;
-}
 
-@media screen and (max-width: 768px) {
-    #verify-page .header {
-        height: 42px !important;
-    }
-    
-    #verify-page #process-logo{
-        width:7%;
-    }
-}
 </style>
 <script>
 $(document).ready(function(){
@@ -341,7 +312,7 @@ function changeHeight(height) {
                 <input type="hidden" name="ModeUsed" value="M">
                 <input type="hidden" name="TEMPLATEFILE" value="QUOTE.HTM">
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12 col-md-12'>
                       <h1>Gender</h1>
                       <div class="control-group">
                           <label class="control control--checkbox">
@@ -379,7 +350,7 @@ function changeHeight(height) {
                   <!--</div>-->
               </fieldset>
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-6 col-md-12'>
                       <h1>Birthdate</h1>
                       <div class="control-group" id="dob">
                           <label class="control-text">
@@ -425,7 +396,7 @@ function changeHeight(height) {
                   <!--</div>-->
               </fieldset>
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12'>
                       <h1>Height/Weight</h1>
                       <div class="control-group" id="height-weight">
                           <label class="control-text">
@@ -459,7 +430,7 @@ function changeHeight(height) {
                   <!--</div>-->
               </fieldset> 
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12'>
                       <h1>State</h1>
                       <div class="control-group">
                         <label class="control-text">
@@ -595,7 +566,7 @@ function changeHeight(height) {
                   <!--</div>-->
               </fieldset> 
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12'>
                       <h1>Health</h1>
                       <div class="control-group">
                           <label class="control control--checkbox">
@@ -661,7 +632,7 @@ function changeHeight(height) {
                   <!--</div>                  -->
               </fieldset>
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12'>
                       <h1>Do you use nicotine?</h1>
                       <div class="control-group">
                           <label class="control control--checkbox">
@@ -699,7 +670,7 @@ function changeHeight(height) {
                   <!--</div>-->
               </fieldset>
               <fieldset>
-                  <div class='hidden-xs'>
+                  <div class='col-xs-12 col-md-12'>
                       <h1>How much/ How long?</h1>
                       <div class="control-group">
                           <label class="control-text">

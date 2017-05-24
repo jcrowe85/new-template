@@ -26,7 +26,12 @@
             </div>                 
         </div>
         <div class="col-md-7">
-          <h3>First things first...<!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>--></h3>
+            <div class="title">
+              <h4>Alright! You made it to the application page. 
+              <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
+              </h4>
+               <p>On this page we're going to ask for some secure information. To keep you safe we use the most modern security.</p>
+            </div>            
             <form method="post" class="new_user" id="userInfoForm" name="myForm" action="">
             <div class="step1">
               <div class='row'>

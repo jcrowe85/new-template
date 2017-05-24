@@ -39,7 +39,7 @@
                             <li><a href="#">Parenting Advice</a></li>
                         </ul>
                         <ul>
-                            <li><b>What Other Have to Say About Us</b></li>
+                            <li><b>What Other Have to Say</b></li>
                             <li><a href="#">Something here</a></li>
                             <li><a href="#">Something here</a></li>
                         </ul>                                                
