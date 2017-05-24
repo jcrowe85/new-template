@@ -72,7 +72,7 @@ $(document).ready(function(){
     $('.day').keyup(function(){
         var dayValue = $(".day").val();
         var monthValue = $(".month").val();
-        if(dayValue > 31 && isNaN(dayValue)) {
+        if(dayValue > 31 || isNaN(dayValue)) {
             $(".day").val('');
             $(".day").focus();
         } else if(monthValue == '2' && dayValue > 29) {
@@ -142,7 +142,7 @@ $(document).ready(function(){
     </div>
     <div class="process container" style="margin: 0 auto;">
         <div class="row">
-            <div class="quick-quote" style="margin:auto; width:50%; text-align:center; display:block; position:relative;">
+            <div class="quick-quote" style="margin:auto; text-align:center; display:block; position:relative;">
                 <form id="quick-quote" method="post" action="/verify.php">
                   <fieldset>
                       <h1>What is your gender?</h1>
@@ -196,7 +196,7 @@ $(document).ready(function(){
                   </fieldset> 
                   <fieldset>
                       <h1>What state do you live in?</h1>
-                      <div class="control-group">
+                      <div class="control-group"> 
                         <label class="control-text">
                           <select name="State">
                               <option style="background-color:#808080;" selected value="">Select State</option>
@@ -256,6 +256,7 @@ $(document).ready(function(){
                               <option style="background-color:#808080;" value="54">Puerto Rico</option>
                               <option style="background-color:#808080;" value="55">Virgin Islands</option>
                               <option style="background-color:#808080;" value="56">Amer. Samoa</option>
+                              
                           </select>
                       </div>
                       <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
