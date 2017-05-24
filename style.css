@@ -1349,7 +1349,7 @@ label.error,div.error{
 }
 
 
-}
+
 /* ------------ sm  ---------- */
 @media screen and (max-width:375px){
     
@@ -1549,7 +1549,5 @@ display: inline-block;
     display:none;
 }    
     
-    
-} 
- 
+
 }
