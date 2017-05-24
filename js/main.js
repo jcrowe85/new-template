@@ -26,7 +26,13 @@ $(document).ready(function(){
     });    
     }
   });
-
+  
+  $('.mobile-primary-quote').click(function(){
+      $(this).find(".mobile1").submit()
+      });  
+  $('.mobile-secondary-quote').click(function(){
+      $(this).find(".mobile2").submit()
+      });  
 });
 
 

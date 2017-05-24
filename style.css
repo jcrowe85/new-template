@@ -1349,7 +1349,17 @@ label.error,div.error{
 #quote-page .sec-quote{
     padding: 5px 25px;
 }
-
+#quote-page .adjust-title, .monthly-annually{
+    display:none;
+}
+#quote-page .adjustments {
+    font-family: 'AileronThin';
+    border-bottom: none;
+    padding: 10px;
+}
+#quote-page .premium h3{
+    float:right;
+}
 }
 
 
@@ -1466,7 +1476,16 @@ label.error,div.error{
 #quote-page .sec-quote{
     padding: 5px 25px;
 }
+#quote-page .premium h3{
+    float:right;
 }
+
+}
+
+
+
+
+
 
 /* iphone6 plus portrait*/
 @media only screen 
