@@ -1589,7 +1589,7 @@
                                             <label type="text" class="form-control noBorder custom-size-header-box" placeholder="Social security number" aria-describedby="basic-addon2" readonly>Social Security Number</label>
                                             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
                                         </div>
-                                        <input type="text" class="form-control noBorder custom-size-input-box" placeholder="Enter the number" id="ssn" name="ssntext" aria-describedby="basic-addon1" tabindex='10'>
+                                        <input type="text" class="form-control noBorder custom-size-input-box ssn" placeholder="Enter the number" id="ssn" name="ssntext" aria-describedby="basic-addon1" tabindex='10'>
                                     </div>
                                 </div>
                             </div>

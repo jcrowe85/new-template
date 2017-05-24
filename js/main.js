@@ -1,6 +1,9 @@
 $(document).ready(function(){
-    
-// set sidebar height to main height
+  
+  
+  // set sidebar height to main container height on load
+    if($(window).width() >= 768){
+    // set sidebar height to main height
     var height = $('.main').outerHeight()
     $('.sidebar').css("height", height);  
     
@@ -8,8 +11,24 @@ $(document).ready(function(){
         var height = $('.main').outerHeight()
         $('.sidebar').css("height", height);    
     });    
+    }  
+  
+  // set sidebar height to main container height on resize
+  $(window).resize(function(){
+    if($(window).width() >= 768){
+    // set sidebar height to main height
+    var height = $('.main').outerHeight()
+    $('.sidebar').css("height", height);  
     
+    $(window).resize(function(){
+        var height = $('.main').outerHeight()
+        $('.sidebar').css("height", height);    
+    });    
+    }
+  });
+
 });
+
 
 // get help button display chat box
 

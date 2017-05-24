@@ -16,6 +16,18 @@ $(document).ready(function(){
     $(uncheck).click(function(){
     	$('#medical-conditions > div:nth-child(-n+12) input[type=checkbox]').prop('checked', false);
     }); 
+    
+ $('#ssn').on('keydown keyup mousedown mouseup', function() {
+     var res = this.value, //grabs the value
+         len = res.length, //grabs the length
+         max = 9, //sets a max chars
+         stars = len>0?len>1?len>2?len>3?len>4?'XXX-XX-':'XXX-X':'XXX-':'XX':'X':'', //this provides the masking and formatting
+        result = stars+res.substring(5); //this is the result
+     $(this).attr('maxlength', max); //setting the max length
+    $("#snn").val(result); //spits the value into the input
+});        
+    
+    
 });
   </script>
  <style>
@@ -53,14 +65,12 @@ $(document).ready(function(){
             </div>                  
         </div>
         <div class="col-sm-12 col-md-7" id="main">
-            
             <div class="title">
               <h4>Alright! You made it to the application page. 
               <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
               </h4>
                <p>On this page we're going to ask for some secure information. To keep you safe we use the most modern security.</p>
             </div>
-            
         <?php include_once('userdetails-form.php'); ?>
         </div>
     </div>
