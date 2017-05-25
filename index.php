@@ -83,7 +83,7 @@ $(document).ready(function(){
                 <div class="col-md-3">
                     <div class="logo">
                         <a href="/"><img src="/images/logo.png" alt=""></a>
-                        <span>Usurance</span>
+                        <span>Usurit</span>
                     </div>
                 </div>
                 <div class="col-md-6 col-md-offset-2">
@@ -100,7 +100,7 @@ $(document).ready(function(){
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                                 <ul class="nav navbar-nav">
-                                    <li><a id="whyus" href="#">Why Usurance?</a></li>
+                                    <li><a id="whyus" href="#">Why Usurit?</a></li>
                                     <li><a id="guide" href="#">Insurance Guides</a></li>
                                     <li><a id="about" href="#">About Us</a></li>
                                     <li><a id="contact" href="#">Contact</a></li>
@@ -524,7 +524,7 @@ $(document).ready(function(){
                             <div class="answer">
                                 <p>
                                 Don't worry. We have a licensed professional ready to help you either through online chat or through calling, 
-                                if that's what you're comfortable with. You can email us as well at: contact@usurance.com.
+                                if that's what you're comfortable with. You can email us as well at: contact@usurit.com.
                                 </p>
                             
                         </ul>

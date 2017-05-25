@@ -185,7 +185,7 @@ fieldset{
     border-radius: 5px;
     font-family: 'AileronThin';
     border: none;
-    /*height: 20px;*/
+    height: 45px;
     max-width: 130px;
     font-size: 18px;
     color: white;

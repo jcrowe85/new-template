@@ -210,6 +210,12 @@ $(document).ready(function(){
     #quote-page .secondary-quote form:nth-child(-n+3){
         display:none;
     }
+<<<<<<< Updated upstream
+=======
+    #quote-page .mobile-secondary-quote form:nth-child(-n+3){
+        display:none;
+    }    
+>>>>>>> Stashed changes
 </style>
 </head>
 <body id="quote-page">
@@ -337,11 +343,16 @@ $(document).ready(function(){
             <div class="col-md-12">
                 <div class="row" style="margin-top:25px;">
                 <div class="title col-md-8 col-md-offset-1">
-                  <h4>Alright! You made it to the application page. 
+                  <h4>We got you matched with <u><span class="quote-count"></u></span> quotes from top-rated carriers. 
                   <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
                   </h4>
+<<<<<<< Updated upstream
                     <p>We matched you with <u><span class="quote-count"></u></span> quotes from several top-rated companeis.</p>
                     <p>The first 3 are the most affordable quotes for you. You can scroll down to view more expensives quotes form top-rated carriers.</p>
+=======
+                    <p>The first 3 are the most affordable, followed by the most expensive.</p>
+                    <p>These quotes were based on the information you provided in the previous step.</p>
+>>>>>>> Stashed changes
                 </div>                    
                     <div class="quote-container col-md-12">
                         $prodline=3$      
@@ -515,13 +526,13 @@ $(document).ready(function(){
         </div>
         <div class="c-logo visible-xs" id='downArrow' style="text-align:center;">
             <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
-            <p style="font-size:.8em;">Most expensive quotes from top-rated carriers</p>
+            <p style="font-size:.8em;margin-top: 70px;">Most expensive quotes from top-rated carriers</p>
         </div>
         <div class="row visible-xs">
-            <div class="mobile-container fluid" >
+            <div class="mobile-secondary-quote fluid" >
                 $prodline=20$   
-                    <div class="mobile-quote mobile-secondary-quote" id="mobile-secondary-quote">
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes mobile2">
+                <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes mobile2">
+                    <div class="mobile-quote" id="mobile-secondary-quote">    
                         <div class="col-xs-12" style="display:flex; align-items:center;">
                             <div class="col-xs-4" style="padding:0px;">
                                 <img src="/images/logos/$COMP$.gif" alt="">
@@ -550,8 +561,8 @@ $(document).ready(function(){
                                 <input type="hidden" name="Smoker" value="$origsmoker$">
                                 <input type="hidden" name="FaceAmount" value="$newface$">
                                 <input type="hidden" name="NewCategory" value="$origcat$">                             
-                        </form>
-                   </div>
+                        </div>        
+                    </form>
                 $/prodline$
             </div>  
         </div>

@@ -8,7 +8,7 @@
                             <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
                             <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
                             <li><i>Mon-Friday | 9am-8pm PST</i></li>
-                            <li>Team@usuranace.biz</li>
+                            <li>Team@usurit.biz</li>
                             <li>24/7 We're here for you!</li>
                         </ul>
                     </div>
