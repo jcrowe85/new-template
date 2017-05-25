@@ -807,10 +807,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     padding-top: 0px; 
     font-size: 14px;
     line-height: 1.42857143;
-    color: #555;
+
 }
 #quote-page .coverage, #quote-page .term-title {
     float:left;
+    margin-bottom: 20px;
+    color: black;    
+
 }
 #quote-page #coverage, #quote-page #term{
     float:right;
@@ -1427,6 +1430,17 @@ label.error,div.error{
     #life-page #process-logo,  #userinfo-page #process-logo,  #userdetails-page #process-logo{
         width:7%;
     }    
+#quote-page .controls div{
+    text-align: center;
+    margin-bottom: 50px;
+    align-items: center;
+    justify-content: center;    
+}
+#quote-page output{
+
+    font-family:'AileronSemibold';
+    color: black;
+}
 }
 
 
@@ -1508,6 +1522,7 @@ label.error,div.error{
 #quote-page .sidebar {
     color: #000;
     border-right: none; 
+    padding-bottom:0px;
 }
 #quote-page .adjustments {
     font-family: 'AileronThin';
@@ -1543,7 +1558,13 @@ label.error,div.error{
 #quote-page .premium h3{
     float:right;
 }
-
+#quote-page .controls div{
+    margin-bottom: 20px;
+}
+#quote-page output{
+    font-family:'AileronSemibold';
+    color: black;
+}
 }
 
 
