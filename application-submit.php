@@ -146,7 +146,7 @@ expyear ='$expyear'
 WHERE userId='$user'";
  
  if ($conn->query($sql) === TRUE) {
-     header('Location: /index.php');
+     echo ('congratulations!');
  } else {
      echo "Error updating record: " . $conn->error;
  }
