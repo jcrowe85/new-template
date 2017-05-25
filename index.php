@@ -70,7 +70,7 @@ $(document).ready(function(){
     });
 
 
-    $(".serv").click(function() {
+    $(".life").click(function() {
       window.location = $(this).find("a").attr("href"); 
       return false;
     });
@@ -120,11 +120,11 @@ $(document).ready(function(){
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv"><a href="/life.php"><h3>Life</h3></a></div>
-                        <div class="serv"><a href="/life.php"><h3>Health</h3></a></div>
-                        <div class="serv"><a href="/life.php"><h3>Home</h3></a></div>
-                        <div class="serv"><a href="/life.php"><h3>Auto</h3></a></div>
-                        <div class="serv"><a href="/life.php"><h3>Disability</h3></a></div>                        
+                        <div class="serv life"><a href="/life.php"><h3>Life</h3></a></div>
+                        <div class="serv" data-popup-open="popup-1"><h3>Health</h3></div>
+                        <div class="serv" data-popup-open="popup-1"><h3>Home</h3></div>
+                        <div class="serv" data-popup-open="popup-1"><h3>Auto</h3></div>
+                        <div class="serv" data-popup-open="popup-1"><h3>Disability</h3></div>                        
                     </div>
                 </div>
             </div>
@@ -539,4 +539,21 @@ $(document).ready(function(){
                 </div>
             </div>
         </div>
+        <!-- services popup -->
+        <div class="popup" data-popup="popup-1">
+            <div class="popup-inner">
+                <h2 style="">We're Only Offering Life Insurance Quotes at this Time.</h2>
+                <h5 style="color:gray;">Let's Refer You to One of Our Partners.</h5>
+                <p>
+                    Although we're only offering life insurance at this time we can still help by referring you to one of our trusted partners.
+                    By clicking 'Leave Site' we'll forward you to their website to get the quote. By pressing 'Stay Here' we'll take you back to our site.
+                    <div>
+                    <button class="btn btn-warning btn-lg">Stay Here</button>    
+                    <button class="btn btn-default btn-lg">Leave Site</button>
+                    </div>
+                </p>
+                <p><a data-popup-close="popup-1" href="#">Close</a></p>
+                <a class="popup-close" data-popup-close="popup-1" href="#" style="color:white;">x</a>
+            </div>
+        </div>          
 <?php include_once('footer.php') ?>
