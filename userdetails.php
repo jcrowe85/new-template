@@ -41,7 +41,7 @@ $(document).ready(function(){
  </style>
 <body id="userdetails-page">
     <div class="sidebar col-md-3">
-        <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>
+        <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
             <br><br>
             <h3>Welcome to the application process.</h3>
             <br>
