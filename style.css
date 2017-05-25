@@ -1024,7 +1024,7 @@ fieldset{
 .previous-step{
     position:absolute; 
     top: 25rem; 
-    left: -10rem;
+    left: -20rem;
     ms-transform: rotate(90deg); 
     -webkit-transform: rotate(90deg); 
     transform: rotate(90deg);    
