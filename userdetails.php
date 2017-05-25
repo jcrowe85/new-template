@@ -5,7 +5,6 @@
 <script src="/js/userinfo.js"></script>
 <script>
 $(document).ready(function(){
-    
     // uncheck 'none of these' when checking medical conditions
     var check = $('#medical-conditions > div:nth-child(-n+12) input[type=checkbox]');
     $(check).click(function(){
@@ -43,7 +42,7 @@ $(document).ready(function(){
 
  </style>
 <body id="userdetails-page">
-    <div class="sidebar col-md-3" >
+    <div class="sidebar col-md-3">
         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>
             <br><br>
             <h3>Welcome to the application Process.</h3>

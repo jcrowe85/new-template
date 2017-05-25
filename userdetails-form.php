@@ -1872,5 +1872,4 @@
                             <!--  <input type="submit" name="commit" value="Almost Done -- Next" id="btnTerm" class="btn btn-warning btn-lg step1Button" />-->
                             <!--</div>                    -->
                         
-
                     </form>
