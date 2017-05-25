@@ -5,6 +5,7 @@
 <script src="/js/userinfo.js"></script>
 <script>
 $(document).ready(function(){
+    
     // uncheck 'none of these' when checking medical conditions
     var check = $('#medical-conditions > div:nth-child(-n+12) input[type=checkbox]');
     $(check).click(function(){
@@ -15,17 +16,6 @@ $(document).ready(function(){
     $(uncheck).click(function(){
     	$('#medical-conditions > div:nth-child(-n+12) input[type=checkbox]').prop('checked', false);
     }); 
-    
- $('#ssn').on('keydown keyup mousedown mouseup', function() {
-     var res = this.value, //grabs the value
-         len = res.length, //grabs the length
-         max = 9, //sets a max chars
-         stars = len>0?len>1?len>2?len>3?len>4?'XXX-XX-':'XXX-X':'XXX-':'XX':'X':'', //this provides the masking and formatting
-        result = stars+res.substring(5); //this is the result
-     $(this).attr('maxlength', max); //setting the max length
-    $("#snn").val(result); //spits the value into the input
-});        
-    
     
 });
   </script>
@@ -40,6 +30,15 @@ $(document).ready(function(){
 
  </style>
 <body id="userdetails-page">
+    <?php echo $_SESSION["sessionemailtext"] ?>
+<?php
+// Echo session variables that were set on previous page
+echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
+echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+?>
+    
+    
+    
     <div class="sidebar col-md-3">
         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
             <br><br>
