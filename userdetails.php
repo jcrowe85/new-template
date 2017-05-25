@@ -36,16 +36,14 @@ $(document).ready(function(){
 #userdetails-page label, #userdetails-page label{
     font-size: 12px;
 }
-#userdetails-page .title{
-    margin: 35px 0;
-}
+
 
  </style>
 <body id="userdetails-page">
     <div class="sidebar col-md-3">
         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>
             <br><br>
-            <h3>Welcome to the application Process.</h3>
+            <h3>Welcome to the application process.</h3>
             <br>
             <p>
             It's time for us to get to know you. We need your full name, phone number to contact you if needed, an email to send follow up notifications and a password. 

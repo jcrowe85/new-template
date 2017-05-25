@@ -142,7 +142,7 @@ $(document).ready(function(){
     </div>
     <div class="process container" style="margin: 0 auto;">
         <div class="row">
-            <div class="quick-quote" style="margin:auto; text-align:center; width: 65%; display:block; position:relative;">
+            <div class="quick-quote">
                 <form id="quick-quote" method="post" action="/verify.php">
                   <fieldset>
                       <h1>What is your gender?</h1>

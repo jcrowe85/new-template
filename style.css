@@ -869,6 +869,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 #userinfo-page .title, #userdetails-page .title, #quote-page .title{
     
 }
+#userinfo-page .title, #userdetails-page .title{
+    margin: 35px 0;
+}
 
 /*  ---------------------------   userdetails page  -------------------------------- */
 
@@ -903,20 +906,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
 #life-page fieldset:nth-child(2) .control-group, #life-page fieldset:nth-child(3) .control-group,  #life-page fieldset:nth-child(7) .control-group {
     display: inline-block;
 }
-
-@media screen and (max-width: 768px) {
-    #life-page .header, #userinfo-page .header, #userdetails-page .header {
-        height: 42px !important;
-    }
-    
-    #life-page #process-logo,  #userinfo-page #process-logo,  #userdetails-page #process-logo{
-        width:7%;
-    }
+#life-page .quick-quote{
+        margin:auto; 
+        width:65%;
+        margin:auto; 
+        text-align:center; 
+        display:block; 
+        position:relative;        
 }
-
 #life-page fieldset h1{
      margin-top: 50px;
 }
+
 
 
 /*  ---------------------------   life page input fields styling  -------------------------------- */
@@ -1389,10 +1390,6 @@ label.error,div.error{
      display: inline-block; 
 }
 
-#verify-page .quick-quote{
-        margin:auto; 
-        width:100%;
-}
 #verify-page fieldset h1 {
     font-size: 15px;
      width: 100%; 
@@ -1420,6 +1417,16 @@ label.error,div.error{
 #quote-page .premium h3{
     float:right;
 }
+#life-page .quick-quote{
+        margin:auto; 
+        width:90%;
+}
+    #life-page .header, #userinfo-page .header, #userdetails-page .header {
+        height: 42px !important;
+    }
+    #life-page #process-logo,  #userinfo-page #process-logo,  #userdetails-page #process-logo{
+        width:7%;
+    }    
 }
 
 
@@ -1516,10 +1523,7 @@ label.error,div.error{
 #verify-page .control-group, #verify-page h1 {
      display: inline-block; 
 }
-#verify-page .quick-quote{
-        margin:auto; 
-        width:100%;
-}
+
 #verify-page fieldset h1 {
     font-size: 15px;
      width: 100%; 

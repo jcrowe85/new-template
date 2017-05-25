@@ -7,7 +7,7 @@
     <div class="sidebar col-md-3" >
         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>
             <br><br>
-            <h3>Welcome to the application Process.</h3>
+            <h3>Welcome to the application process.</h3>
             <br>
             <p>
             It's time for us to get to know you. We need your full name, phone number to contact you if needed, an email to send follow up notifications and a password. 
@@ -27,10 +27,8 @@
         </div>
         <div class="col-md-7">
             <div class="title">
-              <h4>Alright! You made it to the application page. 
-              <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
-              </h4>
-               <p>On this page we're going to ask for some secure information. To keep you safe we use the most modern security.</p>
+            <h4>Let's create an account to save your progress.</h4>
+            <p>Creating an account will save your progress and allow you to login to your dashboard later on.</p>
             </div>            
             <form method="post" class="new_user" id="userInfoForm" name="myForm" action="">
             <div class="step1">
