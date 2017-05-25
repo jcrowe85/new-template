@@ -357,7 +357,7 @@ $(document).ready(function(){
                           </label>
                       </div>
                         <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                        <div class="previous-step" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                        <div class="previous-step"><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                 </fieldset>      
                 <fieldset>
                     <h1>How long will you need coverage?</h1>
