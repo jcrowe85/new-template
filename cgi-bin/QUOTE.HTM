@@ -99,6 +99,7 @@ $(document).ready(function(){
      if (term == '5'){$('#term').html('20-years');}
      if (term == '6'){$('#term').html('25-years');}
      if (term == '7'){$('#term').html('30-years');}
+     if (term == '8'){$('#term').html('');}
      if (term == '9'){$('#term').html('35-years');}
     // $('#term').val(term + " " + "Years");
     
@@ -121,9 +122,14 @@ $(document).ready(function(){
     // count quotes and update title
     var primaryQuotes = $('.primary-quotes').length;
     var secondaryQuotes = $('.secondary-quotes').length;
-    var totalQuotes = primaryQuotes + secondaryQuotes;
+    var totalQuotes = primaryQuotes + secondaryQuotes - 3;
+    if (totalQuotes == 0){
+        $('.title h4').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
+        $('.title p').html("");
+    }
+    else{
     $('.quote-count').html(totalQuotes);
-    
+    }
     // offset background to secondary quotes
     $('.secondary-quote').find('.front:even').css({"background" : "#f4f5f7"});
     
@@ -177,6 +183,7 @@ $(document).ready(function(){
      if (term == '5'){$('#term').html('20-years');}
      if (term == '6'){$('#term').html('25-years');}
      if (term == '7'){$('#term').html('30-years');}
+     if (term == '8'){$('#term').html('');}
      if (term == '9'){$('#term').html('35-years');}            
     }
     
@@ -188,6 +195,7 @@ $(document).ready(function(){
     max-height: 200px;
     margin-bottom: 15px;
     overflow: auto;
+    padding-top: 5px;
     }
     #quote-page .mobile-quote:nth-child(n-3){
        border-left:25px solid #ec2327;    
@@ -526,7 +534,7 @@ input[type=number]{
                 <small>(select one to begin application)</small></p>
                 $prodline=3$
                     <div class="mobile-quote mobile-primary-quote">
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes mobile1" id="primary-quotes">
+                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile1" id="primary-quotes">
                             <div class="col-xs-12" style="display:flex; align-items:center;">
                                 <div class="col-xs-3" style="padding:0px;">
                                     <img src="/images/logos/$COMP$.gif" alt="">
@@ -568,7 +576,7 @@ input[type=number]{
         <div class="row visible-xs">
             <div class="mobile-secondary-quote fluid" >
                 $prodline=20$   
-                <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes mobile2">
+                <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile2">
                     <div class="mobile-quote" id="mobile-secondary-quote">    
                         <div class="col-xs-12" style="display:flex; align-items:center;">
                             <div class="col-xs-4" style="padding:0px;">
