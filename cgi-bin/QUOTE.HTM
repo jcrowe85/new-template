@@ -78,6 +78,8 @@
 <script>
 $(document).ready(function(){
 
+    
+    
     //coverage: show coverage from initial submit
     var faceAmountValue = $("input[name=FaceAmount]").val();
     var parts = faceAmountValue.toString().split(".");
@@ -153,6 +155,7 @@ $(document).ready(function(){
      if (term == '5'){$('#term').html('20-years');}
      if (term == '6'){$('#term').html('25-years');}
      if (term == '7'){$('#term').html('30-years');}
+     if (term == '8'){$('#term').html('');}
      if (term == '9'){$('#term').html('35-years');}
      
      
@@ -210,12 +213,9 @@ $(document).ready(function(){
     #quote-page .secondary-quote form:nth-child(-n+3){
         display:none;
     }
-<<<<<<< Updated upstream
-=======
     #quote-page .mobile-secondary-quote form:nth-child(-n+3){
         display:none;
     }    
->>>>>>> Stashed changes
 </style>
 </head>
 <body id="quote-page">
@@ -346,13 +346,8 @@ $(document).ready(function(){
                   <h4>We got you matched with <u><span class="quote-count"></u></span> quotes from top-rated carriers. 
                   <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
                   </h4>
-<<<<<<< Updated upstream
-                    <p>We matched you with <u><span class="quote-count"></u></span> quotes from several top-rated companeis.</p>
-                    <p>The first 3 are the most affordable quotes for you. You can scroll down to view more expensives quotes form top-rated carriers.</p>
-=======
                     <p>The first 3 are the most affordable, followed by the most expensive.</p>
                     <p>These quotes were based on the information you provided in the previous step.</p>
->>>>>>> Stashed changes
                 </div>                    
                     <div class="quote-container col-md-12">
                         $prodline=3$      
