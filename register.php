@@ -1,17 +1,24 @@
 <?php
- ob_start();
+ 
  session_start();
+ 
  if( isset($_SESSION['user'])!="" ){
   header("Location: userdetails.php");
  }
+ 
  include_once 'conn.php';
 
  $error = false;
 
  if ( isset($_POST['continue']) ) {
   
+  
+  // set a session variable to user's email
+  $_SESSION["sessionemailtext"] = $_POST['emailtext'];
+  $_SESSION["favcolor"] = "green";
+$_SESSION["favanimal"] = "cat";
+  
   // clean user inputs to prevent sql injections
-    $_SESSION["sessionemailtext"] = $_POST['emailtext'];
     $firstnametext = mysqli_real_escape_string($conn, $_POST ['firstnametext']);
     $middlenametext = mysqli_real_escape_string($conn, $_POST ['middlenametext']);
     $lastnametext = mysqli_real_escape_string($conn, $_POST ['lastnametext']);
@@ -63,6 +70,7 @@
    if ($res) {
 
    header('Location: userdetails.php');
+
         }
     // $errTyp = "success";
     // $errMSG = "Successfully registered, you may login now";
@@ -73,7 +81,7 @@
     $errMSG = "Something went wrong, try again later..."; 
    } 
     
-  
+ 
   
   
  }

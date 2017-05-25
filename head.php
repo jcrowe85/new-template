@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Compare Life Insurance Quotes | Usurance.com - Insurance Without the Agent</title>
+        <title>Compare Life Insurance Quotes | Usurit.com - Insurance Without the Agent</title>
         <!--  bootstrap -->
         <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         
