@@ -1,6 +1,46 @@
 $(document).ready(function(){
   
   
+  
+    //move to section on click 
+    
+      // $( "#whyus" ).click(function() {
+    //     $('html,body').animate({
+    //         scrollTop: $(".why-us").offset().top - 60},
+    //     'slow');
+    // });
+    
+    $( "#guide" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".footer").offset().top - 60},
+        'slow');
+    });
+    
+    // $( "#about" ).click(function() {
+    //     $('html,body').animate({
+    //         scrollTop: $(".team").offset().top - 60},
+    //     'slow');
+    // });
+    
+    $( "#contact" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".footer").offset().top - 60},
+        'slow');
+    });
+    
+    $( "#downArrow" ).click(function() {
+        $('html,body').animate({
+            scrollTop: $(".why-us").offset().top - 60},
+        'slow');
+    });
+
+
+    $(".life").click(function() {
+      window.location = $(this).find("a").attr("href"); 
+      return false;
+    });
+  
+  
   // set sidebar height to main container height on load
     if($(window).width() >= 768){
     // set sidebar height to main height
@@ -67,7 +107,13 @@ function getHelp(){
 function getStarted(){
     var x = document.getElementById("menu");
     var y = x.options[x.selectedIndex].value;
+    if (y != ""){
     window.document.location.href=(y);
+    }
+    else{
+       var targeted_popup_class = jQuery('[data-popup-open]').attr('data-popup-open');
+        $('[data-popup="' + targeted_popup_class + '"]').fadeIn(350); 
+    }
 } 
 
 
@@ -88,3 +134,5 @@ $(function() {
         e.preventDefault();
     });
 });
+
+

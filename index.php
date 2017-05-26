@@ -39,79 +39,10 @@ $(document).ready(function(){
     });
     
     
-    $( "#whyus" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".why-us").offset().top - 60},
-        'slow');
-    });
-    
-    $( "#guide" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".footer").offset().top - 60},
-        'slow');
-    });
-    
-    $( "#about" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".team").offset().top - 60},
-        'slow');
-    });
-    
-    $( "#contact" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".questions").offset().top - 60},
-        'slow');
-    });
-    
-    $( "#downArrow" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".why-us").offset().top - 60},
-        'slow');
-    });
-
-
-    $(".life").click(function() {
-      window.location = $(this).find("a").attr("href"); 
-      return false;
-    });
-    
 });
 </script>
     <body id="home-page">
-        <div class="header navbar-fixed-top fluid">
-            <div class="container">
-                <div class="col-md-3">
-                    <div class="logo">
-                        <a href="/"><img src="/images/logo.png" alt=""></a>
-                        <span>Usurit</span>
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-offset-2">
-                    <nav class="navbar navbar-static-top" role="navigation">
-                        <div class="container">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                    <span class="sr-only">Toggle navigation</span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                            </div>
-                            <!-- Collect the nav links, forms, and other content for toggling -->
-                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                                <ul class="nav navbar-nav">
-                                    <li><a id="whyus" href="#">Why Usurit?</a></li>
-                                    <li><a id="guide" href="#">Insurance Guides</a></li>
-                                    <li><a id="about" href="#">About Us</a></li>
-                                    <li><a id="contact" href="#">Contact</a></li>
-                                    <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
+        <?php include_once('header.php') ?>
         <div class="main fluid">
             <div class="container">
                 <div class="row" style="padding:0px;">
@@ -358,10 +289,10 @@ $(document).ready(function(){
                     <form name="" id="myForm">
                         <select name="menu" id="menu">
                             <option value="/life.php" selected="selected">Life Insurance</option>
-                            <option value="/health">Health Insurance</option>
-                            <option value="/life.php">Home Insurance</option>
-                            <option value="/life.php">Auto Insurance</option>
-                            <option value="/life.php">Disability Insurance</option>
+                            <option value="" >Health Insurance</option>
+                            <option value="" data-popup-open="popup-1">Home Insurance</option>
+                            <option value="" data-popup-open="popup-1">Auto Insurance</option>
+                            <option value="" data-popup-open="popup-1">Disability Insurance</option>
                         </select>
                         <button type="button" onClick="getStarted();" class="buttonSpl getStarted btn">Get Started</button>
                     </form>                 
@@ -519,22 +450,22 @@ $(document).ready(function(){
                                 <div class="col-md-11"><h5>That's great that this is all online. But what if I have questions that I can't find the answer to?</h5></div>                                     
                                 <div class="col-md-1">
                                     <i class="fa fa-plus answer-button" aria-hidden="true"></i>
-                                <div></div>    
+                                </div>
                             </li>
                             <div class="answer">
                                 <p>
                                 Don't worry. We have a licensed professional ready to help you either through online chat or through calling, 
                                 if that's what you're comfortable with. You can email us as well at: contact@usurit.com.
                                 </p>
-                            
+                            </div>
                         </ul>
-                            <script>
+                        <script>
                             $(document).ready(function(){
                                 $('.answer-button').click(function(){
                                    $(this).parent().parent().next().slideToggle();
                                 });
                             });
-                     </script>                        
+                         </script>                        
                     </div>
                 </div>
             </div>
