@@ -163,7 +163,7 @@ $(document).ready(function(){
                       <h1>What is your date of birth?</h1>
                       <div class="control-group" id="dob">
                           <label class="control-text">
-                              <input type="text" class='month' id="month" name="BirthMonth" placeholder="Mo" maxlength="2"/>
+                              <input type="text" class='month' id="month" name="BirthMonth" placeholder="Mo" maxlength="2" />
                           </label>
                       </div>	
                       <div class="control-group">
