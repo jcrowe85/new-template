@@ -30,15 +30,6 @@ $(document).ready(function(){
 
  </style>
 <body id="userdetails-page">
-    <?php echo $_SESSION["sessionemailtext"] ?>
-<?php
-// Echo session variables that were set on previous page
-echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
-echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
-?>
-    
-    
-    
     <div class="sidebar col-md-3">
         <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
             <br><br>
