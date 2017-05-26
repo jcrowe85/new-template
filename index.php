@@ -38,7 +38,6 @@ $(document).ready(function(){
     	}
     });
     
-    
 });
 </script>
     <body id="home-page">
@@ -289,7 +288,7 @@ $(document).ready(function(){
                     <form name="" id="myForm">
                         <select name="menu" id="menu">
                             <option value="/life.php" selected="selected">Life Insurance</option>
-                            <option value="" >Health Insurance</option>
+                            <option value="" data-popup-open="popup-1">Health Insurance</option>
                             <option value="" data-popup-open="popup-1">Home Insurance</option>
                             <option value="" data-popup-open="popup-1">Auto Insurance</option>
                             <option value="" data-popup-open="popup-1">Disability Insurance</option>
