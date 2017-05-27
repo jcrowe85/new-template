@@ -154,7 +154,27 @@ input::-webkit-contacts-auto-fill-button {
 #getHelp {
      padding-top: 1rem;
 }
-
+.dropdown-content{
+    display: none; 
+    position:absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* <-- Added */
+    background-color:#d52024;
+}
+.dropdown-content a {
+    color: black;
+    padding: 15px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background:lightgray;    
+}
+li.dropdown:hover .dropdown-content{
+    display:block;
+}
 /* -------------------------  footer  ----------------------*/
 
 .footer{
@@ -1546,8 +1566,10 @@ label.error,div.error{
     margin: 0 auto;
     margin-top: 20px;
 }
+li.dropdown:hover .dropdown-content{
+    display:none;
 }
-
+}
 
 
 /* ------------ sm  ---------- */

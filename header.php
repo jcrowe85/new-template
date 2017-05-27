@@ -23,7 +23,12 @@
                         <ul class="nav navbar-nav">
                             <li><a id="whyus" href="/index.php">Home</a></li>
                             <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
-                            <li><a id="guide" href="#">Insurance Guides</a></li>
+                            <li class="dropdown"><a id="guide" href="#">Insurance Guides</a>
+                              <div class="dropdown-content">
+                                <a href="/life-guide.php">Life Insurance</a>
+                                <a href="/health-guide.php">Health Insurance</a>
+                              </div>        
+                             </li>
                             <li><a id="about" href="#">About Us</a></li>
                             <li><a id="about" href="/team.php">Team</a></li>
                             <li><a id="contact" href="#">Contact</a></li>
@@ -35,3 +40,5 @@
         </div>
     </div>
 </div>
+
+
