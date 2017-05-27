@@ -40,7 +40,10 @@
         
         <!-- sitewide js -->
         <script src="/js/main.js"></script>
-
+        
+        <!-- google ananlytics -->
+        <?php include_once('googleanalytics.php'); ?>
+        
     <!--[if lt IE 9]>
       <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
       </script>
@@ -59,5 +62,5 @@
             		$(".se-pre-con").fadeOut("slow");;
             	});
         </script>
-<meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />        
+        <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />      
     </head>    
