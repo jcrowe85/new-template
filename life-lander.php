@@ -2,71 +2,44 @@
 <?php include_once('privy.php') ?>   
 <script>
 $(document).ready(function(){
-    
 
-    // $(document).scroll(function(){
-    //     console.log($(document).scrollTop())
-    // });
-    
-    // $(document).scroll(function() {
-    // if ($(window).width() > 549) {
-    //     if($(window).scrollTop() > 60) {
-            
-    //      firstAnimation();
-         
-    //     }
-        
-    // }
-   
-    // });
-    // var firstAnimation = function () {
-    //     $('.features').show();
-    //     $('.features .feat').each(function(){
-    //         function(){
-    //             $(this).show().delay(500).animate({
-    //                 opacity: 1;
-    //             })
-    //         });
-
-
-    // }
-    
-    
-    $(':input').keyup(function(){
-    	if (this.value.length == this.maxLength) {
-    		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
-    	}
-    });
     
 });
 </script>
+<style>
+    .lifelander-page .main{
+        background-image: none;
+        background-repeat: no-repeat;
+        background-size: 2500px 888px;
+        background-color: #ea2931;
+        background-position: center top;
+        border-bottom: 1px solid #8b8b8b;
+        margin-top: 66px;        
+    }
+</style>
     <body id="home-page">
         <?php include_once('header.php') ?>
-        <div class="main fluid">
+        <div class="main fluid" style="background-image:none;    background: #ffffff;
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%);
+    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%);
+    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 );">
             <div class="container">
                 <div class="row" style="padding:0px;">
-                    <div class="title">
-                        <h1>Get the Insurance <br> Every Household Needs</h1>
+                    <div class="title" style="color:black;">
+                        <h1>Get a Life Insurance Quote</h1>
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
-                    <div class="services">
-                        <div class="serv life"><a href="/life.php"><h3>Life</h3></a></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Health</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Home</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Auto</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Disability</h3></div>                        
-                    </div>
+                <div class="row" style="text-align: center;">
+                    <form name="" id="myForm">
+                        <select name="menu" id="menu">
+                            <option value="/life.php" selected="selected">Life Insurance</option>
+                        </select>
+                        <button type="button" onClick="getStarted();" class="buttonSpl getStarted btn">Get Started</button>
+                    </form>                 
+                </div>                    
                 </div>
             </div>
-            <div class="carrier-logo">
-                <div class="c-logo"><img src="/images/nyl.png" alt=""></div>
-                <div class="c-logo"><img src="/images/prudential-white.png" alt=""></div>
-                <div class="c-logo"><img src="/images/legal-general.png" alt=""></div>
-                <div class="c-logo" id='downArrow'><a href='#'><img src="/images/down-arrow.png" alt=""></a></div>
-                <div class="c-logo"><img src="/images/aig.png" alt=""></div>
-                <div class="c-logo"><img src="/images/nationwide.png" alt=""></div>
-                <div class="c-logo"><img src="/images/paclife.png" alt=""></div>
-            </div>        
         </div>
         <div class="why-us fluid">
             <div class="container">
