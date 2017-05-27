@@ -217,7 +217,123 @@ input::-webkit-contacts-auto-fill-button {
 }
 .section2 ul li:nth-child(1), .section3 ul li:nth-child(1){
     font-family: 'AileronSemibold';
-    
+}
+.footer .row{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+/*----------------------------- popup ----------------------------------------*/
+
+/* Outer */
+.popup {
+    width:100%;
+    height:100%;
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+}
+
+/* Inner */
+.popup-inner {
+    max-width:700px;
+    width:90%;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate(-50%, -50%);
+    transform:translate(-50%, -50%);
+    box-shadow:0px 2px 6px rgba(0,0,0,1);
+    border-radius:3px;
+    background:#fff;
+}
+
+/* Close Button */
+.popup-close {
+    width:30px;
+    height:30px;
+    padding-top:4px;
+    display:inline-block;
+    position:absolute;
+    top:0px;
+    right:0px;
+    transition:ease 0.25s all;
+    -webkit-transform:translate(50%, -50%);
+    transform:translate(50%, -50%);
+    border-radius:1000px;
+    background:rgba(0,0,0,0.8);
+    font-family:Arial, Sans-Serif;
+    font-size:20px;
+    text-align:center;
+    line-height:100%;
+    color:#fff;
+}
+
+.popup-close:hover {
+    -webkit-transform:translate(50%, -50%) rotate(180deg);
+    transform:translate(50%, -50%) rotate(180deg);
+    background:rgba(0,0,0,1);
+    text-decoration:none;
+}
+
+/* -------------------------  get started section  ----------------------*/
+#home-page .get-started, #why-usurit-page .get-started, #lifeguide-page .get-started, #healthguide-page .get-started{
+    text-align:center;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+    background: #ececec; /* Old browsers */
+    background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+}
+#home-page .getStarted, #why-usurit-page .getStarted, #lifeguide-page .getStarted, #healthguide-page .getStarted{
+    background-color: #ed2428;
+    border-radius: 50px;
+    border: 0px;
+    color: white;
+    padding: 20px 70px;
+    box-shadow: 1px 1px 0px rgba(0,0,0, .5);
+}
+#home-page .getStarted:hover, #why-usurit-page .getStarted:hover, #lifeguide-page .getStarted:hover, #healthguide-page .getStarted:hover{
+    margin-top:1px;
+    transition: .95s;    
+}
+#home-page select, #why-usurit-page select, #lifeguide-page select, #healthguide-page select {
+    outline: none;
+    border-radius: 0px;
+    margin: 50px;
+    border: 1px solid #111;
+    background: transparent;
+    padding: 10px 40px;
+    font-size: 25px;
+    border: 1px solid #ccc;
+    /* height: 34px; */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
+}
+#home-page .buttonSpl, #why-usurit-page .buttonSpl, #lifeguide-page .buttonSpl, #healthguide-page .buttonSpl {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #d52024;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+#home-page .buttonSpl:hover, #why-usurit-page .buttonSpl:hover, #lifeguide-page .buttonSpl:hover, #healthguide-page .buttonSpl:hover  {
+    background-color: #d52024
+}
+#home-page .buttonSpl:active, #why-usurit-page .buttonSpl:active, #lifeguide-page .buttonSpl:active, #healthguide-page .buttonSpl:active {
+  background-color: #d52024;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 /* -------------------------  home page  ----------------------*/
@@ -388,41 +504,6 @@ input::-webkit-contacts-auto-fill-button {
     width: 65%;
     padding-bottom: 10px;
 }
-#home-page .get-started{
-    text-align:center;
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
-background: #ececec; /* Old browsers */
-background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
-}
-#home-page .getStarted{
-    background-color: #ed2428;
-    border-radius: 50px;
-    border: 0px;
-    color: white;
-    padding: 20px 70px;
-    box-shadow: 1px 1px 0px rgba(0,0,0, .5);
-}
-#home-page .getStarted:hover{
-    margin-top:1px;
-    transition: .95s;    
-}
-#home-page select {
-    border-radius: 0px;
-    margin: 50px;
-    border: 1px solid #111;
-    background: transparent;
-    padding: 10px 40px;
-    font-size: 25px;
-    border: 1px solid #ccc;
-    /* height: 34px; */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
-}
 #home-page .row{
     padding-top:50px;
     padding-bottom:50px;
@@ -572,32 +653,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', end
     display:none; 
 }
 
-#home-page .buttonSpl {
-  padding: 15px 25px;
-  font-size: 24px;
-  text-align: center;
-  cursor: pointer;
-  outline: none;
-  color: #fff;
-  background-color: #d52024;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-#home-page .buttonSpl:hover {
-    background-color: #d52024
-    
-}
-#home-page .buttonSpl:active {
-  background-color: #d52024;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-#home-page .row{
-    padding-top:50px;
-    padding-bottom:50px;
-}
 #home-page .feat-details p{
         line-height: 1.5em;
 }
@@ -1302,64 +1357,59 @@ label.error,div.error{
     margin:0 auto;
     text-align: left;      
 }
-
-
-
-
-/*----------------------------- popup ----------------------------------------*/
-
-/* Outer */
-.popup {
-    width:100%;
-    height:100%;
-    display:none;
-    position:fixed;
-    top:0px;
-    left:0px;
-    background:rgba(0,0,0,0.75);
-}
-
-/* Inner */
-.popup-inner {
-    max-width:700px;
-    width:90%;
-    padding:40px;
-    position:absolute;
-    top:50%;
-    left:50%;
-    -webkit-transform:translate(-50%, -50%);
-    transform:translate(-50%, -50%);
-    box-shadow:0px 2px 6px rgba(0,0,0,1);
-    border-radius:3px;
-    background:#fff;
-}
-
-/* Close Button */
-.popup-close {
-    width:30px;
-    height:30px;
-    padding-top:4px;
-    display:inline-block;
-    position:absolute;
-    top:0px;
-    right:0px;
-    transition:ease 0.25s all;
-    -webkit-transform:translate(50%, -50%);
-    transform:translate(50%, -50%);
-    border-radius:1000px;
-    background:rgba(0,0,0,0.8);
-    font-family:Arial, Sans-Serif;
-    font-size:20px;
+/*  --------------------------- why usurit page  -------------------------------- */
+#why-usurit-page .title{
+    margin-bottom:50px;
     text-align:center;
-    line-height:100%;
-    color:#fff;
+}
+#why-usurit-page .guide{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+#why-usurit-page .about p{
+    letter-spacing: .1em;
+    line-height: 30px;
+    margin:0 auto;
+    margin-bottom:25px;
+    text-align: left;      
 }
 
-.popup-close:hover {
-    -webkit-transform:translate(50%, -50%) rotate(180deg);
-    transform:translate(50%, -50%) rotate(180deg);
-    background:rgba(0,0,0,1);
-    text-decoration:none;
+
+/*  --------------------------- life guide page  -------------------------------- */
+#lifeguide-page .title{
+    margin-bottom:50px;
+    text-align:center;
+}
+#lifeguide-page .guide{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+#lifeguide-page .about p{
+    letter-spacing: .1em;
+    line-height: 30px;
+    margin:0 auto;
+    margin-bottom:25px;
+    text-align: left;      
+}
+
+/*  --------------------------- health guide page  -------------------------------- */
+#healthguide-page .title{
+    margin-bottom:50px;
+    text-align:center;
+}
+#healthguide-page .guide{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 85px;
+}
+#healthguide-page .about p{
+    letter-spacing: .1em;
+    line-height: 30px;
+    margin:0 auto;
+    margin-bottom:25px;
+    text-align: left;      
 }
 
 
@@ -1452,9 +1502,6 @@ label.error,div.error{
     #life-page .header, #userinfo-page .header, #userdetails-page .header {
         height: 42px !important;
     }
-    #life-page #process-logo,  #userinfo-page #process-logo,  #userdetails-page #process-logo{
-        
-    }    
 #quote-page .controls div{
     text-align: center;
     margin-bottom: 50px;
@@ -1494,7 +1541,7 @@ label.error,div.error{
 .popup-inner h2{
     font-size: 1em;
 }
-#why-usurit-page .row {
+.guide .row {
      width: 100%; 
     margin: 0 auto;
     margin-top: 20px;
@@ -1524,8 +1571,11 @@ label.error,div.error{
 #home-page .feature-details{
     margin-top: 25px;
 }
-#home-page select{
+#home-page select, #why-usurit-page select, #lifeguide-page select, #healthguide-page select{
     margin: 10px 0px;
+}
+#home-page .guide:nth-child(1), #why-usurit-page .guide:nth-child(1), #lifeguide-page .guide:nth-child(1), #healthguide-page .guide:nth-child(1){
+    margin: 85px 0px;
 }
 #home-page .faq > div{
     margin:0px;
@@ -1652,13 +1702,23 @@ label.error,div.error{
     font-size: 1em;
 }
 #why-usurit-page .row {
-     width: 100%; 
+    width: 100%; 
     margin: 0 auto;
-    margin-top: 20px;
+    margin-top: 0px;
+    padding:0px;
+}
+#lifeguide-page .guide, #healthguide-page .guide{
+    width: 100%;
+    margin: 0 auto;
+}
+#why-usurit-page .get-started, #lifeguide-page .get-started, #healthguide-page .get-started {
+    
+    padding: 25px 0px;
 }
 
-}
 
+
+}
 
 /* iphone6 plus portrait*/
 @media only screen 

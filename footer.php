@@ -15,33 +15,33 @@
                     <div class="col-md-3 col-md-offset-1 section2">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
-                            <li><a href="#">Life Insurance Guide</a></li>
-                            <li><a href="#">Health Insurance Guide</a></li>
-                            <li><a href="#">Home Insurance Guide</a></li>
-                            <li><a href="#">Auto Insurance Guide</a></li>
-                            <li><a href="#">Disability Insurance Guide</a></li>
+                            <li><a href="/life-guide.php">Life Insurance Guide</a></li>
+                            <li><a href="/health-guide.php">Health Insurance Guide</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none; cursor:default;">Home Insurance Guide</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Auto Insurance Guide</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Disability Insurance Guide</a></li>
                         </ul>
                         <ul>
                             <li><b>Helpful Resources</b></li>
-                            <li><a href="#">Life Insurance Advice</a></li>
-                            <li><a href="#">Health Insurance Marketplace</a></li>
-                            <li><a href="#">Obamacare</a></li>
-                            <li><a href="#">Life Insurance Calculator</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Health Insurance Marketplace</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Obamacare</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Calculator</a></li>
                         </ul>                        
                     </div>
                     <div class="col-md-3 col-md-offset-1 section3" >
                         <ul>
                             <li><b>Insurance Product Advice</b></li>
-                            <li><a href="#">Insurance Advice</a></li>
-                            <li><a href="#">Life Advice</a></li>
-                            <li><a href="#">Work Advice</a></li>
-                            <li><a href="#">Money Advice</a></li>
-                            <li><a href="#">Parenting Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Insurance Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Work Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Money Advice</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Parenting Advice</a></li>
                         </ul>
                         <ul>
                             <li><b>What Other Have to Say</b></li>
-                            <li><a href="#">Something here</a></li>
-                            <li><a href="#">Something here</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Our Customers</a></li>
+                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Better Business Burrea</a></li>
                         </ul>                                                
                     </div>
                     <div class="col-md-11 col-md-offset-1 section4">
