@@ -1,30 +1,9 @@
 <?php include_once('head.php') ?>   
 <?php include_once('privy.php') ?>   
-<style>
-#why-usurit-page .title{
-    margin-bottom:50px;
-    text-align:center;
-}
-#why-usurit-page .row{
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 20px;
-}
-#why-usurit-page .about p{
-    letter-spacing: .1em;
-    line-height: 30px;
-    margin:0 auto;
-    margin-bottom:25px;
-    text-align: left;      
-}
-
-</style>
     <body id="why-usurit-page">
         <?php include_once('header.php') ?>
-        <div class="main fluid" style="margin-top: 65px;">
-            <div class="josh">
                 <div class="container">
-                    <div class="row">
+                    <div class="row guide">
                         <div class="title">
                             <h2>Why Usurit?</h2>
                         </div>
@@ -60,7 +39,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+            <div class="get-started fluid" style="clear:both;">
+                <div class="container">
+                    <div class="row">
+                        <form name="" id="myForm">
+                            <select name="menu" id="menu">
+                                <option value="/life.php" selected="selected">Life Insurance</option>
+                                <option value="" data-popup-open="popup-1">Health Insurance</option>
+                                <option value="" data-popup-open="popup-1">Home Insurance</option>
+                                <option value="" data-popup-open="popup-1">Auto Insurance</option>
+                                <option value="" data-popup-open="popup-1">Disability Insurance</option>
+                            </select>
+                            <button type="button" onClick="getStarted();" class="buttonSpl getStarted btn">Get Started</button>
+                        </form>                 
+                    </div>
+                </div>
+            </div>                
 <?php include_once('footer.php') ?>
 
