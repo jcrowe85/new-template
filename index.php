@@ -42,7 +42,7 @@ $(document).ready(function(){
 </script>
     <body id="home-page">
         <?php include_once('header.php') ?>
-        <div class="main fluid">
+        <div class="main fluid" style="z-index:1;position:relative;">
             <div class="container">
                 <div class="row" style="padding:0px;">
                     <div class="title">
