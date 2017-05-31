@@ -62,5 +62,10 @@
             		$(".se-pre-con").fadeOut("slow");;
             	});
         </script>
-        <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />      
+        <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />  
+        
+        <meta property="og:title" content="Title of the article"/>
+        <meta property="og:image" content="/images/linkedInBg.jpg"/>
+        <meta property="og:description" content="Description that will show in the preview"/>
+        <meta property="og:url" content="www.usurit.com/" />        
     </head>    

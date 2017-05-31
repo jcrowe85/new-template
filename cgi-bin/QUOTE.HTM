@@ -90,19 +90,6 @@ $(document).ready(function(){
     var faceAmountValue = $("input[name=FaceAmount]").val();
     $('#faceAmount').val(faceAmountValue);
     
-    //term: show term years from inital submit
-    var term = $('input[name=NewCategory]').val();
-    var term = $('#term-range').val();
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}
-    // $('#term').val(term + " " + "Years");
-    
     //term: set term years to subsequent submits
     var term = $('input[name=NewCategory]').val();
     $('#term-range').val(term);
@@ -153,7 +140,21 @@ $(document).ready(function(){
         $('.adjustPolicy').submit();
      });
      
+    //term: show term years from inital submit
+    var term = $('input[name=NewCategory]').val();
+    var term = $('#term-range').val();
+     if (term == '2'){$('#term').html('5-years');}
+     if (term == '3'){$('#term').html('10-years');}
+     if (term == '4'){$('#term').html('15-years');}
+     if (term == '5'){$('#term').html('20-years');}
+     if (term == '6'){$('#term').html('25-years');}
+     if (term == '7'){$('#term').html('30-years');}
+     if (term == '8'){$('#term').html('');}
+     if (term == '9'){$('#term').html('35-years');}
+    // $('#term').val(term + " " + "Years");     
      
+     
+     //term: show term years from subsequent submits
      var term = $('#term-range').val();
      if (term == '2'){$('#term').html('5-years');}
      if (term == '3'){$('#term').html('10-years');}
@@ -165,6 +166,7 @@ $(document).ready(function(){
      if (term == '9'){$('#term').html('35-years');}
      
      
+     
 
 });
     //coverage: update coverage while sliding and submit form on change
@@ -174,7 +176,7 @@ $(document).ready(function(){
       document.querySelector('#coverage').value = "$" + parts.join(".");
     }
     
-    //term: update term whie sliding and submit form on change
+    //term: update term whie sliding
     function termUpdate(x){
     var term = x;
      if (term == '2'){$('#term').html('5-years');}

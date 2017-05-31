@@ -1,6 +1,6 @@
-/// Setting up your local git respository and connecting to remote
+Setting up local git respository and connecting to remote
 
-~# go to terminal/bash
+~# open command line (terminal/bash)
 ~# git clone git@github.com:jcrowe85/usurance.git
 - rename usurance folder to public
 - cd into public
@@ -62,3 +62,15 @@ ServerName https://${C9_HOSTNAME}
 ~# sudo a2enmod cgi
 ~# sudo service apache2 restart
 // test cgi script by visiting life.php and submitting information
+
+
+
+Emmet - coding shortcuts
+// Emmet is a software that makes coding easy through shortcuts. Review the 'cheat sheet' url for further details
+
+Cheat sheet - https://docs.emmet.io/cheat-sheet/
+
+// installation from command line
+~# npm install npm@latest -g
+~# npm install --save emmett
+

@@ -22,6 +22,7 @@
 }       
     
 }
+
 </style>
     <body id="lifelander-page">
         <?php include_once('header.php') ?>
