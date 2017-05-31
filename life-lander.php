@@ -454,20 +454,19 @@
             </div>
         </div>     
 <script>
-/*
-Unbounce Community :: Tips & Scripts :: Dynamically Change Background Image with URL Parameters
-TS:0002-04-045
-***********************
-Do not remove this section. Ithelps our team troubleshoot possible issues and track feature usage and adoption.
-*/    
-    
 function getURLParameter(name) {
     return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
 }
 var background = getURLParameter('background');
 if (background) {
 document.getElementById("lifelander-bg").style.backgroundImage = 'url('+background+')'; // add the ID of the section you would like the change the background for
-document.getElementById("lifelander-bg").style.backgroundColor = 'black'; // add the ID of the section you would like the change the background for
 };  
+
+var parameter = location.search;
+var regexp = new RegExp(/\=(.*)&/);
+var filter = (regexp.exec(parameter));
+var bgColor = (filter[1]);
+document.getElementById("lifelander-bg").style.backgroundColor = bgColor;
+
 </script>
 <?php include_once('footer.php') ?>
