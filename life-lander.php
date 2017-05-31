@@ -453,7 +453,7 @@
                 <a class="popup-close" data-popup-close="popup-1" href="#" style="color:white;">x</a>
             </div>
         </div>     
-        <script>
+<script>
 /*
 Unbounce Community :: Tips & Scripts :: Dynamically Change Background Image with URL Parameters
 TS:0002-04-045
