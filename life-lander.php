@@ -1,43 +1,38 @@
 <?php include_once('head.php') ?>   
 <?php include_once('privy.php') ?>   
-<script>
-$(document).ready(function(){
-
-    
-});
-</script>
 <style>
-    .lifelander-page .main{
-        background-image: none;
-        background-repeat: no-repeat;
-        background-size: 2500px 888px;
-        background-color: #ea2931;
-        background-position: center top;
-        border-bottom: 1px solid #8b8b8b;
-        margin-top: 66px;        
+    #lifelander-page .get-started{
+        background:none;
     }
+ #lifelander-bg{
+    background-repeat: no-repeat;
+    background-position:center top;
+    border-bottom:1px solid #8b8b8b;
+    margin-top: 66px;
+    background-size: auto;
+}    
+
+@media screen and (max-width:375px){
+ #lifelander-bg{
+    background-repeat: no-repeat;
+    background-position:center top;
+    border-bottom:1px solid #8b8b8b;
+    margin-top: 66px;
+    background-size: auto 50%;
+}       
+    
+}
 </style>
-    <body id="home-page">
+    <body id="lifelander-page">
         <?php include_once('header.php') ?>
-        <div class="main fluid" style="background-image:none;    background: #ffffff;
-    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%);
-    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%);
-    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 );">
+        <div class="main fluid" id="lifelander-bg">
             <div class="container">
-                <div class="row" style="padding:0px;">
-                    <div class="title" style="color:black;">
+                <div class="row">
+                    <div class="title" style="color:white;">
                         <h1>Get a Life Insurance Quote</h1>
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
-                <div class="row" style="text-align: center;">
-                    <form name="" id="myForm">
-                        <select name="menu" id="menu">
-                            <option value="/life.php" selected="selected">Life Insurance</option>
-                        </select>
-                        <button type="button" onClick="getStarted();" class="buttonSpl getStarted btn">Get Started</button>
-                    </form>                 
-                </div>                    
+                    <?php include_once('_getstarted.php'); ?>
                 </div>
             </div>
         </div>
@@ -457,5 +452,22 @@ $(document).ready(function(){
                 </p>
                 <a class="popup-close" data-popup-close="popup-1" href="#" style="color:white;">x</a>
             </div>
-        </div>          
+        </div>     
+<script>
+/*
+Unbounce Community :: Tips & Scripts :: Dynamically Change Background Image with URL Parameters
+TS:0002-04-045
+***********************
+Do not remove this section. Ithelps our team troubleshoot possible issues and track feature usage and adoption.
+*/    
+    
+function getURLParameter(name) {
+    return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+}
+var background = getURLParameter('background');
+if (background) {
+document.getElementById("lifelander-bg").style.backgroundImage = 'url('+background+')'; // add the ID of the section you would like the change the background for
+document.getElementById("lifelander-bg").style.backgroundColor = 'black'; // add the ID of the section you would like the change the background for
+};  
+</script>
 <?php include_once('footer.php') ?>
