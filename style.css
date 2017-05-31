@@ -43,15 +43,17 @@ a:hover {
 a:active {
     text-decoration: none;
 }
-
+.btn,
 .btn:active,
 .btn:focus,
 .btn.active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
+button:focus {outline:0;}
+btn:focus{ouline:0;}
 #process-logo{
     width:2%;
 }
@@ -298,8 +300,102 @@ li.dropdown:hover .dropdown-content{
     text-decoration:none;
 }
 
-/* -------------------------  get started section  ----------------------*/
-#home-page .get-started, #why-usurit-page .get-started, #lifeguide-page .get-started, #healthguide-page .get-started{
+
+/* -------------------------  _why_us partial  ----------------------*/
+.why-us{
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+81,ececec+100 */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+.why-us:before{
+
+}
+.why-us h2{
+    text-align:center;
+}
+.features-container{
+    display: flex;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.features{
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+.feat{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    overflow:auto;
+    height:72px;
+    margin-bottom: 10px;
+    font: 0/0 a;    
+    background-color: white;
+}
+.feat:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+.feat-left{
+    background-color: #ed2428;
+    color:white;
+    float:left;
+    padding: 10px 15px;
+    min-width: 65px;
+}
+.feat-left h1{
+    margin:0px;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+    font-size: 3em;
+}
+.feat-right, .feat-details, .feat-logo{
+    display: inline-block;
+}
+.feat-right{
+    text-align: center;
+}
+.feature-details{
+    text-align: center;
+        margin-top: 50px;
+}
+.feat-right, .feat-left{
+    display: inline-block;
+    vertical-align: middle;  
+    font: 16px/1.4 'AileronRegular'; ;
+}
+.feat-logo, .feat-details{
+    margin-left:15px;
+}
+.feat-details p{
+        line-height: 1.5em;
+}
+/* -------------------------  _team partial  ----------------------*/
+.team .container{
+    width:70%;
+}
+.team ul{
+    list-style:none;
+    padding: 0px;
+}
+.team-pics img{
+    width:80%;
+}
+.team-highlights ul{
+    margin-top: 40px;
+}
+.team-highlights h2{
+    border-bottom: 2px solid red;
+    width: 65%;
+    padding-bottom: 10px;
+}
+
+/* -------------------------  _getstarted partial  ----------------------*/
+
+.get-started{
     text-align:center;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
     background: #ececec; /* Old browsers */
@@ -308,7 +404,7 @@ li.dropdown:hover .dropdown-content{
     background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
 }
-#home-page .getStarted, #why-usurit-page .getStarted, #lifeguide-page .getStarted, #healthguide-page .getStarted{
+.getStarted{
     background-color: #ed2428;
     border-radius: 50px;
     border: 0px;
@@ -316,11 +412,11 @@ li.dropdown:hover .dropdown-content{
     padding: 20px 70px;
     box-shadow: 1px 1px 0px rgba(0,0,0, .5);
 }
-#home-page .getStarted:hover, #why-usurit-page .getStarted:hover, #lifeguide-page .getStarted:hover, #healthguide-page .getStarted:hover{
+.getStarted:hover{
     margin-top:1px;
     transition: .95s;    
 }
-#home-page select, #why-usurit-page select, #lifeguide-page select, #healthguide-page select {
+.get-started select {
     outline: none;
     border-radius: 0px;
     margin: 50px;
@@ -335,40 +431,197 @@ li.dropdown:hover .dropdown-content{
     appearance: none;
     background: url(/images/dropdown-arrow.png) 96% / 10% no-repeat #fff;
 }
-#home-page .buttonSpl, #why-usurit-page .buttonSpl, #lifeguide-page .buttonSpl, #healthguide-page .buttonSpl {
+.buttonSpl{
   padding: 15px 25px;
   font-size: 24px;
   text-align: center;
   cursor: pointer;
-  outline: none;
-  color: #fff;
   background-color: #d52024;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
+  color: #fff;
+  outline: none;
 }
-#home-page .buttonSpl:hover, #why-usurit-page .buttonSpl:hover, #lifeguide-page .buttonSpl:hover, #healthguide-page .buttonSpl:hover  {
+.buttonSpl:hover {
     background-color: #d52024
+    outline: none;
+    color: #fff;
 }
-#home-page .buttonSpl:active, #why-usurit-page .buttonSpl:active, #lifeguide-page .buttonSpl:active, #healthguide-page .buttonSpl:active {
+.buttonSpl:active{
+    color: #fff;
   background-color: #d52024;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+ select::-ms-expand { 
+    display: none; /* remove default arrow in IE 10 and 11 */
+}
+
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+     select {
+        background:none\9;
+        padding: 5px\9;
+    }
+}
+/* target Internet Explorer 9 to undo the custom arrow */
+@media screen and (min-width:0\0) {
+     select {
+        background-image:none\9;
+        padding: 5px\9;
+    } 
+}
+
+/* -------------------------  _blog partial ----------------------*/
+.blog .container{
+    width:50%;
+}
+.blog-row {
+    margin-top: 25px;
+    display:inline-block;
+}
+.blog-row img{
+    width:100%;
+}
+.title-animate:hover .text{
+    font-size:14px;
+    height:25%;
+    display: block;
+}
+.blog2{
+    margin-bottom:5px;
+}
+.text{
+    
+    font-family: 'AileronThin';
+    font-size: 0px;
+    color:white;
+    position: absolute;
+    text-align:center;
+    left: 0;
+    bottom: 0;
+    height:1px;
+    width: 100%;
+    background: rgba(0,0,0,0.6);
+    -webkit-transition: font-size 2s; /* Safari */
+    transition: font-size 2s; 
+    -webkit-transition: height .5s; /* Safari */
+    transition: height .5s;    
+}
+.title-animate{
+    position: relative;
+    margin-bottom:10px;
+}
+/* -------------------------  _questions partial  ----------------------*/
+
+.questions{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
+background: #ececec; /* Old browsers */
+background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
+}
+.questions .container{
+    width:60%;
+}
+.questions ul{
+    list-style: none;
+    line-height: 25px;   
+    float:right;
+}
+ul.quest li:nth-child(-n+4) {
+    line-height: 35px;
+    font-family:'AileronThin';
+}
+ul.quest li:nth-child(5) {
+    font-family:'AileronThin';
+    font-size:12px;
+    line-height:18px;
+}
+.quest h3{
+    color: #ed2428;
+    font-weight:bold;
+    margin-top:0px;
+}
+
+.faq h3{
+    display: inline-block;
+    margin:0px;
+}
+.faq h5{
+    font-size: 1em;
+ 
+}
+.faq img{
+    display: inline-block;
+    width:75%;
+}
+.faq{
+    margin-bottom: 15px;
+}
+.faq:before{
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle; 
+    height: 100%;
+}
+.faq div:nth-child(1){
+    display:inline-block;
+    vertical-align: middle;
+     max-width: 300px;
+
+}
+.faq div:nth-child(2){
+    display: inline-block;
+    vertical-align: middle;
+}
+.faq li:nth-child(2){
+    margin-right:30px;
+}
+.faq h5{margin:0px;}
+.answer-button{
+
+    cursor:pointer;
+}
+.answer-button:active,
+.answer-button:focus,
+.answer-button.active {
+  
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.answer{
+    clear:both; 
+    display:none; 
+}
+.faq-ul h5{
+        line-height: 25px;
+}
+.faq div:nth-child(2){
+        margin-top: 10px
+}
+.faq div:nth-child(1){
+        margin-bottom: 10px;
+}
+
+
 
 /* -------------------------  home page  ----------------------*/
 
-#home-page .title{
+#home-page .title, #lifelander-page .title{
     text-align:center;
     color: white;
     margin-top: 50px;
 }
-#home-page .title h1{
+#home-page .title h1, #lifelander-page .title h1{
     line-height: 1.2em;
     font-family: 'AileronThin'; 
     font-size:3.0em;
 }
-#home-page .title span{
+#home-page .title span, #lifelander-page .title span{
     font-family: 'AileronThin'; 
     font-style:italic;
     font-size: 18px;
@@ -381,6 +634,7 @@ li.dropdown:hover .dropdown-content{
     background-position:center top;
     border-bottom:1px solid #8b8b8b;
     margin-top: 66px;
+
 }
 #home-page .services{
     display: flex;
@@ -438,252 +692,9 @@ li.dropdown:hover .dropdown-content{
     width:100%;
 
 }
-#home-page .why-us{
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,efefef+81,ececec+100 */
-    background: #ffffff; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #efefef 81%, #ececec 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#efefef 81%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #ffffff 0%,#efefef 81%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
-}
-#home-page .why-us:before{
-
-}
-#home-page .why-us h2{
-    text-align:center;
-}
-#home-page .features-container{
-    display: flex;
-    margin: 0 auto;
-    margin-top: 50px;
-}
-#home-page .features{
-    margin: auto;
-    align-items: center;
-    justify-content: center;
-}
-#home-page .feat{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    overflow:auto;
-    height:72px;
-    margin-bottom: 10px;
-    font: 0/0 a;    
-    background-color: white;
-}
-#home-page .feat:before{
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;
-}
-#home-page .feat-left{
-    background-color: #ed2428;
-    color:white;
-    float:left;
-    padding: 10px 15px;
-    min-width: 65px;
-}
-#home-page .feat-left h1{
-    margin:0px;
-    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
-    font-size: 3em;
-}
-#home-page .feat-right, .feat-details, .feat-logo{
-    display: inline-block;
-}
-#home-page .feat-right{
-    text-align: center;
-}
-#home-page .feature-details{
-    text-align: center;
-        margin-top: 50px;
-}
-#home-page .feat-right, .feat-left{
-    display: inline-block;
-    vertical-align: middle;  
-    font: 16px/1.4 'AileronRegular'; ;
-}
-#home-page .feat-logo, .feat-details{
-    margin-left:15px;
-}
-#home-page .team .container{
-    width:70%;
-}
-#home-page .team ul{
-    list-style:none;
-    padding: 0px;
-}
-#home-page .team-pics img{
-    width:80%;
-}
-#home-page .team-highlights ul{
-    margin-top: 40px;
-}
-#home-page .team-highlights h2{
-    border-bottom: 2px solid red;
-    width: 65%;
-    padding-bottom: 10px;
-}
-#home-page .row{
+#home-page .row, #lifelander-page .row{
     padding-top:50px;
     padding-bottom:50px;
-}
-
-/* CAUTION: IE hackery ahead */
-
-
-#home-page select::-ms-expand { 
-    display: none; /* remove default arrow in IE 10 and 11 */
-}
-
-/* target Internet Explorer 9 to undo the custom arrow */
-@media screen and (min-width:0\0) {
-    #home-page select {
-        background:none\9;
-        padding: 5px\9;
-    }
-}
-/* target Internet Explorer 9 to undo the custom arrow */
-@media screen and (min-width:0\0) {
-    #home-page select {
-        background-image:none\9;
-        padding: 5px\9;
-    } 
-}
-#home-page .blog .container{
-    width:50%;
-}
-#home-page .blog-row {
-    margin-top: 25px;
-    display:inline-block;
-}
-#home-page .blog-row img{
-    width:100%;
-}
-#home-page .text{
-    
-    font-family: 'AileronThin';
-    font-size: 0px;
-    color:white;
-    position: absolute;
-    text-align:center;
-    left: 0;
-    bottom: 0;
-    height:1px;
-    width: 100%;
-    background: rgba(0,0,0,0.6);
-    -webkit-transition: font-size 2s; /* Safari */
-    transition: font-size 2s; 
-    -webkit-transition: height .5s; /* Safari */
-    transition: height .5s;    
-    
-}
-#home-page .title-animate{
-    position: relative;
-    margin-bottom:10px;
-}
-#home-page .title-animate:hover .text{
-    font-size:14px;
-    height:25%;
-    display: block;
-}
-#home-page .blog2{
-    margin-bottom:5px;
-}
-#home-page .questions{
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ececec+0,ffffff+49,ececec+100 */
-background: #ececec; /* Old browsers */
-background: -moz-linear-gradient(top, #ececec 0%, #ffffff 49%, #ececec 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #ececec 0%,#ffffff 49%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #ececec 0%,#ffffff 49%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ececec', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */    
-}
-#home-page .questions .container{
-    width:60%;
-}
-#home-page .questions ul{
-    list-style: none;
-    line-height: 25px;   
-    float:right;
-}
-#home-page ul.quest li:nth-child(-n+4) {
-    line-height: 35px;
-    font-family:'AileronThin';
-}
-#home-page ul.quest li:nth-child(5) {
-    font-family:'AileronThin';
-    font-size:12px;
-    line-height:18px;
-}
-#home-page .quest h3{
-    color: #ed2428;
-    font-weight:bold;
-    margin-top:0px;
-}
-
-#home-page .faq h3{
-    display: inline-block;
-    margin:0px;
-}
-#home-page .faq h5{
-    font-size: 1em;
- 
-}
-#home-page .faq img{
-    display: inline-block;
-    width:75%;
-}
-#home-page .faq{
-    margin-bottom: 15px;
-}
-#home-page .faq:before{
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle; 
-    height: 100%;
-}
-#home-page .faq div:nth-child(1){
-    display:inline-block;
-    vertical-align: middle;
-     max-width: 300px;
-
-}
-#home-page .faq div:nth-child(2){
-    display: inline-block;
-    vertical-align: middle;
-}
-#home-page .faq li:nth-child(2){
-    margin-right:30px;
-}
-#home-page .faq h5{margin:0px;}
-#home-page .answer-button{
-
-    cursor:pointer;
-}
-#home-page .answer-button:active,
-.answer-button:focus,
-.answer-button.active {
-  
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-}
-#home-page .answer{
-    clear:both; 
-    display:none; 
-}
-
-#home-page .feat-details p{
-        line-height: 1.5em;
-}
-#home-page .faq-ul h5{
-        line-height: 25px;
-}
-#home-page .faq div:nth-child(2){
-        margin-top: 10px
-}
-#home-page .faq div:nth-child(1){
-        margin-bottom: 10px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
@@ -1450,13 +1461,13 @@ label.error,div.error{
 .quote-container{
     flex-direction: column;
 }
-#home-page .features-container{
+.features-container{
     flex-direction: column;
 }
-#home-page .features{
+.features{
     margin-bottom: 50px;
 }
-#home-page .feature-details{
+.feature-details{
     margin-top: 25px;
 }
 #userinfo-page #process-logo, #life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
@@ -1584,34 +1595,34 @@ li.dropdown:hover .dropdown-content{
 #home-page .title h1{
     font-size: 2.0em;
 }
-#home-page .features-container{
+.features-container{
     flex-direction: column;
 }
-#home-page .features{
+.features{
     margin-bottom: 50px;
 }
-#home-page .feature-details{
+.feature-details{
     margin-top: 25px;
 }
-#home-page select, #why-usurit-page select, #lifeguide-page select, #healthguide-page select{
+.get-started select{
     margin: 10px 0px;
 }
 #home-page .guide:nth-child(1), #why-usurit-page .guide:nth-child(1), #lifeguide-page .guide:nth-child(1), #healthguide-page .guide:nth-child(1){
     margin: 85px 0px;
 }
-#home-page .faq > div{
+.faq > div{
     margin:0px;
 }
-#home-page .questions ul{
+.questions ul{
     list-style: none;
     line-height: 25px;
     /* float: right; */
     display: inline-block;
     }
-#home-page .questions{
+.questions{
         text-align: center;
 }
-#home-page .questions .container{
+.questions .container{
         width:70%;
 }
 #home-page .serv{
@@ -1641,7 +1652,7 @@ li.dropdown:hover .dropdown-content{
 #quote-page .monthly-annually, #quote-page .adjust-title{
     display:none;
 }
-#home-page .team .container {
+.team .container {
     width:100%;
 }
 
@@ -1733,7 +1744,7 @@ li.dropdown:hover .dropdown-content{
     width: 100%;
     margin: 0 auto;
 }
-#why-usurit-page .get-started, #lifeguide-page .get-started, #healthguide-page .get-started {
+.get-started{
     
     padding: 25px 0px;
 }
