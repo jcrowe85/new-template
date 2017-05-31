@@ -52,6 +52,9 @@
         <!-- favicon include -->
         <?php include_once('favicon.php') ?>
         
+        <!-- mouseflow -->
+        <?php include_once('mouseflow.php'); ?>
+        
         <!-- page loader -->
         <script type="text/javascript">
             $(window).load(function() {
@@ -64,6 +67,7 @@
         </script>
         <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />  
         
+       <!-- linkedIn images/content for post -->
         <meta property="og:title" content="Title of the article"/>
         <meta property="og:image" content="/images/linkedInBg.jpg"/>
         <meta property="og:description" content="Description that will show in the preview"/>

@@ -152,6 +152,5 @@
     <!--    Don't worry, everything is taken over a secure connection and we will not share your information without your approval.                -->
     <!--    </p>-->
     <!--</div>-->
-<?php include_once('mouseflow.php'); ?>    
 </body>
 </html>
