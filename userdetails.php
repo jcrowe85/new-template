@@ -61,6 +61,5 @@ $(document).ready(function(){
         <?php include_once('userdetails-form.php'); ?>
         </div>
     </div>
-    <?php include_once('mouseflow.php'); ?>
 </body>
 </html>
