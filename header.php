@@ -1,13 +1,13 @@
 <div class="header navbar-fixed-top fluid">
     <div class="container">
-        <div class="col-md-3">
+        <div class="col-md-2">
             <div class="logo">
                 <a href="/"><img src="/images/logo.png" alt="">
                 <span>Usurit</span>
                 </a>
             </div>
         </div>
-        <div class="col-md-6 col-md-offset-2">
+        <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
             <nav class="navbar navbar-static-top" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
@@ -25,8 +25,8 @@
                             <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
                             <li class="dropdown"><a id="guide" href="#">Insurance Guides</a>
                               <div class="dropdown-content">
-                                <a href="/life-guide.php">Life Insurance</a>
-                                <a href="/health-guide.php">Health Insurance</a>
+                                <a href="/guide-life.php">Life Insurance</a>
+                                <a href="/guide-health.php">Health Insurance</a>
                               </div>        
                              </li>
                             <li><a id="about" href="#">About Us</a></li>

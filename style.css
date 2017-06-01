@@ -963,7 +963,9 @@ ul.quest li:nth-child(5) {
 #userinfo-page .title, #userdetails-page .title{
     margin: 35px 0;
 }
-
+#userinfo-page .continue, #userdetails-page .continue{
+    margin: 35px 0 75px 0;
+}
 /*  ---------------------------   userdetails page  -------------------------------- */
 
 
@@ -1444,7 +1446,14 @@ label.error,div.error{
 }
 
 
-
+@media screen and (max-width:992px){
+#userinfo-page .sidebar, #userdetails-page .sidebar{
+    display: none;
+}    
+#home-page .features-container{
+    flex-direction: column;
+}
+}
 
 /*  ---------------------------   responsive  -------------------------------- */
 

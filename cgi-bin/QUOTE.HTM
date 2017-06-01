@@ -309,11 +309,14 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
       <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
       <input type="hidden" name="email" value="$email$">
       <input type="hidden" name="css" value="$css$">    
+    <!-- show loader while loading page -->  
     <div class="se-pre-con"></div>
+    <!-- end show loader while loading page -->  
     <div class="sidebar col-sm-2 col-md-2" >
         <div class="hidden-xs">
             <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
         </div>
+        <!-- Mobile Header (logo+name+hamburger and filters) -->
         <div class="row visible-xs" style="border-bottom:1px solid lightgray;">
             <div class="col-xs-3">
                 <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>
@@ -347,55 +350,57 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                     </div>
                 </nav>
             </div>              
-        </div>         
+        </div>    
+        <!-- End Mobile Header (logo+name+hamburger and filters) -->        
         <div class="adjustments fluid">
-                <div class="controls">
-                    <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
-                        <div class="adjust-title">Adjust your policy</div> 
-                        <div class="coverage">
-                                <label for="coverage" class="coverage" style="color:gray" >Coverage</label>
-                                <output name="coverage" id="coverage"></output>
-                                <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="1000000" value="100000" step="50000" oninput="coverageUpdate(value)">
-                        </div>
-                        <div class="term">
-                            <label for="term" style="color:gray" class="term-title">Term</label>
-                            <output for="term" id="term"></output>
-                            <input type="range" name="NewCategory" id="term-range"  min="2" max="9" step="1" oninput="termUpdate(value)" >
-                        </div>                         
-                        <div class="monthly-annually">
-                            <label for="mode" style="display:block" style="display:block;">Show Prices</label>
+            <div class="controls">
+                <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
+                    <div class="adjust-title">Adjust your policy</div> 
+                    <div class="coverage">
+                        <label for="coverage" class="coverage" style="color:gray" >Coverage</label>
+                        <output name="coverage" id="coverage"></output>
+                        <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="1000000" value="100000" step="50000" oninput="coverageUpdate(value)">
+                    </div>
+                    <div class="term">
+                        <label for="term" style="color:gray" class="term-title">Term</label>
+                        <output for="term" id="term"></output>
+                        <input type="range" name="NewCategory" id="term-range"  min="2" max="9" step="1" oninput="termUpdate(value)" >
+                    </div>                         
+                    <div class="monthly-annually">
+                        <label for="mode" style="display:block" style="display:block;">Show Prices</label>
                             <div style="margin:0px">
-                                <label for="monthly">Monthly</label>
-                               <input type="radio" name="ModeUsed" class="M" value="M">
-                           </div>
-                           <div style="margin:0px">
-                               <label for="annually">Annually</label>
-                               <input type="radio" name="ModeUsed" class="A" value="A">
-                           </div>
-                        </div>        
-                            <input type="hidden" name="ZipCode" value="$zipcode$">
-                            <input type="hidden" name="DoingHealth" value="ON">
-                            <input type="hidden" name="State" value="$origstate$">
-                            <input type="hidden" name="Birthday" value="$origday$">
-                            <input type="hidden" name="BirthMonth" value="$origmonth$">
-                            <input type="hidden" name="BirthYear" value="$origyear$">
-                            <input type="hidden" name="Health" value="$orighealth$">
-                            <input type="hidden" name="Sex" value="$origsex$">
-                            <input type="hidden" name="Smoker" value="$origsmoker$">
-                            <input type="hidden" name="NewCategory" value="$origcat$">
-                            <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
-                            <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                            <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
-                            <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
-                            <input type="hidden" name="ModeUsed" value="$origmodeused$">
-                            <input type="hidden" name="UserLocation" value="$userlocation$">
-                            <input type="hidden" name="UserLocation" value="$userlocation$">
-                            <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
-                            <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
-                            <input type="hidden" name="email" value="$email$">
-                            <input type="hidden" name="css" value="$css$">                       
-                    </form>                    
-                </div>
+                            <label for="monthly">Monthly</label>
+                            <input type="radio" name="ModeUsed" class="M" value="M">
+                       </div>
+                       <div style="margin:0px">
+                           <label for="annually">Annually</label>
+                           <input type="radio" name="ModeUsed" class="A" value="A">
+                       </div>
+                    </div>    
+                    <!-- saved values to pass to cgi engine when changing filters -->
+                        <input type="hidden" name="ZipCode" value="$zipcode$">
+                        <input type="hidden" name="DoingHealth" value="ON">
+                        <input type="hidden" name="State" value="$origstate$">
+                        <input type="hidden" name="Birthday" value="$origday$">
+                        <input type="hidden" name="BirthMonth" value="$origmonth$">
+                        <input type="hidden" name="BirthYear" value="$origyear$">
+                        <input type="hidden" name="Health" value="$orighealth$">
+                        <input type="hidden" name="Sex" value="$origsex$">
+                        <input type="hidden" name="Smoker" value="$origsmoker$">
+                        <input type="hidden" name="NewCategory" value="$origcat$">
+                        <input type="hidden" name="parm1" value="$parm1$"><!-- custom Name parm -->
+                        <input type="hidden" name="parm2" value="$parm2$"><!-- custom Height parm -->
+                        <input type="hidden" name="parm3" value="$parm3$"><!-- custom Weight parm -->
+                        <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+                        <input type="hidden" name="ModeUsed" value="$origmodeused$">
+                        <input type="hidden" name="UserLocation" value="$userlocation$">
+                        <input type="hidden" name="UserLocation" value="$userlocation$">
+                        <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+                        <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+                        <input type="hidden" name="email" value="$email$">
+                        <input type="hidden" name="css" value="$css$">                       
+                </form>                    
+            </div>
         </div>            
     </div> 
     <div class="main col-sm-12 col-md-10">

@@ -61,5 +61,7 @@ $(document).ready(function(){
         <?php include_once('userdetails-form.php'); ?>
         </div>
     </div>
+    <div style="clear:both;"></div>
+    <?php include_once('footer.php'); ?>    
 </body>
 </html>
