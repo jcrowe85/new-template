@@ -68,8 +68,8 @@
         <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />  
         
        <!-- linkedIn images/content for post -->
-        <meta property="og:title" content="Title of the article"/>
+        <meta property="og:title" content="Usurit"/>
         <meta property="og:image" content="/images/linkedInBg.jpg"/>
-        <meta property="og:description" content="Description that will show in the preview"/>
+        <meta property="og:description" content="Making Insurance Easy to Learn, and Easy to Buy."/>
         <meta property="og:url" content="www.usurit.com/" />        
     </head>    
