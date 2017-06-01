@@ -114,7 +114,7 @@
               </div>
               <div class='row'>
                   <div class='col-md-12 col-sm-12 col-xs-12'>
-                      <div class="form-group">
+                      <div class="form-group continue">
                                <!--<button type="submit" name="continue" value="Continue To Full Application" id="btnContinue" class="btn btn-warning btn-block" tabindex='1'>Continue To Full Application</button>-->
                                <input type="submit" name="continue" value="Continue To Full Application" id="btnContinue" class="btn btn-warning btn-block"  tabindex='1'>
                        </div>
@@ -152,5 +152,7 @@
     <!--    Don't worry, everything is taken over a secure connection and we will not share your information without your approval.                -->
     <!--    </p>-->
     <!--</div>-->
+    <div style="clear:both;"></div>
+    <?php include_once('footer.php'); ?>       
 </body>
 </html>

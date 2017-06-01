@@ -1861,7 +1861,7 @@
 
                             <div class='row'>
                                 <div class='col-md-12 col-sm-12 col-xs-12'>
-                                    <div class="form-group">
+                                    <div class="form-group continue">
                                         <button type="submit" name="submitMainForm" id="submitMainForm" class="btn btn-warning btn-block" tabindex="11">Submit application</button>
                                     </div>
                                 </div>

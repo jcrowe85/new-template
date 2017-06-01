@@ -67,5 +67,21 @@
                 </div>
             </div>
         </div>
+        <!-- services popup -->
+        <div class="popup" data-popup="popup-1">
+            <div class="popup-inner">
+                <h2 style="">We're Only Offering <u>Life Insurance</u> Quotes at this Time.</h2>
+                <h5 style="color:gray;">Let's Refer You to One of Our Partners.</h5>
+                <p>
+                    Although we're only offering life insurance at this time, you can head over to one of our trusted partners to get a quote.
+                    By clicking 'Leave Site' we'll forward you to their website to get the quote. By pressing 'Stay Here' we'll take you back to our site.
+                    <div>
+                    <button class="btn btn-warning btn-lg" data-popup-close="popup-1">Stay Here</button>    
+                    <button class="btn btn-default btn-lg">Leave Site</button>
+                    </div>
+                </p>
+                <a class="popup-close" data-popup-close="popup-1" href="#" style="color:white;">x</a>
+            </div>
+        </div>         
     </body>
 </html>
