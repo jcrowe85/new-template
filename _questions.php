@@ -17,7 +17,7 @@
             <div class="col-md-6 col-md-offset-2">
                 <ul class="faq-ul">
                     <li class="faq">
-                        <div class="col-md-11"><h5>How do I get started?</h5></div>                                     
+                        <div class="col-md-9 col-lg-11"><h5>How do I get started?</h5></div>                                     
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>
@@ -31,7 +31,7 @@
                     </div>
                     
                     <li class="faq">
-                        <div class="col-md-11"><h5>How are you guys different?</h5></div>                                     
+                        <div class="col-md-9 col-lg-11"><h5>How are you guys different?</h5></div>                                     
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>
@@ -48,7 +48,7 @@
                         </p>
                     </div>      
                     <li class="faq">
-                        <div class="col-md-11"><h5>How do you make money?</h5></div>                                     
+                        <div class="col-md-9 col-lg-11"><h5>How do you make money?</h5></div>                                     
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>
@@ -66,7 +66,7 @@
                         </p>
                     </div> 
                     <li class="faq">
-                        <div class="col-md-11"><h5> Which companies do you guys work with?</h5></div>   
+                        <div class="col-md-9 col-lg-11"><h5> Which companies do you guys work with?</h5></div>   
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>    
@@ -83,7 +83,7 @@
                         </p>
                     </div>  
                     <li class="faq">
-                        <div class="col-md-11"><h5>Can we go direct to the insurance carrier for a better price?</h5></div>                                     
+                        <div class="col-md-9 col-lg-11"><h5>Can we go direct to the insurance carrier for a better price?</h5></div>                                     
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>    
@@ -100,7 +100,7 @@
                         </p>
                     </div>  
                     <li class="faq">
-                        <div class="col-md-11"><h5>That's great that this is all online. But what if I have questions that I can't find the answer to?</h5></div>                                     
+                        <div class="col-md-9 col-lg-11"><h5>That's great that this is all online. But what if I have questions that I can't find the answer to?</h5></div>                                     
                         <div class="col-md-1">
                             <i class="fa fa-plus answer-button" aria-hidden="true"></i>
                         </div>
