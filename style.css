@@ -1545,8 +1545,11 @@ label.error,div.error{
 .feature-details{
     margin-top: 25px;
 }
-#userinfo-page #process-logo, #life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
+#userinfo-page #process-logo, #userdetails-page #process-logo,{
     width:15%;
+}
+#life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
+    width:4%;
 }
 
 #userinfo-page .sidebar, #userdetails-page .sidebar{
