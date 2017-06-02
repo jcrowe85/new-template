@@ -71,7 +71,7 @@
                             </div>
                             <div class="feat-right">
                                 <div class="feat-details">
-                                    <p> Purchased<br> a Home</p>
+                                    <span>Purchased<br> a Home</span>
                                     <spa><b></b></spa>
                                 </div>
                             </div>
@@ -87,7 +87,7 @@
                             </div>
                             <div class="feat-right">
                                 <div class="feat-details">
-                                    <p>Had a Baby</p>
+                                    <span>Had a Baby</span>
                                     <spa><b></b></spa>
                                 </div>
                             </div>
@@ -103,7 +103,7 @@
                             </div>
                             <div class="feat-right">
                                 <div class="feat-details">
-                                    <p>Recently Lost<br> a Loved One</p>
+                                    <span>Recently Lost<br> a Loved One</span>
                                     <spa><b></b></spa>
                                 </div>
                             </div>
