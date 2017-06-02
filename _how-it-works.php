@@ -1,7 +1,7 @@
-<div class="team fluid">
+<div class="how-it-works fluid">
     <div class="container">
         <div class="row">
-            <div class="team-highlights col-md-7">
+            <div class="how-it-works-highlights col-md-7">
             <h2>How it Works</h2>
                 <ul>
                     <li>
@@ -22,7 +22,7 @@
                 </ul>
                 <ul>
                     <li>
-                        <h4><b>Fillout Applicaiton</b></h4>
+                        <h4><b>Finish Applicaiton</b></h4>
                         <p>
                             After selecting your product you'll be asked to create an account and complete an application. Creating an account will save your information. 
                             The application is secure and we will <u>not</u> share your information without your consent.
@@ -31,7 +31,7 @@
                     <li>
                 </ul>                        
             </div>
-            <div class="team-pics col-md-5">
+            <div class="how-it-works-pics col-md-4 col-md-offset-1">
                 <img src="/images/iphone6-life-quote.gif" alt="">
             </div>
         </div>
