@@ -354,6 +354,7 @@ li.dropdown:hover .dropdown-content{
 }
 .feat-right, .feat-details, .feat-logo{
     display: inline-block;
+        font-size: 12px;
 }
 .feat-right{
     text-align: center;
@@ -367,7 +368,7 @@ li.dropdown:hover .dropdown-content{
     vertical-align: middle;  
     font: 16px/1.4 'AileronRegular'; ;
 }
-.feat-logo, .feat-details{
+.feat-logo{
     margin-left:15px;
 }
 .feat-details p{
