@@ -69,8 +69,10 @@ $(document).ready(function(){
             </div>        
         </div>
         <?php include_once('_why_us.php'); ?>
+        <?php include_once('_how-it-works.php'); ?>
+        <?php include('_getstarted.php'); ?>
         <?php include_once('_team.php'); ?>
-        <?php include_once('_getstarted.php'); ?>
+        <?php include('_getstarted.php'); ?>
         <?php include_once('_blog.php'); ?>
         <?php include_once('_questions.php'); ?>
         <!-- services popup -->
