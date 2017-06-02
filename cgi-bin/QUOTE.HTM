@@ -312,12 +312,12 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
     <!-- show loader while loading page -->  
     <div class="se-pre-con"></div>
     <!-- end show loader while loading page -->  
-    <div class="sidebar col-sm-2 col-md-2" >
-        <div class="hidden-xs">
+    <div class="sidebar col-md-3 col-lg-2" >
+        <div class="hidden-xs hidden-sm">
             <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
         </div>
         <!-- Mobile Header (logo+name+hamburger and filters) -->
-        <div class="row visible-xs" style="border-bottom:1px solid lightgray;">
+        <div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">
             <div class="col-xs-3">
                 <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>
             </div>
@@ -351,15 +351,15 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 </nav>
             </div>              
         </div>    
-        <!-- End Mobile Header (logo+name+hamburger and filters) -->        
+        <!-- Sidebar -->        
         <div class="adjustments fluid">
             <div class="controls">
                 <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
-                    <div class="adjust-title">Adjust your policy</div> 
+                    <div class="adjust-title">Adjust Your Policy</div> 
                     <div class="coverage">
                         <label for="coverage" class="coverage" style="color:gray" >Coverage</label>
                         <output name="coverage" id="coverage"></output>
-                        <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="1000000" value="100000" step="50000" oninput="coverageUpdate(value)">
+                        <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="2000000" value="100000" step="50000" oninput="coverageUpdate(value)">
                     </div>
                     <div class="term">
                         <label for="term" style="color:gray" class="term-title">Term</label>
@@ -403,8 +403,8 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
             </div>
         </div>            
     </div> 
-    <div class="main col-sm-12 col-md-10">
-        <div class="row hidden-xs">
+    <div class="main col-md-9 col-lg-10">
+        <div class="row hidden-xs hidden-sm">
             <div class="header fluid">
                 <div class="container">
                     <header>
@@ -413,7 +413,7 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 </div>
             </div>                 
         </div>
-        <div class="row hidden-xs">
+        <div class="row hidden-xs hidden-sm">
             <div class="col-md-12">
                 <div class="row" style="margin-top:25px;">
                 <div class="title col-md-8 col-md-offset-1">
@@ -423,7 +423,7 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                     <p>The first 3 are the most affordable, followed by the most expensive.</p>
                     <p>These quotes were based on the information you provided in the previous step.</p>
                 </div>                    
-                    <div class="quote-container col-md-12">
+                    <div class="primary-quote-container  col-md-12">
                         $prodline=3$      
                         <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes" id="primary-quotes">
                             <div class="card-grid" >
@@ -483,11 +483,11 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 </div>
             </div>
         </div>
-        <div class="c-logo hidden-xs" id='downArrow' style="text-align:center; margin-top: 85px;">
+        <div class="c-logo hidden-xs hidden-sm" id='downArrow' style="text-align:center; margin-top: 85px;">
             <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
             <p style="font-size:.8em;">Most expensive quotes from top-rated carriers</p>
         </div>        
-        <div class="row hidden-xs">
+        <div class="row hidden-xs hidden-sm">
             <div class="secondary-quote main" id="secondary-quote">
                 $prodline=20$      
                 <form action="/userinfo.php" method="POST" class="secondary-quotes">
@@ -499,7 +499,9 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                                 </div>
                                 <div class="sec-logo-name">
                                     <img src="../images/logos/$COMP$.gif" alt="">
-                                    <span>$company$</span>
+                                </div>
+                                <div class="company">
+                                    $company$
                                 </div>
                                 <div class="price">
                                     <h3>$$premium$<small>/mo</small></h3>
@@ -551,7 +553,8 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 $/prodline$
             </div>
         </div>
-        <div class="row visible-xs">
+        <!-- Mobile version only -->
+        <div class="row visible-xs visible-sm">
             <div class="mobile-container fluid">
                 <p style="text-align:center; font-size:.8em;">Most Affordable Quotes from Top-Rated Carriers
                 <br>
@@ -593,11 +596,11 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 $/prodline$
             </div>  
         </div>
-        <div class="c-logo visible-xs" id='downArrow' style="text-align:center;">
+        <div class="c-logo visible-xs visible-sm" id='downArrow' style="text-align:center;">
             <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
             <p style="font-size:.8em;margin-top: 70px;">Most expensive quotes from top-rated carriers</p>
         </div>
-        <div class="row visible-xs">
+        <div class="row visible-xs visible-sm">
             <div class="mobile-secondary-quote fluid" >
                 $prodline=20$   
                 <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile2">
@@ -635,11 +638,6 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                 $/prodline$
             </div>  
         </div>
-        <div class="row">
-            <div class="footer">
-               <p>Usurit, Inc.</p> 
-            </div>        
-        </div>
     </div>
 
     <!--<div class="sidebar">-->
@@ -668,5 +666,9 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
         document.getElementsByTagName("head")[0].appendChild(mf);
     })();
 </script>
+    <div style="clear:both"></div>
+    <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
+       <p>Usurance, Inc.</p> 
+    </div>
   </body>    
 </html>

@@ -42,7 +42,7 @@ $(document).ready(function(){
   
   
   // set sidebar height to main container height on load
-    if($(window).width() >= 768){
+    if($(window).width() >= 992){
     // set sidebar height to main height
     var height = $('.main').outerHeight()
     $('.sidebar').css("height", height);  
@@ -55,7 +55,7 @@ $(document).ready(function(){
   
   // set sidebar height to main container height on resize
   $(window).resize(function(){
-    if($(window).width() >= 768){
+    if($(window).width() >= 992){
     // set sidebar height to main height
     var height = $('.main').outerHeight()
     $('.sidebar').css("height", height);  

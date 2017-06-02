@@ -13,14 +13,7 @@ $NewCategory = $_POST['NewCategory'];
 ?>
 <?php include_once('head.php') ?>
 <style>
-#process-logo{
-    width:2%;
-}
-#verify-page{
-    background-color: #9c292b;
-    color:white;
-    font-family: 'AileronThin';
-}
+
 .progress{
     height:0px;
 }
@@ -32,14 +25,6 @@ $NewCategory = $_POST['NewCategory'];
 .control-group {
 	display: block;
 }
-#life-page fieldset > div{
-    margin-top:25px;
-}
-#life-page input, #life-page select {
-     letter-spacing: 5px;
-
-}
-
 fieldset:nth-child(2) .control-group, fieldset:nth-child(3) .control-group,  fieldset:nth-child(7) .control-group {
     display: inline-block;
 }
@@ -140,81 +125,9 @@ fieldset{
     position:absolute;
     width:100%;
 }
-#quick-quote fieldset:not(:first-of-type) {
-	display: none;
-}
-.previous-step{
-    position:fixed; 
-    top:40%; 
-    left:2%;
-    ms-transform: rotate(90deg); 
-    -webkit-transform: rotate(90deg); 
-    transform: rotate(90deg);    
-}
-.previous-step button{
-    background:none; 
-    border:none;
-    outline: none; 
-    pointer:cursor;    
-}
-.previous-step img{
-    width:75%
-}
 
-#verify-page #quick-quote fieldset{
-    display: block;
-    position: relative;
-}
-#verify-page .row{
-    margin-top: 0px;
-    padding: 0px;
-}
-#verify-page h1{
-    margin-top:0px;
-}
 
-#verify-page .control__indicator{
-    font-size: 18px;
-    letter-spacing: 2px;    
-    padding: 10px 20px;
 
-}
-#verify-page .control-text input{
-    background-color: rgba(255, 255, 255, 0.3);
-    padding: 20px 10px;
-    border-radius: 5px;
-    font-family: 'AileronThin';
-    border: none;
-    height: 45px;
-    max-width: 130px;
-    font-size: 18px;
-    color: white;
-    letter-spacing: 2px;
-}
-#verify-page .control-text select {
-    border-radius: 5px;
-    border: none;
-    padding: 10px;
-    font-size: 18px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    color: white;
-    font-family: 'AileronThin';
-    background: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    letter-spacing: 2px;
-}
-#verify-page fieldset{
-    margin-bottom: 10px;
-}
-#verify-page .quick-quote > h1{
-    margin-top: 10px;
-    margin-bottom: 15px;
-}
-#verify-page div:last{
-    margin-bottom:25px;
-}
 
 
 </style>
@@ -655,8 +568,8 @@ function changeHeight(height) {
                       <div class="control-group">
                           <label class="control-text">
                             <select name="FaceAmount" id="faceamount">
-                                <option style="background-color:#808080;" value="10000" <?php if($FaceAmount == "10000") echo "selected"; ?>>$10,000</option>
-                                <option style="background-color:#808080;" value="25000" <?php if($FaceAmount == "25000") echo "selected"; ?>>$25,000</option>
+                                <!--<option style="background-color:#808080;" value="10000" <?php if($FaceAmount == "10000") echo "selected"; ?>>$10,000</option>-->
+                                <!--<option style="background-color:#808080;" value="25000" <?php if($FaceAmount == "25000") echo "selected"; ?>>$25,000</option>-->
                                 <option style="background-color:#808080;" value="50000" <?php if($FaceAmount == "50000") echo "selected"; ?>>$50,000</option>
                                 <option style="background-color:#808080;" value="50000" <?php if($FaceAmount == "50000") echo "selected"; ?>>$50,000</option>
                                 <option style="background-color:#808080;" value="75000" <?php if($FaceAmount == "75000") echo "selected"; ?>>$75,000</option>
@@ -685,15 +598,15 @@ function changeHeight(height) {
                                 <option style="background-color:#808080;" value="1500000" <?php if($FaceAmount == "1500000") echo "selected"; ?>>$1,500,000</option>
                                 <option style="background-color:#808080;" value="1750000" <?php if($FaceAmount == "1750000") echo "selected"; ?>>$1,750,000</option>
                                 <option style="background-color:#808080;" value="2000000" <?php if($FaceAmount == "2000000") echo "selected"; ?>>$2,000,000</option>
-                                <option style="background-color:#808080;" value="2500000" <?php if($FaceAmount == "2500000") echo "selected"; ?>>$2,500,000</option>
-                                <option style="background-color:#808080;" value="3000000" <?php if($FaceAmount == "3000000") echo "selected"; ?>>$3,000,000</option>
-                                <option style="background-color:#808080;" value="4000000" <?php if($FaceAmount == "4000000") echo "selected"; ?>>$4,000,000</option>
-                                <option style="background-color:#808080;" value="5000000" <?php if($FaceAmount == "5000000") echo "selected"; ?>>$5,000,000</option>
-                                <option style="background-color:#808080;" value="6000000" <?php if($FaceAmount == "6000000") echo "selected"; ?>>$6,000,000</option>
-                                <option style="background-color:#808080;" value="7000000" <?php if($FaceAmount == "7000000") echo "selected"; ?>>$7,000,000</option>
-                                <option style="background-color:#808080;" value="8000000" <?php if($FaceAmount == "8000000") echo "selected"; ?>>$8,000,000</option>
-                                <option style="background-color:#808080;" value="9000000" <?php if($FaceAmount == "9000000") echo "selected"; ?>>$9,000,000</option>
-                                <option style="background-color:#808080;" value="10000000" <?php if($FaceAmount == "10000000") echo "selected"; ?>>$10,000,000</option>
+                                <!--<option style="background-color:#808080;" value="2500000" <?php if($FaceAmount == "2500000") echo "selected"; ?>>$2,500,000</option>-->
+                                <!--<option style="background-color:#808080;" value="3000000" <?php if($FaceAmount == "3000000") echo "selected"; ?>>$3,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="4000000" <?php if($FaceAmount == "4000000") echo "selected"; ?>>$4,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="5000000" <?php if($FaceAmount == "5000000") echo "selected"; ?>>$5,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="6000000" <?php if($FaceAmount == "6000000") echo "selected"; ?>>$6,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="7000000" <?php if($FaceAmount == "7000000") echo "selected"; ?>>$7,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="8000000" <?php if($FaceAmount == "8000000") echo "selected"; ?>>$8,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="9000000" <?php if($FaceAmount == "9000000") echo "selected"; ?>>$9,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="10000000" <?php if($FaceAmount == "10000000") echo "selected"; ?>>$10,000,000</option>-->
                             </select>
                           </label>
                       </div>	
