@@ -374,21 +374,21 @@ li.dropdown:hover .dropdown-content{
 .feat-details p{
         line-height: 1.5em;
 }
-/* -------------------------  _team partial  ----------------------*/
-.team .container{
+/* -------------------------  _how-it-works partial  ----------------------*/
+.how-it-works .container{
     width:70%;
 }
-.team ul{
+.how-it-works ul{
     list-style:none;
     padding: 0px;
 }
-.team-pics img{
-    width:80%;
+.how-it-works-pics img{
+    width:100%;
 }
-.team-highlights ul{
+.how-it-works-highlights ul{
     margin-top: 40px;
 }
-.team-highlights h2{
+.how-it-works-highlights h2{
     border-bottom: 2px solid red;
     width: 65%;
     padding-bottom: 10px;
@@ -608,6 +608,27 @@ ul.quest li:nth-child(5) {
         margin-bottom: 10px;
 }
 
+/* -------------------------  _team partial  ----------------------*/
+
+.team .container{
+    width:70%;
+}
+.team ul{
+    list-style:none;
+    padding: 0px;
+}
+.team-pics img{
+    width:80%;
+    float:right;
+}
+.team-highlights ul{
+    margin-top: 40px;
+}
+.team-highlights h2{
+    border-bottom: 2px solid red;
+    width: 65%;
+    padding-bottom: 10px;
+}
 
 
 /* -------------------------  home page  ----------------------*/
@@ -1524,10 +1545,12 @@ label.error,div.error{
 
 
 }
-
+}
 
 /* ------------ xs  ---------- */
+
 @media screen and (max-width:768px){
+    
 .serv h3{
     font-size:14px;
 }
@@ -1660,6 +1683,7 @@ li.dropdown:hover .dropdown-content{
 #life-page .control-group {
     display: block;
 }
+
 }
 
 
@@ -1730,6 +1754,9 @@ li.dropdown:hover .dropdown-content{
     margin-left: 0 !important;
 }
 .team .container {
+    width:100%;
+}
+.how-it-works .container {
     width:100%;
 }
 
