@@ -1516,37 +1516,10 @@ label.error,div.error{
 #home-page .features-container{
     flex-direction: column;
 }
-#quote-page .sidebar {
-    color: #000;
-    border-right: none; 
-    padding-bottom:0px;
-}
-#quote-page .adjustments {
-    font-family: 'AileronThin';
-    border-bottom: none;
-    padding: 10px;
-}
-#quote-page .controls div{
-    text-align: center;
-    margin-bottom: 0px;
-    align-items: center;
-    justify-content: center;    
-}
-#quote-page .sec-logo-name img {
-    max-width: 45%;
-}
-#quote-page .sec-quote{
-    padding: 5px 25px;
-}
-#quote-page .premium h3{
-    float:right;
-}
-#quote-page .controls div{
-    margin-bottom: 20px;
-}
-#quote-page .adjust-title, .monthly-annually{
-    display:none;
-}
+
+
+
+
 }
 /*  ---------------------------   responsive  -------------------------------- */
 
