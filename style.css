@@ -560,7 +560,7 @@ ul.quest li:nth-child(5) {
     width:75%;
 }
 .faq{
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 }
 .faq:before{
     content: ' ';
@@ -1510,22 +1510,23 @@ label.error,div.error{
     text-align: left;      
 }
 
+/*  ---------------------------   responsive  -------------------------------- */
+
+
+/* ------------ md  ---------- */
 
 @media screen and (max-width:992px){
  
 #home-page .features-container{
     flex-direction: column;
+    align-items:center;
+
+
+
 }
 
 
-
-
-}
-/*  ---------------------------   responsive  -------------------------------- */
-
-
-
-/* ------------ md ---------- */
+/* ------------ xs  ---------- */
 @media screen and (max-width:768px){
 .serv h3{
     font-size:14px;
@@ -1659,7 +1660,7 @@ li.dropdown:hover .dropdown-content{
 }
 
 
-/* ------------ sm  ---------- */
+/* ------------ xs  ---------- */
 @media screen and (max-width:375px){
     
 
