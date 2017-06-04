@@ -16,20 +16,20 @@
   // set a session variable to user's email
   $_SESSION["sessionemailtext"] = $_POST['emailtext'];
   $_SESSION["favcolor"] = "green";
-$_SESSION["favanimal"] = "cat";
+  $_SESSION["favanimal"] = "cat";
   
-  // clean user inputs to prevent sql injections
-    $firstnametext = mysqli_real_escape_string($conn, $_POST ['firstnametext']);
-    $middlenametext = mysqli_real_escape_string($conn, $_POST ['middlenametext']);
-    $lastnametext = mysqli_real_escape_string($conn, $_POST ['lastnametext']);
-    $bestphonetext = mysqli_real_escape_string($conn, $_POST ['bestphonetext']);
-    $email = mysqli_real_escape_string($conn, $_POST ['emailtext']);
-    $pass = mysqli_real_escape_string($conn, $_POST ['passwordtext']);
-    $premium = mysqli_real_escape_string($conn, $_POST ['premium']);
-    $company = mysqli_real_escape_string($conn, $_POST ['company']);
-    $sex = mysqli_real_escape_string($conn, $_POST ['Sex']);
-    $smoker = mysqli_real_escape_string($conn, $_POST ['Smoker']);
-    $address1text = mysqli_real_escape_string($conn, $_POST ['address1text']);   
+// clean user inputs to prevent sql injections
+  $firstnametext = mysqli_real_escape_string($conn, $_POST ['firstnametext']);
+  $middlenametext = mysqli_real_escape_string($conn, $_POST ['middlenametext']);
+  $lastnametext = mysqli_real_escape_string($conn, $_POST ['lastnametext']);
+  $bestphonetext = mysqli_real_escape_string($conn, $_POST ['bestphonetext']);
+  $email = mysqli_real_escape_string($conn, $_POST ['emailtext']);
+  $pass = mysqli_real_escape_string($conn, $_POST ['passwordtext']);
+  $premium = mysqli_real_escape_string($conn, $_POST ['premium']);
+  $company = mysqli_real_escape_string($conn, $_POST ['company']);
+  $sex = mysqli_real_escape_string($conn, $_POST ['Sex']);
+  $smoker = mysqli_real_escape_string($conn, $_POST ['Smoker']);
+  $address1text = mysqli_real_escape_string($conn, $_POST ['address1text']);   
     
   
   

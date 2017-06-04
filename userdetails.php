@@ -26,8 +26,6 @@ $(document).ready(function(){
 #userdetails-page label, #userdetails-page label{
     font-size: 12px;
 }
-
-
  </style>
 <body id="userdetails-page">
     <div class="sidebar col-md-3">
