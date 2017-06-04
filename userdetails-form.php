@@ -50,7 +50,7 @@
                                 </div>
                                 <div class='col-md-6 col-sm-12 col-xs-12'>
                                     <div class="form-group">
-                                        <label type="text" class="form-control noBorder custom-size-header-box" name="zipcode" value='Zip code' readonly/>Zip Code</label>
+                                        <label type="text" class="form-control noBorder custom-size-header-box" name="zipcodetext" value='Zip code' readonly/>Zip Code</label>
                                         <input 
                                             class="form-control noBorder custom-size-input-box" 
                                             id="zipcodetext"
@@ -70,6 +70,7 @@
                                         <label 
                                         type="text" class="form-control noBorder custom-size-header-box" value='State' readonly/>State</label>
                                         <select 
+                                            id="state"
                                             name="state"
                                             class="form-control noBorder custom-size-input-box" 
                                             tabindex='4'
@@ -503,7 +504,7 @@
                                     <div class="form-group">
                                         <label type="text" class="form-control noBorder custom-size-header-box" value='Reason for applying' readonly/>Reason for applying</label>
                                         <select id="reasonforapplying" class="form-control noBorder custom-size-input-box" name="reasonforapplying" tabindex='7'>
-                                     <option value="1">--Select reason for applying--</option>
+                                     <option value="empty">--Select reason for applying--</option>
                                      <option value="personal">Personal</option>
                                      <option value="family protection">Family protection</option>
                                  </select>
@@ -819,7 +820,7 @@
                                                                 data-validation-help="Please provide your month of birth" 
                                                                  data-validation-regexp="^([A-Za-z]+)$"
                                                                 data-suggestions="January, February, March, April, May, June, July, August, September, October, November, December"/>-->
-                                                            <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'>
+                                                            <select id="form_dob_month" class="form-control" name="primarybirthmonth" tabindex='10'>
                                                                         <option value="January" selected="selected">January</option>
                                                                         <option value="February">February</option>
                                                                         <option value="March">March</option>
@@ -842,7 +843,7 @@
                                                                 data-validation='required number length'
                                                                 data-validation-help="Please provide your date of birth"
                                                                  data-validation-length="max2"/>-->
-                                                            <select id="form_dob_date" class="form-control" name="Birthday" tabindex='10'>
+                                                            <select id="form_dob_date" class="form-control" name="primarybirthday" tabindex='10'>
                                                                             <option value="1" selected="selected" >1</option>
                                                                             <option value="2">2</option>
                                                                             <option value="3">3</option>
@@ -884,7 +885,7 @@
                                                                 data-validation='required number'
                                                                 data-validation-help="Please provide your year of birth"
                                                                 data-validation-length="max4"/>-->
-                                                            <select id="form_dob_year" class="form-control" name="BirthYear" tabindex='10'>
+                                                            <select id="form_dob_year" class="form-control" name="primarybirthyear" tabindex='10'>
                                                                         <option value="2005" selected="selected">2017</option>
                                                                         <option value="2004">2016</option>
                                                                         <option value="2003">2015</option>
@@ -1482,7 +1483,7 @@
                                                     id="othercitytext" 
                                                     placeholder="Enter city" 
                                                     type="text" 
-                                                    name="citytext" 
+                                                    name="othercitytext" 
                                                     tabindex='13'
                                                     data-validation="required custom length"
                                                     data-validation-length="max40"
@@ -1497,7 +1498,7 @@
                                                     id="otherzipcodetext"
                                                     placeholder="Enter zip code" 
                                                     type="text" 
-                                                    name="zipcodetext" 
+                                                    name="otherzipcodetext" 
                                                     tabindex='14'
                                                     data-validation="required length number" 
                                                     data-validation-length="max20"/>
@@ -1615,63 +1616,64 @@
                                             <label type="text" class="form-control noBorder custom-size-header-box" placeholder="Driver license's state" aria-describedby="basic-addon2" readonly>Driver's License State</label>
                                             <span class="input-group-addon" id="basic-addon2"><i class="glyphicon glyphicon-lock" aria-hidden="true"></i></span>
                                         </div>
-                                        <select id="driverlicense" class="form-control noBorder custom-size-input-box" name="driverlicense" tabindex='10'>
-                                                <option value="1">Alabama</option>
-                                                <option value="2">Alaska</option>
-                                                <option value="3">Arizona</option>
-                                                <option value="4">Arkansas</option>
-                                                <option selected value="5">California</option>
-                                                <option value="6">Colorado</option>
-                                                <option value="7">Connecticut</option>
-                                                <option value="8">Delaware</option>
-                                                <option value="9">Dist.Columbia</option>
-                                                <option value="10">Florida</option>
-                                                <option value="11">Georgia</option>
-                                                <option value="12">Hawaii</option>
-                                                <option value="13">Idaho</option>
-                                                <option value="14">Illinois</option>
-                                                <option value="15">Indiana</option>
-                                                <option value="16">Iowa</option>
-                                                <option value="17">Kansas</option>
-                                                <option value="18">Kentucky</option>
-                                                <option value="19">Louisiana</option>
-                                                <option value="20">Maine</option>
-                                                <option value="21">Maryland</option>
-                                                <option value="22">Massachusetts</option>
-                                                <option value="23">Michigan</option>
-                                                <option value="24">Minnesota</option>
-                                                <option value="25">Mississippi</option>
-                                                <option value="26">Missouri</option>
-                                                <option value="27">Montana</option>
-                                                <option value="28">Nebraska</option>
-                                                <option value="29">Nevada</option>
-                                                <option value="30">New Hampshire</option>
-                                                <option value="31">New Jersey</option>
-                                                <option value="32">New Mexico</option>
-                                                <option value="52">NY Non-Bus</option>
-                                                <option value="33">NY Business</option>
-                                                <option value="34">North Carolina</option>
-                                                <option value="35">North Dakota</option>
-                                                <option value="36">Ohio</option>
-                                                <option value="37">Oklahoma</option>
-                                                <option value="38">Oregon</option>
-                                                <option value="39">Pennsylvania</option>
-                                                <option value="40">Rhode Island</option>
-                                                <option value="41">South Carolina</option>
-                                                <option value="42">South Dakota</option>
-                                                <option value="43">Tennessee</option>
-                                                <option value="44">Texas</option>
-                                                <option value="45">Utah</option>
-                                                <option value="46">Vermont</option>
-                                                <option value="47">Virginia</option>
-                                                <option value="48">Washington</option>
-                                                <option value="49">West Virginia</option>
-                                                <option value="50">Wisconsin</option>
-                                                <option value="51">Wyoming</option>
-                                                <option value="53">Guam</option>
-                                                <option value="54">Puerto Rico</option>
-                                                <option value="55">Virgin Islands</option>
-                                                <option value="56">Amer. Samoa</option>
+                                        <select id="driverlicense" class="form-control noBorder custom-size-input-box" name="licensestate" tabindex='10'>
+                                        <option value="">--Select a state--</option>    
+                                        <option value="Alabama">Alabama</option>
+                                        <option value="Alaska">Alaska</option>
+                                        <option value="Arizona">Arizona</option>
+                                        <option value="Arkansas">Arkansas</option>
+                                        <option value="California">California</option>
+                                        <option value="Colorado">Colorado</option>
+                                        <option value="Connecticut">Connecticut</option>
+                                        <option value="Delaware">Delaware</option>
+                                        <option value="Dist.Columbia">Dist.Columbia</option>
+                                        <option value="Florida">Florida</option>
+                                        <option value="Georgia">Georgia</option>
+                                        <option value="Hawaii">Hawaii</option>
+                                        <option value="Idaho">Idaho</option>
+                                        <option value="Illinois">Illinois</option>
+                                        <option value="Indiana">Indiana</option>
+                                        <option value="Iowa">Iowa</option>
+                                        <option value="Kansas">Kansas</option>
+                                        <option value="Kentucky">Kentucky</option>
+                                        <option value="Louisiana">Louisiana</option>
+                                        <option value="Maine">Maine</option>
+                                        <option value="Maryland">Maryland</option>
+                                        <option value="Massachusetts">Massachusetts</option>
+                                        <option value="Michigan">Michigan</option>
+                                        <option value="Minnesota">Minnesota</option>
+                                        <option value="Mississippi">Mississippi</option>
+                                        <option value="Missouri">Missouri</option>
+                                        <option value="Montana">Montana</option>
+                                        <option value="Nebraska">Nebraska</option>
+                                        <option value="Nevada">Nevada</option>
+                                        <option value="Nw Hampshire">Nw Hampshire</option>
+                                        <option value="New Jersey">New Jersey</option>
+                                        <option value="New Mexico">New Mexico</option>
+                                        <option value="Non-Bus">Non-Bus</option>
+                                        <option value="NY Business">NY Business</option>
+                                        <option value="North Carolina">North Carolina</option>
+                                        <option value="North Dakota">North Dakota</option>
+                                        <option value="Ohio">Ohio</option>
+                                        <option value="Oklahoma">Oklahoma</option>
+                                        <option value="Oregon">Oregon</option>
+                                        <option value="Pennsylvania">Pennsylvania</option>
+                                        <option value="Rhode Island">Rhode Island</option>
+                                        <option value="South Carolina">South Carolina</option>
+                                        <option value="South Dakota">South Dakota</option>
+                                        <option value="Tennessee">Tennessee</option>
+                                        <option value="Texas">Texas</option>
+                                        <option value="Utah">Utah</option>
+                                        <option value="Vermont">Vermont</option>
+                                        <option value="Virginia">Virginia</option>
+                                        <option value="Washington">Washington</option>
+                                        <option value="West Virginia">West Virginia</option>
+                                        <option value="Wisconsin">Wisconsin</option>
+                                        <option value="Wyoming">Wyoming</option>
+                                        <option value="Guam">Guam</option>
+                                        <option value="Puerto Rico">Puerto Rico</option>
+                                        <option value="Virgin Islands">Virgin Islands</option>
+                                        <option value="Amer. Samoa">Amer. Samoa</option>
                                          </select>
                                     </div>
                                 </div>
@@ -1683,23 +1685,23 @@
                                         <label type="text" class="form-control noBorder custom-size-header-box"  readonly/>Driver's License Expiration Date</label>
                                         <div class="row">
                                             <div class="col-md-4">
-                                                <select id="form_dob_month" class="form-control" name="BirthMonth" tabindex='10'>
-                                                    <option value="1" selected="selected" >January</option>
-                                                    <option value="2">February</option>
-                                                    <option value="3">March</option>
-                                                    <option value="4">April</option>
-                                                    <option value="5">May</option>
-                                                    <option value="6">June</option>
-                                                    <option value="7">July</option>
-                                                    <option value="8">August</option>
-                                                    <option value="9">September</option>
-                                                    <option value="10">October</option>
-                                                    <option value="11">November</option>
-                                                    <option value="12">December</option>
+                                                <select id="form_dob_month" class="form-control" name="licenseexpmonth" tabindex='10'>
+                                                    <option value="January" selected="selected">January</option>
+                                                    <option value="February">February</option>
+                                                    <option value="March">March</option>
+                                                    <option value="April">April</option>
+                                                    <option value="May">May</option>
+                                                    <option value="June">June</option>
+                                                    <option value="July">July</option>
+                                                    <option value="August">August</option>
+                                                    <option value="September">September</option>
+                                                    <option value="October">October</option>
+                                                    <option value="November">November</option>
+                                                    <option value="December">December</option>
                                                 </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <select id="form_dob_year" class="form-control" name="Birthday" tabindex='10'>
+                                                <select id="form_dob_year" class="form-control" name="licenseexpday" tabindex='10'>
                                                         <option value="1" selected="selected" >1</option>
                                                         <option value="2">2</option>
                                                         <option value="3">3</option>
@@ -1734,7 +1736,7 @@
                                                     </select>
                                             </div>
                                             <div class="col-md-4">
-                                                <select id="dob_month" class="form-control" name="BirthYear" tabindex='10'>
+                                                <select id="dob_month" class="form-control" name="licenseexpyear" tabindex='10'>
                                                     <option value="2005" selected="selected">2017</option>
                                                     <option value="2004">2016</option>
                                                     <option value="2003">2015</option>

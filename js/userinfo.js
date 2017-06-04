@@ -81,7 +81,11 @@ $(document).ready(function () {
     $('html,body').animate({
         scrollTop: $(".step2").offset().top - 80},
     'slow');
-    $('#sameaddress').text($('#address1text').val());
+    var address1text = $('#address1text').val();
+    var citytext = $('#citytext').val();
+    var zipcodetext = $('#zipcodetext').val();
+    var state = $('#state').val();
+    $('#sameaddress').text(address1text + citytext + state + zipcodetext);
    });
     
      $( "#reasonforapplying" ).change(function() {
