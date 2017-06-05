@@ -39,6 +39,7 @@ $(document).ready(function(){
       window.location = $(this).find("a").attr("href"); 
       return false;
     });
+    
   
   
   // set sidebar height to main container height on load

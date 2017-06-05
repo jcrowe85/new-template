@@ -129,7 +129,10 @@ fieldset{
 
 
 
-
+#verify-page .BirthYear{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
 </style>
 <script>
 $(document).ready(function(){
