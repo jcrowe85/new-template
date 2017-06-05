@@ -700,7 +700,7 @@ function changeHeight(height) {
     </div>
     <div style="clear:both"></div>
     <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
-       <p>Usurance, Inc.</p> 
+       <p>Usurit, Inc.</p> 
     </div>
     </body>
 </html>

@@ -105,6 +105,7 @@
     
       <div class="modal-body">
         <button type="button" id='closeModal' class="btn btn-default btn-circle pull-right" style='margin-top: -25px'><i class="glyphicon glyphicon-remove"></i></button>
+        <div style="padding:30px">
         <h2>Congratulations! You've applied for life insurance</h2><br/><br/>
         <div class="row">
             <div class="col-xs-4 center">
@@ -171,7 +172,7 @@
           </div>
         </div>
       </div>
-      
+      </div>
     </div>
   </div>
  </div>

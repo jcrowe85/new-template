@@ -74,3 +74,10 @@ Cheat sheet - https://docs.emmet.io/cheat-sheet/
 ~# npm install npm@latest -g
 ~# npm install --save emmett
 
+
+
+//Commit to production
+1.	Ssh root@159.203.85.19
+2.	cd /var/www/usurit.com/public_html
+3.	git pull
+4.	exit
