@@ -10,7 +10,6 @@ $(document).ready(function(){
           <?php include('slide-next.php') ?>
     });
     
-    
     $('select').change(function(){
           <?php include('slide-next.php') ?>
     });
@@ -58,7 +57,6 @@ $(document).ready(function(){
         if (yearLength == 4 && yearValue >= 1900) {
             <?php include('slide-next.php') ?>
         }
-                                
     });
     
     $('.month').keyup(function(){

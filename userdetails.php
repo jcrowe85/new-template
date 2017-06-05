@@ -16,6 +16,9 @@ $(document).ready(function(){
     $(uncheck).click(function(){
     	$('#medical-conditions > div:nth-child(-n+12) input[type=checkbox]').prop('checked', false);
     }); 
+
+    var height = $('.main').outerHeight()
+    $('.sidebar').css("height", height);  
     
 });
   </script>
