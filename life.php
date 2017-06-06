@@ -312,8 +312,8 @@ $(document).ready(function(){
                           <label class="control-text">
                             <select name="FaceAmount" id="faceamount">
                                 <option style="background-color:#808080;" selected="selected" value="">Select Coverage</option>
-                                <option style="background-color:#808080;" value="10000">$10,000</option>
-                                <option style="background-color:#808080;" value="25000">$25,000</option>
+                                <!--<option style="background-color:#808080;" value="10000">$10,000</option>-->
+                                <!--<option style="background-color:#808080;" value="25000">$25,000</option>-->
                                 <option style="background-color:#808080;" value="50000">$50,000</option>
                                 <option style="background-color:#808080;" value="50000">$50,000</option>
                                 <option style="background-color:#808080;" value="75000">$75,000</option>
@@ -342,15 +342,15 @@ $(document).ready(function(){
                                 <option style="background-color:#808080;" value="1500000">$1,500,000</option>
                                 <option style="background-color:#808080;" value="1750000">$1,750,000</option>
                                 <option style="background-color:#808080;" value="2000000">$2,000,000</option>
-                                <option style="background-color:#808080;" value="2500000">$2,500,000</option>
-                                <option style="background-color:#808080;" value="3000000">$3,000,000</option>
-                                <option style="background-color:#808080;" value="4000000">$4,000,000</option>
-                                <option style="background-color:#808080;" value="5000000">$5,000,000</option>
-                                <option style="background-color:#808080;" value="6000000">$6,000,000</option>
-                                <option style="background-color:#808080;" value="7000000">$7,000,000</option>
-                                <option style="background-color:#808080;" value="8000000">$8,000,000</option>
-                                <option style="background-color:#808080;" value="9000000">$9,000,000</option>
-                                <option style="background-color:#808080;" value="10000000">$10,000,000</option>
+                                <!--<option style="background-color:#808080;" value="2500000">$2,500,000</option>-->
+                                <!--<option style="background-color:#808080;" value="3000000">$3,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="4000000">$4,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="5000000">$5,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="6000000">$6,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="7000000">$7,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="8000000">$8,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="9000000">$9,000,000</option>-->
+                                <!--<option style="background-color:#808080;" value="10000000">$10,000,000</option>-->
                             </select>
                           </label>
                       </div>
@@ -381,7 +381,7 @@ $(document).ready(function(){
         </div>
     </div>
     <div class="footer hidden-xs hidden-sm" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
-       <p>Usurance, Inc.</p> 
+       <p>Usurit, Inc.</p> 
     </div>
     </body>
 </html>
