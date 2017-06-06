@@ -47,11 +47,11 @@
                     <div class="col-md-11 col-md-offset-1 section4">
                         <div class="col-md-4 socials">
                             <ul>
-                                <li><img src="/images/facebook.png" alt=""></li>
+                                <li><a href="https://www.facebook.com/usurit/" target="_blank"><img src="/images/facebook.png" alt=""></a></li>
                                 <li><img src="/images/google.png" alt=""></li>
                                 <li><img src="/images/pinterest.png" alt=""></li>
                                 <li><img src="/images/twitter.png" alt=""></li>
-                                <li><img src="/images/linkedin.png" alt=""></li>
+                                <li><a href="https://www.linkedin.com/company-beta/22320616/" target="_blank"><img src="/images/linkedin.png" alt=""></a></li>
                             </ul>                            
                         </div>
                         <div class="col-md-8 extras">
