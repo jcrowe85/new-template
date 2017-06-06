@@ -158,6 +158,52 @@ $(document).ready(function(){
         }
     });
     
+     $('#day').keyup(function(){
+        var dayValue = $("#day").val();
+        var monthValue = $("#month").val();
+        if(dayValue > 31 || isNaN(dayValue)) {
+            $("#day").val('');
+            $("#day").focus();
+        } else if(monthValue == '2' && dayValue > 29) {
+            $("#day").val('');
+            $("#day").focus();
+        } else if((monthValue == '4' || monthValue == '6' || monthValue == '9' || monthValue == '11') && dayValue > 30) {
+            $("#day").val('');
+            $("#day").focus();
+        }  
+        
+    });
+    
+    $('#month').keyup(function(){
+        var monthValue = $("#month").val();
+        if(monthValue > 12 || isNaN(monthValue)) {
+            $("#month").val('');
+            $("#month").focus();
+        } 
+    });
+    
+     $('.BirthYear').keyup(function(){
+        var yearLength = $(".BirthYear").val().length;
+        var yearValue = $(".BirthYear").val();
+        var monthValue = $(".month").val();
+        var dayValue = $(".day").val();
+        if (dayValue == '') {
+            $(".day").focus();
+        }
+        if (monthValue == '') {
+            $(".month").focus();
+        }
+        
+        if (yearValue >= 1900) {
+         
+        }
+        else if (yearLength == 4 && yearValue <= 1900 || isNaN(yearValue)) {
+            $('.BirthYear').val('');
+            $('.BirthYear').focus();
+        }
+      
+    });
+    
 
 
 });
@@ -250,12 +296,12 @@ function changeHeight(height) {
                       <h1>Birthdate</h1>
                       <div class="control-group" id="dob">
                           <label class="control-text">
-                              <input type="text" name="BirthMonth" placeholder="Mo" maxlength="2" value="<?php echo $BirthMonth ?>"/>
+                              <input type="text" name="BirthMonth" id='month' placeholder="Mo" maxlength="2" value="<?php echo $BirthMonth ?>"/>
                           </label>
                       </div>	
                       <div class="control-group">
                           <label class="control-text">
-                              <input type="text" name="Birthday" placeholder="Day" maxlength="2" value="<?php echo $Birthday ?>"/>
+                              <input type="text" name="Birthday" id='day' placeholder="Day" maxlength="2" value="<?php echo $Birthday ?>"/>
                           </label>
                       </div> 
                       <div class="control-group">
