@@ -315,7 +315,6 @@ $(document).ready(function(){
                                 <!--<option style="background-color:#808080;" value="10000">$10,000</option>-->
                                 <!--<option style="background-color:#808080;" value="25000">$25,000</option>-->
                                 <option style="background-color:#808080;" value="50000">$50,000</option>
-                                <option style="background-color:#808080;" value="50000">$50,000</option>
                                 <option style="background-color:#808080;" value="75000">$75,000</option>
                                 <option style="background-color:#808080;" value="100000">$100,000</option>
                                 <option style="background-color:#808080;" value="125000">$125,000</option>
