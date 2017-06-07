@@ -620,7 +620,6 @@ function changeHeight(height) {
                                 <!--<option style="background-color:#808080;" value="10000" <?php if($FaceAmount == "10000") echo "selected"; ?>>$10,000</option>-->
                                 <!--<option style="background-color:#808080;" value="25000" <?php if($FaceAmount == "25000") echo "selected"; ?>>$25,000</option>-->
                                 <option style="background-color:#808080;" value="50000" <?php if($FaceAmount == "50000") echo "selected"; ?>>$50,000</option>
-                                <option style="background-color:#808080;" value="50000" <?php if($FaceAmount == "50000") echo "selected"; ?>>$50,000</option>
                                 <option style="background-color:#808080;" value="75000" <?php if($FaceAmount == "75000") echo "selected"; ?>>$75,000</option>
                                 <option style="background-color:#808080;" value="100000" <?php if($FaceAmount == "100000") echo "selected"; ?>>$100,000</option>
                                 <option style="background-color:#808080;" value="125000" <?php if($FaceAmount == "125000") echo "selected"; ?>>$125,000</option>
