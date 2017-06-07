@@ -5,7 +5,7 @@
                         <ul>
                             <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
                             <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
-                            <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
+                            <li style="cursor:pointer" onClick="getHelp()"><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
                             <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
                             <li><i>Mon-Friday | 9am-8pm PST</i></li>
                             <li>Team@usurit.biz</li>

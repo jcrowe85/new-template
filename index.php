@@ -50,11 +50,11 @@ $(document).ready(function(){
                         <span>No salesman. No broker fees. Affordable plans. 100s of carriers.</span>
                     </div>
                     <div class="services">
-                        <div class="serv life"><a href="/life.php"><h3>Life</h3></a></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Health</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Home</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Auto</h3></div>
-                        <div class="serv" data-popup-open="popup-1"><h3>Disability</h3></div>                        
+                        <div style="cursor:pointer" class="serv life"><a href="/life.php"><h3>Life</h3></a></div>
+                        <div style="cursor:pointer" class="serv" data-popup-open="popup-1"><h3>Health</h3></div>
+                        <div style="cursor:pointer" class="serv" data-popup-open="popup-1"><h3>Home</h3></div>
+                        <div style="cursor:pointer" class="serv" data-popup-open="popup-1"><h3>Auto</h3></div>
+                        <div style="cursor:pointer" class="serv" data-popup-open="popup-1"><h3>Disability</h3></div>                        
                     </div>
                 </div>
             </div>
