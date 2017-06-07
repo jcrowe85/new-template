@@ -22,7 +22,7 @@
                 <ul>
                     <li>
                         <h4><b>Understand What You're Buying</b></h4>
-                        <p>We make insurance easy throug real life 
+                        <p>We make insurance easy through real life 
                             examples and visuals so you understand what you 
                             have and how you're protected.</p>
                     </li>
