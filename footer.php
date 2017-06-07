@@ -48,9 +48,9 @@
                         <div class="col-md-4 socials">
                             <ul>
                                 <li><a href="https://www.facebook.com/usurit/" target="_blank"><img src="/images/facebook.png" alt=""></a></li>
-                                <li><img src="/images/google.png" alt=""></li>
-                                <li><img src="/images/pinterest.png" alt=""></li>
-                                <li><img src="/images/twitter.png" alt=""></li>
+                                <li><a href="https://business.google.com/b/113999845946600497090/dashboard/l/05545805246277006420" target="_blank"><img src="/images/google.png" alt=""></a></li>
+                                <!--<li><img src="/images/pinterest.png" alt=""></li>-->
+                                <li><a href="https://twitter.com/usuritinsurance" target="_blank"><img src="/images/twitter.png" alt=""></a></li>
                                 <li><a href="https://www.linkedin.com/company-beta/22320616/" target="_blank"><img src="/images/linkedin.png" alt=""></a></li>
                             </ul>                            
                         </div>
