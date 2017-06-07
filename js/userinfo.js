@@ -85,7 +85,7 @@ $(document).ready(function () {
     var citytext = $('#citytext').val();
     var zipcodetext = $('#zipcodetext').val();
     var state = $('#state').val();
-    $('#sameaddress').text(address1text + citytext + state + zipcodetext);
+    $('#sameaddress').text(address1text +','+ '\xa0' + citytext +','+ '\xa0' + state +'.'+'\xa0' + zipcodetext);
    });
     
      $( "#reasonforapplying" ).change(function() {
