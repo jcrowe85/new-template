@@ -6,7 +6,7 @@
                     <li><h3>Questions here?</h3></li>
                     <li>We're here for you.</li>
                     <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
-                    <li><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>
+                    <li style="cursor:pointer" onClick="getHelp()"><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>
                     <li>Don't see your question?
                     Not to worry. Just press Chat above,
                     or call us to speak with one of our 
