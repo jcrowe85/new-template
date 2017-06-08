@@ -124,7 +124,7 @@ input::-webkit-contacts-auto-fill-button {
     display: inline;
     font-size: 14px;
     margin-right:5px;
-    font-family: 'AileronThin'
+    font-family: 'AileronLight'
 }
 .navbar a:link{
     color:white;
@@ -198,6 +198,9 @@ li.dropdown:hover .dropdown-content{
 }
 .footer ul{
     list-style:none;
+}
+.footer li{
+    font-family: 'AileronThin';
 }
 .socials ul{
     display: inline;
@@ -1689,7 +1692,9 @@ li.dropdown:hover .dropdown-content{
 
 /* ------------ xs  ---------- */
 @media screen and (max-width:375px){
-    
+#new-home-page .process{
+    flex-direction: column;
+}
 
 #home-page .services{
     flex-direction:column;
