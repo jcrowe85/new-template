@@ -77,7 +77,7 @@
                     By clicking 'Leave Site' we'll forward you to their website to get the quote. By pressing 'Stay Here' we'll take you back to our site.
                     <div>
                     <button class="btn btn-warning btn-lg" data-popup-close="popup-1">Stay Here</button>    
-                    <button class="btn btn-default btn-lg">Leave Site</button>
+                    <!--<button class="btn btn-default btn-lg">Leave Site</button>-->
                     </div>
                 </p>
                 <a class="popup-close" data-popup-close="popup-1" href="#" style="color:white;">x</a>
