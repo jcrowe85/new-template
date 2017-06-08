@@ -36,6 +36,7 @@ $(document).ready(function(){
       });
     
     
+    
 });
 // slide navbar up and down on page scroll
 $(window).scroll(function() {
@@ -57,6 +58,48 @@ $(window).scroll(function() {
             $(".header").css("background", "rgba(0, 0, 0, 0)");
             $('.header').fadeIn();
        });         
+    }
+});
+
+
+$(window).scroll(function() {
+    if ($(this).width() > 992) {
+        if ($(this).height() <= 768) {
+            if ($(this).scrollTop() > 400) {
+                $('.proc:eq(0)').animate({
+                    opacity: 1
+                }, 800, function(){
+                    $('.proc:eq(1)').animate({
+                        opacity: 1
+                    }, 800, function(){
+                        $('.proc:eq(2)').animate({
+                                opacity: 1
+                            }, 800, function(){}
+                        );                    
+                    }   
+                    );                   
+                }
+                );
+            }
+        }
+    }
+});
+$(window).scroll(function() {
+    if ($(this).width() > 992) {
+        if ($(this).height() <= 768) {
+            if ($(this).scrollTop() > 900) {
+                $('.manage-title').animate({
+                    opacity: 1,
+                    left: 0
+                }, 1000, function(){}
+                );
+                $('.manage-image').animate({
+                    opacity: 1,
+                    left: 0
+                }, 1000, function(){}
+                );                
+            }
+        }
     }
 });
 </script>
@@ -145,7 +188,7 @@ $(window).scroll(function() {
     color:black;
 }
 #new-home-page .title{
-    text-shadow: 1px 1px 0px black;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
 }
 #new-home-page .title h1, #new-home-page .title p, #new-home-page .get-started{
     position:relative;
@@ -181,6 +224,16 @@ $(window).scroll(function() {
 #new-home-page .manage{
     background: #eeeeee;
 }
+#new-home-page .manage-title{
+    position: relative;
+    opacity: 0;
+    left:-200px;
+}
+#new-home-page .manage-image{
+    position: relative;
+    opacity: 0;
+    right:-200px;    
+}
 #new-home-page .questions{
     background:white;
 }
@@ -195,7 +248,9 @@ $(window).scroll(function() {
 #new-home-page .footer .row{
     width:100%;
 }    
-
+#new-home-page .proc{
+    opacity: 0;
+}
 </style>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
@@ -293,11 +348,11 @@ $(window).scroll(function() {
             <div class="manage fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 manage-title">
                             <h2>Manage Your Polices in One Place</h2>
                             <p>Log in to access your policies in one place. You can policies details and contact your advisor for any questions or concerns you might have.</p>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 manage-image">
                             <img src="/images/dashboard.png" style="width:100%;"></img>
                         </div>
                     </div>
