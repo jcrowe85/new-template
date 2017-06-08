@@ -30,14 +30,13 @@ $(document).ready(function(){
             );            
         });
     });
-    
-    
-    
+      jQuery(function(){
+          jQuery("a.bla-1").YouTubePopUp();
+          jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+      });
     
     
 });
-
-
 // slide navbar up and down on page scroll
 $(window).scroll(function() {
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
@@ -145,7 +144,9 @@ $(window).scroll(function() {
 #new-home-page .dropdown-content a{
     color:black;
 }
-
+#new-home-page .title{
+    text-shadow: 1px 1px 0px black;
+}
 #new-home-page .title h1, #new-home-page .title p, #new-home-page .get-started{
     position:relative;
     top:100px;
@@ -231,7 +232,7 @@ $(window).scroll(function() {
                                     <li><a id="about" href="#">About Us</a></li>
                                     <li><a id="about" href="/team.php">Team</a></li>
                                     <li><a id="contact" href="#">Contact</a></li>
-                                    <li id='getHelp'><button class="btn getHelp" onClick="getHelp()">Get Help</button></li>
+                                    <li id='getHelp'><button class="btn getHelp" onClick="getHelp()" style="color:white;">Get Help</button></li>
                                 </ul>
                             </div>
                         </div>
@@ -269,7 +270,7 @@ $(window).scroll(function() {
             <div class="container">
                 <div class="row how-it-works">
                     <h2>How it works</h2>
-                    <div>See Demo <img src="/images/playbutton.png" class="play"></img></div>
+                    <div><a class="bla-1" href="https://youtu.be/Fv8yOkpcQ_o">See Demo</a> <img src="/images/playbutton.png" class="play"></img></div>
                     <div class="process" style="margin-top:50px;">
                         <div class="proc">
                             <img src="/images/survey.png" alt="">

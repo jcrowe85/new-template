@@ -41,6 +41,10 @@
         <!-- sitewide js -->
         <script src="/js/main.js"></script>
         
+        <!-- video popup  css/js -->
+        <link rel="stylesheet" type="text/css" href="YouTubePopUp.css">
+        <script type="text/javascript" src="/js/YouTubePopUp.jquery.js"></script>
+        
         <!-- google ananlytics -->
         <?php include_once('googleanalytics.php'); ?>
         
