@@ -15,8 +15,8 @@
                     <div class="col-md-3 col-md-offset-1 section2">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
-                            <li><a href="/life-guide.php">Life Insurance Guide</a></li>
-                            <li><a href="/health-guide.php">Health Insurance Guide</a></li>
+                            <li><a href="/guide-life.php">Life Insurance Guide</a></li>
+                            <li><a href="/guide-health.php">Health Insurance Guide</a></li>
                             <li><a href="#" style="color:lightgray;pointer-events:none; cursor:default;">Home Insurance Guide</a></li>
                             <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Auto Insurance Guide</a></li>
                             <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Disability Insurance Guide</a></li>
