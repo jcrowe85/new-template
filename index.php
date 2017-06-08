@@ -95,7 +95,7 @@ $(window).scroll(function() {
                 );
                 $('.manage-image').animate({
                     opacity: 1,
-                    left: 0
+                    top: 0
                 }, 1000, function(){}
                 );                
             }
@@ -232,7 +232,8 @@ $(window).scroll(function() {
 #new-home-page .manage-image{
     position: relative;
     opacity: 0;
-    right:-200px;    
+    bottom:-200px;
+    
 }
 #new-home-page .questions{
     background:white;
