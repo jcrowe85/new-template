@@ -14,7 +14,7 @@
                     
                 </ul>
             </div>
-            <div class="col-md-6 col-md-offset-2">
+            <div class="col-md-7 col-md-offset-1">
                 <ul class="faq-ul">
                     <li class="faq">
                         <div class="col-md-9 col-lg-11"><h5>How do I get started?</h5></div>                                     
