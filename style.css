@@ -1695,7 +1695,9 @@ li.dropdown:hover .dropdown-content{
 #new-home-page .process{
     flex-direction: column;
 }
-
+#new-home-page .phone{
+    display:none;
+}
 #home-page .services{
     flex-direction:column;
     height: 100%;
