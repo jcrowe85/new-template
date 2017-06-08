@@ -191,7 +191,10 @@ $(window).scroll(function() {
     background: -o-linear-gradient(141deg, #6293fc, #ff9897);
     background: linear-gradient(141deg, #6293fc, #ff9897);    
 }    
-}
+#new-home-page .footer .row{
+    width:100%;
+}    
+
 </style>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
