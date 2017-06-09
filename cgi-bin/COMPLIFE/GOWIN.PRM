@@ -28,7 +28,7 @@ cbBestRating_s=A-    Excellent
 BestCatagory_v=16
 BestCatagory_s=Quote all with Best category
 StateSF_v=6
-StateSF_s=CA       California
+StateSF_s=CA         California
 [Prm]
 Comparison Last Mode=0
 FORCE Outlook Express=1
