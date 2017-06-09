@@ -73,7 +73,7 @@
         
        <!-- linkedIn images/content for post -->
         <meta property="og:title" content="Usurit"/>
-        <meta property="og:image" content="/images/linkedInBg.jpg"/>
+        <meta property="og:image" content="/images/usurit-facelift.png"/>
         <meta property="og:description" content="Making Insurance Easy to Learn, and Easy to Buy."/>
         <meta property="og:url" content="www.usurit.com/" />        
     </head>    
