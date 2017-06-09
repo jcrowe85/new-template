@@ -62,8 +62,8 @@ JOHU|AV|Accumulation VUL
 JOHU|PV|Protection VUL
 JOHU|V*|======  Survivorship VUL  =======
 JOHU|SA|Accumulation SVUL
-JOHU|PL|Protection SVUL
-JOHU|PI|Protection Survivorship Indexed UL
+JOHU|SV|Protection SVUL
+JOHU|SI|Protection Survivorship Indexed UL
 JOHY|T*|============  Term  =============
 JOHY|TM|Single Life Term
 JOHY|TV|Single Life Term with Vitality
@@ -86,21 +86,19 @@ JOHY|AV|Accumulation VUL
 JOHY|PV|Protection VUL
 JOHY|V*|======  Survivorship VUL  =======
 JOHY|SA|Accumulation SVUL
-JOHY|PL|Protection SVUL
-JOHY|PI|Protection Survivorship Indexed UL
+JOHY|SV|Protection SVUL
+JOHY|SI|Protection Survivorship Indexed UL
 LNLI|TR|Term 
 LNLI|UL|Universal Life 
 LNLI|GN|General Forms
 LNNA|TR|Term Life
 LNNA|UL|Universal Life
 LNNA|UI|Indexed Universal Life
+LNNA|MG|MoneyGuard II
 LNNA|GN|General Forms
 NORA|AD|Addvantage Term
 NORA|BI|Builder IUL
-NORA|CA|Custom Accumulator
-NORA|CC|Custom GrowthCV
 NORA|CG|Custom Guarantee
-NORA|CT|Custom TermGUL
 NORA|GB|Guarantee Builder IUL
 NORA|CB|Rapid Builder IUL
 NORA|SG|Survivorship GIUL

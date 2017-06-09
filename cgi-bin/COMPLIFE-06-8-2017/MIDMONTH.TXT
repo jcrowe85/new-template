@@ -1,0 +1,301 @@
+The following changes have been made to the March 2017  
+edition of the Compulife Quotation System:
+
+6.  Nationwide Life Insurance - new term rates
+
+March 13th - Nationwide has introduced new rates for
+its 10, 15, 20 and 30 year term products.
+
+
+5.  Brighthouse Life - correction and Best ratings
+
+March 10th - I neglected to include the one year
+term rate files in the last midmonth update, which
+had the new company name(s) for MetLife's old
+one year term products.
+
+A.M. Best has now changed the ratings info and
+is showing ratings for Brighthouse Life.  This
+has been updated in our system.
+
+
+4.  John Hancock Life - state approvals
+
+March 10th - John Hancock's new Vital Term 
+rates are now approved in DE, NJ and RI.
+
+
+3.  MetLife OUT - Brighthouse ADDED
+
+March 6th - MetLife has established a new company
+called Brighthouse Financial.  MetLife has ceased
+the sale of term product under both:
+
+MetLife Insurance Company USA              and
+Metropolitan Life Insurance Company
+
+The term products are now offered under
+
+Brighthouse Life Insurance Company         and
+Brighthouse Life Insurance Company of NY
+
+No big deal except for two issues/problems:
+
+a)  A.M. Best ratings - the company has advised
+us that Brighthouse has been given the same "A"
+rating as given to MetLife.  The problem is that
+A.M. Best has not yet published anything about
+the two Brighthouse Life Insurance companies and
+until they do we cannot publish a rating for
+these companies.  We need A.M. Best to clarify 
+the situation and we have encouraged the company 
+to get on that with A.M. Best.  Those of you 
+that use minimum A.M. Best rating filters will
+not see the company(s) in your quotes.
+
+b)  If you have used the "Select a Group of
+Companies to Quote" function in "Manage 
+Product Database", you will need to add
+these companies if you want them in your quotes.
+The new companies have been issued new codes and
+so they appear in the system as brand new companies.
+
+
+2.  Grange Life Insurance - new term rates
+
+March 6th - Grange Life has introduced new rates for
+its 10, 15, 20, 25 and 30 year term products.
+
+
+1.  Pruco Life Insurance - new rates & state approvals
+
+March 6th - Pruco Life's erm Essential products
+are now approved in MT and ND.
+
+The company has introduced new no lapse UL rates
+that are not yet approved in AK, CA, MA, NY and WY.
+
+
+
+
+================================================================
+
+The following changes were made and were included with the 
+March 2017 monthly update of the Compulife Quotation System:
+
+17.  Pruco Life Insurance - new term rates
+
+February 27th - Pruco Life has introduced new rates 
+for its 10, 15, 20 and 30 year Term Essential products.
+The new rates are not approved in MT and ND.
+
+
+17.  John Hancok - company forms
+
+March Monthly Update - John Hancock is the newest
+edition to the forms library.  
+
+We are still working on categorizing the forms for
+products other than single life term, but the forms
+are ready for single life term.  Please give us any
+feedback on changes you think should be made.
+
+Our thanks to the company for their assistance 
+in getting these added.
+
+
+16.  Pacific Life - state approval
+
+February 27th - Pacific Life's Promise Term is now
+approved in FL and SD.
+
+
+15.  John Hancock Life - state approval
+
+February 24th - John Hancock's new rates are now 
+approved in all states including CA.
+
+
+14.  John Hancock Life - new term rates
+
+February 23rd - John Hancock Life has introduced 
+new rates for its 10, 15 and 20 year term products.
+
+The company has also changed its modal factors, 
+and because the modal calculation are COMPLEX and
+atypical, Compulife has dealt with them by having
+a special routine in our software to deal with 
+those modal calculations.  Therefore, we have 
+introduced a new version of our software to 
+go with the new rates.
+
+SEE the WARNING above if you are an internet 
+engine user.
+
+The new rates are NOT approved in CA.  Because
+the old rates used a different calculation for 
+modal premiums, we have TURNED OFF modal premiums
+for CA.
+
+The company has also introduced a new rider 
+related to unemployment benefits.  This rider is
+at an extra cost.  We are not quoting this rider
+at this time.  We will wait to hear what demand
+there is to be able to quote the rider, before
+looking further into it.
+
+The company has also introduced new rate for its
+Vitality term.  The problem is that the new 
+Vitality rates are NOT approved in:
+
+AK,CA,DE,IL,KS,MA,NJ,OR,PA,RI,WI,WY,GU
+
+whereas the old rates are available.  However,
+same problem/issue with modal factor and they
+will not quote for the old products.
+
+
+
+13.  John Hancock Life of NY - new term rates
+
+February 23rd - John Hancock of NY has introduced 
+new rates for its 10, 15 and 20 year term products.
+
+
+12.  Savings Bank Life Insurance - new rates
+
+February 22nd - SBLI has introduced new rates 
+for it's 10, 15, 20, 25 and 30 year products.
+
+The same new rates apply to Centrian Life in CT.
+
+
+11.  North American/Midland Life - CORRECTIONS
+
+February 22nd - I noticed when I was testing the
+no lapse UL products, after integrating the new
+rates into the general release, that there were
+some odd results between the pay to 65, 20 pay 
+and 10 pay premiums.
+
+If a client is age 45, then the pay to 65 and 
+20 pay premiums should be the same - they were
+not.  If the client is 55, then the pay to 65
+and 10 pay premiums should be the same - they 
+were not.  
+
+I brought this to the attention of the company
+and the it turns out that the pay to 65 rates 
+that I had been given were wrong.  
+
+We have now entered the new rates, which we 
+received today, and they are now correct.
+
+WARNING - in some cases the corrected rates 
+are HIGHER than what we had been given.  If 
+you gave a Pay to 65, North American or Midland
+Life quote to a consumer in the last few days, 
+PLEASE CHECK it immediately.  The corrected
+premium may be lower, but it could be HIGHER.
+
+The next problem was the monthly premiums for
+the pay to age 121 products.  I left the policy
+fee set to $60, which is the annual policy fee,
+and failed to change it to $5 for the monthly
+premiums.  We were overstating monthly premiums
+by $55.  That is corrected.
+
+
+10.  North American Co for Life - new GUL rates
+
+February 18th - North American has introduced new 
+rates for it's no lapse, guaranteed UL products.
+
+The new rates are not yet approved for Guarantee
+Builder IUL4 in CA, DE and MT.  Until they are 
+approved, the IUL3 will be available in those
+states.  
+
+Custom Guarantee Gen 8 is approved in all states
+except NY.
+
+
+9.  Midland National Life - new GUL rates
+
+February 18th - Midland National has introduced new 
+rates for it's no lapse, guaranteed UL products.
+
+The new rates are not yet approved for XL-DB4 
+in CA, DE and MT.  Until they are approved, the 
+XL-DB3 will be available in those states.  
+
+Essential Guarantee UL 4 is approved in all states
+except NY.
+
+
+8.  Banner Life - new term rates
+
+February 13th - Banner has introduced new rates for 
+its 10, 15, 20, 25 and 30 year term products.
+
+
+7.  William Penn Life - new term rates
+
+February 13th - William Penn has introduced new rates 
+for its 10, 15, 20, 25 and 30 year term products.
+
+
+6.  Symetra Life - UL rate changes
+
+February 9th - Earlier today Symetra made some changes
+to their rates and we were a little misled as to the 
+nature of the change.  Previous Symetra had some lower
+premiums for face amount of $1.5 million and higher, for
+certain older ages.  Those lower rates are now gone.
+
+The company has also changed the names of their health
+classes.
+
+
+5.  American Americable - Occidental - minimum premium
+
+February 3rd (2nd) - It took about 4 emails, but the 
+ccompany(s) has now confirmed that a minimum premius
+also applies to all other modes.  This has been fixed.
+
+
+4.  Minnesota Life - renewal policy fee correction
+
+February 3rd (2nd) - When I changed the product codes in 
+item 1 below, I forgot to add the new product code
+to the renewal premium.  That is now fixed.
+
+
+3.  American Amicable Life of Texas - minimum premium
+
+February 3rd - One of Compulife's subscribers brought
+to our attention that the Simple Term product minimum
+face amount of $50,000 is OK, as long as the monthly 
+premium is greater than $20.  We did not have the 
+minimum premium set.
+
+The problem has been corrected, and a 10% coupon given
+to the customer who brought it to our attention.
+
+
+2.  Occidental Life of NC - minimum premium
+
+February 3rd - Occidental sells the same Simple
+Term products as American Amicable.  We have correct
+the premium here as well.
+
+
+1.  Minnesota Life - policy fee correction
+
+February 2nd - The policy fees for Minnesota Life
+eApp products, for $250,000, were incorrect.  The
+problem was a hold over from a previous policy fee
+reduction the company had been using for their 5
+and 10 year term, which was hard-wired into the 
+quoting software.  I have changed the codes, and
+that resolved the problem.
