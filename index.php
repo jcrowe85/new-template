@@ -38,7 +38,7 @@ $(document).ready(function(){
     
     
 });
-// slide navbar up and down on page scroll
+// menu background color change with page scroll
 $(window).scroll(function() {
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
     
@@ -61,25 +61,58 @@ $(window).scroll(function() {
     }
 });
 
-// animate sections for ipads and tablets 1025x768 and 768x1024
+// animate sections for phones
 $(window).scroll(function() {
-    if ($(this).width() <= 768) {
-            if ($(this).scrollTop() > 200) {
+    if ($(this).width() <= 414) {
+            if ($(this).scrollTop() > 300) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
-                }, 800, function(){
+                }, 500, function(){
                     $('.proc:eq(1)').animate({
                         opacity: 1
-                    }, 800, function(){
+                    }, 500, function(){
                         $('.proc:eq(2)').animate({
                                 opacity: 1
-                            }, 800, function(){}
+                            }, 500, function(){}
                         );                    
                     }   
                     );                   
                 }
                 );
-            }if ($(this).scrollTop() > 500) {
+            }if ($(this).scrollTop() > 1200) {
+                $('.manage-title').animate({
+                    opacity: 1,
+                    left: 0
+                }, 1000, function(){}
+                );
+                $('.manage-image').animate({
+                    opacity: 1,
+                    top: 0
+                }, 1000, function(){}
+                ); 
+            }
+    }
+});
+
+// animate sections for ipads and tablets 1025x768 and 768x1024
+$(window).scroll(function() {
+    if ($(this).width() <= 768 && $(this).width() > 414) {
+            if ($(this).scrollTop() > 200) {
+                $('.proc:eq(0)').animate({
+                    opacity: 1
+                }, 600, function(){
+                    $('.proc:eq(1)').animate({
+                        opacity: 1
+                    }, 600, function(){
+                        $('.proc:eq(2)').animate({
+                                opacity: 1
+                            }, 600, function(){}
+                        );                    
+                    }   
+                    );                   
+                }
+                );
+            }if ($(this).scrollTop() > 900) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
@@ -95,13 +128,13 @@ $(window).scroll(function() {
                 if ($(this).scrollTop() > 200) {
                     $('.proc:eq(0)').animate({
                         opacity: 1
-                    }, 800, function(){
+                    }, 600, function(){
                         $('.proc:eq(1)').animate({
                             opacity: 1
-                        }, 800, function(){
+                        }, 600, function(){
                             $('.proc:eq(2)').animate({
                                     opacity: 1
-                                }, 800, function(){}
+                                }, 600, function(){}
                             );                    
                         }   
                         );                   
@@ -123,17 +156,17 @@ $(window).scroll(function() {
 });
 // animate sections for desktops
 $(window).scroll(function() {
-    if ($(this).width() > 922) {
+    if ($(this).width() > 1200) {
             if ($(this).scrollTop() > 400) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
-                }, 800, function(){
+                }, 500, function(){
                     $('.proc:eq(1)').animate({
                         opacity: 1
-                    }, 800, function(){
+                    }, 500, function(){
                         $('.proc:eq(2)').animate({
                                 opacity: 1
-                            }, 800, function(){}
+                            }, 500, function(){}
                         );                    
                     }   
                     );                   
@@ -151,206 +184,12 @@ $(window).scroll(function() {
                 }, 1000, function(){}
                 ); 
             }
-    }else if ($(window).width() > 768 && $(window).width() <= 1024){
-                if ($(this).scrollTop() > 200) {
-                    $('.proc:eq(0)').animate({
-                        opacity: 1
-                    }, 800, function(){
-                        $('.proc:eq(1)').animate({
-                            opacity: 1
-                        }, 800, function(){
-                            $('.proc:eq(2)').animate({
-                                    opacity: 1
-                                }, 800, function(){}
-                            );                    
-                        }   
-                        );                   
-                    }
-                    );
-                }if ($(this).scrollTop() > 600) {
-                $('.manage-title').animate({
-                    opacity: 1,
-                    left: 0
-                }, 1000, function(){}
-                );
-                $('.manage-image').animate({
-                    opacity: 1,
-                    top: 0
-                }, 1000, function(){}
-                ); 
-                }
-            }   
+    } 
 });
 
-
-// $(window).scroll(function() {
-//     if ($(this).width() > 992) {
-//         if ($(this).height() <= 768) {
-//             if ($(this).scrollTop() > 900) {
-//                 $('.manage-title').animate({
-//                     opacity: 1,
-//                     left: 0
-//                 }, 1000, function(){}
-//                 );
-//                 $('.manage-image').animate({
-//                     opacity: 1,
-//                     top: 0
-//                 }, 1000, function(){}
-//                 );                
-//             }
-//         }
-//     }
-// });
 </script>
 <style>
-#new-home-page .header{
-    background:rgba(0, 0, 0, 0);
-    display:inline-block;
-    
-}
-#new-home-page .navbar a:visited {
-    /*text-shadow: 0.5px 0.5px 0px rgba(0,0,0,1);*/
-}
-#new-home-page .navbar a:link {
-    /*text-shadow: 0.5px 0.5px 0px rgba(0,0,0,1);*/
-}
-#new-home-page .navbar a:hover {
-    color:black;
-}
-#new-home-page .banner{
-    background: -webkit-linear-gradient(141deg, #6293fc, #ff9897);
-    background: -moz-linear-gradient(141deg, #6293fc, #ff9897);
-    background: -o-linear-gradient(141deg, #6293fc, #ff9897);
-    background: linear-gradient(141deg, #6293fc, #ff9897);    
-}
-#new-home-page .title{
-    color:white;
-    /*text-shadow: 1px 1px 0px rgba(0,0,0, 0.2);*/
-}
-#new-home-page .title h1{
-    font-size: 3em;
-    line-height:1em;
-}
-#new-home-page .title p{
-    line-height:1.5em;
-}
-#new-home-page .phone img{
-    width:70%;
-}
-#new-home-page .phone{
-    position:relative;
-    left:-400px;
-    opacity:0;
-}
-#new-home-page .get-started{
-    background: none;
-    margin-top:5%;
-    padding:0px;
-    text-align: left;
-}
-#new-home-page .get-started select{
-    padding: 15px;
-    border-radius: 5px;
-    margin:0px;
-    background: url(/images/dropdown-arrow-home-page.png) 96% / 10% no-repeat #fff;
-    margin-right:10px;
-    font-size:16px;
-}
-#new-home-page .row{
-    padding-top: 100px;
-    padding-bottom: 100px;
-    width: 85%;
-    margin: auto;
-}
-#new-home-page .banner .row{
-    display: flex; 
-    align-items: center; 
-    justify-content: center;
-}
-#new-home-page #myForm{
-    display: flex; 
-    align-items: center; 
-}
-.myForm button{
-    background:red; 
-    color:white;
-    padding:15px;
-    border-radius: 5px;
-}
-#new-home-page .header{
-    padding-top:0px;
-}
-#new-home-page .dropdown-content {
-    background-color: rgba(255,255,255,.8);
-}
-#new-home-page .dropdown-content a{
-    color:black;
-}
-#new-home-page .title{
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
-}
-#new-home-page .title h1, #new-home-page .title p, #new-home-page .get-started{
-    position:relative;
-    top:100px;
-    opacity:0;
-}
-#new-home-page .how-it-works{
-    text-align:center;
-    width:75%;
-    margin:auto;
-}
-#new-home-page .play{
-    width:12px;
-}
-#new-home-page .process{
-    display:flex;
-    justify-content: space-between;
-    margin-bottom: 0 auto;
-    align-items: center;
-}
-#new-home-page .proc img{
-    width:75px;
-}
-#new-home-page .proc{
-    max-width: 200px;
-}
-#new-home-page .proc p{
-    color: gray;
-}
-#new-home-page .proc h3{
-    margin-top:30px;
-}
-#new-home-page .manage{
-    background: #eeeeee;
-}
-#new-home-page .manage-title{
-    position: relative;
-    opacity: 0;
-    left:-200px;
-}
-#new-home-page .manage-image{
-    position: relative;
-    opacity: 0;
-    bottom:-200px;
-    
-}
-#new-home-page .questions{
-    background:white;
-}
-#new-home-page .footer{
-    width:100%;
-    border:none;
-    background: -webkit-linear-gradient(141deg, #6293fc, #ff9897);
-    background: -moz-linear-gradient(141deg, #6293fc, #ff9897);
-    background: -o-linear-gradient(141deg, #6293fc, #ff9897);
-    background: linear-gradient(141deg, #6293fc, #ff9897);    
-}    
-#new-home-page .footer .row{
-    width:100%;
-}    
-#new-home-page .proc{
-    opacity: 0;
-}
+
 </style>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
@@ -362,7 +201,7 @@ $(window).scroll(function() {
                         </a>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-2">
+                <div class="col-sm-12 col-md-8 col-lg-8 col-md-offset-1 col-lg-offset-2">
                     <nav class="navbar navbar-static-top" role="navigation">
                         <div class="container">
                             <div class="navbar-header">
@@ -425,7 +264,7 @@ $(window).scroll(function() {
             <div class="container">
                 <div class="row how-it-works">
                     <h2>How it works</h2>
-                    <div><a class="bla-1" href="https://youtu.be/Fv8yOkpcQ_o">See Demo</a> <img src="/images/playbutton.png" class="play"></img></div>
+                    <div><a class="bla-1" href="https://youtu.be/Fv8yOkpcQ_o">See Demo<img src="/images/playbutton.png" class="play"></img></a></div>
                     <div class="process" style="margin-top:50px;">
                         <div class="proc">
                             <img src="/images/survey.png" alt="">
