@@ -1,7 +1,7 @@
         <div class="footer fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-md-offset-1 section1">
+                    <div class="col-sm-4 col-md-3 col-md-offset-1 section1">
                         <ul>
                             <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
                             <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
@@ -12,7 +12,7 @@
                             <li>24/7 We're here for you!</li>
                         </ul>
                     </div>
-                    <div class="col-md-3 col-md-offset-1 section2">
+                    <div class="col-sm-4 col-md-3 col-md-offset-1 section2">
                         <ul>
                             <li><b>Insurance Product Guides</b></li>
                             <li><a href="/guide-life.php">Life Insurance Guide</a></li>
@@ -29,7 +29,7 @@
                             <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Calculator</a></li>
                         </ul>                        
                     </div>
-                    <div class="col-md-3 col-md-offset-1 section3" >
+                    <div class="col-sm-4 col-md-3 col-md-offset-1 section3" >
                         <ul>
                             <li><b>Insurance Product Advice</b></li>
                             <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Insurance Advice</a></li>
@@ -44,8 +44,8 @@
                             <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Better Business Burrea</a></li>
                         </ul>                                                
                     </div>
-                    <div class="col-md-11 col-md-offset-1 section4">
-                        <div class="col-md-4 socials">
+                    <div class="col-sm-12 col-md-11 col-md-offset-1 section4">
+                        <div class="col-sm-6 col-md-4 socials">
                             <ul>
                                 <li><a href="https://www.facebook.com/usurit/" target="_blank"><img src="/images/facebook.png" alt=""></a></li>
                                 <li><a href="https://business.google.com/b/113999845946600497090/dashboard/l/05545805246277006420" target="_blank"><img src="/images/google.png" alt=""></a></li>
@@ -54,7 +54,7 @@
                                 <li><a href="https://www.linkedin.com/company-beta/22320616/" target="_blank"><img src="/images/linkedin.png" alt=""></a></li>
                             </ul>                            
                         </div>
-                        <div class="col-md-8 extras">
+                        <div class="col-sm-6 col-md-8 extras">
                             <ul>
                                 <li><a href="#">Our Story</a></li>
                                 <li><a href="#">Value Teams</a></li>

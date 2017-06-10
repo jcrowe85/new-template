@@ -2,11 +2,13 @@
 <?php include_once('privy.php') ?>   
 <script>
 $(window).load(function(){
+    
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
     	}
     });
+    
     
     // animate banner title and phone
     $('.title h1').animate({
@@ -30,10 +32,18 @@ $(window).load(function(){
             );            
         });
     });
+    
+    // remove phone video on mobile
+    if ($(window).width() <= 768){
+        $('.ui').remove();
+    }       
+    
+    // demo video popup
       jQuery(function(){
           jQuery("a.bla-1").YouTubePopUp();
           jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
       });    
+
     
     
 });
@@ -65,22 +75,22 @@ $(window).scroll(function() {
 // animate sections for phones
 $(window).scroll(function() {
     if ($(this).width() <= 414) {
-            if ($(this).scrollTop() > 400) {
+            if ($(this).scrollTop() > 700) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
-                }, 900, function(){
+                }, 1000, function(){
                     $('.proc:eq(1)').animate({
                         opacity: 1
-                    }, 900, function(){
+                    }, 1000, function(){
                         $('.proc:eq(2)').animate({
                                 opacity: 1
-                            }, 900, function(){}
+                            }, 1000, function(){}
                         );                    
                     }   
                     );                   
                 }
                 );
-            }if ($(this).scrollTop() > 1200) {
+            }if ($(this).scrollTop() > 1600) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
@@ -93,6 +103,8 @@ $(window).scroll(function() {
                 ); 
             }
     }
+
+    
 });
 
 // animate sections for ipads and tablets 1025x768 and 768x1024
@@ -155,19 +167,20 @@ $(window).scroll(function() {
                 }
             }   
 });
+
 // animate sections for desktops
 $(window).scroll(function() {
     if ($(this).width() > 1200) {
             if ($(this).scrollTop() > 400) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
-                }, 500, function(){
+                }, 700, function(){
                     $('.proc:eq(1)').animate({
                         opacity: 1
-                    }, 500, function(){
+                    }, 700, function(){
                         $('.proc:eq(2)').animate({
                                 opacity: 1
-                            }, 500, function(){}
+                            }, 700, function(){}
                         );                    
                     }   
                     );                   
@@ -187,11 +200,8 @@ $(window).scroll(function() {
             }
     } 
 });
-
+ 
 </script>
-<style>
-
-</style>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
             <div class="container">
@@ -258,20 +268,8 @@ $(window).scroll(function() {
                     </div>
                     <figure class="col-md-5 col-md-offset-1 phone">
                         <img src="/images/tilt-phone.png"></img>
-                        <video class="ui" autoplay="" muted="" loop="" style="    
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 0;
-    transform-origin: 50% 70%;
-    transform: rotate3d(0, -1, 0, 25deg);
-    -webkit-transform: perspective(500px) rotateY(-6.6deg) scale(0.897, 0.971) translate(-4.5%, 13.6%);
-    transform: perspective(500px) rotateY(-5.6deg) scale(0.63, 0.699) translate(-22.5%, -18.4%);
-    border-radius: 1px;"
-    
-    >
-                            <!--<source src="https://cdn.stashinvest.com/assets/images/home/screen.mp4" type="video/mp4">-->
-                            <!--<source src="https://cdn.stashinvest.com/assets/images/home/screen.webm" type="video/webm">-->
+                        <video class="ui" autoplay="" preload="metadata" muted="" loop="" style="">
+                            <source src="/mobile-life-quote2.mp4" type="video/mp4">
                         </video>                        
                     </div>
                 </div>
@@ -280,7 +278,7 @@ $(window).scroll(function() {
             <div class="container">
                 <div class="row how-it-works">
                     <h2>How it works</h2>
-                    <div><a class="bla-1" href="https://youtu.be/Fv8yOkpcQ_o">See Demo<img src="/images/playbutton.png" class="play"></img></a></div>
+                    <div><a class="bla-1" href="https://youtu.be/Fv8yOkpcQ_o">See Demo <img src="/images/playbutton.png" class="play"></img></a></div>
                     <div class="process" style="margin-top:50px;">
                         <div class="proc">
                             <img src="/images/survey.png" alt="">
