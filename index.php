@@ -101,6 +101,11 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
+            }if ($(this).scrollTop() > 2200) {
+                $('.quest').animate({
+                    opacity: 1,
+                }, 1000, function(){}
+                );
             }
     }
 
@@ -136,6 +141,11 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
+            }if ($(this).scrollTop() > 1800) {
+                $('.quest').animate({
+                    opacity: 1,
+                }, 1000, function(){}
+                );
             }
     }else if ($(window).width() > 768 && $(window).width() <= 1024){
                 if ($(this).scrollTop() > 200) {
@@ -164,8 +174,13 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
-                }
-            }   
+                }if ($(this).scrollTop() > 1400) {
+                $('.quest').animate({
+                    opacity: 1,
+                }, 1000, function(){}
+                );
+            }
+            }
 });
 
 // animate sections for desktops
@@ -197,6 +212,11 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
+            }if ($(this).scrollTop() > 1600) {
+                $('.quest').animate({
+                    opacity: 1,
+                }, 1000, function(){}
+                );
             }
     } 
 });

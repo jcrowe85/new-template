@@ -555,7 +555,9 @@ ul.quest li:nth-child(5) {
     font-weight:bold;
     margin-top:0px;
 }
-
+.quest{
+    opacity: 0;
+}
 .faq h3{
     display: inline-block;
     margin:0px;
