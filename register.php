@@ -15,8 +15,7 @@
   
   // set a session variable to user's email
   $_SESSION["sessionemailtext"] = $_POST['emailtext'];
-  $_SESSION["favcolor"] = "green";
-  $_SESSION["favanimal"] = "cat";
+
   
 // clean user inputs to prevent sql injections
   $firstnametext = mysqli_real_escape_string($conn, $_POST ['firstnametext']);
