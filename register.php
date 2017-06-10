@@ -66,6 +66,12 @@
     VALUES ('$firstnametext', '$middlenametext', '$lastnametext', '$bestphonetext', '$email', '$pass', '$company', '$premium', '$sex', '$smoker')";
     $res = mysqli_query($conn, $query);
     
+    
+
+    // if (!mysqli_query($conn, $res)) {
+    // printf("Errormessage: %s\n", mysqli_error($conn));
+    // }
+    
    if ($res) {
 
    header('Location: userdetails.php');
@@ -80,8 +86,6 @@
     $errMSG = "Something went wrong, try again later..."; 
    } 
     
- 
-  
   
  }
 ?>

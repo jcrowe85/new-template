@@ -1,16 +1,13 @@
-<?php
-session_start();
-?>
+<?php include_once('conn.php')?>
 
-<?php
-// Set session variables
-$_SESSION["favcolor"] = "green";
-$_SESSION["favanimal"] = "cat";
-echo "Session variables are set.";
-?>
+<?php 
 
-<?php
-// Echo session variables that were set on previous page
-echo "Favorite color is " . $_SESSION["favcolor"] . ".<br>";
-echo "Favorite animal is " . $_SESSION["favanimal"] . ".";
+    $query = "INSERT INTO main (firstnametext)
+    VALUES ('josh')";
+    
+    $res = mysqli_query($conn, $query);
+
+    if (!mysqli_query($conn, $res)) {
+    printf("Errormessage: %s\n", mysqli_error($conn));
+}
 ?>
