@@ -1,7 +1,7 @@
 <?php include_once('head.php') ?>   
 <?php include_once('privy.php') ?>   
 <script>
-$(document).ready(function(){
+$(window).load(function(){
     $(':input').keyup(function(){
     	if (this.value.length == this.maxLength) {
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
@@ -33,11 +33,12 @@ $(document).ready(function(){
       jQuery(function(){
           jQuery("a.bla-1").YouTubePopUp();
           jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
-      });
-    
+      });    
     
     
 });
+
+
 // menu background color change with page scroll
 $(window).scroll(function() {
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
@@ -64,16 +65,16 @@ $(window).scroll(function() {
 // animate sections for phones
 $(window).scroll(function() {
     if ($(this).width() <= 414) {
-            if ($(this).scrollTop() > 300) {
+            if ($(this).scrollTop() > 400) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
-                }, 500, function(){
+                }, 900, function(){
                     $('.proc:eq(1)').animate({
                         opacity: 1
-                    }, 500, function(){
+                    }, 900, function(){
                         $('.proc:eq(2)').animate({
                                 opacity: 1
-                            }, 500, function(){}
+                            }, 900, function(){}
                         );                    
                     }   
                     );                   
@@ -240,7 +241,7 @@ $(window).scroll(function() {
                     <div class="col-md-6">
                         <div class="title">
                             <h1>Get the Insurance <br> Every Household Needs</h1>
-                            <p style="width:50%;">No salesman. No broker fees. Affordable plans. 100s of carriers.</p>
+                            <p> No salesman. No broker fees. Affordable plans. 100s of carriers.</p>
                         </div>  
                         <div class="get-started">
                             <form name="" id="myForm" class="myForm">
@@ -255,8 +256,23 @@ $(window).scroll(function() {
                             </form>                               
                         </div>
                     </div>
-                    <div class="col-md-5 col-md-offset-1 phone">
+                    <figure class="col-md-5 col-md-offset-1 phone">
                         <img src="/images/tilt-phone.png"></img>
+                        <video class="ui" autoplay="" muted="" loop="" style="    
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transform-origin: 50% 70%;
+    transform: rotate3d(0, -1, 0, 25deg);
+    -webkit-transform: perspective(500px) rotateY(-6.6deg) scale(0.897, 0.971) translate(-4.5%, 13.6%);
+    transform: perspective(500px) rotateY(-5.6deg) scale(0.63, 0.699) translate(-22.5%, -18.4%);
+    border-radius: 1px;"
+    
+    >
+                            <!--<source src="https://cdn.stashinvest.com/assets/images/home/screen.mp4" type="video/mp4">-->
+                            <!--<source src="https://cdn.stashinvest.com/assets/images/home/screen.webm" type="video/webm">-->
+                        </video>                        
                     </div>
                 </div>
             </div> 

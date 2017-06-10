@@ -1569,7 +1569,7 @@ label.error,div.error{
     line-height:1.5em;
 }
 #new-home-page .phone img{
-    width:70%;
+    width:75%;
 }
 #new-home-page .phone{
     position:relative;
@@ -1685,7 +1685,9 @@ label.error,div.error{
 #new-home-page .proc{
     opacity: 0;
 }
-
+#new-home-page .title p{
+    width:50%;
+}
 
 
 
@@ -1866,23 +1868,36 @@ li.dropdown:hover .dropdown-content{
 }    
 #new-home-page .row {
     padding-top: 50px;
-}    
+} 
+#new-home-page .banner .row {
+    padding-top: 50px;
+}   
 #new-home-page .proc{
     margin-bottom: 35px;
 }
 #new-home-page .process{
     flex-direction: column;
 }
+#new-home-page .title{
+    text-align: center;
+}
 #new-home-page .phone{
-    display:none;
+    flex-direction: column;
+}
+#new-home-page .title h1{
+    font-size: 1.8em;
+}
+#new-home-page .title p{
+    font-size: 1em;
+    width:100%;
 }
 #home-page .services{
     flex-direction:column;
     height: 100%;
     width: 100%;
-    }
+}
 #home-page .title h1{
-    font-size: 2.0em;
+    font-size: 1.5em;
 }
 .features-container{
     flex-direction: column;
