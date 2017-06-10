@@ -90,7 +90,7 @@ $(window).scroll(function() {
                     );                   
                 }
                 );
-            }if ($(this).scrollTop() > 1600) {
+            }if ($(this).scrollTop() > 1700) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
@@ -101,7 +101,11 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
+<<<<<<< Updated upstream
             }if ($(this).scrollTop() > 2200) {
+=======
+            }if ($(this).scrollTop() > 2300) {
+>>>>>>> Stashed changes
                 $('.quest').animate({
                     opacity: 1,
                 }, 1000, function(){}
@@ -114,7 +118,7 @@ $(window).scroll(function() {
 
 // animate sections for ipads and tablets 1025x768 and 768x1024
 $(window).scroll(function() {
-    if ($(this).width() <= 768 && $(this).width() > 414) {
+    if ($(this).width() < 768 && $(this).width() > 414) {
             if ($(this).scrollTop() > 200) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
@@ -147,8 +151,8 @@ $(window).scroll(function() {
                 }, 1000, function(){}
                 );
             }
-    }else if ($(window).width() > 768 && $(window).width() <= 1024){
-                if ($(this).scrollTop() > 200) {
+    }else if ($(window).width() >= 768 && $(window).width() <= 1024){
+                if ($(this).scrollTop() > 400) {
                     $('.proc:eq(0)').animate({
                         opacity: 1
                     }, 600, function(){
@@ -163,7 +167,7 @@ $(window).scroll(function() {
                         );                   
                     }
                     );
-                }if ($(this).scrollTop() > 600) {
+                }if ($(this).scrollTop() > 800) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
