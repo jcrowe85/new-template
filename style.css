@@ -1873,7 +1873,6 @@ li.dropdown:hover .dropdown-content{
     padding-top:100px;
     
 }
-
 #new-home-page .phone{
     margin-top: 45px;
 }
@@ -1886,6 +1885,10 @@ li.dropdown:hover .dropdown-content{
 
 /* ------------ xs  ---------- */
 @media screen and (max-width:375px){
+#new-home-page .banner .row {
+    flex-direction: column;
+    
+}    
 #new-home-page .manage h3, #new-home-page .manage p{
     margin-bottom:20px;
 }    

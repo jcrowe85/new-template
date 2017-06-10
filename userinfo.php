@@ -1,6 +1,5 @@
 <!-- register user on submit -->
 <?php include_once('register.php'); ?>
-
 <?php include_once('head.php') ?>
 <script src="/js/userinfo.js"></script>
 <body id="userinfo-page">
@@ -30,7 +29,7 @@
             <h4>Let's create an account to save your progress.</h4>
             <p>Creating an account will save your progress and allow you to login to your dashboard later on.</p>
             </div>            
-            <form method="post" class="new_user" id="userInfoForm" name="myForm" action="">
+            <form method="post" class="new_user" id="userInfoForm" name="myForm" action=""
             <div class="step1">
               <div class='row'>
                   <div class='col-md-6 col-sm-12 col-xs-12'>

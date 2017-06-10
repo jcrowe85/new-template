@@ -22,7 +22,7 @@ if(isset($_POST['address1text'])!=""){
 $user = $_SESSION['user'];
 
 // update database with user enter info
-$address1text = mysqli_real_escape_string($conn, $_POST['address1text']);
+$address1text = $_POST['address1text']);
 $address2text = $_POST['address2text'];
 $citytext = $_POST['citytext'];
 $zipcodetext = $_POST['zipcodetext'];
