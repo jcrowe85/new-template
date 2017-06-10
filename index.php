@@ -101,11 +101,7 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
-<<<<<<< Updated upstream
             }if ($(this).scrollTop() > 2200) {
-=======
-            }if ($(this).scrollTop() > 2300) {
->>>>>>> Stashed changes
                 $('.quest').animate({
                     opacity: 1,
                 }, 1000, function(){}
