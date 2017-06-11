@@ -174,7 +174,7 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
-                }if ($(this).scrollTop() > 1700) {
+                }if ($(this).scrollTop() > 1600) {
                 $('.quest').animate({
                     opacity: 1,
                 }, 1000, function(){}
