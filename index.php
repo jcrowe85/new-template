@@ -130,7 +130,7 @@ $(window).scroll(function() {
                     );                   
                 }
                 );
-            }if ($(this).scrollTop() > 900) {
+            }if ($(this).scrollTop() > 1000) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
