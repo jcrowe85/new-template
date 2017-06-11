@@ -1731,6 +1731,12 @@ position: absolute;
 #new-home-page .phone img {
     width: 40%;
 }
+#new-home-page .manage-image{
+    width: 50%;
+    display: block;
+    margin: auto;    
+}
+
 }
 
 

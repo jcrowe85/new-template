@@ -114,7 +114,7 @@ $(window).scroll(function() {
 
 // animate sections for ipads and tablets 1025x768 and 768x1024
 $(window).scroll(function() {
-    if ($(this).width() < 768 && $(this).width() > 414) {
+    if ($(this).width() > 414 && $(this).width() < 768) {
             if ($(this).scrollTop() > 200) {
                 $('.proc:eq(0)').animate({
                     opacity: 1
@@ -163,7 +163,7 @@ $(window).scroll(function() {
                         );                   
                     }
                     );
-                }if ($(this).scrollTop() > 1600) {
+                }if ($(this).scrollTop() > 1100) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
@@ -174,7 +174,7 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
-                }if ($(this).scrollTop() > 2000) {
+                }if ($(this).scrollTop() > 1700) {
                 $('.quest').animate({
                     opacity: 1,
                 }, 1000, function(){}
