@@ -163,7 +163,7 @@ $(window).scroll(function() {
                         );                   
                     }
                     );
-                }if ($(this).scrollTop() > 800) {
+                }if ($(this).scrollTop() > 1600) {
                 $('.manage-title').animate({
                     opacity: 1,
                     left: 0
@@ -174,7 +174,7 @@ $(window).scroll(function() {
                     top: 0
                 }, 1000, function(){}
                 ); 
-                }if ($(this).scrollTop() > 1400) {
+                }if ($(this).scrollTop() > 2000) {
                 $('.quest').animate({
                     opacity: 1,
                 }, 1000, function(){}
