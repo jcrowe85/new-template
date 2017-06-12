@@ -1,5 +1,4 @@
 <?php include_once('head.php') ?>   
-<?php include_once('privy.php') ?>   
 <script>
 $(window).load(function(){
     
@@ -9,7 +8,13 @@ $(window).load(function(){
     	}
     });
     
-});
+    // demo video popup ! do not add to main.js
+      jQuery(function(){
+          jQuery("a.bla-1").YouTubePopUp();
+          jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+      });    
+
+});    
 </script>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
