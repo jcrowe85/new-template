@@ -1,7 +1,45 @@
 
+ <style>
+  .center {
+    text-align: center;
+  }
+  
+  small {
+    font-size: x-small;
+  }
+  
+  h5 {
+    line-height: 0;
+  }
+  
+ .modal-lg {
+    width: 55%;
+  }
+  
+ .btn-circle {
+    margin-top: -26px;
+  }
+  
+  .btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger {
+    border-radius:23px;
+  }
+  
+ .btn-primary {
+    background-color: #2ea6f4;
+  }
+  
+ .blur {
+    color: darkgrey;
+  }
+  
+  .active {
+    text-decoration: underline;
+    text-decoration-color: red;
+  }
+
+
+ </style>
 <body id="dashboard">
-  
-  
   <div class='container col-md-9'>
     <h2>My Dashboard</h2>
     <div class='row'>
@@ -176,46 +214,4 @@
     </div>
   </div>
  </div>
- <style>
-  .center {
-    text-align: center;
-  }
-  
-  small {
-    font-size: x-small;
-  }
-  
-  h5 {
-    line-height: 0;
-  }
-  
- .modal-lg {
-    width: 65%;
-  }
-  
- .btn-circle {
-    margin-top: -26px;
-  }
-  
-  .btn-default,.btn-primary,.btn-success,.btn-info,.btn-warning,.btn-danger {
-    border-radius:23px;
-  }
-  
- .btn-primary {
-    background-color: #2ea6f4;
-  }
-  
- .blur {
-    color: darkgrey;
-  }
-  
-  .active {
-    text-decoration: underline;
-    text-decoration-color: red;
-  }
-
-
- </style>
- 
- 
 </body>

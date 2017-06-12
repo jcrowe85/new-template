@@ -45,7 +45,6 @@ $(window).load(function(){
       });    
 
     
-    
 });
 
 
@@ -59,6 +58,8 @@ $(window).scroll(function() {
             $(".logo img").attr("src", "/images/logo-red.png"); 
             $(".header").css("background", "rgba(255, 255, 255, 1)");
             $(".header").slideDown("fast");
+            $('.navbar-toggle').css("border", "1px solid #e92730");
+            $('.navbar-toggle span').css("background", "#e92730");
        }); 
        
     }else if($(this).scrollTop() == 0 && $('.navbar a').css('color') == 'rgb(0, 0, 0)'){
@@ -67,9 +68,35 @@ $(window).scroll(function() {
             $(".logo span").css("color", "white");
             $(".logo img").attr("src", "/images/logo.png");     
             $(".header").css("background", "rgba(0, 0, 0, 0)");
+            $('.navbar-toggle').css("border", "1px solid #fff");
+            $('.navbar-toggle span').css("background", "#fff");
             $('.header').fadeIn();
        });         
     }
+});
+
+$(document).ready(function(){
+// add white background if monbile menu is collapsed
+$(".navbar-toggle").click(function(){
+        $(".navbar a:link").css("color", "black");
+        $(".logo span").css("color", "black");
+        $(".logo img").attr("src", "/images/logo-red.png"); 
+        $(".header").css("background", "rgba(255, 255, 255, 1)");
+        $(".navbar-toggle").css("border", "1px solid #e92730");
+        $(".navbar-toggle span").css("background", "#e92730");
+        
+        
+     if ($('.navbar-toggle').attr('aria-expanded') === "true") {
+        $("#new-home-page .header").css("background", "transparent");
+        $(".navbar a:link").css("color", "white");
+        $(".logo span").css("color", "white");
+        $(".logo img").attr("src", "/images/logo.png"); 
+        $(".navbar-toggle").css("border", "1px solid white");
+        $(".navbar-toggle span").css("background", "white");
+    } 
+        
+});    
+    
 });
 
 // animate sections for phones
