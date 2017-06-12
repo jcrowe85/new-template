@@ -92,25 +92,19 @@ $(document).ready(function(){
             $(".navbar-toggle span").css("background", "white");
         } 
             
-    });        
-          
-      
-// end document ready      
-});
-
-
-
-// run load on full page load
-$( window ).on( "load", function() {
-
+    });     
+    
+    
     // remove phone video on mobile
     if ($(window).width() <= 768){
         $('.ui').remove();
-    };       
+    };              
     
-}); 
-
-
+    
+    
+    
+// end document ready      
+});
 
 // load on window scroll
 $(window).scroll(function() {
@@ -279,6 +273,19 @@ $(window).scroll(function() {
             $('.header').fadeIn();
        });         
     }    
+    
+});
+
+
+
+// load when window resize
+$(window).resize(function(){
+    //remove video if screen size is less than 992px
+        if($(window).width() <= 992){
+        $('.ui').hide();
+    }if($(window).width() >= 992){
+        $('.ui').show();
+    }
 });
 
 
