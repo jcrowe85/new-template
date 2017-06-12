@@ -1,7 +1,7 @@
 // run when dom ready
 $(document).ready(function(){
-    //home page: animate banner title and phone
-    $('.title h1').delay(500).animate({
+        //home page: animate banner title and phone
+    $('.title h1').delay(1000).animate({
         opacity: 1,
         top: "0",
     }, 500, function(){
@@ -20,7 +20,7 @@ $(document).ready(function(){
                 );                
             });            
         });
-    });    
+    });  
     //home page: scroll page to section when menu item is clicked
     $( "#contact" ).click(function() {
         $('html,body').animate({
@@ -102,7 +102,27 @@ $(document).ready(function(){
 
 // run load on full page load
 $( window ).on( "load", function() {
-
+    //home page: animate banner title and phone
+    $('.title h1').animate({
+        opacity: 1,
+        top: "0",
+    }, 500, function(){
+        $('.title p').animate({
+            opacity: 1,
+            top: "0px",
+        }, 500, function(){
+            $('.get-started').animate({
+                opacity: 1,
+                top: "0px",
+            }, 500, function(){
+                $('.phone').animate({
+                    opacity: 1,
+                    left: "0px"
+                }, 500, function(){}
+                );                
+            });            
+        });
+    });  
     
     // remove phone video on mobile
     if ($(window).width() <= 768){
