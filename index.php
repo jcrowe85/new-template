@@ -1,5 +1,4 @@
 <?php include_once('head.php') ?>   
-<?php include_once('privy.php') ?>   
 <script>
 $(window).load(function(){
     
@@ -9,6 +8,7 @@ $(window).load(function(){
     	}
     });
     
+<<<<<<< Updated upstream
     
     // animate banner title and phone
     $('.title h1').animate({
@@ -39,11 +39,15 @@ $(window).load(function(){
     }       
     
     // demo video popup
+=======
+    // demo video popup ! do not add to main.js
+>>>>>>> Stashed changes
       jQuery(function(){
           jQuery("a.bla-1").YouTubePopUp();
           jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
       });    
 
+<<<<<<< Updated upstream
     
     
 });
@@ -221,6 +225,9 @@ $(window).scroll(function() {
     } 
 });
  
+=======
+});    
+>>>>>>> Stashed changes
 </script>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">

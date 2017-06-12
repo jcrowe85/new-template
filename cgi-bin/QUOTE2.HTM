@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Compare Life Insurance Quotes | Usurance.com - Insurance Without the Agent</title>
+    <!--  bootstrap -->
+    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!--  min.js -->
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script><!-- * -->
+    
+    <!-- resolve multiple jquery loads -->
+    <script> $.noConflict();</script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+
+    <!--  date/time plugin -->
+    <script src="https://rawgit.com/smalot/bootstrap-datetimepicker/master/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    
+
+    <!--  quote page product flip js/css -->
+    <link rel='stylesheet' href="https://rawgit.com/smalot/bootstrap-datetimepicker/master/css/bootstrap-datetimepicker.css">
+
+    <script src="//ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="csrf-param" content="authenticity_token" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+
+    <!--  icon plugin -->
+    <script src="https://use.fontawesome.com/c694372f78.js"></script>
+    <link rel="stylesheet" media="all" href="/style.css" />
+    
+    <!-- easing js plugin -->
+    <script src="/js/easing.js"></script>
+
+    <!-- sitewide js -->
+    <script src="/js/main.js"></script>        
+
+<!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+  </script>
+<![endif]-->
+
+<!-- favicon include -->
+<link rel="apple-touch-icon" sizes="57x57" href="/images/favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+<link rel="manifest" href="/images/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/favicon/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+    
+    <!-- page loader -->
+    <script type="text/javascript">
+        $(window).load(function() {
+        	$(".loader").fadeOut("slow");
+        });
+        	$(window).load(function() {
+        		// Animate loader off screen
+        		$(".se-pre-con").fadeOut("slow");;
+        	});
+    </script>
+</head>
+
+<body id="new-quote-page">
+        <div class="hidden-xs hidden-sm">
+            <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
+        </div>
+        <!-- Mobile Header (logo+name+hamburger and filters) -->
+        <div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">
+            <div class="col-xs-3">
+                <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>
+            </div>
+            <div class="col-xs-6" style="text-align:center;">
+              <h4>Usurit</h4>
+            </div>                
+            <div class="col-md-3 ">
+                <nav class="navbar navbar-static-top" role="navigation">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a id="whyus" href="/index.php">Home</a></li>
+                                <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
+                                <li><a id="guide" href="#">Insurance Guides</a></li>
+                                <li><a id="about" href="#">About Us</a></li>
+                                <li><a id="team" href="/team.php">Team</a></li>
+                                <li><a id="contact" href="#">Contact</a></li>
+                                <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>              
+        </div> 
+</body>
+
+
+</html>
