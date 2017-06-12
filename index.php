@@ -7,14 +7,15 @@ $(window).load(function(){
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
     	}
     });
-    
     // demo video popup ! do not add to main.js
       jQuery(function(){
           jQuery("a.bla-1").YouTubePopUp();
           jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
       });    
 
+
 });    
+
 </script>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">

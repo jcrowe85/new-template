@@ -43,11 +43,8 @@ $(document).ready(function(){
     });    
     }
   });
-<<<<<<< Updated upstream
-  // submit to userinfo when selecting product on mobile screen
-=======
+
   // submit form when seleting product on mobile screen
->>>>>>> Stashed changes
   $('.mobile-primary-quote').click(function(){
       $(this).find(".mobile1").submit()
       });  
@@ -282,7 +279,6 @@ $(window).scroll(function() {
             $('.header').fadeIn();
        });         
     }    
-    
 });
 
 
