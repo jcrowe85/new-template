@@ -102,28 +102,7 @@ $(document).ready(function(){
 
 // run load on full page load
 $( window ).on( "load", function() {
-    //home page: animate banner title and phone
-    $('.title h1').animate({
-        opacity: 1,
-        top: "0",
-    }, 500, function(){
-        $('.title p').animate({
-            opacity: 1,
-            top: "0px",
-        }, 500, function(){
-            $('.get-started').animate({
-                opacity: 1,
-                top: "0px",
-            }, 500, function(){
-                $('.phone').animate({
-                    opacity: 1,
-                    left: "0px"
-                }, 500, function(){}
-                );                
-            });            
-        });
-    });  
-    
+
     // remove phone video on mobile
     if ($(window).width() <= 768){
         $('.ui').remove();
