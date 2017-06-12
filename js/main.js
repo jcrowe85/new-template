@@ -92,24 +92,16 @@ $(document).ready(function(){
             $(".navbar-toggle span").css("background", "white");
         } 
             
-    });        
-          
-      
-// end document ready      
-});
-
-
-
-// run load on full page load
-$( window ).on( "load", function() {
-
+    });     
+    
+    
     // remove phone video on mobile
     if ($(window).width() <= 768){
         $('.ui').remove();
-    };       
-    
-}); 
-
+    };              
+      
+// end document ready      
+});
 
 
 // load on window scroll
