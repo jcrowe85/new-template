@@ -61,13 +61,10 @@
         
         <!-- page loader -->
         <script type="text/javascript">
-            $(window).load(function() {
-            	$(".loader").fadeOut("slow");
-            });
-            	$(window).load(function() {
-            		// Animate loader off screen
-            		$(".se-pre-con").fadeOut("slow");;
-            	});
+        	$(window).load(function() {
+        		// Animate loader off screen
+        		$(".se-pre-con").fadeOut("slow");;
+        	});
         </script>
         <meta name="google-site-verification" content="CBSEkgENsvUWcPSQym_bJJBHyBCrq1U9EymYg9fuwi8" />  
         

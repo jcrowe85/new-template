@@ -1,33 +1,6 @@
-<<<<<<< Updated upstream
-$(document).ready(function(){
-  
-  
-  
-    //move to section on click 
-    
-      // $( "#whyus" ).click(function() {
-    //     $('html,body').animate({
-    //         scrollTop: $(".why-us").offset().top - 60},
-    //     'slow');
-    // });
-    
-    $( "#guide" ).click(function() {
-        $('html,body').animate({
-            scrollTop: $(".footer").offset().top - 60},
-        'slow');
-    });
-    
-    // $( "#about" ).click(function() {
-    //     $('html,body').animate({
-    //         scrollTop: $(".team").offset().top - 60},
-    //     'slow');
-    // });
-    
-=======
 // run when dom ready
 $(document).ready(function(){
     //home page: scroll page to section when menu item is clicked
->>>>>>> Stashed changes
     $( "#contact" ).click(function() {
         $('html,body').animate({
             scrollTop: $(".footer").offset().top - 60},
@@ -70,15 +43,14 @@ $(document).ready(function(){
     });    
     }
   });
-  // submit to userinfo when selecting product on mobile screen
+
+  // submit form when seleting product on mobile screen
   $('.mobile-primary-quote').click(function(){
       $(this).find(".mobile1").submit()
       });  
   $('.mobile-secondary-quote').click(function(){
       $(this).find(".mobile2").submit()
       });  
-<<<<<<< Updated upstream
-=======
       
     // add white background if monbile menu is collapsed
     $(".navbar-toggle").click(function(){
@@ -307,8 +279,6 @@ $(window).scroll(function() {
             $('.header').fadeIn();
        });         
     }    
-    
->>>>>>> Stashed changes
 });
 
 
