@@ -42,7 +42,7 @@
 <body id="dashboard">
   <div class='container col-md-9'>
     <h2>My Dashboard</h2>
-    <div class='row'>
+    <div class='row alignFull'>
       <div class="col-xs-4 center">
               <img src="../images/blog1.jpg" height='140' width='130' class="img-circle" alt="Cinque Terre"> 
               <div class='row'>
@@ -81,11 +81,11 @@
     </div>
     <div class='row'>
           
-          <div class='col-xs-2 center'><br/><br/>
+          <div class='col-xs-12 col-md-2 center'><br/><br/>
             <i class="fa fa-umbrella fa-5x" aria-hidden="true"></i>
           </div>
           
-          <div class='col-xs-7'><br/><br/>
+          <div class='col-xs-12 col-md-7 col-sm-12'><br/><br/>
             Policy Details<hr/>
             <div class='col-xs-6'>
               <div class='col-xs-12'>
@@ -115,7 +115,7 @@
           </div>
            
            
-          <div class='col-xs-3'><br/><br/>
+          <div class='col-xs-12 col-md-3 col-sm-12'><br/><br/>
             Payment Details<hr/>
             <div class='col-xs-12'>
                 Preminum:<span>$52.12/mo</span>
