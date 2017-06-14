@@ -252,7 +252,7 @@ $(window).scroll(function() {
     //home page: menu background color change with page scroll
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
     
-       $(".header").fadeOut(function(){
+       $("#new-home-page .header").fadeOut(function(){
             $(".navbar a:link").css("color", "black");
             $(".logo span").css("color", "black");
             $(".logo img").attr("src", "/images/logo-red.png"); 
@@ -263,7 +263,7 @@ $(window).scroll(function() {
        }); 
        
     }else if($(this).scrollTop() == 0 && $('.navbar a').css('color') == 'rgb(0, 0, 0)'){
-       $('.header').slideUp(function(){
+       $('#new-home-page .header').slideUp(function(){
             $(".navbar a:link").css({'color' : 'white'});
             $(".logo span").css("color", "white");
             $(".logo img").attr("src", "/images/logo.png");     
@@ -278,7 +278,7 @@ $(window).scroll(function() {
 
 
 
-// load when window resize
+// home page: load when window resize
 $(window).resize(function(){
     //remove video if screen size is less than 992px
         if($(window).width() <= 992){
