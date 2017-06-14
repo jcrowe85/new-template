@@ -31,13 +31,19 @@
  .blur {
     color: darkgrey;
   }
-  
   .active {
     text-decoration: underline;
     text-decoration-color: red;
   }
-
-
+  .next-steps{
+    line-height: .8em;
+  }
+  .next-step-image{
+    margin-bottom:10px;    
+  }
+  .next-step-container{
+    text-align: center;
+  }
  </style>
 <body id="dashboard">
   <div class='container col-md-9'>
@@ -143,7 +149,7 @@
     
       <div class="modal-body">
         <button type="button" id='closeModal' class="btn btn-default btn-circle pull-right" style='margin-top: -25px'><i class="glyphicon glyphicon-remove"></i></button>
-        <div style="padding:30px">
+        <div style="padding: 0px 30px">
         <h2>Congratulations! You've applied for life insurance</h2><br/><br/>
         <div class="row">
             <div class="col-xs-4 center">
@@ -166,10 +172,12 @@
             <div class="col-xs-8">
               <div class='col-xs-12'>
                 <h4>Albert Lee is Your consultant</h4>
-                Hi Joshua, my name is Albert. Congratulations on your purchase of life insurance. 
-                I am going to be taking care of everything on the back-end so you dont have to.
-                I'll be reaching out to you shortly to confirm your information and answer any questions you might have.
-                Nice meeting you and look forward to helping you.
+                <p>
+                  Hi Joshua, my name is Albert. Congratulations on your purchase of life insurance. 
+                  I am going to be taking care of everything on the back-end so you dont have to.
+                  I'll be reaching out to you shortly to confirm your information and answer any questions you might have.
+                  Nice meeting you and look forward to helping you.
+                  </p>
               </div>
               <div class='col-xs-12'><br/><br/><br/>
                 <button class='form-control btn btn-primary btn-block'>Contact Me</button>
@@ -177,12 +185,12 @@
             </div>
         </div>
         <hr/>
-        <div class='row'>
+        <div class='row next-steps'>
           <div class='col-xs-12'>
                <h3>Next Steps:</h3>
           </div>
-          <div class='col-xs-4'>
-            <div class='col-xs-12 center'>
+          <div class='col-xs-4 next-step-container'>
+            <div class='col-xs-12 center next-step-image'>
               <i class="fa fa-phone fa-5x"></i>
             </div>
             <div class='col-xs-12'>
@@ -190,8 +198,8 @@
               Be honest, but dont give more information than requested.</small>
             </div>
           </div>
-          <div class='col-xs-4'>
-            <div class='col-xs-12 center'>
+          <div class='col-xs-4 next-step-container'>
+            <div class='col-xs-12 center next-step-image'>
               <i class="fa fa-stethoscope fa-5x"></i>
             </div>
             <div class='col-xs-12'>
@@ -199,8 +207,8 @@
               Be honest, but dont give more information than requested.</small>
             </div>
           </div>
-          <div class='col-xs-4'>
-            <div class='col-xs-12 center'>
+          <div class='col-xs-4 next-step-container'>
+            <div class='col-xs-12 center next-step-image'>
               <i class="fa fa-calendar fa-5x"></i>
             </div>
             <div class='col-xs-12'>
