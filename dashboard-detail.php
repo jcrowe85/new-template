@@ -38,11 +38,21 @@
   .next-steps{
     line-height: .8em;
   }
-  .next-step-image{
-    margin-bottom:10px;    
+  .next-step-image img{
+    margin-bottom:10px; 
+    width:75px;
   }
   .next-step-container{
     text-align: center;
+  }
+  #contact-me{
+    font-size:1.5em;
+    border-radius:10px;
+    border:none;
+    margin-top:1em;
+  }
+  .consultant{
+    margin-top:40px;
   }
  </style>
 <body id="dashboard">
@@ -149,23 +159,23 @@
     
       <div class="modal-body">
         <button type="button" id='closeModal' class="btn btn-default btn-circle pull-right" style='margin-top: -25px'><i class="glyphicon glyphicon-remove"></i></button>
-        <div style="padding: 0px 30px">
-        <h2>Congratulations! You've applied for life insurance</h2><br/><br/>
-        <div class="row">
+        <div style="padding: 0px 30px;">
+        <h3>Congratulations! You've applied for life insurance</h3>
+        <div class="row consultant">
             <div class="col-xs-4 center">
               <img src="../images/blog1.jpg" height='140' width='130' class="img-circle" alt="Cinque Terre"> 
               <div class='row'>
                 <div class='col-xs-12 center'><br/>
-                  <h5>Albert Lee</h5>
+                  <p>Albert Lee</p>
                 </div>
                 <div class='col-xs-12 center'>
-                  <h6>Assigned Consultant</h6>
+                  <p>Assigned Consultant</p>
                 </div>
                 <div class='col-xs-12 center'>
-                  <h6>949.438.3433</h6>
+                  <p>949.438.3433</p>
                 </div>
                 <div class='col-xs-12 center'>
-                  <h6>albert@usurit.com</h6>
+                  <p>albert@usurit.com</p>
                 </div>
               </div>
             </div>
@@ -179,19 +189,19 @@
                   Nice meeting you and look forward to helping you.
                   </p>
               </div>
-              <div class='col-xs-12'><br/><br/><br/>
-                <button class='form-control btn btn-primary btn-block'>Contact Me</button>
+              <div class='col-xs-12'>
+                <button class='btn btn-primary btn-block' id="contact-me">Contact Me</button>
               </div>
             </div>
         </div>
         <hr/>
         <div class='row next-steps'>
-          <div class='col-xs-12'>
+          <div class='col-xs-12' style="margin-bottom: 15px;">
                <h3>Next Steps:</h3>
           </div>
           <div class='col-xs-4 next-step-container'>
             <div class='col-xs-12 center next-step-image'>
-              <i class="fa fa-phone fa-5x"></i>
+              <img src="/images/phone.png"></img>
             </div>
             <div class='col-xs-12'>
               <small>Take your phone interview. During the interview you will be asked multiple questions pertainging to your health.
@@ -200,7 +210,7 @@
           </div>
           <div class='col-xs-4 next-step-container'>
             <div class='col-xs-12 center next-step-image'>
-              <i class="fa fa-stethoscope fa-5x"></i>
+              <img src="/images/stethoscope.png"></img>
             </div>
             <div class='col-xs-12'>
               <small>Take your phone interview. During the interview you will be asked multiple questions pertainging to your health.
@@ -209,7 +219,7 @@
           </div>
           <div class='col-xs-4 next-step-container'>
             <div class='col-xs-12 center next-step-image'>
-              <i class="fa fa-calendar fa-5x"></i>
+              <img src="/images/calendar.png"></img>
             </div>
             <div class='col-xs-12'>
               <small>Take your phone interview. During the interview you will be asked multiple questions pertainging to your health.
