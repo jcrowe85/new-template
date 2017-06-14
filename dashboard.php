@@ -23,6 +23,31 @@ $(document).ready(function(){
   .active a {
     color: red !important;
   }
+<!-- update user's info with application data -->
+<?php include_once('application-submit.php'); ?>
+
+<?php include_once('head.php') ?>
+<script src="/js/userinfo.js"></script>
+<script>
+$(document).ready(function(){
+    
+   $('#thankYouModal').modal('show');
+    
+    $('#closeModal').click(function () {
+      $('#thankYouModal').modal('hide');
+    });
+    
+});
+</script>
+<style type="text/css">
+  .active {
+    color: red;
+    text-decoration: none !important;
+  }
+  
+  .active a {
+    color: red !important;
+  }
   
   .navbar-toggle {
     border: 1px solid #cc2020;
