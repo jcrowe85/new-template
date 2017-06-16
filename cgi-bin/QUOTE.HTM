@@ -446,10 +446,13 @@ input[type=range]::-ms-thumb {
     .featured{
         display:none;
     }    
+<<<<<<< Updated upstream
     .menu{
     padding-top: 5px;
     margin-top:50px;
     }
+=======
+>>>>>>> Stashed changes
 }
 @media screen and (max-width:767px){
 
@@ -557,8 +560,8 @@ input[type=range]::-ms-thumb {
 ///////////////////// Document ready //////////////////////////
 $(document).ready(function(){
     // new-quote-page: open carrier details for corresponding product
-    $('.details').click(function(){
-    	$(this).parent().next('.carrier-info').slideToggle({
+    $('.quote').click(function(){
+    	$(this).find('.carrier-info').slideToggle({
         	duration: 1000, 
         	easing: "easeOutElastic", 
         	complete: function(){}});
