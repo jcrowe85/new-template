@@ -140,8 +140,11 @@ $(document).ready(function(){
     </div>
     <div class="process container" style="margin: 0 auto;">
         <div class="row">
+        <form id="quick-quote" method="post" action="/cgi-bin/cqsl.cgi">
+            <input type="hidden" name="ModeUsed" value="M">
+            <input type="hidden" name="TEMPLATEFILE" value="QUOTE.HTM">            
             <div class="quick-quote">
-                <form id="quick-quote" method="post" action="/verify.php">
+                
                   <fieldset>
                       <h1>What is your gender?</h1>
                       <div class="control-group">
@@ -254,7 +257,6 @@ $(document).ready(function(){
                               <option style="background-color:#808080;" value="54">Puerto Rico</option>
                               <option style="background-color:#808080;" value="55">Virgin Islands</option>
                               <option style="background-color:#808080;" value="56">Amer. Samoa</option>
-                              
                           </select>
                       </div>
                       <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
@@ -375,8 +377,8 @@ $(document).ready(function(){
                        <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
-                </form>
             </div>
+            </form>
         </div>
     </div>
     <div class="footer hidden-xs hidden-sm" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">

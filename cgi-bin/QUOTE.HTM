@@ -39,7 +39,12 @@
     <script src="/js/easing.js"></script>
 
     <!-- sitewide js -->
-    <script src="/js/main.js"></script>        
+    <script src="/js/main.js"></script>    
+    
+    <!-- jquery easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    
+     
 
 <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -75,25 +80,585 @@
         		$(".se-pre-con").fadeOut("slow");;
         	});
     </script>
-<script>
-$(document).ready(function(){
+</head>
+<style>
 
+#new-quote-page{
+    background: #eeeeee;
+}
+#new-quote-page .header{
+    border-bottom: 1px solid #fff;
+    padding: 15px 10px;
+    position: relative;
+}
+.header:before {
+  background: none;
+  border-bottom: 1px solid #d3d3d3;
+  content: "";
+  display: block;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  pointer-events: none;
+  margin-left:-10px;
+  margin-right:-10px;
+}  
+.sidebar-fixed:before {
+  background: none;
+  border-right: 1px solid #fff;
+  content: "";
+  display: block;
+  position:absolute;
+  right:0;
+  height:100%;
+  pointer-events: none;
+}
+#new-quote-page .sidebar-fixed{
+    position:fixed;
+    top: 60px;
+    left:0px;
+    bottom:0px;
+    border-right: 1px solid #d3d3d3;
+    background: #e5e5e5;
+    width: 360px; 
+    padding-left:0px
+}
+#new-quote-page .main{
+    margin-top: 120px;
+    margin-left:360px;
+    height:100%;
+    padding-bottom: 100px;
+}
+.upper{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height:50px;
+    background: #e5e5e5;
+    border-bottom:3px solid rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position:fixed;
+    top:60px;
+    padding-right: 360px;
+    width:100%;
     
+}
+.matches, .average-premium{
+    width:215px;
+    font-family: 'AileronRegular';
+    font-size:1.1em;
+}
+.average-premium{
+    width:300px;
+}
+.count, .dollars, .cheap, .expensive, .separation{
+    color: #6293fc;
+    font-family: 'AileronBold';
+}
+.quote-container{
+    position: fixed;
+    height: 100%;
+    margin-top: 10px;
+    z-index: 0;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 370px;
+    padding-top: 5px;
+    width: 100%; 
+    padding-bottom:250px;
+}
+.quote{
+    margin-bottom:10px;
+    
+}
+.quote-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    padding:20px;
+    background:white;
+    position:relative;
+    z-index:999;  
+    
+}
+.carrier-logo img{
+    width: 65px;
+}
+.carrier-name{
+    max-width: 250px;
+    
+}
+.featured{
+    text-align: center;
+}
+.featured-img img, .details img{
+    width: 20px;    
+}
+.featured-img img{
+    margin-bottom: 5px;    
+}
+.monthly-premium{
+    text-align: center;
+}
+.premium h2{
+    margin:0px;
+}
+.per-month, .featured-description {
+    font-size:.9em;
+    color: #9f9f9f;
+    margin-bottom:0px;
+}
+.carrier-info{
+    padding: 20px 40px;
+    background:white;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    width: 96%;
+    margin: auto;
+    display:none;
+    overflow: auto;
+}
+.carrier-logo{
+    max-width: 350px;
+
+}
+.ratings ul, .highlights ul{
+    list-style:none;
+    border-left: 2px solid lightgray;
+    padding-left: 10px;
+
+}
+.ratings li, .highlights li{
+    line-height: 22px;
+    font-size: .9em;
+}
+.why p{
+    line-height: 22px;
+    font-size: .8em;    
+}
+.why h5{
+    text-transform: uppercase;
+}
+.select  {
+    background: #6293fc;
+    border-radius: 2px;    
+    border:none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;;
+    font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);    
+}
+.select:hover{
+    background-color: #4562fb;
+}
+.sidebar-inner{
+    background: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);    
+    padding: 20px 10px;    
+    overflow: auto;
+    padding-bottom:100px;
+}
+.menu{
+    margin-bottom:30px;
+    padding-bottom:10px;
+    border-bottom: 1px solid #ebebeb;    
+}
+.coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom: 1px solid #ebebeb;
+}
+.coverage{
+    border:none;
+}
+.type-term, .type-permanent, .mode-monthly, .mode-annually, .male, .female, .dob-title, .dob-date, .dob-day, .dob-month, .dob-year{
+    padding:0px;
+}
+.dob-day, .dob-month, .dob-year, .height-number, .weight-number{
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    margin-right:5px;
+    padding: 5px 20px;
+}
+.change-info a{
+    color: rgb(98,147,252);
+}
+.policy a, .personal a{
+    color:lightgray;
+}
+.active a{
+    color: rgb(98,147,252);
+}
+#sidebar-personal{
+    position:relative;
+    left: -350px;
+    display:none;
+}
+#sidebar-policy{
+    position:relative;
+}
+.sidebar-inner{
+    height:100%;
+    overflow:scroll;
+}
+.sidebar-inner h5{
+    
+    
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    outline: none;
+    border-radius: 6px;
+    height: 8px;
+    margin-top:15px;
+    background-color: rgb(98, 147, 252);
+}
+#new-quote-page .header{
+    position:fixed;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.nopad{
+    padding:0px;
+}
+.type-term, .mode-monthly, .mode-annually, .male, .female{
+    margin-top:10px;
+}
+.quote:nth-child(-n+3){
+    border-left: 15px solid red;
+}
+/*.quote:nth-child(3){*/
+/*    margin-bottom:100px;*/
+/*}*/
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+        #new-quote-page .carrier-name{
+        max-width: 100px;       
+        }
+        #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+         font-size: .8em;
+        }      
+        .select{
+            padding: 5px 20px;
+        }
+        .carrier-info h5{
+            font-size: .8em;
+        }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #new-quote-page .quote-container, #new-quote-page .main{
+        width:100%;
+        position: relative;
+        padding-right:0px;
+        margin-left:0px;
+        overflow: auto;
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 25px;
+    }
+    #new-quote-page .sidebar-fixed{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding:0px;
+        border:none;
+    }
+    #new-quote-page .sidebar-inner{
+        margin:0px;
+        padding: 0px;
+    }
+    .upper{
+         position: relative; 
+         top:0;
+         padding:0px;
+         text-align:center;
+         background:none;
+         border:none;
+        }
+    .coverage-title, .coverage-amount, .term-title, .term-years, .type, .payment-mode, .policy, .personal{
+        text-align: center;
+    }
+    .coverage-amount, .term-years{
+        font-size: 1.5em;
+    }
+    .menu{
+        height: 35px;    
+    }
+    #new-quote-page .carrier-name{
+    max-width: 100px;       
+    }
+    #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+     font-size: .8em;
+    }      
+    .select{
+        padding: 5px 20px;
+    }
+    .carrier-info h5{
+        font-size: .8em;
+    }
+    .coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender {
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        border-bottom: 0px solid #ebebeb;  
+        text-align: center;
+    }
+    .term{
+        margin-bottom:30px;
+    }    
+    .type, .payment-mode{
+        display:none;
+    }
+}
+@media screen and (max-width:768px){
+
+    #new-quote-page .quote-container, #new-quote-page .main{
+        width:100%;
+        position: relative;
+        padding-right:0px;
+        margin-left:0px;
+        overflow: auto;
+        margin: 0px;
+        padding: 5px;
+        padding-bottom: 25px;
+    }
+    #new-quote-page .sidebar-fixed{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding:0px;
+        border:none;
+    }
+    #new-quote-page .sidebar-inner{
+        margin:0px;
+        padding: 0px;
+    }
+    .upper{
+         position: relative; 
+         top:0;
+         padding:0px;
+         text-align:center;
+         background:none;
+         border:none;
+         font-size: .7em;
+        }
+    .coverage-title, .coverage-amount, .term-title, .term-years, .type, .payment-mode, .policy, .personal{
+        text-align: center;
+    }
+    .coverage-amount, .term-years{
+        font-size: 1.5em;
+    }
+    .menu{
+        height: 35px;   
+        padding-bottom: 25px;
+    }
+    #new-quote-page .carrier-name{
+    max-width: 100px;       
+    }
+    #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+     font-size: .6em;
+    }      
+    .select{
+        padding: 5px 20px;
+    }
+    .carrier-info h5{
+        font-size: .8em;
+    }
+    .coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender {
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        border-bottom: 0px solid #ebebeb;  
+        text-align: center;
+    }
+    .term{
+        margin-bottom:30px;
+    }    
+    .type, .payment-mode{
+        display:none;
+    }
+    .select, .featured{
+        display:none;
+    }
+    .mobile-select{
+    background: #6293fc;
+    border-radius: 2px;
+    border: none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;; font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);     
+    width: 100%;
+
+    }
+}
+@media screen and (max-width:414px){
+    .upper{
+        font-size: .5em;
+    }
+    .monthly-premium{
+        font-size:.6em;
+    }
+    .carrier-logo{
+        margin-right: 5px;
+    }
+    #new-quote-page .carrier-name{
+        max-width: 70px;
+    }
+    .carrier-info{
+        padding: 20px 10px;
+    }
+}
+</style>
+<script>
+///////////////////// Document ready //////////////////////////
+$(document).ready(function(){
+    // new-quote-page: open carrier details for corresponding product
+    $('.details').click(function(){
+    	$(this).parent().next('.carrier-info').slideToggle({
+        	duration: 1000, 
+        	easing: "easeOutElastic", 
+        	complete: function(){}});
+    });  
+    // new-quote-page: display active sidebar menu and stylize menu option chosen
+    $('.policy').click(function(){
+        if($('#sidebar-policy .policy').hasClass('active')){
+            
+        }else{
+            $('#sidebar-personal .personal').removeClass('active');
+        	$('#sidebar-policy .policy').addClass('active');
+        	$('#sidebar-personal').animate({left: -350},100,function(){
+        	    $('#sidebar-personal').css("display", "none");    	    
+        	    $('#sidebar-policy').css("display", "block");
+        	    $('#sidebar-policy').animate({left: 0},500);
+        	    
+        	});
+        }
+    	event.preventDefault();
+    });   
+    $('.personal').click(function(){
+        if($('#sidebar-personal .personal').hasClass('active')){
+            
+        }else{
+            $('#sidebar-policy .policy').removeClass('active');
+        	$('#sidebar-personal .personal').addClass('active');
+        	$('#sidebar-policy').animate({left:-350},100,function(){
+        	    $('#sidebar-policy').css("display", "none");
+        	    $('#sidebar-personal').css("display", "block");
+        	    $('#sidebar-personal').animate({left: 0},500);
+        	    
+        	});
+        }
+    	event.preventDefault();
+    });
+    
+    // count quotes and update count
+    var primaryQuotes = $('.quote').length;
+    // var secondaryQuotes = $('.secondary-quotes').length;
+    if (primaryQuotes == 0){
+        // $('.count').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
+        $('.count').html("0");
+    }
+    else{
+    $('.count').html(primaryQuotes);
+    }    
+    
+    // new-quote-page: display first and last quote price
+    var cheap = $('.quote:first-child h2').html();
+    var expensive = $('.quote:last-child h2').html();
+    $('.cheap').html(cheap);
+    $('.expensive').html(expensive);
     
     //coverage: show coverage from initial submit
     var faceAmountValue = $("input[name=FaceAmount]").val();
     var parts = faceAmountValue.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    document.querySelector('#coverage').value = "$" + parts.join(".");
+    document.querySelector('.coverage-amount h5').innerHTML = "$" + parts.join(".");    
     
     //coverage: set coverage to subsequent submits
     var faceAmountValue = $("input[name=FaceAmount]").val();
     $('#faceAmount').val(faceAmountValue);
     
-    //term: set term years to subsequent submits
+     $('#faceAmount').change(function(){
+         $('.adjustPolicy').submit();
+     });
+     
+    //term: show term years from inital submit
+    var term = $('input[name=NewCategory]').val();
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}
+    // $('#term').val(term + " " + "Years");        
+
+    //term: set term years for subsequent submits
     var term = $('input[name=NewCategory]').val();
     $('#term-range').val(term);
-    
+
+     //term: show term years from subsequent submits
+     var term = $('#term-range').val();
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}    
+     
+     //term: submit on change
+     $('#term-range').change(function(){
+        $('.adjustPolicy').submit();
+     });     
+
+    // set premium mode to mo (monthly) or year (annually) 
+     var modeUsed = $('input[name=ModeUsed]').val();
+     if (modeUsed == "A"){
+         modeUsed = "per year";
+         $('.premium-mode').html(modeUsed);
+     }
+     else if (modeUsed = "M"){
+         modeUsed = "per month";
+         $('.premium-mode').html(modeUsed);
+     }
     // set annual/monthly from initial submit
     var  ModeUsed = $('input[name=ModeUsed]').val();
         if (ModeUsed == "A"){
@@ -104,436 +669,388 @@ $(document).ready(function(){
         }
     $('input[type=radio][name=ModeUsed]').change(function(){
         $('.adjustPolicy').submit();
-    });
+    });     
     
-    // count quotes and update title
-    var primaryQuotes = $('.primary-quotes').length;
-    var secondaryQuotes = $('.secondary-quotes').length;
-    var totalQuotes = primaryQuotes + secondaryQuotes - 3;
-    if (totalQuotes == 0){
-        $('.title h4').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
-        $('.title p').html("");
-    }
-    else{
-    $('.quote-count').html(totalQuotes);
-    }
-    // offset background to secondary quotes
-    $('.secondary-quote').find('.front:even').css({"background" : "#f4f5f7"});
+    // set current dob
+    var birthDay = $('input[name=Birthday]').val();
+    var birthMonth = $('input[name=BirthMonth]').val();
+    var birthYear = $('input[name=BirthYear]').val();
+    $('.dob-day').val(birthDay);
+    $('.dob-month').val(birthMonth);
+    $('.dob-year').val(birthYear); 
     
-    // set premium mode to mo (monthly) or year (annually) 
-     var modeUsed = $('input[name=ModeUsed]').val();
-     if (modeUsed == "A"){
-         modeUsed = "/yr";
-         $('.premium-mode').html(modeUsed);
-     }
-     else if (modeUsed = "M"){
-         modeUsed = "/mo";
-         $('.premium-mode').html(modeUsed);
-     }
-     
-     // submit form after adjusting coverage/term
-     $('#faceAmount').change(function(){
+     // submit birthday on change
+     $('.dob-year').change(function(){
          $('.adjustPolicy').submit();
      });
      
-     $('#term-range').change(function(){
-        $('.adjustPolicy').submit();
-     });
-     
-    //term: show term years from inital submit
-    var term = $('input[name=NewCategory]').val();
-    var term = $('#term-range').val();
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}
-    // $('#term').val(term + " " + "Years");     
-     
-     
-     //term: show term years from subsequent submits
-     var term = $('#term-range').val();
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}
-     
-     
-     
+    // set current height
+    var height = $('input[name=parm2]').val();
+    $('.height-number').val(height);
 
+    
+     // submit height on change
+     $('.height-number').change(function(){
+         $('.adjustPolicy').submit();
+     });   
+
+    // set current weight
+    var weight = $('input[name=parm3]').val();
+    $('.weight-number').val(weight);
+
+    
+     // submit weight on change
+     $('.weight-number').change(function(){
+         $('.adjustPolicy').submit();
+     });      
+     
+    // set sex to male/female
+    var  sex = $('input[name=Sex]').val();
+        if (sex == "M"){
+             $('.Ma').prop("checked", true);
+        }
+        else if (sex == "F"){
+             $('.F').prop("checked", true);
+        }
+    // submit sex on change
+    $('input[type=radio][name=Sex]').change(function(){
+        $('.adjustPolicy').submit();
+    });      
+     
+     // set medical 
+    var health = $('input[name=Health]').val();
+    $('#health').val(health);
+     // submit medical on change
+    $('select[name=Health]').change(function(){
+        $('.adjustPolicy').submit();
+    });  
+    
+    // set smoke to yes/no
+    var  smoke = $('input[name=Smoker]').val();
+        if (smoke == "Y"){
+             $('.smoke-y').prop("checked", true);
+        }
+        else if (smoke == "N"){
+             $('.smoke-n').prop("checked", true);
+        }
+    // submit smoke on change
+    $('input[type=radio][name=Smoker]').change(function(){
+        $('.adjustPolicy').submit();
+    });      
+     
+    
+    // change input border color on mouse over
+    $('input').mouseover(function(){
+    	$(this).css("border-color", "rgb(98, 147, 252)");
+    });   
+    $('input').mouseout(function(){
+    	$(this).css("border-color", "lightgray");
+    });         
+        
+// end document ready
 });
+
+
+////////////////////// Functions /////////////////////////////
+
+
     //coverage: update coverage while sliding and submit form on change
     function coverageUpdate(x) {
       var parts = x.toString().split(".");
       parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      document.querySelector('#coverage').value = "$" + parts.join(".");
+      document.querySelector('.coverage-amount h5').innerHTML = "$" + parts.join(".");
     }
-    
     //term: update term whie sliding
     function termUpdate(x){
     var term = x;
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}            
-    }
-    
-</script>
-<style>
-    #quote-page .mobile-quote{
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    max-height: 200px;
-    margin-bottom: 15px;
-    overflow: auto;
-    padding-top: 5px;
-    }
-    #quote-page .mobile-quote:nth-child(n-3){
-       border-left:25px solid #ec2327;    
-    }
-
-    #quote-page #mobile-secondary-quote{
-       border-left:25px solid lightgray;    
-    }   
-    
-    #quote-page .mobile-quote img{
-         width: 75px;
-    }
-    #quote-page .mobile-quote h3{
-        font-family: 'AileronSemibold';
-        font-size: 2em;
-         letter-spacing: -2px;
-
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}            
     }    
-    #quote-page .description p{
-        font-size: .7em;
-        line-height: 1.5em;
-    }
-    #quote-page .secondary-quote form:nth-child(-n+3){
-        display:none;
-    }
-    #quote-page .mobile-secondary-quote form:nth-child(-n+3){
-        display:none;
-    }    
-    input[type="range"]{
-        -webkit-appearance: none;
-        -moz-apperance: none;
-        outline: none;
-        border-radius: 6px;
-        height: 2px;
-        background-color:red;
-    }
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
+    
+    
 
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
-}
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
-}
-
-input[type=number]{
-    outline: none;
-}
+///////////////////// Window resize //////////////////////////
 
 
-</style>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1301953106512137');
-fbq('track', 'Lead');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-</head>
-<body id="quote-page">
-      <!-- catch form feilds -->
-      <input type="hidden" name="ZipCode" value="$zipcode$">
-      <input type="hidden" name="DoingHealth" value="ON">
-      <input type="hidden" name="State" value="$origstate$">
-      <input type="hidden" name="Birthday" value="$origday$">
-      <input type="hidden" name="BirthMonth" value="$origmonth$">
-      <input type="hidden" name="BirthYear" value="$origyear$">
-      <input type="hidden" name="Health" value="$orighealth$">
-      <input type="hidden" name="FaceAmount" value="$newface$">
-      <input type="hidden" name="Sex" value="$origsex$">
-      <input type="hidden" name="Smoker" value="$origsmoker$">
-      <input type="hidden" name="NewCategory" value="$origcat$">
-      <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
-      <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-      <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
-      <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
-      <input type="hidden" name="ModeUsed" value="$origmodeused$">
-      <input type="hidden" name="UserLocation" value="$userlocation$">
-      <input type="hidden" name="UserLocation" value="$userlocation$">
-      <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
-      <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
-      <input type="hidden" name="email" value="$email$">
-      <input type="hidden" name="css" value="$css$">    
-    <!-- show loader during page load -->  
-    <div class="se-pre-con"></div>
-    <!-- end show loader while loading page -->  
-    <div class="sidebar col-md-3 col-lg-2" >
-        <div class="hidden-xs hidden-sm">
-            <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
-        </div>
-        <!-- Mobile Header (logo+name+hamburger and filters) -->
-        <div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">
-            <div class="col-xs-3">
-                <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>
+<body id="new-quote-page">
+          <!-- catch form feilds -->
+          <input type="hidden" name="ZipCode" value="$zipcode$">
+          <input type="hidden" name="DoingHealth" value="ON">
+          <input type="hidden" name="State" value="$origstate$">
+          <input type="hidden" name="Birthday" value="$origday$">
+          <input type="hidden" name="BirthMonth" value="$origmonth$">
+          <input type="hidden" name="BirthYear" value="$origyear$">
+          <input type="hidden" name="Health" value="$orighealth$">
+          <input type="hidden" name="FaceAmount" value="$newface$">
+          <input type="hidden" name="Sex" value="$origsex$">
+          <input type="hidden" name="Smoker" value="$origsmoker$">
+          <input type="hidden" name="NewCategory" value="$origcat$">
+          <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
+          <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+          <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
+          <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+          <input type="hidden" name="ModeUsed" value="$origmodeused$">
+          <input type="hidden" name="UserLocation" value="$userlocation$">
+          <input type="hidden" name="UserLocation" value="$userlocation$">
+          <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+          <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+          <input type="hidden" name="email" value="$email$">
+          <input type="hidden" name="css" value="$css$">    
+        <!-- show loader during page load -->  
+        <div class="se-pre-con"></div>    
+        <div class="header hidden-xs hidden-sm navbar-fixed-top" style="background:white; display:flex; justify-content:space-between;">
+            <div class="hidden-xs hidden-sm align-self:center;">
+                <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:25px"></a>
+                <span>Usurit</span>
             </div>
-            <div class="col-xs-6" style="text-align:center;">
-              <h4>Usurit</h4>
-            </div>                
-            <div class="col-md-3 ">
-                <nav class="navbar navbar-static-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
-                        </div>
+            <div class="hidden-xs hidden-sm">
+                <button class="btn getHelp" onClick="getHelp()" style="color:white;">Get Help</button>
+            </div> 
+        </div>       
+        <!-- Mobile Header (logo+name+hamburger and filters) -->
+        <!--<div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">-->
+        <!--    <div class="col-xs-3">-->
+        <!--        <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>-->
+        <!--    </div>-->
+        <!--    <div class="col-xs-6" style="text-align:center;">-->
+        <!--      <h4>Usurit</h4>-->
+        <!--    </div>                -->
+        <!--    <div class="col-md-3 ">-->
+        <!--        <nav class="navbar navbar-static-top" role="navigation">-->
+        <!--            <div class="container">-->
+        <!--                <div class="navbar-header">-->
+        <!--                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+        <!--                        <span class="sr-only">Toggle navigation</span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                    </button>-->
+        <!--                </div>-->
                         <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a id="whyus" href="/index.php">Home</a></li>
-                                <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
-                                <li><a id="guide" href="#">Insurance Guides</a></li>
-                                <li><a id="about" href="#">About Us</a></li>
-                                <li><a id="team" href="/team.php">Team</a></li>
-                                <li><a id="contact" href="#">Contact</a></li>
-                                <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>
+        <!--                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+        <!--                    <ul class="nav navbar-nav">-->
+        <!--                        <li><a id="whyus" href="/index.php">Home</a></li>-->
+        <!--                        <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>-->
+        <!--                        <li><a id="guide" href="#">Insurance Guides</a></li>-->
+        <!--                        <li><a id="about" href="#">About Us</a></li>-->
+        <!--                        <li><a id="team" href="/team.php">Team</a></li>-->
+        <!--                        <li><a id="contact" href="#">Contact</a></li>-->
+        <!--                        <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </nav>-->
+        <!--    </div>              -->
+        <!--</div> -->
+        <div class="sidebar-fixed col-md-3">
+            <div class="sidebar-inner" id="sidebar-policy" style="">
+                    <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
+                    <div class="menu col-md-12">
+                        <div class="policy col-xs-6 col-sm-6 col-md-6 active"><a href="">Policy</a></div>
+                        <div class="personal col-xs-6 col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-0"><a href="">Personal</a></div>
+                    </div>    
+                    <div class="coverage col-md-12">
+                        <div class="coverage-title col-md-6"><h5>Coverage</h5></div>
+                        <div class="coverage-amount col-md-6"><h5></h5></div>
+                        <input type="range" id="faceAmount" class="col-md-12" name="FaceAmount"  min="50000" max="2000000" value="100000" step="50000" oninput="coverageUpdate(value)">                    
+                    </div>
+                    <div class="term col-md-12">
+                        <div class="term-title col-md-6"><h5>Term</h5></div>
+                        <div class="term-years col-md-6"><h5></h5></div>
+                        <input type="range" name="NewCategory" id="term-range" class="col-md-12" min="2" max="9" step="1" oninput="termUpdate(value)">
+                    </div>
+                    <div class="type col-sm-6 col-md-12">
+                        <div class="type-title col-md-4"><h5>Type</h5></div>
+                        <div class="type-term col-sm-6 col-md-4">
+                            <input type="radio" checked>
+                            <label for="">Term</label>
+                        </div>
+                        <!--<div class="type-permanent col-sm-6 col-md-4">-->
+                        <!--    <input type="radio">-->
+                        <!--    <label for="" >Perm</label>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="payment-mode col-sm-6 col-md-12">
+                        <div class="mode-title col-md-5"><h5>Payment Mode</h5></div>
+                        <div class="mode-monthly col-sm-6 col-md-3">
+                            <input type="radio" name="ModeUsed" class="M" value="M">
+                            <label for="">Month</label>
+                        </div>
+                        <div class="mode-annually col-sm-6 col-md-4">
+                            <input type="radio" name="ModeUsed" class="A" value="A">
+                            <label for="">Year</label>
+                        </div>
+                    </div> 
+                    <!--<div class="change-info col-md-12">-->
+                    <!--       <a href="">Change Info</a>-->
+                    <!--</div>-->
+                        <!-- saved values to pass to cgi engine when changing filters -->
+            </div>
+            <div class="sidebar-inner" id="sidebar-personal">
+                <div class="menu col-md-12">
+                    <div class="policy col-xs-6 col-sm-6 col-md-6"><a href="">Policy</a></div>
+                    <div class="personal col-xs-6 col-sm-6 col-md-6 "><a href="">Personal</a></div>
+                </div>    
+                <div class="dob col-md-12">
+                    <div class="dob-title col-md-12"><h5>Date of Birth</h5></div>
+                    <div class="col-md-12 nopad">
+                        <input type="text" class="dob-month col-md-3" name="BirthMonth">
+                        <input type="text" class="dob-day col-md-3" name="Birthday">
+                        <input type="text" class="dob-year col-md-4" name="BirthYear">
+                    </div>
+                </div>
+                <div class="height col-sm-6 col-md-12">
+                    <div class="height-title col-md-5"><h5>Height</h5></div>
+                    <div class="col-md-7 nopad">
+                        <input type="text" class="height-number col-md-6" name="parm2">
+                    </div>
+                </div>
+                <div class="weight col-sm-6 col-md-12">
+                    <div class="weight-title col-md-5"><h5>Weight</h5></div>
+                    <div class="weight-pounds col-md-7 nopad">
+                        <input type="text" class="weight-number col-md-6" name="parm3">
+                    </div>
+                </div> 
+                <div class="gender col-sm-6 col-md-12">
+                    <div class="gender-title col-md-4"><h5>Gender</h5></div>
+                    <div class="male col-sm-6 col-md-4">
+                        <input type="radio" name="Sex" class="Ma" value="M"/>
+                        <label for="">Male</label>
+                    </div>
+                    <div class="female col-sm-6 col-md-4">
+                        <input type="radio" name="Sex" class="F" value="F"/>
+                        <label for="">Female</label>
+                    </div>
+                </div> 
+                <div class="health col-sm-6 col-md-12">
+                    <div class="health-title col-md-6"><h5>Health Rating</h5></div>
+                    <div class="health-rating col-sm-12 col-md-6">
+                        <select name="Health" id="health">
+                            <option value="PP" class="PP">Very good</option>
+                            <option value="P" class="P">Good</option>
+                            <option value="RP" class="RP">Average</option>
+                            <option value="R" class="R">Bad</option>
+                        </select>
+                    </div>
+                </div>
+                <!--<div class="state col-md-12">-->
+                <!--    <div class="state-title col-md-6"><h5>State</h5></div>-->
+                <!--    <div class="state-name col-md-6">-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="smoke col-sm-12 col-md-12">
+                    <div class="smoke-title col-md-4"><h5>Smoke</h5></div>
+                    <div class="smoke-yes col-sm-6 col-md-4">
+                        <input type="radio" name="Smoker" class="smoke-y" value="Y"/>
+                        <label for="">Yes</label>
+                    </div>
+                    <div class="smoke-no col-sm-6 col-md-4">
+                        <input type="radio" name="Smoker" class="smoke-n" value="N"/>
+                        <label for="">No</label>
+                    </div>
+                </div>                 
+            </div>  
+                <input type="hidden" name="ZipCode" value="$zipcode$">
+                <input type="hidden" name="DoingHealth" value="ON">
+                <input type="hidden" name="State" value="$origstate$">
+                <input type="hidden" name="Birthday" value="$origday$">
+                <input type="hidden" name="BirthMonth" value="$origmonth$">
+                <input type="hidden" name="BirthYear" value="$origyear$">
+                <input type="hidden" name="Health" value="$orighealth$">
+                <input type="hidden" name="Sex" value="$origsex$">
+                <input type="hidden" name="Smoker" value="$origsmoker$">
+                <input type="hidden" name="NewCategory" value="$origcat$">
+                <input type="hidden" name="parm1" value="$parm1$"><!-- custom Name parm -->
+                <input type="hidden" name="parm2" value="$parm2$"><!-- custom Height parm -->
+                <input type="hidden" name="parm3" value="$parm3$"><!-- custom Weight parm -->
+                <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+                <input type="hidden" name="ModeUsed" value="$origmodeused$">
+                <input type="hidden" name="UserLocation" value="$userlocation$">
+                <input type="hidden" name="UserLocation" value="$userlocation$">
+                <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+                <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+                <input type="hidden" name="email" value="$email$">
+                <input type="hidden" name="css" value="$css$">                       
+            </form>              
+        </div>
+        <div class="main">
+        <div class="upper">
+            <div class="matches">
+                Displaying <span class="count"></span> matches 
+            </div>
+            <div class="average-premium">
+                <span class="cheap"></span><span class="separation">-</span><span class="expensive"></span> <span class="premium-mode">per month</span>
+            </div>
+        </div>    
+            <div class="quote-container">
+$prodline=20$               
+                <div class="quote">
+                <form action="/userinfo.php" method="POST" class="secondary-quotes">                    
+                    <div class="quote-details">
+                        <div class="carrier-logo">
+                            <img src="../images/logos/$COMP$.gif" alt="">
+                        </div>
+                        <div class="carrier-name">
+                            <h5>$company$</h5>
+                        </div>
+                        <div class="monthly-premium">
+                            <div class="premium">
+                                <h2>$$premium$</h2>
+                            </div>
+                            <div class="premium-mode">
+                                per month
+                            </div>
+                        </div>
+                        <div class="featured">
+                            <div class="featured-img">
+                                <img src="/images/thumbs-up.png" alt="">
+                            </div>
+                            <div class="featured-description">
+                                95% match
+                            </div>
+                        </div>
+                        <button class="btn btn-primary select">Select</button>
+                        <div class="details">
+                            <img src="/images/details-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="carrier-info">
+                        <div class="ratings col-sm-3 col-md-3">
+                            <h5>RATINGS</h5>
+                            <ul>
+                                <li>Customer: <img src="/images/stars.jpg" alt="" style="width:80px;"></li>
+                                <li>A.M. Best: $amb$</li>
+                                <li>BBB:</li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
-            </div>              
-        </div>    
-        <!-- Sidebar -->        
-        <div class="adjustments fluid">
-            <div class="controls">
-                <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
-                    <div class="adjust-title">Adjust Your Policy</div> 
-                    <div class="coverage">
-                        <label for="coverage" class="coverage" style="color:gray" >Coverage</label>
-                        <output name="coverage" id="coverage"></output>
-                        <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="2000000" value="100000" step="50000" oninput="coverageUpdate(value)">
-                    </div>
-                    <div class="term">
-                        <label for="term" style="color:gray" class="term-title">Term</label>
-                        <output for="term" id="term"></output>
-                        <input type="range" name="NewCategory" id="term-range"  min="2" max="9" step="1" oninput="termUpdate(value)" >
-                    </div>                         
-                    <div class="monthly-annually">
-                        <label for="mode" style="display:block" style="display:block;">Show Prices</label>
-                            <div style="margin:0px">
-                            <label for="monthly">Monthly</label>
-                            <input type="radio" name="ModeUsed" class="M" value="M">
-                       </div>
-                       <div style="margin:0px">
-                           <label for="annually">Annually</label>
-                           <input type="radio" name="ModeUsed" class="A" value="A">
-                       </div>
-                    </div>    
-                    <!-- saved values to pass to cgi engine when changing filters -->
-                        <input type="hidden" name="ZipCode" value="$zipcode$">
-                        <input type="hidden" name="DoingHealth" value="ON">
-                        <input type="hidden" name="State" value="$origstate$">
-                        <input type="hidden" name="Birthday" value="$origday$">
-                        <input type="hidden" name="BirthMonth" value="$origmonth$">
-                        <input type="hidden" name="BirthYear" value="$origyear$">
-                        <input type="hidden" name="Health" value="$orighealth$">
-                        <input type="hidden" name="Sex" value="$origsex$">
-                        <input type="hidden" name="Smoker" value="$origsmoker$">
-                        <input type="hidden" name="NewCategory" value="$origcat$">
-                        <input type="hidden" name="parm1" value="$parm1$"><!-- custom Name parm -->
-                        <input type="hidden" name="parm2" value="$parm2$"><!-- custom Height parm -->
-                        <input type="hidden" name="parm3" value="$parm3$"><!-- custom Weight parm -->
-                        <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
-                        <input type="hidden" name="ModeUsed" value="$origmodeused$">
-                        <input type="hidden" name="UserLocation" value="$userlocation$">
-                        <input type="hidden" name="UserLocation" value="$userlocation$">
-                        <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
-                        <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
-                        <input type="hidden" name="email" value="$email$">
-                        <input type="hidden" name="css" value="$css$">                       
-                </form>                    
-            </div>
-        </div>            
-    </div> 
-    <div class="main col-md-9 col-lg-10">
-        <div class="row hidden-xs hidden-sm">
-            <div class="header fluid">
-                <div class="container">
-                    <header>
-                        <button class="getHelp" onClick="getHelp()">Get Help</button>
-                    </header>
-                </div>
-            </div>                 
-        </div>
-        <div class="row hidden-xs hidden-sm">
-            <div class="col-md-12">
-                <div class="row" style="margin-top:25px;">
-                <div class="title col-md-8 col-md-offset-1">
-                  <h4>We got you matched with <u><span class="quote-count"></u></span> quotes from top-rated carriers. 
-                  <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
-                  </h4>
-                    <p>The first 3 are the most affordable, followed by the most expensive.</p>
-                    <p>These quotes were based on the information you provided in the previous step.</p>
-                </div>                    
-                    <div class="primary-quote-container  col-md-12">
-                        $prodline=3$      
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes" id="primary-quotes">
-                            <div class="card-grid" >
-                                    <div class="quote front">
-                                        <div class="logo-name">
-                                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                            <div style="line-height:18px; max-width: 175px;">$company$</div>
-                                        </div>
-                                        <div class="price">
-                                            <h3>$$premium$<small class="premium-mode"></small></h3>
-                                        </div>
-                                        <div class="continue">
-                                            <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                        </div>
-                                        <div class="details">
-                                            <span><img src="../images/flip.png" alt="">details</span>
-                                        </div>
-                                    </div>
-                                    <div class="quote back">
-                                        <div class="logo-name">
-                                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                            <div style="line-height:18px; max-width:175px;">$company$</div>
-                                        </div>
-                                        <div class="price">
-                                            <h3>$$premium$<small class="premium-mode"></small></h3>
-                                        </div>
-                                        <div class="continue">
-                                            <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                        </div>
-                                        <div class="details">
-                                            <span><img src="../images/flip.png" alt="">details</span>
-                                        </div>
-                                    </div>                 
-                                    <input type="hidden" name="premium" value="$$premium$">
-                                    <input type="hidden" name="company" value="$company$">
-                                    <input type="hidden" name="Sex" value="$origsex$">
-                                    <input type="hidden" name="Birthday" value="$origday$">
-                                    <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                    <input type="hidden" name="BirthYear" value="$origyear$">
-                                    <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                    <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                    <input type="hidden" name="State" value="$origstate$">
-                                    <input type="hidden" name="ZipCode" value="$zipcode$">
-                                    <input type="hidden" name="Health" value="$orighealth$">
-                                    <input type="hidden" name="Smoker" value="$origsmoker$">
-                                    <input type="hidden" name="FaceAmount" value="$newface$">
-                                    <input type="hidden" name="NewCategory" value="$origcat$"> 
-                            </div>        
-                        </form>   
-                        $/prodline$                
-                    </div>
-                    <script>
-                        $(".card-grid").flip({
-                          trigger: 'click'
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <div class="c-logo hidden-xs hidden-sm" id='downArrow' style="text-align:center; margin-top: 85px;">
-            <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
-            <p style="font-size:.8em;">Most expensive quotes from top-rated carriers</p>
-        </div>        
-        <div class="row hidden-xs hidden-sm">
-            <div class="secondary-quote main" id="secondary-quote">
-                $prodline=20$      
-                <form action="/userinfo.php" method="POST" class="secondary-quotes">
-                    <div class="card-grid-sec" style="margin:0 auto;">
-                        <div class="fluid front">
-                            <div class="sec-quote">
-                                <div class="details">
-                                    <span><img src="/images/flip.png" alt="">details</span>
-                                </div>
-                                <div class="sec-logo-name">
-                                    <img src="../images/logos/$COMP$.gif" alt="">
-                                </div>
-                                <div class="company">
-                                    $company$
-                                </div>
-                                <div class="price">
-                                    <h3>$$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="product-type">
-                                    Term Life
-                                </div>
-                                <div class="sec-continue">
-                                    <button type="submit" class="btn btn-primary">Continue</button>
-                                </div>
-                            </div>
+                        <div class="highlights col-sm-3 col-md-3">
+                            <h5>HIGHLIGHTS</h5>
+                            <ul>
+                                <li>Founded:</li>
+                                <li>Total Assets:</li>
+                                <li>Policies In Force:</li>
+                                <li>Average Turnaround:</li>
+                            </ul>
                         </div>
-                        <div class="fluid back">
-                            <div class="sec-quote">
-                                <div class="details">
-                                    <span><img src="/images/flip.png" alt="">details</span>
-                                </div>
-                                <div class="sec-logo-name">
-                                    <img src="../images/logos/$COMP$.gif" alt="">
-                                    <span>$company$</span>
-                                </div>
-                                <div class="price">
-                                    <h3>$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="product-type">
-                                    Term Life
-                                </div>
-                                <div class="sec-continue">
-                                    <button type="submit" class="btn btn-primary">Continue</button>
-                                </div>
-                            </div>
-                        </div> 
+                        <div class="why col-sm-6 col-md-6">
+                            <h5>WHY CHOOSE $company$</h5>
+                            <p>
+                                Founded in 1886, they started out as a property and casualty insurance company 
+                                and added life insurance into their list of products in 1958. In 1996, they were bought 
+                                out by Sammons Financial Group, however everything remains the same except for that now 
+                                Sammons Financial Group also helps back the claims of North American. 
+                            </p>
+                        </div>  
+                        <div class="visible-xs col-sm-12">
+                            <button class="btn btn-primary mobile-select">Select</button>
+                        </div>
                     </div>
                         <input type="hidden" name="premium" value="$$premium$">
                         <input type="hidden" name="company" value="$company$">
@@ -549,126 +1066,13 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                         <input type="hidden" name="Smoker" value="$origsmoker$">
                         <input type="hidden" name="FaceAmount" value="$newface$">
                         <input type="hidden" name="NewCategory" value="$origcat$"> 
-                </form>
-                $/prodline$
+                </form>                                    
+                </div>
+$/prodline$                
             </div>
         </div>
-        <!-- Mobile version only -->
-        <div class="row visible-xs visible-sm">
-            <div class="mobile-container fluid">
-                <p style="text-align:center; font-size:.8em;">Most Affordable Quotes from Top-Rated Carriers
-                <br>
-                <small>(select one to begin application)</small></p>
-                $prodline=3$
-                    <div class="mobile-quote mobile-primary-quote">
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile1" id="primary-quotes">
-                            <div class="col-xs-12" style="display:flex; align-items:center;">
-                                <div class="col-xs-3" style="padding:0px;">
-                                    <img src="/images/logos/$COMP$.gif" alt="">
-                                </div>
-                                <div class="col-xs-9 premium">
-                                    <h3 style="font-size:2.5em;">$$premium$<small>/mo</small></h3>
-                                </div>
-                            </div>
-                            <div class="col-xs-12" style="font-size:12px; font-family:'AileronBold';  margin-bottom: 5px;">$company$</div>                        
-                            <div class="col-xs-12 description">
-                                <p>
-                                    This top-rated carrier has been in business for over 100-years. With a 100% paid claims, you can be sure your family will be compensated. 
-                                </p>
-                            </div>
-                                <input type="hidden" name="premium" value="$$premium$">
-                                <input type="hidden" name="company" value="$company$">
-                                <input type="hidden" name="Sex" value="$origsex$">
-                                <input type="hidden" name="Birthday" value="$origday$">
-                                <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                <input type="hidden" name="BirthYear" value="$origyear$">
-                                <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                <input type="hidden" name="State" value="$origstate$">
-                                <input type="hidden" name="ZipCode" value="$zipcode$">
-                                <input type="hidden" name="Health" value="$orighealth$">
-                                <input type="hidden" name="Smoker" value="$origsmoker$">
-                                <input type="hidden" name="FaceAmount" value="$newface$">
-                                <input type="hidden" name="NewCategory" value="$origcat$">                             
-                            
-                        </form>
-                   </div>
-                $/prodline$
-            </div>  
+        <div class="footer" style="background:lightgray; position:fixed; bottom:0;height:40px;width:100%; z-index:999;">
+            
         </div>
-        <div class="c-logo visible-xs visible-sm" id='downArrow' style="text-align:center;">
-            <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
-            <p style="font-size:.8em;margin-top: 70px;">Most expensive quotes from top-rated carriers</p>
-        </div>
-        <div class="row visible-xs visible-sm">
-            <div class="mobile-secondary-quote fluid" >
-                $prodline=20$   
-                <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile2">
-                    <div class="mobile-quote" id="mobile-secondary-quote">    
-                        <div class="col-xs-12" style="display:flex; align-items:center;">
-                            <div class="col-xs-4" style="padding:0px;">
-                                <img src="/images/logos/$COMP$.gif" alt="">
-                            </div>
-                            <div class="col-xs-8 premium" style="padding:0px;">
-                                <h3 style="font-size:2.5em;">$$premium$<small>/mo</small></h3>
-                            </div>
-                        </div>
-                        <div class="col-xs-12" style="font-size:12px; font-family:'AileronBold'; margin-bottom: 5px;">$company$</div>                        
-                        <div class="col-xs-12 description">
-                            <p>
-                                This top-rated carrier has been in business for over 100-years. With a 100% paid claims, you can be sure your family will be compensated. 
-                            </p>
-                        </div>
-                                <input type="hidden" name="premium" value="$$premium$">
-                                <input type="hidden" name="company" value="$company$">
-                                <input type="hidden" name="Sex" value="$origsex$">
-                                <input type="hidden" name="Birthday" value="$origday$">
-                                <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                <input type="hidden" name="BirthYear" value="$origyear$">
-                                <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                <input type="hidden" name="State" value="$origstate$">
-                                <input type="hidden" name="ZipCode" value="$zipcode$">
-                                <input type="hidden" name="Health" value="$orighealth$">
-                                <input type="hidden" name="Smoker" value="$origsmoker$">
-                                <input type="hidden" name="FaceAmount" value="$newface$">
-                                <input type="hidden" name="NewCategory" value="$origcat$">                             
-                        </div>        
-                    </form>
-                $/prodline$
-            </div>  
-        </div>
-    </div>
-
-    <!--<div class="sidebar">-->
-    <!-- <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>-->
-    <!--    <br><br>-->
-    <!--    <h3>Welcome to the application Process.</h3>-->
-    <!--    <br>-->
-    <!--    <p>-->
-    <!--    It's time for us to get to know you. We need your full name, phone number to contact you if needed, an email to send follow up notifications and a password. -->
-    <!--    <br><br>-->
-    <!--    Don't worry, everything is taken over a secure connection and we will not share your information without your approval.                -->
-    <!--    </p>-->
-    <!--</div>    -->
-    <script>
-        $(".card-grid-sec").flip({
-          axis: 'x',
-          trigger: 'click'
-        });
-    </script>
-    <script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function() {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.async = true;
-        mf.src = "//cdn.mouseflow.com/projects/edd0d33c-2ba8-4bcb-ba3f-e5b6e4bd2374.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-</script>
-    <div style="clear:both"></div>
-    <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
-       <p>Usurit, Inc.</p> 
-    </div>
-  </body>    
+</body>
 </html>
