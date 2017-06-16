@@ -143,11 +143,13 @@
           </div>
     </div>
     
-    <div class='col-xs-12'><br/><br/><br/>
+    <div class='col-xs-12'>
+    <p>
       Your policy is currently pending in Medical exam. Our examiner's should have reached out to schedule your exam date and time.
       If you have not heard from a medical examiner, please call 800.888.888. They will ask for some personal information to verify
       your identity. If you are unable to reach the examination office, please call us at 949.438.3433 or press get help at the
-      top right hand of the screen to chat with a live representative.<br/><br/><br/>
+      top right hand of the screen to chat with a live representative.
+    </p>
     </div>
     
   </div>

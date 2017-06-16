@@ -1,13 +1,13 @@
-<?php include_once('conn.php')?>
+
 
 <?php 
+$birthday = $_POST['Birthday'];
+$birthMonth= $_POST['BirthMonth'];
+$birthYear = $_POST['BirthYear'];
+$sex = $_POST['Sex'];
 
-    $query = "INSERT INTO main (firstnametext)
-    VALUES ('josh')";
-    
-    $res = mysqli_query($conn, $query);
 
-    if (!mysqli_query($conn, $res)) {
-    printf("Errormessage: %s\n", mysqli_error($conn));
-}
+
+  echo json_encode($birthday);
+  echo json_encode($birthMonth);
 ?>

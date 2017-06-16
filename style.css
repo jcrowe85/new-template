@@ -20,7 +20,7 @@ h1{font-size:2.5em}
 h2{font-size:2.0em}
 h3{font-size:1.75em}
 h4{font-size:1.50em}
-h5{font-size:1em}
+h5{font-size:1.25em}
 
 p{
     font-family: 'AileronLight';
@@ -734,6 +734,7 @@ ul.quest li:nth-child(5) {
     #home-page .services {
         width: 76%;
     }
+  
 }
 
 @media screen and (min-width: 376px) and (max-width: 541px) {
@@ -1708,6 +1709,11 @@ position: absolute;
 
 
 /*  ---------------------------   responsive  -------------------------------- */
+
+
+
+
+
 
 
 /* ------------ md  ---------- */
