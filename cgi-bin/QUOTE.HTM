@@ -121,10 +121,11 @@
     border-right: 1px solid #d3d3d3;
     background: #e5e5e5;
     width: 360px; 
-    padding-left:0px
+    padding-left:0px;
+    box-shadow: 6px 0px 5px rgba(0,0,0,0.1);
 }
 #new-quote-page .main{
-    margin-top: 120px;
+    margin-top: 115px;
     margin-left:360px;
     height:100%;
     padding-bottom: 100px;
@@ -141,6 +142,7 @@
     top:60px;
     padding-right: 360px;
     width:100%;
+    box-shadow: 0px 7px 5px rgba(0,0,0,0.1);
     
 }
 .matches, .average-premium{
@@ -150,6 +152,9 @@
 }
 .average-premium{
     width:300px;
+}
+.premium-mode{
+    letter-spacing: .02px;
 }
 .count, .dollars, .cheap, .expensive, .separation{
     color: #6293fc;
@@ -203,6 +208,7 @@
 }
 .premium h2{
     margin:0px;
+    letter-spacing: -0.02em;
 }
 .per-month, .featured-description {
     font-size:.9em;
@@ -261,14 +267,16 @@
     margin-top: 10px;
     border-radius: 2px;
     box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);    
-    padding: 20px 10px;    
     overflow: auto;
     padding-bottom:100px;
 }
 .menu{
     margin-bottom:30px;
     padding-bottom:10px;
-    border-bottom: 1px solid #ebebeb;    
+    
+    background: #e8e8e8;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;    
 }
 .coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender{
     margin-bottom:30px;
@@ -291,7 +299,7 @@
     color: rgb(98,147,252);
 }
 .policy a, .personal a{
-    color:lightgray;
+    color: gray;
 }
 .active a{
     color: rgb(98,147,252);
@@ -358,12 +366,22 @@ input[type=range]::-ms-thumb {
 .type-term, .mode-monthly, .mode-annually, .male, .female{
     margin-top:10px;
 }
-.quote:nth-child(-n+3){
-    border-left: 15px solid red;
-}
+/*.quote:nth-child(-n+3){*/
+/*    border-left: 15px solid red;*/
+/*}*/
 /*.quote:nth-child(3){*/
 /*    margin-bottom:100px;*/
 /*}*/
+.premium span{
+    font-size: .7em;
+    top: -6px;
+    position: relative;
+    color: #5f90ff;
+    margin-right: 2px;
+}
+.fa-times{
+    display:none;
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
         #new-quote-page .carrier-name{
         max-width: 100px;       
@@ -446,13 +464,14 @@ input[type=range]::-ms-thumb {
     .featured{
         display:none;
     }    
-<<<<<<< Updated upstream
     .menu{
     padding-top: 5px;
     margin-top:50px;
     }
-=======
->>>>>>> Stashed changes
+    .upper{
+        display:none;
+    }
+
 }
 @media screen and (max-width:767px){
 
@@ -537,10 +556,14 @@ input[type=range]::-ms-thumb {
     width: 100%;
 
     }
+    .upper{
+        display:none;
+    }    
 }
 @media screen and (max-width:414px){
     .upper{
         font-size: .7em;
+        display:none;
     }
     .monthly-premium{
         font-size:.6em;
@@ -554,6 +577,12 @@ input[type=range]::-ms-thumb {
     .carrier-info{
         padding: 20px 10px;
     }
+    .premium span{
+        
+        top: 0;
+        position: relative;
+        color: #5f90ff;
+    }  
 }
 </style>
 <script>
@@ -565,7 +594,11 @@ $(document).ready(function(){
         	duration: 1000, 
         	easing: "easeOutElastic", 
         	complete: function(){}});
+        // $('.fa-angle-down').hide();
+        // $('.fa-times').show();
+        
     });  
+    
     // new-quote-page: display active sidebar menu and stylize menu option chosen
     $('.policy').click(function(){
         if($('#sidebar-policy .policy').hasClass('active')){
@@ -1002,7 +1035,7 @@ $(document).ready(function(){
             </div>
         </div>    
             <div class="quote-container">
-$prodline=20$               
+$prodline=20$           
                 <div class="quote">
                 <form action="/userinfo.php" method="POST" class="secondary-quotes">                    
                     <div class="quote-details">
@@ -1014,7 +1047,7 @@ $prodline=20$
                         </div>
                         <div class="monthly-premium">
                             <div class="premium">
-                                <h2>$$premium$</h2>
+                               <h2><span>$</span>$premium$</h2>
                             </div>
                             <div class="premium-mode">
                                 per month
@@ -1030,7 +1063,8 @@ $prodline=20$
                         </div>
                         <button class="btn btn-primary select">Select</button>
                         <div class="details">
-                            <img src="/images/details-arrow.png" alt="">
+                            <i class="fa fa-angle-down fa-2x" style="color:gray;" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
                         </div>
                     </div>
                     <div class="carrier-info">
@@ -1080,10 +1114,10 @@ $prodline=20$
                         <input type="hidden" name="NewCategory" value="$origcat$"> 
                 </form>                                    
                 </div>
-$/prodline$                
+$/prodline$           
             </div>
         </div>
-        <div class="footer" style="background:lightgray; position:fixed; bottom:0;height:40px;width:100%; z-index:999;">
+        <div class="footer" style="background: rgba(0,0,0,.3); position:fixed; bottom:0;height:40px;width:100%; z-index:999;">
             
         </div>
 </body>
