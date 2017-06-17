@@ -381,7 +381,7 @@ $(document).ready(function(){
             </form>
         </div>
     </div>
-    <div class="footer hidden-xs hidden-sm" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b;">
+    <div class="footer hidden-xs hidden-sm" style="text-align:center; padding: 15px 0px;  position:fixed; bottom:0; width:100%; background-color:#9c292b; border-top: 5px solid rgba(0, 0, 0, 0.3);">
        <p>Usurit, Inc.</p> 
     </div>
     </body>
