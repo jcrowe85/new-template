@@ -146,12 +146,12 @@
     
 }
 .matches, .average-premium{
-    width:215px;
+    width:235px;
     font-family: 'AileronRegular';
     font-size:1.1em;
 }
 .average-premium{
-    width:300px;
+    
 }
 .premium-mode{
     letter-spacing: .02px;
@@ -159,6 +159,7 @@
 .count, .dollars, .cheap, .expensive, .separation{
     color: #6293fc;
     font-family: 'AileronBold';
+    font-size: 1.2em;
 }
 .quote-container{
     position: fixed;
@@ -578,7 +579,6 @@ input[type=range]::-ms-thumb {
         padding: 20px 10px;
     }
     .premium span{
-        
         top: 0;
         position: relative;
         color: #5f90ff;
@@ -631,22 +631,6 @@ $(document).ready(function(){
     	event.preventDefault();
     });
     
-    // count quotes and update count
-    var primaryQuotes = $('.quote').length;
-    // var secondaryQuotes = $('.secondary-quotes').length;
-    if (primaryQuotes == 0){
-        // $('.count').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
-        $('.count').html("0");
-    }
-    else{
-    $('.count').html(primaryQuotes);
-    }    
-    
-    // new-quote-page: display first and last quote price
-    var cheap = $('.quote:first-child h2').html();
-    var expensive = $('.quote:last-child h2').html();
-    $('.cheap').html(cheap);
-    $('.expensive').html(expensive);
     
     //coverage: show coverage from initial submit
     var faceAmountValue = $("input[name=FaceAmount]").val();
@@ -784,20 +768,59 @@ $(document).ready(function(){
     });      
      
     
-    // change input border color on mouse over
+    // change peronal tab input border color on mouse over
     $('input').mouseover(function(){
     	$(this).css("border-color", "rgb(98, 147, 252)");
     });   
     $('input').mouseout(function(){
     	$(this).css("border-color", "lightgray");
-    });         
-        
+    });   
+
+    // remove ones and tenths place from quote premiums
+    $(".premium h2").each(function(){
+    	var val = $(this).text();
+    	var myRe = /^\$\d+/;
+        var exec = myRe.exec(val);
+        $(this).text(exec);
+    });
+    // remove ones and tenths place from most expensive and least expensive menu
+    $(".cheap, .expensive").each(function(){
+        	var val = $(this).text();
+        	var myRe = /^\$\d+/
+            var exec = myRe.exec(val);
+            $(this).text(exec);
+        });
+    // remove duplicate carriers    
+    var seen = {};
+    $('.carrier-name h5').each(function() {
+        var txt = $(this).text();
+        if (seen[txt])
+            $(this).closest('.quote').remove();
+        else
+            seen[txt] = true;
+    });        
+            
+    // count quotes and update count
+    var primaryQuotes = $('.quote').length;
+    // var secondaryQuotes = $('.secondary-quotes').length;
+    if (primaryQuotes == 0){
+        // $('.count').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
+        $('.count').html("0");
+    }
+    else{
+    $('.count').html(primaryQuotes);
+    }    
+    
+    // new-quote-page: display first and last quote price
+    var cheap = $('.quote:first-child h2').html();
+    var expensive = $('.quote:last-child h2').html();
+    $('.cheap').html(cheap);
+    $('.expensive').html(expensive);        
 // end document ready
 });
 
 
 ////////////////////// Functions /////////////////////////////
-
 
     //coverage: update coverage while sliding and submit form on change
     function coverageUpdate(x) {
@@ -853,7 +876,7 @@ $(document).ready(function(){
         <div class="header navbar-fixed-top" style="background:white; display:flex; justify-content:space-between;">
             <div class="align-self:center;">
                 <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:25px"></a>
-                <span>Usurit</span>
+                <span class="testing">Usurit</span>
             </div>
             <div class="">
                 <button class="btn getHelp" onClick="getHelp()" style="color:white;">Get Help</button>
@@ -1031,7 +1054,7 @@ $(document).ready(function(){
                 Displaying <span class="count"></span> matches 
             </div>
             <div class="average-premium">
-                <span class="cheap"></span><span class="separation">-</span><span class="expensive"></span> <span class="premium-mode">per month</span>
+                <span class="cheap"></span><span class="separation"> - </span><span class="expensive"></span> <span class="premium-mode">per month</span>
             </div>
         </div>    
             <div class="quote-container">
