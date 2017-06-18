@@ -149,12 +149,15 @@
     width:235px;
     font-family: 'AileronRegular';
     font-size:1.1em;
+    letter-spacing: .02px;
+    color: gray;
 }
 .average-premium{
     
 }
 .premium-mode{
     letter-spacing: .02px;
+    margin-top: -5px;
 }
 .count, .dollars, .cheap, .expensive, .separation{
     color: #6293fc;
@@ -374,14 +377,21 @@ input[type=range]::-ms-thumb {
 /*    margin-bottom:100px;*/
 /*}*/
 .premium span{
-    font-size: .7em;
+    font-size: 1.3em;
     top: -6px;
     position: relative;
     color: #5f90ff;
-    margin-right: 2px;
+    margin-right: -5px;
 }
 .fa-times{
     display:none;
+}
+.cash-symbol{
+    font-size: 0.8em;
+    top: -3px;
+    position: relative;
+    color: #5f90ff;
+    /* margin-right: -10px; */    
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
         #new-quote-page .carrier-name{
@@ -576,10 +586,13 @@ input[type=range]::-ms-thumb {
         padding: 20px 10px;
     }
     .premium span{
-        top: 0;
         position: relative;
         color: #5f90ff;
     }  
+    .premium-mode{
+    margin-top: -5px;
+    font-size: 0.7em;
+    }
 }
 </style>
 <script>
@@ -776,7 +789,7 @@ $(document).ready(function(){
     // remove ones and tenths place from quote premiums
     $(".premium h2").each(function(){
     	var val = $(this).text();
-    	var myRe = /^\$\d+/;
+    	var myRe = /^\d+/;
         var exec = myRe.exec(val);
         $(this).text(exec);
     });
@@ -1135,7 +1148,7 @@ $(document).ready(function(){
                 Displaying <span class="count"></span> matches 
             </div>
             <div class="average-premium">
-                <span class="cheap"></span><span class="separation"> - </span><span class="expensive"></span> <span class="premium-mode">per month</span>
+               <span class="cash-symbol">$</span><span class="cheap"></span><span class="separation"> - </span><span class="cash-symbol">$</span><span class="expensive"></span> <span class="premium-mode">per month</span>
             </div>
         </div>    
             <div class="quote-container">
@@ -1151,7 +1164,8 @@ $prodline=20$
                         </div>
                         <div class="monthly-premium">
                             <div class="premium">
-                               <h2><span>$</span>$premium$</h2>
+                                <span style="display:inline-block;">$</span>
+                               <h2 style="display:inline-block;">$premium$</h2>
                             </div>
                             <div class="premium-mode">
                                 per month
