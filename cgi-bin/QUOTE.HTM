@@ -790,7 +790,7 @@ $(document).ready(function(){
     // remove ones and tenths place from quote premiums
     $(".premium h2").each(function(){
     	var val = $(this).text();
-    	var myRe = /^\d+/;
+    	var myRe = /^\d+\,\d+|\d+/;
         var exec = myRe.exec(val);
         $(this).text(exec);
     });
