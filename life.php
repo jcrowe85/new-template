@@ -370,7 +370,7 @@ $(document).ready(function(){
                                 <option style="background-color:#808080;" value="5">20-Year Term</option>
                                 <option style="background-color:#808080;" value="6">25-Year Term</option>
                                 <option style="background-color:#808080;" value="7">30-Year Term</option>
-                                <option style="background-color:#808080;" value="9">35-Year Term</option>      
+                                <!--<option style="background-color:#808080;" value="9">35-Year Term</option>      -->
                             </select> 
                           </label>
                       </div>

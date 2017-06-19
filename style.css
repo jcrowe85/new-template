@@ -55,7 +55,7 @@ a:active {
 button:focus {outline:0;}
 btn:focus{ouline:0;}
 #process-logo{
-    width:2%;
+    width: 30px;
 }
 
 input::-webkit-contacts-auto-fill-button {
