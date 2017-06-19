@@ -632,8 +632,14 @@ input[type=range]::-ms-thumb {
         font-size: 2em;
     }    
     .premium{
-        min-width: 125px;
+        min-width: 80px;
     }
+    #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+    font-size: 1.6em;
+    font-weight: bold;
+
+    }   
+    
 }
 </style>
 <script>
@@ -830,8 +836,9 @@ $(document).ready(function(){
     // remove ones and tenths place from quote premiums
     $(".premium h2").each(function(){
     	var val = $(this).text();
+    	var round = Math.ceil(val); 
     	var myRe = /^\d+\,\d+|\d+/;
-        var exec = myRe.exec(val);
+        var exec = myRe.exec(round);
         $(this).text(exec);
     });
     // remove ones and tenths place from most expensive and least expensive menu
