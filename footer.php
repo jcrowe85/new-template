@@ -57,15 +57,16 @@
                         <div class="col-sm-6 col-md-8 extras">
                             <ul>
                                 <li><a href="#">Our Story</a></li>
-                                <li><a href="#">Value Teams</a></li>
-                                <li><a href="#">Careers</a></li>
+                                <li><a href="#">Legal Terms & Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
                                 <li><a href="#">Press</a></li>
                                 <li><a href="#">FAQ</a></li>
-                            </ul>
-                        </div>
-                    </div>
+                            </ul>    
+                        </div>  
+                    </div>  
                 </div>
-            </div>
+              <p style="text-align: center;"><i class="fa fa-copyright" aria-hidden="true"></i> 2017 Usurit, Inc. All rights reserved.</p>   
+           </div>
         </div>
         <!-- services popup -->
         <div class="popup" data-popup="popup-1">
