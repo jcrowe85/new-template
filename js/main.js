@@ -95,12 +95,10 @@ $(document).ready(function(){
     });     
     
     
-    // remove phone video on mobile
+    // remove video on tablet/mobile
     if ($(window).width() <= 768){
         $('.ui').remove();
     };              
-    
-    
     
     
 // end document ready      
@@ -249,7 +247,7 @@ $(window).scroll(function() {
                 }
         } 
         
-    //home page: menu background color change with page scroll
+    //home page: change menu background color on scroll
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
     
        $("#new-home-page .header").fadeOut(function(){
