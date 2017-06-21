@@ -160,6 +160,9 @@
     margin-top: -5px;
     color: gray;
 }
+.average{
+    color:white;
+}
 .count, .dollars, .cheap, .expensive, .separation{
     
     font-family: 'AileronBold';
@@ -205,7 +208,7 @@
     text-align: center;
 }
 .featured-img img, .details img{
-    width: 20px;    
+    width: 70px;    
 }
 .featured-img img{
     margin-bottom: 5px;    
@@ -416,6 +419,36 @@ input[type=range]::-ms-thumb {
     justify-content: flex-end;    
     padding: 10px;
 }
+.quote:nth-child(3){
+    
+}
+.quote:nth-child(n+4){
+    -webkit-filter: grayscale(100%) blur(5px);
+    -moz-filter:grayscale(100%)  blur(5px);
+    -ms-filter: grayscale(100%) blur(5px);
+    -o-filter: grayscale(100%) blur(5px);  
+    filter: gray blur(5px);
+}
+.see-all{
+    background: rgb(0,191,255);
+    border-radius: 2px;
+    border: none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;; font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 115px;
+    margin-bottom: 25px;
+}
+.featured{
+    display:none;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
         #new-quote-page .carrier-name{
         max-width: 100px;       
@@ -1079,10 +1112,39 @@ $(document).ready(function(){
         $(this).text(exec);
         
     });    
- 
+    
+    // add 'see all' carrier button
+    $('.quote:nth-child(3)').after("<button class=\"btn btn-primary see-all\">See All Quotes</button>");
+    
+    // remove gray scale filter from 'other' carriers
+    $('.see-all').click(function(){
+        $('.quote:nth-child(n+4)').css("filter", "none");
+    });
+    
+    // set featured to show for first 3 carriers
+    $('.quote:nth-child(-n+3) .featured').show();
+    
+    // add thumbs up
+    $('.quote:nth-child(1) .featured-img').append("<img src=\"/images/three-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(1) .featured-description').text("Best Match");
+    $('.quote:nth-child(2) .featured-img').append("<img src=\"/images/two-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(2) .featured-description').text("Second");    
+    $('.quote:nth-child(3) .featured-img').append("<img src=\"/images/one-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(3) .featured-description').text("Third");
+    
+    
     
     
 // end document ready
+});
+
+
+$(window).resize(function(){
+    if($(window).width() <= 992){
+        $('.featured').css("display", "none");
+    }else{
+        $('.featured').css("display", "block");
+    }
 });
 
 
@@ -1340,10 +1402,10 @@ $prodline=100$
                         </div>
                         <div class="featured">
                             <div class="featured-img">
-                                <img src="/images/thumbs-up.png" alt="">
+                                
                             </div>
                             <div class="featured-description">
-                                95% match
+                                
                             </div>
                         </div>
                         <button class="btn btn-primary select">Select</button>
@@ -1404,7 +1466,7 @@ $/prodline$
                 Displaying <span class="count"></span> matches 
             </div>
             <div class="average-premium">
-               <span class="cash-symbol">$</span><span class="cheap"></span><span class="separation"> - </span><span class="cash-symbol">$</span><span class="expensive"></span> <span class="premium-mode">per month</span>
+               <span class="cash-symbol">$</span><span class="cheap"></span><span class="separation"> - </span><span class="cash-symbol">$</span><span class="expensive"></span> <span class="premium-mode average">per month</span>
             </div>
         </div>
 </body>
