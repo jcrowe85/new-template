@@ -123,6 +123,27 @@ $(document).ready(function(){
     $('.term').change(function(){
         //$('#quick-quote').submit();
     });
+    
+     $('input[name=option1]').click(function() {
+            if(!$('#option2').length && !$('#option3').length) {
+                $('#quick-quote').submit();
+            } else {
+                <?php include('slide-next.php') ?>
+            }
+     });
+     
+     $('input[name=option2]').click(function() {
+            if(!$('#option3').length) {
+                $('#quick-quote').submit();
+            } else {
+                <?php include('slide-next.php') ?>
+            }
+     });
+     
+     $('input[name=option3]').click(function() {
+                $('#quick-quote').submit();
+     });
+     
     $('#faceAmount').change(function(){
         event.preventDefault();
     });
