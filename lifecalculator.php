@@ -121,7 +121,7 @@ $(document).ready(function(){
     });
     
     $('.term').change(function(){
-        $('#quick-quote').submit();
+        //$('#quick-quote').submit();
     });
     $('#faceAmount').change(function(){
         event.preventDefault();
@@ -180,63 +180,7 @@ $(document).ready(function(){
                           <button class='btn btn-default btn-lg' id='next'>Next</button>
                       </div>
                     </fieldset>
-                    <fieldset id='option1'>
-                      <div>
-                          <h1>Option one</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option1" value="o1"/>
-                                  <div class="control__indicator">A</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option1" value="o1"/>
-                                  <div class="control__indicator">B</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>    
-                  </fieldset>
-                  <fieldset id='option2'>
-                      <div>
-                          <h1>Option two</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option2" value="o2"/>
-                                  <div class="control__indicator">C</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option2" value="o2"/>
-                                  <div class="control__indicator">D</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>
-                  </fieldset>
-                  <fieldset id='option3'>
-                      <div>
-                          <h1>Option three</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option3" value="o3"/>
-                                  <div class="control__indicator">E</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option3" value="o3"/>
-                                  <div class="control__indicator">F</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>
-                  </fieldset>
+                    
                     <fieldset>
                       <h1>I live in</h1>
                       <div class="control-group"> 
@@ -393,6 +337,63 @@ $(document).ready(function(){
                        <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
+                  <fieldset id='option1'>
+                      <div>
+                          <h1>Option one</h1>
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                <input type="radio" name="option1" value="o1"/>
+                                  <div class="control__indicator">A</div>
+                              </label>
+                          </div>	
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                  <input type="radio" name="option1" value="o1"/>
+                                  <div class="control__indicator">B</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>    
+                  </fieldset>
+                  <fieldset id='option2'>
+                      <div>
+                          <h1>Option two</h1>
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                <input type="radio" name="option2" value="o2"/>
+                                  <div class="control__indicator">C</div>
+                              </label>
+                          </div>	
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                  <input type="radio" name="option2" value="o2"/>
+                                  <div class="control__indicator">D</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>
+                  </fieldset>
+                  <fieldset id='option3'>
+                      <div>
+                          <h1>Option three</h1>
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                <input type="radio" name="option3" value="o3"/>
+                                  <div class="control__indicator">E</div>
+                              </label>
+                          </div>	
+                          <div class="control-group">
+                              <label class="control control--checkbox">
+                                  <input type="radio" name="option3" value="o3"/>
+                                  <div class="control__indicator">F</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>
+                  </fieldset>
                 </form>
             </div>
         </div>
