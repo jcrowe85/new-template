@@ -248,7 +248,7 @@
     line-height: 22px;
     font-size: .9em;
 }
-.founded span, .assets span, .forces span, .turnaround span{
+.founded span, .assets span, .forces span, .turnaround span, .full-premium span{
     font-family: 'AileronBold';
 }
 .why p{
@@ -965,7 +965,7 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.assets span').text("$68.5 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$208.9 Billion");
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");         
-        }if(carrier === "Prudential"){
+        }if(carrier === "Pruco"){
           $(this).parent().children('p').text("One of the big 3 life insurance companies. They have high pricing in their term products and competitive pricing in their permanent products. However, they do have a more relaxed underwriting. They accept poor health conditions and are generally favorable to them. They have an average turnaround time of 20 days.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1875");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$796.4 Billion");
@@ -1319,7 +1319,7 @@ $(document).ready(function(){
 
         </div>    
             <div class="quote-container">
-$prodline=20$           
+$prodline=100$           
                 <div class="quote">
                 <form action="/userinfo.php" method="POST" class="secondary-quotes">                    
                     <div class="quote-details">
@@ -1368,6 +1368,7 @@ $prodline=20$
                                 <li class="assets">Total Assets: <span></span></li>
                                 <li class="forces">Policies In Force: <span></span></li>
                                 <li class="turnaround">Average Turnaround: <span></span></li>
+                                <li class="full-premium">Full Premium: <span>$$premium$</span></li>
                             </ul>
                         </div>
                         <div class="why col-sm-6 col-md-5">
