@@ -867,9 +867,8 @@ $(document).ready(function(){
     // remove ones and tenths place from quote premiums
     $(".premium h2").each(function(){
     	var val = $(this).text();
-    	var round = Math.ceil(val); 
     	var myRe = /^\d+\,\d+|\d+/;
-        var exec = myRe.exec(round);
+        var exec = myRe.exec(val);
         $(this).text(exec);
     });
     // remove ones and tenths place from most expensive and least expensive menu
