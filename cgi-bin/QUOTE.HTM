@@ -1135,12 +1135,19 @@ $(document).ready(function(){
     // open first carrier details on page load
     $('.quote:nth-child(1) .carrier-info').slideDown();      
     
+    // remove featured from mobile
+    if($(window).width() <= 768){
+        $('.featured').css("display", "none");
+    }else{
+        $('.featured').css("display", "block");
+    }    
+    
 // end document ready
 });
 
 
 $(window).resize(function(){
-    if($(window).width() <= 992){
+    if($(window).width() <= 768){
         $('.featured').css("display", "none");
     }else{
         $('.featured').css("display", "block");
