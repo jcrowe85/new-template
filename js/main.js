@@ -73,7 +73,7 @@ $(document).ready(function(){
       $(this).find(".mobile2").submit()
       });  
       
-    // add white background if monbile menu is collapsed
+    // add white background if mobile menu is collapsed
     $(".navbar-toggle").click(function(){
             $(".navbar a:link").css("color", "black");
             $(".logo span").css("color", "black");
