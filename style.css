@@ -1702,16 +1702,28 @@ position: absolute;
     top: 0;
     transform-origin: 50% 70%;
     transform: rotate3d(0, -1, 0, 25deg);
-    -webkit-transform: perspective(500px) rotateY(-5.6deg) scale(0.72, 0.699) translate(-22.5%, -13.4%);
-    transform: perspective(500px) rotateY(-5.6deg) scale(0.63, 0.72) translate(-22.5%, -13.4%);
-    border-radius: 1px; 
+    -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
+    transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
+    border-radius: 1px;
+    
 }
 
 
 /*  ---------------------------   responsive  -------------------------------- */
 
 
-
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    #new-home-page .ui {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform-origin: 50% 70%;
+        transform: rotate3d(0, -1, 0, 25deg);
+        -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+        transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+        border-radius: 1px;
+}
 
 
 
