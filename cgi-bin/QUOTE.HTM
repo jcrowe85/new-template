@@ -419,16 +419,6 @@ input[type=range]::-ms-thumb {
     justify-content: flex-end;    
     padding: 10px;
 }
-.quote:nth-child(3){
-    
-}
-.quote:nth-child(n+4){
-    /*-webkit-filter: grayscale(100%) blur(5px);*/
-    /*-moz-filter:grayscale(100%)  blur(5px);*/
-    /*-ms-filter: grayscale(100%) blur(5px);*/
-    /*-o-filter: grayscale(100%) blur(5px);  */
-    /*filter: gray blur(5px);*/
-}
 .see-all{
     background: rgb(0,191,255);
     border-radius: 2px;
@@ -447,6 +437,10 @@ input[type=range]::-ms-thumb {
 }
 .featured{
     display:none;
+}
+.quote:nth-child(n+4){
+    opacity:.1;
+    background: lightgray;
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -1116,9 +1110,10 @@ $(document).ready(function(){
     // add 'see all' carrier button
     $('.quote:nth-child(3)').after("<button class=\"btn btn-primary see-all\">See All Quotes</button>");
     
-    // remove gray scale filter from 'other' carriers
+    // see all 'other' carriers when selecting 'see all' button
     $('.see-all').click(function(){
-        $('.quote:nth-child(n+4)').css("filter", "none");
+        $('.quote:nth-child(n+4)').css("opacity", 1);
+        $('.quote:nth-child(n+4)').css("background", "white");
     });
     
     // set featured to show for first 3 carriers
@@ -1141,6 +1136,12 @@ $(document).ready(function(){
     }else{
         $('.featured').css("display", "block");
     }    
+    
+    // wrap "other quotes" in secondary to add blur/grayscale css filter
+    
+    
+    
+    
     
 // end document ready
 });
