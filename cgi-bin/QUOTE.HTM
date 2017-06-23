@@ -937,12 +937,14 @@ $(document).ready(function(){
         var myRe = /^\w+\s\w+\s(\w+)/
         var exec = myRe.exec(carrierFull);
         var carrier = (exec[1]);
+        // American General
         if (carrier === "American"){
           $(this).parent().children('p').text("AIG has one of the cheaper rates in the market, but in terms of medical underwriting, they're roughly average. So if you're in good to great health, this is a great company to work with. Their underwriting averages 30 days from start to finish. So if getting insurance quickly is your goal, keep that in mind.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1919");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$510.3 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$719 Billion");
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.94 out of 5");   
         }if(carrier === "Banner"){
           $(this).parent().children('p').text("In terms of price, they are usually one of the cheapest products out there. But, their medical underwriting is average. So if you're in good to great health, this is a great company to work with.  Their underwriting averages 30 days from start to finish. So if getting insurance quickly is your goal, keep that in mind.")
           $(this).parent().parent().find('.highlights').find('.founded span').text("1949");
@@ -978,7 +980,9 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.forces span').text("$800 Billion");
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");    
           $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
-        }if(carrier === "Penn"){
+        }
+        // The Penn Mutual
+        if(carrier === "The"){
           $(this).parent().children('p').text("One of the oldest life insurance carriers in the US. It is priced on the higher side for their term and permanent policies. Though they do offer competitive whole policies. They have moderate underwriting, and their average turnaround time is 27 days. They also heavily rely on paper over e-filing documents.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1847");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$28 Billion");
@@ -1094,6 +1098,23 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
         }
+        // // American National Insurance
+        // if(carrier === "William"){
+        //   $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
+        //   $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        // }
+        // // American Equity
+        // if(carrier === "William"){
+        //   $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
+        //   $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        // }
+        
         
     });    
     
