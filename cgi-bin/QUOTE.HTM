@@ -1101,7 +1101,7 @@ $(document).ready(function(){
     // remove "life insurance company" from carrier names
     $('.carrier-name h5').each(function(){
         var val = $(this).text();
-        var reg = /\Transamerica\s\John\s\Hancock|\The\s\Penn\s\Mutual|\North\s\American|\American\s\General|\United\s\of\s\Omaha|\w+/
+        var reg = /\Transamerica\s|\John\s\Hancock|\The\s\Penn\s\Mutual|\North\s\American|\American\s\General|\United\s\of\s\Omaha|\w+/
         var exec = reg.exec(val);
         $(this).text(exec);
         
@@ -1113,7 +1113,7 @@ $(document).ready(function(){
     // see all 'other' carriers when selecting 'see all' button
     $('.see-all').click(function(){
         $('.quote:nth-child(n+4)').css("opacity", 1);
-        $('.quote:nth-child(n+4)').css("background", "white");
+        
     });
     
     // set featured to show for first 3 carriers
@@ -1439,6 +1439,7 @@ $prodline=100$
                                 <li class="forces">Policies In Force: <span></span></li>
                                 <li class="turnaround">Average Turnaround: <span></span></li>
                                 <li class="full-premium">Full Premium: <span>$$premium$</span></li>
+                                <li class="product-name">Product Name: <span>$product$</span></li>
                             </ul>
                         </div>
                         <div class="why col-sm-6 col-md-5">
