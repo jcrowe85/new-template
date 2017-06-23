@@ -252,7 +252,7 @@
     line-height: 22px;
     font-size: .9em;
 }
-.founded span, .assets span, .forces span, .turnaround span, .full-premium span{
+.founded span, .assets span, .forces span, .turnaround span, .full-premium span, .bbb span, .ambest span{
     font-family: 'AileronBold';
 }
 .why p{
@@ -949,78 +949,77 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.assets span').text("$7.3 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$658 Billion");
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");        
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
         }if(carrier === "Lincoln"){
           $(this).parent().children('p').text("Lincoln does have good pricing, but where it stands out is in their medical underwriting. They look favorably to most medical conditions. So if you're in ok to great health, this is the company for you. Their underwriting is also averages 18 days, which is one of the shortest. So if getting insurance quickly is your goal, look no further.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1905");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$255.2 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$662 Billion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");           
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Nationwide"){
           $(this).parent().children('p').text("Most notably a home and auto insurance company, they have moderately high pricing. Their medical underwriting however is very favorable. Meaning if you're in poor health to great health, they'll have something for you. Turnaround time is roughly 30 days. Most people who choose Nationwide already have their other products.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1926");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$197 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$58 Billion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");          
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.73 out of 5");   
         }if(carrier === "North"){
           $(this).parent().children('p').text("Their pricing is moderately low. They are more competitive in their permanent life insurance products. Their medical underwriting is average. Meaning if you're in good to great health, they'll be a good fit. There turnaround time is roughly 27 days. So keep that in mind if you want a policy delivered quickly to you.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1886");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$18 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$110.5 Billion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days");           
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days"); 
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Pacific"){
           $(this).parent().children('p').text("An insurance company with a long background. They have competitive pricing in both the term and permanent life insurance markets. It’s rare to see a company have cheap prices and a strong backing. They have average underwriting, though they look favorably at family history, sleep apnea, and cholesterol. Their average turnaround time is 20 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");           
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1868");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$143 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$800 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Penn"){
           $(this).parent().children('p').text("One of the oldest life insurance carriers in the US. It is priced on the higher side for their term and permanent policies. Though they do offer competitive whole policies. They have moderate underwriting, and their average turnaround time is 27 days. They also heavily rely on paper over e-filing documents.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");          
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1847");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$28 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$128 Bllion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
         }if(carrier === "Principal"){
           $(this).parent().children('p').text("Please note that their lowest face amount is $200,000. They are also priced moderately low, so they are competitive. They do have some of the strictest underwriting. Meaning that being in great health is almost a necessity. However, turnaround is quick because of how they judge conditions. Expect results in between 10 to 14 days.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1879");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$219 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$260 Billion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("10 Days");           
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("10 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.36 out of 5");   
         }if(carrier === "Protective"){
           $(this).parent().children('p').text("Their pricing is consistently in the top 5 for cheapest policies for both term and permanent policies. But their underwriting is quite strict. So the ending price may turn out to be higher than expected, even so, they are still cheap in almost all of the medical ratings. Turnaround is relatively quick at 18 days");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1907");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$68.5 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$208.9 Billion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");         
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Pruco"){
           $(this).parent().children('p').text("One of the big 3 life insurance companies. They have high pricing in their term products and competitive pricing in their permanent products. However, they do have a more relaxed underwriting. They accept poor health conditions and are generally favorable to them. They have an average turnaround time of 20 days.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1875");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$796.4 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$3.5 Trillion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");         
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("1.22 out of 5");   
         }if(carrier === "Transamerica"){
           $(this).parent().children('p').text("Are on the lower end of prices. They mainly focus on term products which allows them to have fast turnaround times. They do have strict underwriting requirements, but they are easy and quick to complete. However, less than good health is not preferable. But with their fast turnaround times, if you need a policy fast, TransAmerica is a good bet.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1928");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$102.7 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$1.2 Trillion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("14 Days");         
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("14 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.37 out of 5");   
         }if(carrier === "United"){
           $(this).parent().children('p').text("They're right in the middle in terms of pricing for both their term and permanent policies. And their medical underwriting is just in the middle as well. So being in ok health will be just fine. While they focus mainly on financial planning, their insurance products are not lackluster. They average 25 days for their turnaround time.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("1926");
           $(this).parent().parent().find('.highlights').find('.assets span').text("$35.6 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("$221 Trillion");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("25 Days");            
-        }if(carrier === "Americo"){
-          $(this).parent().children('p').text("One of the smaller insurance carriers in the market, but they still have over $38 Billion policies in force. They price there products moderately low. But please keep in mind that their underwriting is stricter than average. They still prefer paper over e-filing documents.  We have noticed that underwriting turnaround is at 35 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
-        }if(carrier === "Accordia"){
-          $(this).parent().children('p').text("They were formerly the insurance branch of Goldman Sachs, breaking off in 2013. They are on the pricier side of term insurance, being more competitive in the permanent insurance side. They do have relatively average underwriting. With average turnaround times of 30 days. They still prefer paper over e-filing documents.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("25 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Axa"){
           $(this).parent().children('p').text("A great multi-national insurance carrier. They have moderate pricing, but are still competitive in the large insurance carrier space. They are more competitive in the permanent insurance space. They have average underwriting, and an average turnaround time of 25 days. They have one of the highest consumer satisfaction ratings in the industry.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
@@ -1035,16 +1034,18 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
         }if(carrier === "Assurity"){
           $(this).parent().children('p').text("Has one of the highest possible financial strength ratings from A.M. Best. They have moderate pricing for their term products, and moderately high pricing in their permanent life insurance market. They do have favorable underwriting, so being in average health is ok. Average turnaround time is 27 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1997");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$2.6 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$17.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
         }if(carrier === "Brighthouse"){
           $(this).parent().children('p').text("Is the life insurance branch for MetLife. The lowest term amount they sell is $1 million, which may be more than what you need. They do have one of the cheapest policies at that $1 million mark and onwards. They also have very favorable underwriting, so being in average health is not a problem. Average turnaround time is 18 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.founded span').text("2017");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$222 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$4.4 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("21 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
         }if(carrier === "Companion"){
           $(this).parent().children('p').text("A subsidiary of Mutual/United of Omaha, they only sell insurance in New York. They have the same pricing and underwriting as United of Omaha. Meaning they’re in the middle of the table, with products cheaper and more expensive than theirs. They have average underwriting, so being in ok health is fine. Average turnaround time is 25 days.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
@@ -1053,40 +1054,39 @@ $(document).ready(function(){
           $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
         }if(carrier === "John"){
           $(this).parent().children('p').text("A strong insurance company that has become global. They focus a lot on other insurance products, mainly long-term care. They tend to be on the higher side in terms of price, though they offer discounts for healthy living. They are average in underwriting, even though they do underwrite those with HIV, which most insurers will decline. Average turnaround time is 30 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1862");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$406.2 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a);
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "Minnesota"){
           $(this).parent().children('p').text("A life insurance subsidiary of Securian Financial Group, in only New York, they are called Securian Life Insurance Co. They are priced moderately high, but what they lack in price, they make up for in relaxed underwriting. They generally look favorably on tobacco and nicotine, asthma, depression, and anxiety. Their average turnaround is 21 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1880");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$70.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$1.2 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("21 Days"); 
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("2.34 out of 5");   
         }if(carrier === "Accordia"){
           $(this).parent().children('p').text("They were formerly the insurance branch of Goldman Sachs, breaking off in 2013. They are on the pricier side of term insurance, being more competitive in the permanent insurance side. They do have relatively average underwriting. With average turnaround times of 30 days. They still prefer paper over e-filing documents.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1999");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$8 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$100 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("1.03 out of 5");   
         }if(carrier === "Sagicor"){
           $(this).parent().children('p').text("One of the few companies that offer non-med term life insurance for both permanent and term life insurance. While their price is on the higher side, you do not have to go through medical underwriting, however you still have to answer health questions which may lead to a medical test. Their average turnaround time is within a week.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1840");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$6.4 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("7 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
         }if(carrier === "Symetra"){
           $(this).parent().children('p').text("A company with a 50 year old history. They are priced on the moderately high end of insurance products. But are competitive in the universal life insurance market. They have relatively light underwriting requirements and look favorably against weight tables and those who recently quit smoking that year. Their average turnaround is roughly 30 days.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1957");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$40.3 Billion");
           $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
-        }if(carrier === "United"){
-          $(this).parent().children('p').text("Known mainly for final expense, small issue whole life, and term policies. They are generally priced higher than normal because they do not require a medical exam up front. However, you still have to answer health questions, and negative answers can lead to a denial or a follow-up medical exam. Average turnaround time is within a week.");
-          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
-          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");     
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
         }if(carrier === "William"){
           $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
           $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
@@ -1425,8 +1425,8 @@ $prodline=100$
                             <h5>RATINGS</h5>
                             <ul>
                                 <li>Customer: <img src="/images/stars.jpg" alt="" style="width:80px;"></li>
-                                <li>A.M. Best: $amb$</li>
-                                <li>BBB:</li>
+                                <li class="ambest">A.M. Best: <span>$amb$</span></li>
+                                <li class="bbb">BBB: <span></span></li>
                             </ul>
                         </div>
                         <div class="highlights col-sm-3 col-md-4">
