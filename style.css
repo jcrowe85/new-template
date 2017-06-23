@@ -1713,7 +1713,8 @@ position: absolute;
 
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
-    #new-home-page .ui {
+    
+        #new-home-page .ui {
         position: absolute;
         width: 100%;
         left: 0;
@@ -1723,8 +1724,9 @@ position: absolute;
         -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
         transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
         border-radius: 1px;
+}    
+    
 }
-
 
 
 

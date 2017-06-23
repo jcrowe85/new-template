@@ -83,7 +83,7 @@ $(window).load(function(){
                         <video class="ui" autoplay="" preload="metadata" muted="" loop="" style="">
                             <source src="/mobile-quote-life-new-layout.mp4" type="video/mp4">
                         </video>                        
-                    </div>
+                    </figure>
                 </div>
             </div> 
             </div>
