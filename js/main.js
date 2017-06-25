@@ -81,7 +81,7 @@ $(document).ready(function(){
             $(".header").css("background", "rgba(255, 255, 255, 1)");
             $(".navbar-toggle").css("border", "1px solid #e92730");
             $(".navbar-toggle span").css("background", "#e92730");
-            
+            $('.navbar a:before').css("background-color", "#000");
             
          if ($('.navbar-toggle').attr('aria-expanded') === "true") {
             $("#new-home-page .header").css("background", "transparent");

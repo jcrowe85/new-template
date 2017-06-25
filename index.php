@@ -82,7 +82,7 @@ $(window).load(function(){
                         <img src="/images/tilt-phone.png"></img>
                         <video class="ui" autoplay="" preload="metadata" muted="" loop="" style="">
                             <source src="/mobile-quote-life-new-layout.mp4" type="video/mp4">
-                        </video>                        
+                        </figure>                        
                     </div>
                 </div>
             </div> 

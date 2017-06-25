@@ -14,7 +14,7 @@
                             fully into technology, but insurance has been a time tested old being. And for that reason, it's slow to move and slow to 
                             react to changes. Our goal is to use technology to help educate people and to finish the process completely online.
                             </p>
-                            <h5>Usureit is Insurance, Streamlined</h5>
+                            <h5>Usurit is Insurance, Streamlined</h5>
                             <p>
                             Talking to an agent is a great way to learn, but it's also talking to a salesman. Learn what you need and how much you need yourself.
                             We'll give you the choices, tools, and education to make a hard decision into an easy one. No one wants to pay more for what they need, 
