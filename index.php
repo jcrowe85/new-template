@@ -1,5 +1,4 @@
 <?php include_once('head.php') ?>   
-<?php include_once('privy.php') ?>   
 <script>
 $(window).load(function(){
     
@@ -8,8 +7,12 @@ $(window).load(function(){
     		$(this).closest('.control-group').next('.control-group').find('input:text').focus();
     	}
     });
-    
-});
+    // demo video popup ! do not add to main.js
+      jQuery(function(){
+          jQuery("a.bla-1").YouTubePopUp();
+          jQuery("a.bla-2").YouTubePopUp( { autoplay: 0 } ); // Disable autoplay
+      });    
+});    
 </script>
     <body id="new-home-page">
         <div class="header navbar-fixed-top fluid">
@@ -78,8 +81,8 @@ $(window).load(function(){
                     <figure class="col-md-5 col-md-offset-1 phone">
                         <img src="/images/tilt-phone.png"></img>
                         <video class="ui" autoplay="" preload="metadata" muted="" loop="" style="">
-                            <source src="/mobile-life-quote2.mp4" type="video/mp4">
-                        </video>                        
+                            <source src="/mobile-quote-life-new-layout.mp4" type="video/mp4">
+                        </figure>                        
                     </div>
                 </div>
             </div> 
@@ -92,17 +95,17 @@ $(window).load(function(){
                         <div class="proc">
                             <img src="/images/survey.png" alt="">
                             <h3>Quote</h3>
-                            <p>Complete a 1 minute survey and get a quote. Name or Email not required.</p>
+                            <p>Complete a 1 minute survey and get a quote. Your name and email are <u>not</u> required.</p>
                         </div>
                         <div class="proc">
                             <img src="/images/carrier.png" alt="">
                             <h3>Carrier</h3>
-                            <p>Select a carrier from 100s of our top-rated, hand selected list.</p>
+                            <p>Review, compare and select a top-rated carrier.</p>
                         </div>
                         <div class="proc">
                             <img src="/images/application.png" alt="">
                             <h3>Application</h3>
-                            <p>Complete a simple application in less than 5 minutes and you're done!</p>
+                            <p>Complete a simple application in 5 minutes or less.</p>
                         </div>
                     </div>
                 </div>
@@ -112,7 +115,7 @@ $(window).load(function(){
                     <div class="row">
                         <div class="col-md-6 manage-title">
                             <h2>Manage Your Polices in One Place</h2>
-                            <p>Log in to access your policies in one place. You can policies details and contact your advisor for any questions or concerns you might have.</p>
+                            <p>Log in to access your policies in one place. You can view policy details and contact your insurance consultant with questions or concerns.</p>
                         </div>
                         <div class="col-md-6 manage-image">
                             <img src="/images/dashboard.png" style="width:100%;"></img>

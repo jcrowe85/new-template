@@ -1,3 +1,22 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Marketplace
+Gist
+ @jcrowe85
+ Sign out
+ Watch 0
+  Star 0
+  Fork 0 jcrowe85/new-template
+ Code  Issues 16  Pull requests 0  Projects 0  Wiki  Settings Insights 
+Tree: ca364d3088 Find file Copy pathnew-template/style.css
+ca364d3  2 days ago
+@jcrowe85 jcrowe85 mobile bug fix on home page #159
+2 contributors @jcrowe85 @chvamsiannavarapu
+RawBlameHistory      
+2251 lines (2072 sloc)  46.3 KB
 /*basic reset*/
 
 * {margin: 0; padding: 0;}
@@ -20,7 +39,7 @@ h1{font-size:2.5em}
 h2{font-size:2.0em}
 h3{font-size:1.75em}
 h4{font-size:1.50em}
-h5{font-size:1em}
+h5{font-size:1.25em}
 
 p{
     font-family: 'AileronLight';
@@ -55,7 +74,7 @@ a:active {
 button:focus {outline:0;}
 btn:focus{ouline:0;}
 #process-logo{
-    width:2%;
+    width: 30px;
 }
 
 input::-webkit-contacts-auto-fill-button {
@@ -771,6 +790,7 @@ ul.quest li:nth-child(5) {
     #home-page .services {
         width: 76%;
     }
+  
 }
 
 @media screen and (min-width: 376px) and (max-width: 541px) {
@@ -1729,14 +1749,33 @@ label.error,div.error{
     top: 0;
     transform-origin: 50% 70%;
     transform: rotate3d(0, -1, 0, 25deg);
-    -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
-    transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+     -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+     transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+
     border-radius: 1px;
     
 }
 
 
 /*  ---------------------------   responsive  -------------------------------- */
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    
+        #new-home-page .ui {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+        transform-origin: 50% 70%;
+        transform: rotate3d(0, -1, 0, 25deg);
+        -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+        transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+        border-radius: 1px;
+}    
+    
+}
+
 
 
 /* ------------ md  ---------- */
@@ -2258,3 +2297,5 @@ display: inline-block;
     
 
 }
+Contact GitHub API Training Shop Blog About
+© 2017 GitHub, Inc. Terms Privacy Security Status Help

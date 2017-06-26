@@ -39,7 +39,30 @@
     <script src="/js/easing.js"></script>
 
     <!-- sitewide js -->
-    <script src="/js/main.js"></script>        
+    <script src="/js/main.js"></script>    
+    
+    <!-- jquery easing -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+    <!-- Begin Inspectlet Embed Code -->
+    <script type="text/javascript" id="inspectletjs">
+    window.__insp = window.__insp || [];
+    __insp.push(['wid', 256262892]);
+    (function() {
+    function ldinsp(){if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+    setTimeout(ldinsp, 500); document.readyState != "complete" ? (window.attachEvent ? window.attachEvent('onload', ldinsp) : window.addEventListener('load', ldinsp, false)) : ldinsp();
+    })();
+    </script>    
+    
+    <script type="text/javascript">
+        window._mfq = window._mfq || [];
+        (function() {
+            var mf = document.createElement("script");
+            mf.type = "text/javascript"; mf.async = true;
+            mf.src = "//cdn.mouseflow.com/projects/edd0d33c-2ba8-4bcb-ba3f-e5b6e4bd2374.js";
+            document.getElementsByTagName("head")[0].appendChild(mf);
+        })();
+    </script>    
 
 <!--[if lt IE 9]>
   <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
@@ -75,25 +98,728 @@
         		$(".se-pre-con").fadeOut("slow");;
         	});
     </script>
-<script>
-$(document).ready(function(){
+</head>
+<style>
 
+#new-quote-page{
+    background: #eeeeee;
+}
+#new-quote-page .header{
+    border-bottom: 1px solid #fff;
+    padding: 15px 10px;
+    position: relative;
+}
+.header:before {
+  background: none;
+  border-bottom: 1px solid #d3d3d3;
+  content: "";
+  display: block;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  pointer-events: none;
+  margin-left:-10px;
+  margin-right:-10px;
+}  
+.sidebar-fixed:before {
+  background: none;
+  border-right: 1px solid #fff;
+  content: "";
+  display: block;
+  position:absolute;
+  right:0;
+  height:100%;
+  pointer-events: none;
+}
+#new-quote-page .sidebar-fixed{
+    position:fixed;
+    top: 60px;
+    left:0px;
+    bottom:0px;
+    border-right: 1px solid #d3d3d3;
+    background: #e5e5e5;
+    width: 360px; 
+    padding-left:0px;
+    box-shadow: 6px 0px 5px rgba(0,0,0,0.1);
+}
+#new-quote-page .main{
+    margin-top: 115px;
+    margin-left:360px;
+    height:100%;
+    padding-bottom: 100px;
+}
+.upper{
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    height:50px;
+    background: rgb(0,191,255);
+    border-bottom:3px solid rgba(0, 0, 0, 0.1);
+    z-index: 999;
+    position:fixed;
+    top:60px;
+    padding-right: 360px;
+    width:100%;
+    box-shadow: 0px 7px 5px rgba(0,0,0,0.1);
+    
+}
+.matches, .average-premium{
+    font-family: 'AileronRegular';
+    font-size:1.5em;
+    letter-spacing: .02px;
+    color: white;
+    margin-right:10px;
+}
+.premium{
+    min-width: 150px;
+}
+.premium-mode{
+    letter-spacing: .02px;
+    margin-top: -5px;
+    color: gray;
+}
+.average{
+    color:white;
+}
+.count, .dollars, .cheap, .expensive, .separation{
+    
+    font-family: 'AileronBold';
+    font-size: 1.2em;
+}
+.quote-container{
+    position: fixed;
+    height: 100%;
+    margin-top: 10px;
+    z-index: 0;
+    overflow: scroll;
+    padding-left: 10px;
+    padding-right: 370px;
+    padding-top: 5px;
+    width: 100%; 
+    padding-bottom:250px;
+}
+.quote{
+    margin-bottom:10px;
+    
+}
+.quote-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    padding:20px;
+    background:white;
+    position:relative;
+    z-index:999;  
+    
+}
+.carrier-logo img{
+    width: 65px;
+}
+.carrier-name{
+    width: 265px;
+    font-size: 1.5em;
+    color: #4a4a4a;
+    
+}
+.featured{
+    text-align: center;
+}
+.featured-img img, .details img{
+    width: 70px;    
+}
+.featured-img img{
+    margin-bottom: 5px;    
+}
+.monthly-premium{
+    text-align: center;
+}
+.premium h2{
+    margin:0px;
+    letter-spacing: -0.02em;
+    font-size: 2.5em;
+}
+.per-month, .featured-description {
+    font-size:.9em;
+    color: #9f9f9f;
+    margin-bottom:0px;
+}
+.carrier-info{
+    padding: 20px 40px;
+    background:white;
+    position:relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+    width: 96%;
+    margin: auto;
+    display:none;
+    overflow: auto;
+}
+.carrier-logo{
+    max-width: 350px;
+
+}
+.ratings ul, .highlights ul{
+    list-style:none;
+    border-left: 2px solid lightgray;
+    padding-left: 10px;
+
+}
+.ratings li, .highlights li{
+    line-height: 22px;
+    font-size: .9em;
+}
+.founded span, .assets span, .forces span, .turnaround span, .full-premium span, .bbb span, .ambest span{
+    font-family: 'AileronBold';
+}
+.why p{
+    line-height: 22px;
+    font-size: .8em;    
+}
+.why h5{
+    text-transform: uppercase;
+}
+.select  {
+    background: rgb(0,191,255);
+    border-radius: 2px;    
+    border:none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;;
+    font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);    
+}
+.select:hover{
+    background-color: #4562fb;
+}
+.sidebar-inner{
+    background: white;
+    margin-top: 10px;
+    border-radius: 2px;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, .3);    
+    overflow: auto;
+    padding-bottom:100px;
+}
+.menu{
+    margin-bottom:30px;
+    padding-bottom:10px;
+    background: #e8e8e8;
+    padding-top: 10px;
+    border-bottom: 1px solid lightgray;    
+}
+.coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender{
+    margin-bottom:30px;
+    padding-bottom:30px;
+    border-bottom: 1px solid #ebebeb;
+}
+.coverage{
+    border:none;
+}
+.type-term, .type-permanent, .mode-monthly, .mode-annually, .male, .female, .dob-title, .dob-date, .dob-day, .dob-month, .dob-year{
+    padding:0px;
+}
+.dob-day, .dob-month, .dob-year, .height-number, .weight-number{
+    border: 3px solid lightgray;
+    border-radius: 5px;
+    margin-right:5px;
+    padding: 5px 20px;
+}
+.change-info a{
+    color: rgb(98,147,252);
+}
+.policy a, .personal a{
+    color: gray;
+}
+.active a{
+    color: rgb(0,191,255);
+}
+#sidebar-personal{
+    position:relative;
+    left: -350px;
+    display:none;
+}
+#sidebar-policy{
+    position:relative;
+}
+.sidebar-inner{
+    height:100%;
+    overflow:scroll;
+}
+.sidebar-inner h5{
+    
+    
+}
+input[type="range"] {
+    -webkit-appearance: none;
+    -moz-apperance: none;
+    outline: none;
+    border-radius: 6px;
+    height: 8px;
+    margin-top:15px;
+    background-color: rgb(0, 191, 255);
+}
+#new-quote-page .header{
+    position:fixed;
+}
+/* Special styling for WebKit/Blink */
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+
+}
+
+/* All the same stuff for Firefox */
+input[type=range]::-moz-range-thumb {
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+}
+
+/* All the same stuff for IE */
+input[type=range]::-ms-thumb {
+  height: 25px;
+  width: 25px;
+  border:1px solid gray;
+  border-radius: 50px;
+  background: #ffffff;
+}
+.nopad{
+    padding:0px;
+}
+.type-term, .mode-monthly, .mode-annually, .male, .female{
+    margin-top:10px;
+}
+/*.quote:nth-child(-n+3){*/
+/*    border-left: 15px solid red;*/
+/*}*/
+/*.quote:nth-child(3){*/
+/*    margin-bottom:100px;*/
+/*}*/
+.premium span{
+    font-size: 1.3em;
+    top: -10px;
+    position: relative;
+    color: rgb(0,191,255);
+    margin-right: -5px;
+}
+.fa-times{
+    display:none;
+}
+.cash-symbol{
+    font-size: 0.8em;
+    top: -3px;
+    position: relative;
+    
+    /* margin-right: -10px; */    
+}
+.testing{
+    font-size: 1.5em;
+}
+#process-logo{
+    width:30px;
+}
+.footer{
+    background: rgba(0,0,0,.8); 
+    position:fixed; 
+    bottom:0;
+    height:40px;
+    width:100%; 
+    z-index:999;
+    display: flex;
+    justify-content: flex-end;    
+    padding: 10px;
+}
+.see-all{
+    background: rgb(0,191,255);
+    border-radius: 2px;
+    border: none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;; font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 115px;
+    margin-bottom: 25px;
+}
+.featured{
+    display:none;
+}
+.quote:nth-child(n+4){
+    opacity:.1;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+        #new-quote-page .carrier-name{
+        max-width: 100px;       
+        }
+        #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+         font-size: .8em;
+        }      
+        .select{
+            padding: 5px 20px;
+        }
+        .carrier-info h5{
+            font-size: .8em;
+        }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    #new-quote-page .quote-container, #new-quote-page .main{
+        width:100%;
+        position: relative;
+        padding-right:0px;
+        margin-left:0px;
+        overflow: auto;
+        margin: 0px;
+        padding: 10px;
+        padding-bottom: 25px;
+    }
+    #new-quote-page .sidebar-fixed{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding:0px;
+        border:none;
+        margin-top:15px;
+    }
+    #new-quote-page .sidebar-inner{
+        margin:0px;
+        padding: 0px;
+    }
+    .upper{
+         position: relative; 
+         top:0;
+         padding:0px;
+         text-align:center;
+         background:none;
+         border:none;
+        }
+    .coverage-title, .coverage-amount, .term-title, .term-years, .type, .payment-mode, .policy, .personal{
+        text-align: center;
+    }
+    .coverage-amount, .term-years{
+        font-size: 1.5em;
+    }
+    .menu{
+        height: 35px;    
+    }
+    #new-quote-page .carrier-name{
+    max-width: 300px;    
+    }
+    #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+     /*font-size: 1.2em;*/
+    }      
+    .select{
+        padding: 5px 20px;
+    }
+    .carrier-info h5{
+        font-size: .8em;
+    }
+    .coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender {
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        border-bottom: 0px solid #ebebeb;  
+        text-align: center;
+    }
+    .term{
+        margin-bottom:30px;
+    }    
+    .type, .payment-mode{
+        display:none;
+    }
+    .featured{
+        display:none;
+    }    
+    .menu{
+    padding-top: 5px;
+    margin-top:50px;
+    }
+    .upper{
+        display:none;
+    }
+
+}
+@media screen and (max-width:767px){
+
+    #new-quote-page .quote-container, #new-quote-page .main{
+        width:100%;
+        position: relative;
+        padding-right:0px;
+        margin-left:0px;
+        overflow: auto;
+        margin: 0px;
+        padding: 5px;
+        padding-bottom: 25px;
+    }
+    #new-quote-page .sidebar-fixed{
+        width: 100%;
+        position: relative;
+        top: 0;
+        padding:0px;
+        border:none;
+    }
+    #new-quote-page .sidebar-inner{
+        margin:0px;
+        padding: 0px;
+    }
+    .upper{
+         position: relative; 
+         top:0;
+         padding:0px;
+         text-align:center;
+         background:none;
+         border:none;
+         font-size: .7em;
+        }
+    .coverage-title, .coverage-amount, .term-title, .term-years, .type, .payment-mode, .policy, .personal{
+        text-align: center;
+    }
+    .coverage-amount, .term-years{
+        font-size: 1.5em;
+    }
+    .menu{
+        height: 45px;   
+        padding-bottom: 25px;
+        
+
+    }
+    #new-quote-page .carrier-name{
+    max-width: 280px;       
+    }
+    #new-quote-page .carrier-name h5, .ratings li, .highlights li{
+     /*font-size: 1.3em;*/
+
+    }      
+    .select{
+        padding: 5px 20px;
+    }
+    .carrier-info h5{
+        font-size: .8em;
+    }
+    .coverage, .term, .type, .payment-mode, .dob, .height, .weight, .health, .state, .smoke, .gender {
+        margin-bottom: 0px;
+        padding-bottom: 15px;
+        border-bottom: 0px solid #ebebeb;  
+        text-align: center;
+    }
+    .term{
+        margin-bottom:30px;
+    }    
+    .type, .payment-mode{
+        display:none;
+    }
+    .select, .featured{
+        display:none;
+    }
+    .mobile-select{
+    background: rgb(0,191,255);
+    border-radius: 2px;
+    border: none;
+    padding: 7px 50px;
+    font-size: 1.5em;
+    letter-spacing: .1em;
+    font-family: 'AileronRegular;;; font-family: 'AileronRegular';
+    box-shadow: 0px 5px 0 rgba(0, 0, 0, .2);     
+    width: 100%;
+
+    }
+    .upper{
+        display:none;
+    }   
+        .carrier-logo{
+        margin-right: 5px;
+        margin-right: 10px;
+    }
+    .premium span {
+        font-size: 1.3em;
+        top: -6px;
+        position: relative;
+        color: rgb(0, 191, 255);
+        margin-right: -5px;
+    }    
+    .sidebar-fixed{
+        margin-top: 65px;
+    }
+    
+}
+@media screen and (max-width:414px){
+    .upper{
+        font-size: .7em;
+        display:none;
+    }
+    .carrier-logo{
+        margin-right: 5px;
+        margin-right: 10px;
+    }
+    #new-quote-page .carrier-name{
+            min-width: 80px;
+    }
+    .carrier-info{
+        padding: 20px 10px;
+    }
+    .premium span{
+        position: relative;
+        color: #5f90ff;
+    }  
+    .premium-mode{
+    margin-top: -5px;
+    font-size: 0.7em;
+    }
+    .premium span {
+        font-size: 1.3em;
+        top: -6px;
+        position: relative;
+        color: rgb(0, 191, 255);
+        margin-right: -5px;
+    }   
+    .sidebar-inner{
+            margin-top: 60px;
+    }    
+    
+}
+@media screen and (max-width:530px){
+    .carrier-name{
+        font-size: .8em;
+    }
+    .premium h2{
+        font-size: 2em;
+    }
+    
+    
+}
+@media screen and (max-width:375px){
+    .carrier-name{
+        font-size: .6em;
+    }
+    .premium h2{
+        font-size: 2em;
+    }    
+    .premium{
+        min-width: 80px;
+    }
+    .matches, .average-premium {
+        font-size: 1.3em;
+    }    
+  
+
+}
+</style>
+<script>
+///////////////////// Document ready //////////////////////////
+$(document).ready(function(){
+    // new-quote-page: open carrier details for corresponding product
+    $('.quote').click(function(){
+    	$(this).find('.carrier-info').slideToggle({
+        	duration: 1000, 
+        	easing: "easeOutElastic", 
+        	complete: function(){}});
+        // $('.fa-angle-down').hide();
+        // $('.fa-times').show();
+        
+    });  
+    
+    // new-quote-page: display active sidebar menu and stylize menu option chosen
+    $('.policy').click(function(){
+        if($('#sidebar-policy .policy').hasClass('active')){
+            
+        }else{
+            $('#sidebar-personal .personal').removeClass('active');
+        	$('#sidebar-policy .policy').addClass('active');
+        	$('#sidebar-personal').animate({left: -350},100,function(){
+        	    $('#sidebar-personal').css("display", "none");    	    
+        	    $('#sidebar-policy').css("display", "block");
+        	    $('#sidebar-policy').animate({left: 0},500);
+        	    
+        	});
+        }
+    	event.preventDefault();
+    });   
+    $('.personal').click(function(){
+        if($('#sidebar-personal .personal').hasClass('active')){
+            
+        }else{
+            $('#sidebar-policy .policy').removeClass('active');
+        	$('#sidebar-personal .personal').addClass('active');
+        	$('#sidebar-policy').animate({left:-350},100,function(){
+        	    $('#sidebar-policy').css("display", "none");
+        	    $('#sidebar-personal').css("display", "block");
+        	    $('#sidebar-personal').animate({left: 0},500);
+        	    
+        	});
+        }
+    	event.preventDefault();
+    });
     
     
     //coverage: show coverage from initial submit
     var faceAmountValue = $("input[name=FaceAmount]").val();
     var parts = faceAmountValue.toString().split(".");
     parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-    document.querySelector('#coverage').value = "$" + parts.join(".");
+    document.querySelector('.coverage-amount h5').innerHTML = "$" + parts.join(".");    
     
     //coverage: set coverage to subsequent submits
     var faceAmountValue = $("input[name=FaceAmount]").val();
     $('#faceAmount').val(faceAmountValue);
     
-    //term: set term years to subsequent submits
+     $('#faceAmount').change(function(){
+         $('.adjustPolicy').submit();
+     });
+     
+    //term: show term years from inital submit
+    var term = $('input[name=NewCategory]').val();
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}
+    // $('#term').val(term + " " + "Years");        
+
+    //term: set term years for subsequent submits
     var term = $('input[name=NewCategory]').val();
     $('#term-range').val(term);
-    
+
+     //term: show term years from subsequent submits
+     var term = $('#term-range').val();
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}    
+     
+     //term: submit on change
+     $('#term-range').change(function(){
+        $('.adjustPolicy').submit();
+     });     
+
+    // set premium mode to mo (monthly) or year (annually) 
+     var modeUsed = $('input[name=ModeUsed]').val();
+     if (modeUsed == "A"){
+         modeUsed = "per year";
+         $('.premium-mode').html(modeUsed);
+     }
+     else if (modeUsed = "M"){
+         modeUsed = "per month";
+         $('.premium-mode').html(modeUsed);
+     }
     // set annual/monthly from initial submit
     var  ModeUsed = $('input[name=ModeUsed]').val();
         if (ModeUsed == "A"){
@@ -104,436 +830,664 @@ $(document).ready(function(){
         }
     $('input[type=radio][name=ModeUsed]').change(function(){
         $('.adjustPolicy').submit();
-    });
+    });     
     
-    // count quotes and update title
-    var primaryQuotes = $('.primary-quotes').length;
-    var secondaryQuotes = $('.secondary-quotes').length;
-    var totalQuotes = primaryQuotes + secondaryQuotes - 3;
-    if (totalQuotes == 0){
-        $('.title h4').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
-        $('.title p').html("");
-    }
-    else{
-    $('.quote-count').html(totalQuotes);
-    }
-    // offset background to secondary quotes
-    $('.secondary-quote').find('.front:even').css({"background" : "#f4f5f7"});
+    // set current dob
+    var birthDay = $('input[name=Birthday]').val();
+    var birthMonth = $('input[name=BirthMonth]').val();
+    var birthYear = $('input[name=BirthYear]').val();
+    $('.dob-day').val(birthDay);
+    $('.dob-month').val(birthMonth);
+    $('.dob-year').val(birthYear); 
     
-    // set premium mode to mo (monthly) or year (annually) 
-     var modeUsed = $('input[name=ModeUsed]').val();
-     if (modeUsed == "A"){
-         modeUsed = "/yr";
-         $('.premium-mode').html(modeUsed);
-     }
-     else if (modeUsed = "M"){
-         modeUsed = "/mo";
-         $('.premium-mode').html(modeUsed);
-     }
-     
-     // submit form after adjusting coverage/term
-     $('#faceAmount').change(function(){
+     // submit birthday on change
+     $('.dob-year').change(function(){
          $('.adjustPolicy').submit();
      });
      
-     $('#term-range').change(function(){
-        $('.adjustPolicy').submit();
-     });
-     
-    //term: show term years from inital submit
-    var term = $('input[name=NewCategory]').val();
-    var term = $('#term-range').val();
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}
-    // $('#term').val(term + " " + "Years");     
-     
-     
-     //term: show term years from subsequent submits
-     var term = $('#term-range').val();
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}
-     
-     
-     
+    // set current height
+    var height = $('input[name=parm2]').val();
+    $('.height-number').val(height);
 
+    
+     // submit height on change
+     $('.height-number').change(function(){
+         $('.adjustPolicy').submit();
+     });   
+
+    // set current weight
+    var weight = $('input[name=parm3]').val();
+    $('.weight-number').val(weight);
+
+    
+     // submit weight on change
+     $('.weight-number').change(function(){
+         $('.adjustPolicy').submit();
+     });      
+     
+    // set sex to male/female
+    var  sex = $('input[name=Sex]').val();
+        if (sex == "M"){
+             $('.Ma').prop("checked", true);
+        }
+        else if (sex == "F"){
+             $('.F').prop("checked", true);
+        }
+    // submit sex on change
+    $('input[type=radio][name=Sex]').change(function(){
+        $('.adjustPolicy').submit();
+    });      
+     
+     // set medical 
+    var health = $('input[name=Health]').val();
+    $('#health').val(health);
+     // submit medical on change
+    $('select[name=Health]').change(function(){
+        $('.adjustPolicy').submit();
+    });  
+    
+    // set smoke to yes/no
+    var  smoke = $('input[name=Smoker]').val();
+        if (smoke == "Y"){
+             $('.smoke-y').prop("checked", true);
+        }
+        else if (smoke == "N"){
+             $('.smoke-n').prop("checked", true);
+        }
+    // submit smoke on change
+    $('input[type=radio][name=Smoker]').change(function(){
+        $('.adjustPolicy').submit();
+    });      
+     
+    
+    // change peronal tab input border color on mouse over
+    $('input').mouseover(function(){
+    	$(this).css("border-color", "rgb(98, 147, 252)");
+    });   
+    $('input').mouseout(function(){
+    	$(this).css("border-color", "lightgray");
+    });   
+
+    // remove ones and tenths place from quote premiums
+    $(".premium h2").each(function(){
+    	var val = $(this).text();
+    	var myRe = /^\d+\,\d+|\d+/;
+        var exec = myRe.exec(val);
+        $(this).text(exec);
+    });
+    // remove ones and tenths place from most expensive and least expensive menu
+    $(".cheap, .expensive").each(function(){
+        	var val = $(this).text();
+        	var myRe = /^\$\d+/
+            var exec = myRe.exec(val);
+            $(this).text(exec);
+        });
+    // remove duplicate carriers    
+    var seen = {};
+    $('.carrier-name h5').each(function() {
+        var txt = $(this).text();
+        if (seen[txt])
+            $(this).closest('.quote').remove();
+        else
+            seen[txt] = true;
+    });        
+            
+    // count quotes and update .count
+    var primaryQuotes = $('.quote').length;
+    // var secondaryQuotes = $('.secondary-quotes').length;
+    if (primaryQuotes == 0){
+        // $('.count').html("Sorry, but there are no matches for you.<br><br><small>Try Changing your coverage or term period.</small>");    
+        $('.count').html("0");
+    }
+    else{
+    $('.count').html(primaryQuotes);
+    }    
+    
+    // new-quote-page: display first and last quote price
+    var cheap = $('.quote:first-child h2').html();
+    var expensive = $('.quote:last-child h2').html();
+    $('.cheap').html(cheap);
+    $('.expensive').html(expensive);      
+    
+    // add carrier details to dropdown
+    $('.why h5').each(function(index){
+    var carrierFull = $( this ).text();
+        var myRe = /^\w+\s\w+\s(\w+)/
+        var exec = myRe.exec(carrierFull);
+        var carrier = (exec[1]);
+        // American General
+        if (carrier === "American"){
+          $(this).parent().children('p').text("AIG has one of the cheaper rates in the market, but in terms of medical underwriting, they're roughly average. So if you're in good to great health, this is a great company to work with. Their underwriting averages 30 days from start to finish. So if getting insurance quickly is your goal, keep that in mind.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1919");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$510.3 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$719 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.94 out of 5");   
+        }if(carrier === "Banner"){
+          $(this).parent().children('p').text("In terms of price, they are usually one of the cheapest products out there. But, their medical underwriting is average. So if you're in good to great health, this is a great company to work with.  Their underwriting averages 30 days from start to finish. So if getting insurance quickly is your goal, keep that in mind.")
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1949");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$7.3 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$658 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");        
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
+        }if(carrier === "Lincoln"){
+          $(this).parent().children('p').text("Lincoln does have good pricing, but where it stands out is in their medical underwriting. They look favorably to most medical conditions. So if you're in ok to great health, this is the company for you. Their underwriting is also averages 18 days, which is one of the shortest. So if getting insurance quickly is your goal, look no further.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1905");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$255.2 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$662 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "Nationwide"){
+          $(this).parent().children('p').text("Most notably a home and auto insurance company, they have moderately high pricing. Their medical underwriting however is very favorable. Meaning if you're in poor health to great health, they'll have something for you. Turnaround time is roughly 30 days. Most people who choose Nationwide already have their other products.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1926");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$197 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$58 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.73 out of 5");   
+        }if(carrier === "North"){
+          $(this).parent().children('p').text("Their pricing is moderately low. They are more competitive in their permanent life insurance products. Their medical underwriting is average. Meaning if you're in good to great health, they'll be a good fit. There turnaround time is roughly 27 days. So keep that in mind if you want a policy delivered quickly to you.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1886");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$18 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$110.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days"); 
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "Pacific"){
+          $(this).parent().children('p').text("An insurance company with a long background. They have competitive pricing in both the term and permanent life insurance markets. It’s rare to see a company have cheap prices and a strong backing. They have average underwriting, though they look favorably at family history, sleep apnea, and cholesterol. Their average turnaround time is 20 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1868");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$143 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$800 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }
+        // The Penn Mutual
+        if(carrier === "The"){
+          $(this).parent().children('p').text("One of the oldest life insurance carriers in the US. It is priced on the higher side for their term and permanent policies. Though they do offer competitive whole policies. They have moderate underwriting, and their average turnaround time is 27 days. They also heavily rely on paper over e-filing documents.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1847");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$28 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$128 Bllion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
+        }if(carrier === "Principal"){
+          $(this).parent().children('p').text("Please note that their lowest face amount is $200,000. They are also priced moderately low, so they are competitive. They do have some of the strictest underwriting. Meaning that being in great health is almost a necessity. However, turnaround is quick because of how they judge conditions. Expect results in between 10 to 14 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1879");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$219 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$260 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("10 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.36 out of 5");   
+        }if(carrier === "Protective"){
+          $(this).parent().children('p').text("Their pricing is consistently in the top 5 for cheapest policies for both term and permanent policies. But their underwriting is quite strict. So the ending price may turn out to be higher than expected, even so, they are still cheap in almost all of the medical ratings. Turnaround is relatively quick at 18 days");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1907");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$68.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$208.9 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("18 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "Pruco"){
+          $(this).parent().children('p').text("One of the big 3 life insurance companies. They have high pricing in their term products and competitive pricing in their permanent products. However, they do have a more relaxed underwriting. They accept poor health conditions and are generally favorable to them. They have an average turnaround time of 20 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1875");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$796.4 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$3.5 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("20 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("1.22 out of 5");   
+        }if(carrier === "Transamerica"){
+          $(this).parent().children('p').text("Are on the lower end of prices. They mainly focus on term products which allows them to have fast turnaround times. They do have strict underwriting requirements, but they are easy and quick to complete. However, less than good health is not preferable. But with their fast turnaround times, if you need a policy fast, TransAmerica is a good bet.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1928");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$102.7 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$1.2 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("14 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.37 out of 5");   
+        }if(carrier === "United"){
+          $(this).parent().children('p').text("They're right in the middle in terms of pricing for both their term and permanent policies. And their medical underwriting is just in the middle as well. So being in ok health will be just fine. While they focus mainly on financial planning, their insurance products are not lackluster. They average 25 days for their turnaround time.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1926");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$35.6 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$221 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("25 Days");    
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "Axa"){
+          $(this).parent().children('p').text("A great multi-national insurance carrier. They have moderate pricing, but are still competitive in the large insurance carrier space. They are more competitive in the permanent insurance space. They have average underwriting, and an average turnaround time of 25 days. They have one of the highest consumer satisfaction ratings in the industry.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        }if(carrier === "Ameritas"){
+          $(this).parent().children('p').text("A strong insurance carrier with a long history that mainly focuses on other insurance products. It has one of the higher pricing for term policies and moderate pricing in the permanent insurance market. They have slightly favorable underwriting, and an average turnaround of 24 days. They have good consumer satisfaction ratings.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        }if(carrier === "Assurity"){
+          $(this).parent().children('p').text("Has one of the highest possible financial strength ratings from A.M. Best. They have moderate pricing for their term products, and moderately high pricing in their permanent life insurance market. They do have favorable underwriting, so being in average health is ok. Average turnaround time is 27 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1997");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$2.6 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$17.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("27 Days");  
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
+        }if(carrier === "Brighthouse"){
+          $(this).parent().children('p').text("Is the life insurance branch for MetLife. The lowest term amount they sell is $1 million, which may be more than what you need. They do have one of the cheapest policies at that $1 million mark and onwards. They also have very favorable underwriting, so being in average health is not a problem. Average turnaround time is 18 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("2017");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$222 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$4.4 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("21 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
+        }if(carrier === "Companion"){
+          $(this).parent().children('p').text("A subsidiary of Mutual/United of Omaha, they only sell insurance in New York. They have the same pricing and underwriting as United of Omaha. Meaning they’re in the middle of the table, with products cheaper and more expensive than theirs. They have average underwriting, so being in ok health is fine. Average turnaround time is 25 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        }if(carrier === "John"){
+          $(this).parent().children('p').text("A strong insurance company that has become global. They focus a lot on other insurance products, mainly long-term care. They tend to be on the higher side in terms of price, though they offer discounts for healthy living. They are average in underwriting, even though they do underwrite those with HIV, which most insurers will decline. Average turnaround time is 30 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1862");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$406.2 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "Minnesota"){
+          $(this).parent().children('p').text("A life insurance subsidiary of Securian Financial Group, in only New York, they are called Securian Life Insurance Co. They are priced moderately high, but what they lack in price, they make up for in relaxed underwriting. They generally look favorably on tobacco and nicotine, asthma, depression, and anxiety. Their average turnaround is 21 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1880");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$70.5 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$1.2 Trillion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("21 Days"); 
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("2.34 out of 5");   
+        }if(carrier === "Accordia"){
+          $(this).parent().children('p').text("They were formerly the insurance branch of Goldman Sachs, breaking off in 2013. They are on the pricier side of term insurance, being more competitive in the permanent insurance side. They do have relatively average underwriting. With average turnaround times of 30 days. They still prefer paper over e-filing documents.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1999");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$8 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("$100 Billion");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("1.03 out of 5");   
+        }if(carrier === "Sagicor"){
+          $(this).parent().children('p').text("One of the few companies that offer non-med term life insurance for both permanent and term life insurance. While their price is on the higher side, you do not have to go through medical underwriting, however you still have to answer health questions which may lead to a medical test. Their average turnaround time is within a week.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1840");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$6.4 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("7 Days");   
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("Not Rated");   
+        }if(carrier === "Symetra"){
+          $(this).parent().children('p').text("A company with a 50 year old history. They are priced on the moderately high end of insurance products. But are competitive in the universal life insurance market. They have relatively light underwriting requirements and look favorably against weight tables and those who recently quit smoking that year. Their average turnaround is roughly 30 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("1957");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("$40.3 Billion");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("30 Days");     
+          $(this).parent().parent().find('.ratings').find('.bbb span').text("3.68 out of 5");   
+        }if(carrier === "William"){
+          $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
+          $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+          $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        }
+        // // American National Insurance
+        // if(carrier === "William"){
+        //   $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
+        //   $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        // }
+        // // American Equity
+        // if(carrier === "William"){
+        //   $(this).parent().children('p').text("This insurance company exclusively does business in New York. Their subsidiary Banner Life does business in all other states. They have above average medical underwriting and look favorably to family history and sleep apnea. Note that in certain situations, you may skip the medical exam with above average health. Average turnaround is 30 days.");
+        //   $(this).parent().parent().find('.highlights').find('.founded span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.assets span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.forces span').text("n/a");
+        //   $(this).parent().parent().find('.highlights').find('.turnaround span').text("n/a");            
+        // }
+        
+        
+    });    
+    
+    // remove "life insurance company" from carrier names
+    $('.carrier-name h5').each(function(){
+        var val = $(this).text();
+        var reg = /\Transamerica\s|\John\s\Hancock|\The\s\Penn\s\Mutual|\North\s\American|\American\s\General|\United\s\of\s\Omaha|\w+/
+        var exec = reg.exec(val);
+        $(this).text(exec);
+        
+    });    
+    
+    // add 'see all' carrier button
+    $('.quote:nth-child(3)').after("<button class=\"btn btn-primary see-all\">See All Quotes</button>");
+    
+    // see all 'other' carriers when selecting 'see all' button
+    $('.see-all').click(function(){
+        $('.quote:nth-child(n+4)').css("opacity", 1);
+        
+    });
+    
+    // set featured to show for first 3 carriers
+    $('.quote:nth-child(-n+3) .featured').show();
+    
+    // add thumbs up
+    $('.quote:nth-child(1) .featured-img').append("<img src=\"/images/three-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(1) .featured-description').text("Best Match");
+    $('.quote:nth-child(2) .featured-img').append("<img src=\"/images/two-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(2) .featured-description').text("Second");    
+    $('.quote:nth-child(3) .featured-img').append("<img src=\"/images/one-thumbs-up.png\" alt=\"\">");
+    $('.quote:nth-child(3) .featured-description').text("Third");
+    
+    // open first carrier details on page load
+    $('.quote:nth-child(1) .carrier-info').slideDown();      
+    
+    // remove featured from mobile
+    if($(window).width() <= 768){
+        $('.featured').css("display", "none");
+    }else{
+        $('.featured').css("display", "block");
+    }    
+    
+    // wrap "other quotes" in secondary to add blur/grayscale css filter
+    
+    
+    
+    
+    
+// end document ready
 });
+
+
+$(window).resize(function(){
+    if($(window).width() <= 768){
+        $('.featured').css("display", "none");
+    }else{
+        $('.featured').css("display", "block");
+    }
+});
+
+
+////////////////////// Functions /////////////////////////////
+
     //coverage: update coverage while sliding and submit form on change
     function coverageUpdate(x) {
       var parts = x.toString().split(".");
       parts[0] = parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-      document.querySelector('#coverage').value = "$" + parts.join(".");
+      document.querySelector('.coverage-amount h5').innerHTML = "$" + parts.join(".");
     }
-    
     //term: update term whie sliding
     function termUpdate(x){
     var term = x;
-     if (term == '2'){$('#term').html('5-years');}
-     if (term == '3'){$('#term').html('10-years');}
-     if (term == '4'){$('#term').html('15-years');}
-     if (term == '5'){$('#term').html('20-years');}
-     if (term == '6'){$('#term').html('25-years');}
-     if (term == '7'){$('#term').html('30-years');}
-     if (term == '8'){$('#term').html('');}
-     if (term == '9'){$('#term').html('35-years');}            
-    }
-    
-</script>
-<style>
-    #quote-page .mobile-quote{
-    border-top: 1px solid lightgray;
-    border-bottom: 1px solid lightgray;
-    max-height: 200px;
-    margin-bottom: 15px;
-    overflow: auto;
-    padding-top: 5px;
-    }
-    #quote-page .mobile-quote:nth-child(n-3){
-       border-left:25px solid #ec2327;    
-    }
-
-    #quote-page #mobile-secondary-quote{
-       border-left:25px solid lightgray;    
-    }   
-    
-    #quote-page .mobile-quote img{
-         width: 75px;
-    }
-    #quote-page .mobile-quote h3{
-        font-family: 'AileronSemibold';
-        font-size: 2em;
-         letter-spacing: -2px;
-
+     if (term == '2'){$('.term-years h5').html('5-years');}
+     if (term == '3'){$('.term-years h5').html('10-years');}
+     if (term == '4'){$('.term-years h5').html('15-years');}
+     if (term == '5'){$('.term-years h5').html('20-years');}
+     if (term == '6'){$('.term-years h5').html('25-years');}
+     if (term == '7'){$('.term-years h5').html('30-years');}
+     if (term == '8'){$('.term-years h5').html('');}
+     if (term == '9'){$('.term-years h5').html('35-years');}            
     }    
-    #quote-page .description p{
-        font-size: .7em;
-        line-height: 1.5em;
-    }
-    #quote-page .secondary-quote form:nth-child(-n+3){
-        display:none;
-    }
-    #quote-page .mobile-secondary-quote form:nth-child(-n+3){
-        display:none;
-    }    
-    input[type="range"]{
-        -webkit-appearance: none;
-        -moz-apperance: none;
-        outline: none;
-        border-radius: 6px;
-        height: 2px;
-        background-color:red;
-    }
-/* Special styling for WebKit/Blink */
-input[type=range]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
+    
+    
 
-}
-
-/* All the same stuff for Firefox */
-input[type=range]::-moz-range-thumb {
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
-}
-
-/* All the same stuff for IE */
-input[type=range]::-ms-thumb {
-  height: 25px;
-  width: 25px;
-  border:1px solid lightgray;
-  border-radius: 50px;
-  background: #ffffff;
-}
-
-input[type=number]{
-    outline: none;
-}
+///////////////////// Window resize //////////////////////////
 
 
-</style>
-<!-- Facebook Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
-n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
-document,'script','https://connect.facebook.net/en_US/fbevents.js');
-
-fbq('init', '1301953106512137');
-fbq('track', 'Lead');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
-</head>
-<body id="quote-page">
-      <!-- catch form feilds -->
-      <input type="hidden" name="ZipCode" value="$zipcode$">
-      <input type="hidden" name="DoingHealth" value="ON">
-      <input type="hidden" name="State" value="$origstate$">
-      <input type="hidden" name="Birthday" value="$origday$">
-      <input type="hidden" name="BirthMonth" value="$origmonth$">
-      <input type="hidden" name="BirthYear" value="$origyear$">
-      <input type="hidden" name="Health" value="$orighealth$">
-      <input type="hidden" name="FaceAmount" value="$newface$">
-      <input type="hidden" name="Sex" value="$origsex$">
-      <input type="hidden" name="Smoker" value="$origsmoker$">
-      <input type="hidden" name="NewCategory" value="$origcat$">
-      <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
-      <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-      <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
-      <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
-      <input type="hidden" name="ModeUsed" value="$origmodeused$">
-      <input type="hidden" name="UserLocation" value="$userlocation$">
-      <input type="hidden" name="UserLocation" value="$userlocation$">
-      <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
-      <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
-      <input type="hidden" name="email" value="$email$">
-      <input type="hidden" name="css" value="$css$">    
-    <!-- show loader while loading page -->  
-    <div class="se-pre-con"></div>
-    <!-- end show loader while loading page -->  
-    <div class="sidebar col-md-3 col-lg-2" >
-        <div class="hidden-xs hidden-sm">
-            <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurit</h4></a>
-        </div>
-        <!-- Mobile Header (logo+name+hamburger and filters) -->
-        <div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">
-            <div class="col-xs-3">
-                <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>
+<body id="new-quote-page">
+          <!-- catch form feilds -->
+          <input type="hidden" name="ZipCode" value="$zipcode$">
+          <input type="hidden" name="DoingHealth" value="ON">
+          <input type="hidden" name="State" value="$origstate$">
+          <input type="hidden" name="Birthday" value="$origday$">
+          <input type="hidden" name="BirthMonth" value="$origmonth$">
+          <input type="hidden" name="BirthYear" value="$origyear$">
+          <input type="hidden" name="Health" value="$orighealth$">
+          <input type="hidden" name="FaceAmount" value="$newface$">
+          <input type="hidden" name="Sex" value="$origsex$">
+          <input type="hidden" name="Smoker" value="$origsmoker$">
+          <input type="hidden" name="NewCategory" value="$origcat$">
+          <input type="hidden" name="parm1" value="$parm1$"><!-- custom name parm -->
+          <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
+          <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->
+          <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+          <input type="hidden" name="ModeUsed" value="$origmodeused$">
+          <input type="hidden" name="UserLocation" value="$userlocation$">
+          <input type="hidden" name="UserLocation" value="$userlocation$">
+          <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+          <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+          <input type="hidden" name="email" value="$email$">
+          <input type="hidden" name="css" value="$css$">    
+        <!-- show loader during page load -->  
+        <div class="se-pre-con"></div>    
+        <div class="header navbar-fixed-top" style="background:white; display:flex; justify-content:space-between;">
+            <div class="align-self:center;">
+                <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"></a>
+                <span class="testing">Usurit</span>
             </div>
-            <div class="col-xs-6" style="text-align:center;">
-              <h4>Usurit</h4>
-            </div>                
-            <div class="col-md-3 ">
-                <nav class="navbar navbar-static-top" role="navigation">
-                    <div class="container">
-                        <div class="navbar-header">
-                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+            <div class="">
+                <button class="btn getHelp" onClick="getHelp()" style="color:white;">Get Help</button>
+            </div> 
+        </div>       
+         <!--Mobile Header (logo+name+hamburger and filters) -->
+        <!--<div class="row visible-xs visible-sm" style="border-bottom:1px solid lightgray;">-->
+        <!--    <div class="col-xs-3">-->
+        <!--        <a href="/index.php"><img id="process-logo" src="../images/logo-full-size.png" style="inline-block; float:left; margin-right:10px; width:35px;"></a>-->
+        <!--    </div>-->
+        <!--    <div class="col-xs-6" style="text-align:center;">-->
+        <!--      <h4>Usurit</h4>-->
+        <!--    </div>                -->
+        <!--    <div class="col-md-3 ">-->
+        <!--        <nav class="navbar navbar-static-top" role="navigation">-->
+        <!--            <div class="container">-->
+        <!--                <div class="navbar-header">-->
+        <!--                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">-->
+        <!--                        <span class="sr-only">Toggle navigation</span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                        <span class="icon-bar"></span>-->
+        <!--                    </button>-->
+        <!--                </div>-->
+                         <!--Collect the nav links, forms, and other content for toggling -->
+        <!--                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">-->
+        <!--                    <ul class="nav navbar-nav">-->
+        <!--                        <li><a id="whyus" href="/index.php">Home</a></li>-->
+        <!--                        <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>-->
+        <!--                        <li><a id="guide" href="#">Insurance Guides</a></li>-->
+        <!--                        <li><a id="about" href="#">About Us</a></li>-->
+        <!--                        <li><a id="team" href="/team.php">Team</a></li>-->
+        <!--                        <li><a id="contact" href="#">Contact</a></li>-->
+        <!--                        <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>-->
+        <!--                    </ul>-->
+        <!--                </div>-->
+        <!--            </div>-->
+        <!--        </nav>-->
+        <!--    </div>              -->
+        <!--</div> -->
+        <div class="sidebar-fixed col-md-3">
+            <div class="sidebar-inner" id="sidebar-policy" style="">
+                    <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
+                    <div class="menu col-md-12">
+                        <div class="policy col-xs-6 col-sm-6 col-md-6 active"><a href="">Policy</a></div>
+                        <div class="personal col-xs-6 col-sm-4 col-sm-offset-2 col-md-6 col-md-offset-0"><a href="">Personal</a></div>
+                    </div>    
+                    <div class="coverage col-md-12">
+                        <div class="coverage-title col-md-6"><h5>Coverage</h5></div>
+                        <div class="coverage-amount col-md-6"><h5></h5></div>
+                        <input type="range" id="faceAmount" class="col-md-12" name="FaceAmount"  min="50000" max="2000000" value="100000" step="50000" oninput="coverageUpdate(value)">                    
+                    </div>
+                    <div class="term col-md-12">
+                        <div class="term-title col-md-6"><h5>Term</h5></div>
+                        <div class="term-years col-md-6"><h5></h5></div>
+                        <input type="range" name="NewCategory" id="term-range" class="col-md-12" min="2" max="8" step="1" oninput="termUpdate(value)">
+                    </div>
+                    <div class="type col-sm-6 col-md-12">
+                        <div class="type-title col-md-4"><h5>Type</h5></div>
+                        <div class="type-term col-sm-6 col-md-4">
+                            <input type="radio" checked>
+                            <label for="">Term</label>
                         </div>
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav">
-                                <li><a id="whyus" href="/index.php">Home</a></li>
-                                <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
-                                <li><a id="guide" href="#">Insurance Guides</a></li>
-                                <li><a id="about" href="#">About Us</a></li>
-                                <li><a id="team" href="/team.php">Team</a></li>
-                                <li><a id="contact" href="#">Contact</a></li>
-                                <li id='getHelp'><button class="btn btn-primary getHelp" onClick="getHelp()">Get Help</button></li>
+                        <!--<div class="type-permanent col-sm-6 col-md-4">-->
+                        <!--    <input type="radio">-->
+                        <!--    <label for="" >Perm</label>-->
+                        <!--</div>-->
+                    </div>
+                    <div class="payment-mode col-sm-6 col-md-12">
+                        <div class="mode-title col-md-5"><h5>Payment Mode</h5></div>
+                        <div class="mode-monthly col-sm-6 col-md-3">
+                            <input type="radio" name="ModeUsed" class="M" value="M">
+                            <label for="">Month</label>
+                        </div>
+                        <div class="mode-annually col-sm-6 col-md-4">
+                            <input type="radio" name="ModeUsed" class="A" value="A">
+                            <label for="">Year</label>
+                        </div>
+                    </div> 
+                    <!--<div class="change-info col-md-12">-->
+                    <!--       <a href="">Change Info</a>-->
+                    <!--</div>-->
+                        <!-- saved values to pass to cgi engine when changing filters -->
+            </div>
+            <div class="sidebar-inner" id="sidebar-personal">
+                <div class="menu col-md-12">
+                    <div class="policy col-xs-6 col-sm-6 col-md-6"><a href="">Policy</a></div>
+                    <div class="personal col-xs-6 col-sm-6 col-md-6 "><a href="">Personal</a></div>
+                </div>    
+                <div class="dob col-md-12">
+                    <div class="dob-title col-md-12"><h5>Date of Birth</h5></div>
+                    <div class="col-md-12 nopad">
+                        <input type="text" class="dob-month col-md-3" name="BirthMonth">
+                        <input type="text" class="dob-day col-md-3" name="Birthday">
+                        <input type="text" class="dob-year col-md-4" name="BirthYear">
+                    </div>
+                </div>
+                <div class="height col-sm-6 col-md-12">
+                    <div class="height-title col-md-5"><h5>Height</h5></div>
+                    <div class="col-md-7 nopad">
+                        <input type="text" class="height-number col-md-6" name="parm2">
+                    </div>
+                </div>
+                <div class="weight col-sm-6 col-md-12">
+                    <div class="weight-title col-md-5"><h5>Weight</h5></div>
+                    <div class="weight-pounds col-md-7 nopad">
+                        <input type="text" class="weight-number col-md-6" name="parm3">
+                    </div>
+                </div> 
+                <div class="gender col-sm-6 col-md-12">
+                    <div class="gender-title col-md-4"><h5>Gender</h5></div>
+                    <div class="male col-sm-6 col-md-4">
+                        <input type="radio" name="Sex" class="Ma" value="M"/>
+                        <label for="">Male</label>
+                    </div>
+                    <div class="female col-sm-6 col-md-4">
+                        <input type="radio" name="Sex" class="F" value="F"/>
+                        <label for="">Female</label>
+                    </div>
+                </div> 
+                <div class="health col-sm-6 col-md-12">
+                    <div class="health-title col-md-6"><h5>Health Rating</h5></div>
+                    <div class="health-rating col-sm-12 col-md-6">
+                        <select name="Health" id="health">
+                            <option value="PP" class="PP">Very good</option>
+                            <option value="P" class="P">Good</option>
+                            <option value="RP" class="RP">Average</option>
+                            <option value="R" class="R">Bad</option>
+                        </select>
+                    </div>
+                </div>
+                <!--<div class="state col-md-12">-->
+                <!--    <div class="state-title col-md-6"><h5>State</h5></div>-->
+                <!--    <div class="state-name col-md-6">-->
+                <!--    </div>-->
+                <!--</div>-->
+                <div class="smoke col-sm-12 col-md-12">
+                    <div class="smoke-title col-md-4"><h5>Smoke</h5></div>
+                    <div class="smoke-yes col-sm-6 col-md-4">
+                        <input type="radio" name="Smoker" class="smoke-y" value="Y"/>
+                        <label for="">Yes</label>
+                    </div>
+                    <div class="smoke-no col-sm-6 col-md-4">
+                        <input type="radio" name="Smoker" class="smoke-n" value="N"/>
+                        <label for="">No</label>
+                    </div>
+                </div>                 
+            </div>  
+                <input type="hidden" name="ZipCode" value="$zipcode$">
+                <input type="hidden" name="DoingHealth" value="ON">
+                <input type="hidden" name="State" value="$origstate$">
+                <input type="hidden" name="Birthday" value="$origday$">
+                <input type="hidden" name="BirthMonth" value="$origmonth$">
+                <input type="hidden" name="BirthYear" value="$origyear$">
+                <input type="hidden" name="Health" value="$orighealth$">
+                <input type="hidden" name="Sex" value="$origsex$">
+                <input type="hidden" name="Smoker" value="$origsmoker$">
+                <input type="hidden" name="NewCategory" value="$origcat$">
+                <input type="hidden" name="parm1" value="$parm1$"><!-- custom Name parm -->
+                <input type="hidden" name="parm2" value="$parm2$"><!-- custom Height parm -->
+                <input type="hidden" name="parm3" value="$parm3$"><!-- custom Weight parm -->
+                <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
+                <input type="hidden" name="ModeUsed" value="$origmodeused$">
+                <input type="hidden" name="UserLocation" value="$userlocation$">
+                <input type="hidden" name="UserLocation" value="$userlocation$">
+                <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
+                <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
+                <input type="hidden" name="email" value="$email$">
+                <input type="hidden" name="css" value="$css$">                       
+            </form>              
+        </div>
+        <div class="main">
+        <div class="upper">
+
+        </div>    
+            <div class="quote-container">
+$prodline=100$           
+                <div class="quote">
+                <form action="/userinfo.php" method="POST" class="secondary-quotes">                    
+                    <div class="quote-details">
+                        <div class="carrier-logo">
+                            <img src="../images/logos/$COMP$.gif" alt="">
+                        </div>
+                        <div class="carrier-name">
+                            <h5>$company$</h5>
+                        </div>
+                        <div class="monthly-premium">
+                            <div class="premium">
+                                <span style="display:inline-block;">$</span>
+                               <h2 style="display:inline-block;">$premium$</h2>
+                            </div>
+                            <div class="premium-mode">
+                                per month
+                            </div>
+                        </div>
+                        <div class="featured">
+                            <div class="featured-img">
+                                
+                            </div>
+                            <div class="featured-description">
+                                
+                            </div>
+                        </div>
+                        <button class="btn btn-primary select">Select</button>
+                        <div class="details">
+                            <i class="fa fa-angle-down fa-2x" style="color:gray;" aria-hidden="true"></i>
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <div class="carrier-info">
+                        <div class="ratings col-sm-3 col-md-3">
+                            <h5>RATINGS</h5>
+                            <ul>
+                                <li>Customer: <img src="/images/stars.jpg" alt="" style="width:80px;"></li>
+                                <li class="ambest">A.M. Best: <span>$amb$</span></li>
+                                <li class="bbb">BBB: <span></span></li>
                             </ul>
                         </div>
-                    </div>
-                </nav>
-            </div>              
-        </div>    
-        <!-- Sidebar -->        
-        <div class="adjustments fluid">
-            <div class="controls">
-                <form class="adjustPolicy" action="/cgi-bin/cqsl.cgi" accept-charset="UTF-8" method="POST" style="margin:0 auto;">
-                    <div class="adjust-title">Adjust Your Policy</div> 
-                    <div class="coverage">
-                        <label for="coverage" class="coverage" style="color:gray" >Coverage</label>
-                        <output name="coverage" id="coverage"></output>
-                        <input type="range" id="faceAmount" name="FaceAmount"  min="50000" max="2000000" value="100000" step="50000" oninput="coverageUpdate(value)">
-                    </div>
-                    <div class="term">
-                        <label for="term" style="color:gray" class="term-title">Term</label>
-                        <output for="term" id="term"></output>
-                        <input type="range" name="NewCategory" id="term-range"  min="2" max="9" step="1" oninput="termUpdate(value)" >
-                    </div>                         
-                    <div class="monthly-annually">
-                        <label for="mode" style="display:block" style="display:block;">Show Prices</label>
-                            <div style="margin:0px">
-                            <label for="monthly">Monthly</label>
-                            <input type="radio" name="ModeUsed" class="M" value="M">
-                       </div>
-                       <div style="margin:0px">
-                           <label for="annually">Annually</label>
-                           <input type="radio" name="ModeUsed" class="A" value="A">
-                       </div>
-                    </div>    
-                    <!-- saved values to pass to cgi engine when changing filters -->
-                        <input type="hidden" name="ZipCode" value="$zipcode$">
-                        <input type="hidden" name="DoingHealth" value="ON">
-                        <input type="hidden" name="State" value="$origstate$">
-                        <input type="hidden" name="Birthday" value="$origday$">
-                        <input type="hidden" name="BirthMonth" value="$origmonth$">
-                        <input type="hidden" name="BirthYear" value="$origyear$">
-                        <input type="hidden" name="Health" value="$orighealth$">
-                        <input type="hidden" name="Sex" value="$origsex$">
-                        <input type="hidden" name="Smoker" value="$origsmoker$">
-                        <input type="hidden" name="NewCategory" value="$origcat$">
-                        <input type="hidden" name="parm1" value="$parm1$"><!-- custom Name parm -->
-                        <input type="hidden" name="parm2" value="$parm2$"><!-- custom Height parm -->
-                        <input type="hidden" name="parm3" value="$parm3$"><!-- custom Weight parm -->
-                        <input type="hidden" name="SortOverride1" value="$origsortoverride1$">
-                        <input type="hidden" name="ModeUsed" value="$origmodeused$">
-                        <input type="hidden" name="UserLocation" value="$userlocation$">
-                        <input type="hidden" name="UserLocation" value="$userlocation$">
-                        <input type="hidden" name="TEMPLATEFILE" value="$templatefile$">
-                        <input type="hidden" name="HTEMPLATEFILE" value="$htemplatefile$">
-                        <input type="hidden" name="email" value="$email$">
-                        <input type="hidden" name="css" value="$css$">                       
-                </form>                    
-            </div>
-        </div>            
-    </div> 
-    <div class="main col-md-9 col-lg-10">
-        <div class="row hidden-xs hidden-sm">
-            <div class="header fluid">
-                <div class="container">
-                    <header>
-                        <button class="getHelp" onClick="getHelp()">Get Help</button>
-                    </header>
-                </div>
-            </div>                 
-        </div>
-        <div class="row hidden-xs hidden-sm">
-            <div class="col-md-12">
-                <div class="row" style="margin-top:25px;">
-                <div class="title col-md-8 col-md-offset-1">
-                  <h4>We got you matched with <u><span class="quote-count"></u></span> quotes from top-rated carriers. 
-                  <!--<small style="font-size:1.3rem;"><br>No phone number or email necessary</small>-->
-                  </h4>
-                    <p>The first 3 are the most affordable, followed by the most expensive.</p>
-                    <p>These quotes were based on the information you provided in the previous step.</p>
-                </div>                    
-                    <div class="primary-quote-container  col-md-12">
-                        $prodline=3$      
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="primary-quotes" id="primary-quotes">
-                            <div class="card-grid" >
-                                    <div class="quote front">
-                                        <div class="logo-name">
-                                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                            <div style="line-height:18px; max-width: 175px;">$company$</div>
-                                        </div>
-                                        <div class="price">
-                                            <h3>$$premium$<small class="premium-mode"></small></h3>
-                                        </div>
-                                        <div class="continue">
-                                            <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                        </div>
-                                        <div class="details">
-                                            <span><img src="../images/flip.png" alt="">details</span>
-                                        </div>
-                                    </div>
-                                    <div class="quote back">
-                                        <div class="logo-name">
-                                          <div style="margin-bottom:15px;"><img src="../images/logos/$COMP$.gif" alt=""></div>
-                                            <div style="line-height:18px; max-width:175px;">$company$</div>
-                                        </div>
-                                        <div class="price">
-                                            <h3>$$premium$<small class="premium-mode"></small></h3>
-                                        </div>
-                                        <div class="continue">
-                                            <button class="btn btn-primary" type="submit"><h3>Continue</h3></button>
-                                        </div>
-                                        <div class="details">
-                                            <span><img src="../images/flip.png" alt="">details</span>
-                                        </div>
-                                    </div>                 
-                                    <input type="hidden" name="premium" value="$$premium$">
-                                    <input type="hidden" name="company" value="$company$">
-                                    <input type="hidden" name="Sex" value="$origsex$">
-                                    <input type="hidden" name="Birthday" value="$origday$">
-                                    <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                    <input type="hidden" name="BirthYear" value="$origyear$">
-                                    <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                    <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                    <input type="hidden" name="State" value="$origstate$">
-                                    <input type="hidden" name="ZipCode" value="$zipcode$">
-                                    <input type="hidden" name="Health" value="$orighealth$">
-                                    <input type="hidden" name="Smoker" value="$origsmoker$">
-                                    <input type="hidden" name="FaceAmount" value="$newface$">
-                                    <input type="hidden" name="NewCategory" value="$origcat$"> 
-                            </div>        
-                        </form>   
-                        $/prodline$                
-                    </div>
-                    <script>
-                        $(".card-grid").flip({
-                          trigger: 'click'
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-        <div class="c-logo hidden-xs hidden-sm" id='downArrow' style="text-align:center; margin-top: 85px;">
-            <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
-            <p style="font-size:.8em;">Most expensive quotes from top-rated carriers</p>
-        </div>        
-        <div class="row hidden-xs hidden-sm">
-            <div class="secondary-quote main" id="secondary-quote">
-                $prodline=20$      
-                <form action="/userinfo.php" method="POST" class="secondary-quotes">
-                    <div class="card-grid-sec" style="margin:0 auto;">
-                        <div class="fluid front">
-                            <div class="sec-quote">
-                                <div class="details">
-                                    <span><img src="/images/flip.png" alt="">details</span>
-                                </div>
-                                <div class="sec-logo-name">
-                                    <img src="../images/logos/$COMP$.gif" alt="">
-                                </div>
-                                <div class="company">
-                                    $company$
-                                </div>
-                                <div class="price">
-                                    <h3>$$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="product-type">
-                                    Term Life
-                                </div>
-                                <div class="sec-continue">
-                                    <button type="submit" class="btn btn-primary">Continue</button>
-                                </div>
-                            </div>
+                        <div class="highlights col-sm-3 col-md-4">
+                            <h5>HIGHLIGHTS</h5>
+                            <ul>
+                                <li class="founded">Founded: <span></span></li>
+                                <li class="assets">Total Assets: <span></span></li>
+                                <li class="forces">Policies In Force: <span></span></li>
+                                <li class="turnaround">Average Turnaround: <span></span></li>
+                                <li class="full-premium">Full Premium: <span>$$premium$</span></li>
+                                <li class="product-name">Product Name: <span>$product$</span></li>
+                            </ul>
                         </div>
-                        <div class="fluid back">
-                            <div class="sec-quote">
-                                <div class="details">
-                                    <span><img src="/images/flip.png" alt="">details</span>
-                                </div>
-                                <div class="sec-logo-name">
-                                    <img src="../images/logos/$COMP$.gif" alt="">
-                                    <span>$company$</span>
-                                </div>
-                                <div class="price">
-                                    <h3>$premium$<small>/mo</small></h3>
-                                </div>
-                                <div class="product-type">
-                                    Term Life
-                                </div>
-                                <div class="sec-continue">
-                                    <button type="submit" class="btn btn-primary">Continue</button>
-                                </div>
-                            </div>
-                        </div> 
+                        <div class="why col-sm-6 col-md-5">
+                            <h5>WHY CHOOSE $company$</h5>
+                            <p>
+                            </p>
+                        </div>  
+                        <div class="visible-xs col-sm-12">
+                            <button class="btn btn-primary mobile-select">Select</button>
+                        </div>
                     </div>
                         <input type="hidden" name="premium" value="$$premium$">
                         <input type="hidden" name="company" value="$company$">
@@ -549,126 +1503,18 @@ src="https://www.facebook.com/tr?id=1301953106512137&ev=PageView&noscript=1"
                         <input type="hidden" name="Smoker" value="$origsmoker$">
                         <input type="hidden" name="FaceAmount" value="$newface$">
                         <input type="hidden" name="NewCategory" value="$origcat$"> 
-                </form>
-                $/prodline$
+                </form>                                    
+                </div>
+$/prodline$           
             </div>
         </div>
-        <!-- Mobile version only -->
-        <div class="row visible-xs visible-sm">
-            <div class="mobile-container fluid">
-                <p style="text-align:center; font-size:.8em;">Most Affordable Quotes from Top-Rated Carriers
-                <br>
-                <small>(select one to begin application)</small></p>
-                $prodline=3$
-                    <div class="mobile-quote mobile-primary-quote">
-                        <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile1" id="primary-quotes">
-                            <div class="col-xs-12" style="display:flex; align-items:center;">
-                                <div class="col-xs-3" style="padding:0px;">
-                                    <img src="/images/logos/$COMP$.gif" alt="">
-                                </div>
-                                <div class="col-xs-9 premium">
-                                    <h3 style="font-size:2.5em;">$$premium$<small>/mo</small></h3>
-                                </div>
-                            </div>
-                            <div class="col-xs-12" style="font-size:12px; font-family:'AileronBold';  margin-bottom: 5px;">$company$</div>                        
-                            <div class="col-xs-12 description">
-                                <p>
-                                    This top-rated carrier has been in business for over 100-years. With a 100% paid claims, you can be sure your family will be compensated. 
-                                </p>
-                            </div>
-                                <input type="hidden" name="premium" value="$$premium$">
-                                <input type="hidden" name="company" value="$company$">
-                                <input type="hidden" name="Sex" value="$origsex$">
-                                <input type="hidden" name="Birthday" value="$origday$">
-                                <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                <input type="hidden" name="BirthYear" value="$origyear$">
-                                <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                <input type="hidden" name="State" value="$origstate$">
-                                <input type="hidden" name="ZipCode" value="$zipcode$">
-                                <input type="hidden" name="Health" value="$orighealth$">
-                                <input type="hidden" name="Smoker" value="$origsmoker$">
-                                <input type="hidden" name="FaceAmount" value="$newface$">
-                                <input type="hidden" name="NewCategory" value="$origcat$">                             
-                            
-                        </form>
-                   </div>
-                $/prodline$
-            </div>  
+        <div class="footer" style="">
+                        <div class="matches">
+                Displaying <span class="count"></span> matches 
+            </div>
+            <div class="average-premium">
+               <span class="cash-symbol">$</span><span class="cheap"></span><span class="separation"> - </span><span class="cash-symbol">$</span><span class="expensive"></span> <span class="premium-mode average">per month</span>
+            </div>
         </div>
-        <div class="c-logo visible-xs visible-sm" id='downArrow' style="text-align:center;">
-            <img src="../images/down-arrow.png" alt="" style="-webkit-filter: invert(100%); filter: invert(100%); display: block; margin: 0 auto;">
-            <p style="font-size:.8em;margin-top: 70px;">Most expensive quotes from top-rated carriers</p>
-        </div>
-        <div class="row visible-xs visible-sm">
-            <div class="mobile-secondary-quote fluid" >
-                $prodline=20$   
-                <form action="/userinfo.php" method="POST" style="margin:0 auto;" class="mobile2">
-                    <div class="mobile-quote" id="mobile-secondary-quote">    
-                        <div class="col-xs-12" style="display:flex; align-items:center;">
-                            <div class="col-xs-4" style="padding:0px;">
-                                <img src="/images/logos/$COMP$.gif" alt="">
-                            </div>
-                            <div class="col-xs-8 premium" style="padding:0px;">
-                                <h3 style="font-size:2.5em;">$$premium$<small>/mo</small></h3>
-                            </div>
-                        </div>
-                        <div class="col-xs-12" style="font-size:12px; font-family:'AileronBold'; margin-bottom: 5px;">$company$</div>                        
-                        <div class="col-xs-12 description">
-                            <p>
-                                This top-rated carrier has been in business for over 100-years. With a 100% paid claims, you can be sure your family will be compensated. 
-                            </p>
-                        </div>
-                                <input type="hidden" name="premium" value="$$premium$">
-                                <input type="hidden" name="company" value="$company$">
-                                <input type="hidden" name="Sex" value="$origsex$">
-                                <input type="hidden" name="Birthday" value="$origday$">
-                                <input type="hidden" name="BirthMonth" value="$origmonth$">
-                                <input type="hidden" name="BirthYear" value="$origyear$">
-                                <input type="hidden" name="parm3" value="$parm3$"><!-- custom weight parm -->                    
-                                <input type="hidden" name="parm2" value="$parm2$"><!-- custom height parm -->
-                                <input type="hidden" name="State" value="$origstate$">
-                                <input type="hidden" name="ZipCode" value="$zipcode$">
-                                <input type="hidden" name="Health" value="$orighealth$">
-                                <input type="hidden" name="Smoker" value="$origsmoker$">
-                                <input type="hidden" name="FaceAmount" value="$newface$">
-                                <input type="hidden" name="NewCategory" value="$origcat$">                             
-                        </div>        
-                    </form>
-                $/prodline$
-            </div>  
-        </div>
-    </div>
-
-    <!--<div class="sidebar">-->
-    <!-- <a href="/index.php"><img id="process-logo" src="/images/logo-full-size.png" style="inline-block; float:left; margin-right:10px;"><h4 style="inline-block; float:left;">Usurance</h4></a>-->
-    <!--    <br><br>-->
-    <!--    <h3>Welcome to the application Process.</h3>-->
-    <!--    <br>-->
-    <!--    <p>-->
-    <!--    It's time for us to get to know you. We need your full name, phone number to contact you if needed, an email to send follow up notifications and a password. -->
-    <!--    <br><br>-->
-    <!--    Don't worry, everything is taken over a secure connection and we will not share your information without your approval.                -->
-    <!--    </p>-->
-    <!--</div>    -->
-    <script>
-        $(".card-grid-sec").flip({
-          axis: 'x',
-          trigger: 'click'
-        });
-    </script>
-    <script type="text/javascript">
-    window._mfq = window._mfq || [];
-    (function() {
-        var mf = document.createElement("script");
-        mf.type = "text/javascript"; mf.async = true;
-        mf.src = "//cdn.mouseflow.com/projects/edd0d33c-2ba8-4bcb-ba3f-e5b6e4bd2374.js";
-        document.getElementsByTagName("head")[0].appendChild(mf);
-    })();
-</script>
-    <div style="clear:both"></div>
-    <div class="footer" style="text-align:center; padding: 15px 0px;  width:100%; background-color:#9c292b;">
-       <p>Usurit, Inc.</p> 
-    </div>
-  </body>    
+</body>
 </html>
