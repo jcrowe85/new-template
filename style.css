@@ -1,22 +1,3 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Marketplace
-Gist
- @jcrowe85
- Sign out
- Watch 0
-  Star 0
-  Fork 0 jcrowe85/new-template
- Code  Issues 16  Pull requests 0  Projects 0  Wiki  Settings Insights 
-Tree: ca364d3088 Find file Copy pathnew-template/style.css
-ca364d3  2 days ago
-@jcrowe85 jcrowe85 mobile bug fix on home page #159
-2 contributors @jcrowe85 @chvamsiannavarapu
-RawBlameHistory      
-2251 lines (2072 sloc)  46.3 KB
 /*basic reset*/
 
 * {margin: 0; padding: 0;}
@@ -86,8 +67,17 @@ input::-webkit-contacts-auto-fill-button {
 }
 /*  ---------------------------   loader css -------------------------------- */
 
-.no-js #loader { display: none;  }
-.js #loader { display: block; position: absolute; left: 100px; top: 0;}
+.no-js #loader { 
+    display: none;  
+    
+}
+.js #loader { 
+    display: block; 
+    position: absolute; 
+    left: 100px; 
+    top: 0;
+    
+}
 .se-pre-con {
 	position: fixed;
 	left: 0px;
@@ -152,6 +142,34 @@ input::-webkit-contacts-auto-fill-button {
 }
 .navbar a:visited{
     color:white;
+}
+.navbar a{
+  position: relative;
+  color: #000;
+  text-decoration: none; 
+}
+.navbar a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 10px;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+.navbar-nav>li>a:hover {
+  background-color: none;
+  background:none;
 }
 .nav-1{
    flex-grow:1 
@@ -1568,15 +1586,6 @@ label.error,div.error{
     display:inline-block;
     
 }
-#new-home-page .navbar a:visited {
-    /*text-shadow: 0.5px 0.5px 0px rgba(0,0,0,1);*/
-}
-#new-home-page .navbar a:link {
-    /*text-shadow: 0.5px 0.5px 0px rgba(0,0,0,1);*/
-}
-#new-home-page .navbar a:hover {
-    color:black;
-}
 #new-home-page .banner{
     background: -webkit-linear-gradient(141deg, #6293fc, #ff9897);
     background: -moz-linear-gradient(141deg, #6293fc, #ff9897);
@@ -1721,8 +1730,8 @@ position: absolute;
     top: 0;
     transform-origin: 50% 70%;
     transform: rotate3d(0, -1, 0, 25deg);
-      -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
-      transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.67) translate(-22.5%, -22.4%);
+     -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
+     transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
     border-radius: 1px;
     
 }
@@ -1828,7 +1837,35 @@ position: absolute;
 #quote-page .navbar{
     position: relative;
     min-height: 50px;
-     margin-bottom: 0px; 
+    margin-top: 25px;
+}
+#userinfo-page #process-logo, #userdetails-page #process-logo,{
+    width:15%;
+}
+#life-page #process-logo, #verify-page #process-logo, #quote-page #process-logo{
+    width:4%;
+}
+
+#userinfo-page .sidebar, #userdetails-page .sidebar{
+    display: none;
+}
+#verify-page .control-group, #verify-page h1 {
+     display: inline-block; 
+}
+
+#verify-page fieldset h1 {
+    font-size: 15px;
+     width: 100%; 
+    letter-spacing: 1px;
+}
+#verified-submit{
+    font-size: 29px;
+    border-radius: 50px;
+    width: 100%;    
+}
+#quote-page .navbar{
+    position: relative;
+    min-height: 50px;
     border: 1px solid transparent;    
 }
 
@@ -1958,7 +1995,7 @@ li.dropdown:hover .dropdown-content{
     justify-content:center;
 }
 #new-home-page .title h1{
-    font-size: 2.5em;
+    font-size: 2em;
 }
 #new-home-page .title p{
     font-size: 1.5em;
