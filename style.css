@@ -134,7 +134,7 @@ input::-webkit-contacts-auto-fill-button {
     font-size: 14px;
     margin-right:5px;
     font-family: 'AileronLight'
-        -webkit-font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 .navbar a:link{
@@ -1724,14 +1724,16 @@ label.error,div.error{
     width:50%;
 }
 #new-home-page .ui{
-position: absolute;
+    position: absolute;
     width: 100%;
     left: 0;
     top: 0;
     transform-origin: 50% 70%;
     transform: rotate3d(0, -1, 0, 25deg);
+
      -webkit-transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
      transform: perspective(500px) rotateY(-4.6deg) scale(0.63, 0.69) translate(-22.5%, -20.4%);
+
     border-radius: 1px;
     
 }
@@ -1866,6 +1868,7 @@ position: absolute;
 #quote-page .navbar{
     position: relative;
     min-height: 50px;
+    margin-bottom: 0px; 
     border: 1px solid transparent;    
 }
 
