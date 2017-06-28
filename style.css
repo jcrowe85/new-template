@@ -141,6 +141,7 @@ input::-webkit-contacts-auto-fill-button {
     border-radius:18px;
     font-family: 'AileronThin';
     letter-spacing: .09em;
+    background-color: #6293fc;
     font-size: 12px;
     outline:none;
 }

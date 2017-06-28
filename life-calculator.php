@@ -14,9 +14,9 @@
 $(document).ready(function(){
    
     
-    $(':checkbox').click(function(){
+    /*$(':checkbox').click(function(){
           <?php include('slide-next.php') ?>
-    });
+    });*/
     
     $(':radio').click(function(){
           <?php include('slide-next.php') ?>
@@ -24,6 +24,21 @@ $(document).ready(function(){
     
     $('#next').click(function(e){
        if($('input[name=option1]:checked').val() == undefined && 
+            $('input[name=option2]:checked').val() == undefined && 
+            $('input[name=option3]:checked').val() == undefined) {
+                return false;
+            }
+        $('input[name=option1]:checked').val() == undefined ? $('#option1').remove() : '';
+        $('input[name=option2]:checked').val() == undefined ? $('#option2').remove() : '';
+        $('input[name=option3]:checked').val() == undefined ? $('#option3').remove() : '';
+       
+          <?php include('slide-next.php') ?>
+          e.preventDefault();
+          e.stopPropagation();
+    });
+    
+        $('#next').click(function(e){
+       if($('input[name=heart]:checked').val() == undefined && 
             $('input[name=option2]:checked').val() == undefined && 
             $('input[name=option3]:checked').val() == undefined) {
                 return false;
@@ -121,10 +136,33 @@ $(document).ready(function(){
     });
     
     $('.term').change(function(){
-        //$('#quick-quote').submit();
+        $('#quick-quote').submit();
     });
     
-     $('input[name=option1]').click(function() {
+    $('#healthNo').click(function() {
+       $('#heartsection').remove();
+       $('#cholesterolsection').remove();
+       $('#healthIssue').remove();
+        <?php include('slide-next.php') ?>
+    });
+    
+    $('#healthYes').click(function() {
+        <?php include('slide-next.php') ?>
+    });
+    
+     $('.next').click(function() {
+        <?php include('slide-next.php') ?>
+    });
+    
+    $('#healthNext').click(function(e) {
+        $('#heart').is(':checked') ? '' : $('#heartsection').remove();
+        $('#cholesterol').is(':checked') ? '' : $('#cholesterolsection').remove();
+        <?php include('slide-next.php') ?>
+        e.preventDefault();
+        e.stopPropagation();
+    });
+    
+     /*$('input[name=option1]').click(function() {
             if(!$('#option2').length && !$('#option3').length) {
                 $('#quick-quote').submit();
             } else {
@@ -141,8 +179,8 @@ $(document).ready(function(){
      });
      
      $('input[name=option3]').click(function() {
-                $('#quick-quote').submit();
-     });
+        $('#quick-quote').submit();
+     });*/
      
     $('#faceAmount').change(function(){
         event.preventDefault();
@@ -202,8 +240,97 @@ $(document).ready(function(){
                       </div>
                     </fieldset>
                     
+                    <fieldset id='option1'>
+                      <div>
+                          <h1>Option one</h1>
+                          <div class="control-group">
+                              <label>
+                                  <!--<input type="radio"/>-->
+                                  <div class="btn btn-default btn-lg next">Next</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>    
+                  </fieldset>
+                  <fieldset id='option2'>
+                      <div>
+                          <h1>Option two</h1>
+                          <div class="control-group">
+                              <label>
+                                  <!--<input type="radio"/>-->
+                                  <div class="btn btn-default btn-lg next">Next</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>
+                  </fieldset>
+                  <fieldset id='option3'>
+                      <div>
+                          <h1>Option three</h1>
+                          <div class="control-group">
+                              <label>
+                                  <!--<input type="radio"/>-->
+                                  <div class="btn btn-default btn-lg next">Next</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>
+                  </fieldset>
                     <fieldset>
-                      <h1>I live in</h1>
+                      <h1>What is your gender?</h1>
+                      <div class="control-group">
+                          <label class="control control--checkbox">
+                            <input type="radio" name="Sex" value="M"/>
+                              <div class="control__indicator">Male</div>
+                          </label>
+                      </div>	
+                      <div class="control-group">
+                          <label class="control control--checkbox">
+                              <input type="radio" name="Sex" value="F"/>
+                              <div class="control__indicator">Female</div>
+                          </label>
+                      </div> 
+                  </fieldset>
+                  <fieldset>
+                      <h1>What is your date of birth?</h1>
+                      <div class="control-group" id="dob">
+                          <label class="control-text">
+                              <input type="text" class='month' id="month" name="BirthMonth" placeholder="Mo" maxlength="2" />
+                          </label>
+                      </div>	
+                      <div class="control-group">
+                          <label class="control-text">
+                              <input type="text" class='day' name="Birthday" id="day" placeholder="Day" maxlength="2"/>
+                          </label>
+                      </div> 
+                      <div class="control-group">
+                          <label class="control-text">
+                              <input type="text" class="BirthYear" name="BirthYear" id="year" placeholder="Year" maxlength="4"/>
+                          </label>
+                      </div> 
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                  </fieldset>
+                  <fieldset>
+                      <h1>What is your height and weight?</h1>
+                      <div class="control-group" id="height-weight">
+                          <label class="control-text">
+                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="5" id="height">
+                          </label>
+                      </div>	
+                      <div class="control-group">
+                          <label class="control-text">
+                              <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
+                          </label>
+                      </div> 
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                  </fieldset> 
+                  <fieldset>
+                      <h1>What state do you live in?</h1>
                       <div class="control-group"> 
                         <label class="control-text">
                           <select name="State">
@@ -264,66 +391,82 @@ $(document).ready(function(){
                               <option style="background-color:#808080;" value="54">Puerto Rico</option>
                               <option style="background-color:#808080;" value="55">Virgin Islands</option>
                               <option style="background-color:#808080;" value="56">Amer. Samoa</option>
-                              
                           </select>
                       </div>
                       <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                       <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                </fieldset> 
-                  <fieldset>
-                      <h1>I am a</h1>
-                      <div class="control-group">
-                          <label class="control control--checkbox">
-                            <input type="radio" name="Sex" value="M"/>
-                              <div class="control__indicator">Male</div>
-                          </label>
-                      </div>	
-                      <div class="control-group">
-                          <label class="control control--checkbox">
-                              <input type="radio" name="Sex" value="F"/>
-                              <div class="control__indicator">Female</div>
-                          </label>
-                      </div>
-                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                  </fieldset>
-                  <fieldset>
-                      <h1>My date of birth is</h1>
-                      <div class="control-group" id="dob">
-                          <label class="control-text">
-                              <input type="text" class='month' id="month" name="BirthMonth" placeholder="Mo" maxlength="2" />
-                          </label>
-                      </div>	
-                      <div class="control-group">
-                          <label class="control-text">
-                              <input type="text" class='day' name="Birthday" id="day" placeholder="Day" maxlength="2"/>
-                          </label>
-                      </div> 
-                      <div class="control-group">
-                          <label class="control-text">
-                              <input type="text" class="BirthYear" name="BirthYear" id="year" placeholder="Year" maxlength="4"/>
-                          </label>
-                      </div> 
-                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                  </fieldset>
-                  <fieldset>
-                      <h1>My current height and weight are</h1>
-                      <div class="control-group" id="height-weight">
-                          <label class="control-text">
-                              <input type="text" name="parm2" placeholder="Height" class="input" maxlength="5" id="height">
-                          </label>
-                      </div>	
-                      <div class="control-group">
-                          <label class="control-text">
-                              <input type="text" name="parm3" placeholder="Lbs." class="input" maxlength="3" id="weight">
-                          </label>
-                      </div> 
-                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
                   </fieldset> 
                   <fieldset>
-                      <h1>Did you use nicotine products from past 12 Months?</h1>
+                      <h1>Do you have any health related issues?</h1>
+                      <div class="control-group">
+                          <label class="control control--checkbox">
+                              <input type="radio" id='healthYes' name="Health" value="PP"/>
+                              <div  class="control__indicator">Yes</div>
+                          </label>
+                      </div>	
+                      <div class="control-group">
+                          <label class="control control">
+                              <input type="radio" id='healthNo' name="Health" value="P"/>
+                              <div class="control__indicator">No</div>
+                          </label>
+                      </div>       
+                      <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                  </fieldset>
+                  <fieldset id='healthIssue'>
+                      <h1>Do you have any history of the health below?</h1>
+                      <div class='row'>
+                               
+                                    <div class='col-md-12'>
+                                      <div class="row">
+                                            <div class='col-md-6 col-sm-12 col-xs-12'>
+                                                <input id="heart" class="checkbox-custom" name="heart" type="checkbox">
+                                                <label for="heart" class="checkbox-custom-label" value="heart"><span style="color:white;">Heart</span></label>
+                                            </div>
+                                            <div class='col-md-6 col-sm-12 col-xs-12 '>
+                                                <input id="cholesterol" class="checkbox-custom" name="cholesterol" type="checkbox" value="cholesterol">
+                                                <label for="cholesterol" class="checkbox-custom-label"><span style="color:white;">Cholesterol</span></label>
+                                            </div>
+                                        </div>
+                                    </div> 
+                            </div>
+                          <div class='row'>
+                              <button class='btn btn-default btn-lg' id='healthNext'>Next</button>
+                          </div>
+                         <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                         <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                  </fieldset>
+                  
+                  <fieldset id="heartsection">
+                      <div>
+                          <h1>Heart Question</h1>
+                           <div class="control-group">
+                              <label>
+                                  <!--<input type="radio"/>-->
+                                  <div class="btn btn-default btn-lg next">Next</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>    
+                  </fieldset>
+                  
+                  <fieldset id="cholesterolsection">
+                      <div>
+                          <h1>Cholesterol questions</h1>
+                         <div class="control-group">
+                              <label>
+                                  <!--<input type="radio"/>-->
+                                  <div class="btn btn-default btn-lg next">Next</div>
+                              </label>
+                          </div>
+                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
+                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
+                      </div>    
+                  </fieldset>
+                  
+                  <fieldset>
+                      <h1>Do you use nicotine products?</h1>
                       <div class="control-group">
                           <label class="control control--checkbox">
                               <input type="radio" name="Smoker" value="Y"/>
@@ -338,82 +481,6 @@ $(document).ready(function(){
                       </div>
                           <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
                           <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                  </fieldset>
-                  <fieldset>
-                    <h1>If I pass away in next</h1>
-                      <div class="control-group">
-                          <label class="control-text">
-                            <select name="NewCategory" class="term">
-                                <option style="background-color:#808080;" selected="selected" value="">Years</option>
-                                <option style="background-color:#808080;" value="2">5-Years</option>
-                                <option style="background-color:#808080;" value="3">10-Years</option>
-                                <option style="background-color:#808080;" value="4">15-Years</option>
-                                <option style="background-color:#808080;" value="5">20-Years</option>
-                                <option style="background-color:#808080;" value="6">25-Years</option>
-                                <option style="background-color:#808080;" value="7">30-Years</option>
-                                <option style="background-color:#808080;" value="9">35-Years</option>      
-                            </select> 
-                          </label>
-                      </div>
-                       <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                      <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                  </fieldset> 
-                  <fieldset id='option1'>
-                      <div>
-                          <h1>Option one</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option1" value="o1"/>
-                                  <div class="control__indicator">A</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option1" value="o1"/>
-                                  <div class="control__indicator">B</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>    
-                  </fieldset>
-                  <fieldset id='option2'>
-                      <div>
-                          <h1>Option two</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option2" value="o2"/>
-                                  <div class="control__indicator">C</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option2" value="o2"/>
-                                  <div class="control__indicator">D</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>
-                  </fieldset>
-                  <fieldset id='option3'>
-                      <div>
-                          <h1>Option three</h1>
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                <input type="radio" name="option3" value="o3"/>
-                                  <div class="control__indicator">E</div>
-                              </label>
-                          </div>	
-                          <div class="control-group">
-                              <label class="control control--checkbox">
-                                  <input type="radio" name="option3" value="o3"/>
-                                  <div class="control__indicator">F</div>
-                              </label>
-                          </div>
-                          <span class="previousmobile visible-xs visible-sm visible-md back"><i class="fa fa-chevron-left" aria-hidden="true"></i>Back</span>
-                          <div class="previous-step hidden-md" ><button type="button"><img src="/images/down-arrow.png"></img></button></div>
-                      </div>
                   </fieldset>
                 </form>
             </div>
