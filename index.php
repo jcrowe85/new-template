@@ -79,7 +79,7 @@ $(window).load(function(){
                         </div>
                     </div>
                     <figure class="col-md-5 col-md-offset-1 phone">
-                        <img src="/images/tilt-phone.png"></img>
+                        <img src="/images/tilt-phone-new-layout.png"></img>
                         <video class="ui" autoplay="" preload="metadata" muted="" loop="" style="">
                             <source src="/mobile-quote-life-new-layout.mp4" type="video/mp4">
                         </figure>                        
