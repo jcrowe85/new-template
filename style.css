@@ -1624,12 +1624,12 @@ label.error,div.error{
     text-align: left;
 }
 #new-home-page .get-started select{
-    padding: 15px;
+    padding: 10px;
     border-radius: 5px;
     margin:0px;
     background: url(/images/dropdown-arrow-home-page.png) 96% / 10% no-repeat #fff;
     margin-right:10px;
-    font-size:16px;
+    font-size:25px;
 }
 #new-home-page .row{
     padding-top: 100px;
@@ -1649,8 +1649,10 @@ label.error,div.error{
 .myForm button{
     background:red; 
     color:white;
-    padding:15px;
+    padding:10px;
     border-radius: 5px;
+    box-shadow: 0px 5px 0px rgba(0,0,0,.5);
+    font-size:25px;
 }
 #new-home-page .header{
     padding-top:0px;
