@@ -62,19 +62,46 @@ $(window).load(function(){
                 <div class="row">
                     <div class="col-md-6">
                         <div class="title">
-                            <h1>Get the Insurance <br> Every Household Needs</h1>
+                            <h1>Protect Your Family with Affordable Life Insurance</h1>
                             <p> No salesman. No broker fees. Affordable plans. 100s of carriers.</p>
                         </div>  
                         <div class="get-started">
                             <form name="" id="myForm" class="myForm">
                                 <select name="menu" id="menu">
-                                    <option value="/life.php" selected="selected">Life Insurance</option>
-                                    <option value="" data-popup-open="popup-1">Health Insurance</option>
-                                    <option value="" data-popup-open="popup-1">Home Insurance</option>
-                                    <option value="" data-popup-open="popup-1">Auto Insurance</option>
-                                    <option value="" data-popup-open="popup-1">Disability Insurance</option>
+                                    <!--<option value="/life.php" selected="selected">Life Insurance</option>-->
+                                    <option style="background-color:#808080;" value="/life.php">$50,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$75,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$100,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$125,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$150,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$175,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$200,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$225,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$250,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$300,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$350,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$400,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$450,000</option>
+                                    <option style="background-color:#808080;" selected="selected" value="500000">$500,000</option>
+                                    <option style="background-color:#808080;" value="550000">$550,000</option>
+                                    <option style="background-color:#808080;" value="600000">$600,000</option>
+                                    <option style="background-color:#808080;" value="650000">$650,000</option>
+                                    <option style="background-color:#808080;" value="700000">$700,000</option>
+                                    <option style="background-color:#808080;" value="750000">$750,000</option>
+                                    <option style="background-color:#808080;" value="800000">$800,000</option>
+                                    <option style="background-color:#808080;" value="900000">$900,000</option>
+                                    <option style="background-color:#808080;" value="1000000">$1,000,000</option>
+                                    <option style="background-color:#808080;" value="1100000">$1,100,000</option>
+                                    <option style="background-color:#808080;" value="1250000">$1,250,000</option>
+                                    <option style="background-color:#808080;" value="1500000">$1,500,000</option>
+                                    <option style="background-color:#808080;" value="1750000">$1,750,000</option>
+                                    <option style="background-color:#808080;" value="2000000">$2,000,000</option>
+                                    <!--<option value="" data-popup-open="popup-1">Health Insurance</option>-->
+                                    <!--<option value="" data-popup-open="popup-1">Home Insurance</option>-->
+                                    <!--<option value="" data-popup-open="popup-1">Auto Insurance</option>-->
+                                    <!--<option value="" data-popup-open="popup-1">Disability Insurance</option>-->
                                 </select>
-                                <button type="button" onClick="getStarted();" class="btn" style="">Go</button>
+                                <button type="button" onClick="getStarted();" class="btn" style="">Get Quote</button>
                             </form>                               
                         </div>
                     </div>
@@ -100,7 +127,7 @@ $(window).load(function(){
                         <div class="proc">
                             <img src="/images/carrier.png" alt="">
                             <h3>Carrier</h3>
-                            <p>Review, compare and select a top-rated carrier.</p>
+                            <p>Review, compare, and select a top-rated carrier.</p>
                         </div>
                         <div class="proc">
                             <img src="/images/application.png" alt="">
