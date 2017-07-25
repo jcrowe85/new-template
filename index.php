@@ -82,20 +82,20 @@ $(window).load(function(){
                                     <option style="background-color:#808080;" value="/life.php">$350,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$400,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$450,000</option>
-                                    <option style="background-color:#808080;" selected="selected" value="500000">$500,000</option>
-                                    <option style="background-color:#808080;" value="550000">$550,000</option>
-                                    <option style="background-color:#808080;" value="600000">$600,000</option>
-                                    <option style="background-color:#808080;" value="650000">$650,000</option>
-                                    <option style="background-color:#808080;" value="700000">$700,000</option>
-                                    <option style="background-color:#808080;" value="750000">$750,000</option>
-                                    <option style="background-color:#808080;" value="800000">$800,000</option>
-                                    <option style="background-color:#808080;" value="900000">$900,000</option>
-                                    <option style="background-color:#808080;" value="1000000">$1,000,000</option>
-                                    <option style="background-color:#808080;" value="1100000">$1,100,000</option>
-                                    <option style="background-color:#808080;" value="1250000">$1,250,000</option>
-                                    <option style="background-color:#808080;" value="1500000">$1,500,000</option>
-                                    <option style="background-color:#808080;" value="1750000">$1,750,000</option>
-                                    <option style="background-color:#808080;" value="2000000">$2,000,000</option>
+                                    <option style="background-color:#808080;" selected="selected" value="/life.php">$500,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$550,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$600,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$650,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$700,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$750,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$800,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$900,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$1,000,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$1,100,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$1,250,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$1,500,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$1,750,000</option>
+                                    <option style="background-color:#808080;" value="/life.php">$2,000,000</option>
                                     <!--<option value="" data-popup-open="popup-1">Health Insurance</option>-->
                                     <!--<option value="" data-popup-open="popup-1">Home Insurance</option>-->
                                     <!--<option value="" data-popup-open="popup-1">Auto Insurance</option>-->
