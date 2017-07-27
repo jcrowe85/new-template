@@ -148,7 +148,7 @@ input::-webkit-contacts-auto-fill-button {
   color: #000;
   text-decoration: none; 
 }
-.navbar a:before {
+.navbar li > a:before {
   content: "";
   position: absolute;
   width: 100%;
@@ -205,14 +205,14 @@ input::-webkit-contacts-auto-fill-button {
 .dropdown-content{
     display: none; 
     position:absolute;
-    min-width: 160px;
+    min-width: 300px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1; /* <-- Added */
     background-color:#d52024;
 }
 .dropdown-content a {
     color: black;
-    padding: 15px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -1568,7 +1568,9 @@ label.error,div.error{
     margin-bottom:25px;
     text-align: left;      
 }
-
+#lifeguide-page .about li p{
+    margin-bottom:10px;
+}
 /*  --------------------------- health guide page  -------------------------------- */
 #healthguide-page .title{
     margin-bottom:50px;
