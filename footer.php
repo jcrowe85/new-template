@@ -1,48 +1,64 @@
         <div class="footer fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-4 col-md-3 col-md-offset-1 section1">
+                    <div class="col-sm-4 col-md-4 section1">
                         <ul>
                             <li><img src="/images/footer-logo.png" alt="" style="width:50%"></li>
                             <li>3300 Irvine Ave. Suite 150<br>Newport Beach, Ca 92660</li>
                             <li style="cursor:pointer" onClick="getHelp()"><i class="fa fa-comment" aria-hidden="true"></i> Chat</li>   
                             <li><i class="fa fa-phone" aria-hidden="true"></i> Call us 949.438.3433</li>
                             <li><i>Mon-Friday | 9am-8pm PST</i></li>
-                            <li>Team@usurit.biz</li>
+                            <li>Team@usurit.com</li>
                             <li>24/7 We're here for you!</li>
                         </ul>
                     </div>
-                    <div class="col-sm-4 col-md-3 col-md-offset-1 section2">
+                    <div class="col-sm-4 col-md-4 section2">
                         <ul>
-                            <li><b>Insurance Product Guides</b></li>
-                            <li><a href="/guide-life.php">Life Insurance Guide</a></li>
-                            <li><a href="/guide-health.php">Health Insurance Guide</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none; cursor:default;">Home Insurance Guide</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Auto Insurance Guide</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Disability Insurance Guide</a></li>
+                            <li><b>Term Insurance Product Guides</b></li>
+                            <li><a href="/term/term-life-insurance-guide.php">Term Guide</a></li>
+                            <li><a href="/">Level Term Guide</a></li>
+                            <li><a href="/">Renewable Term Guide</a></li>
+                            <li><a href="/">Decreasing Term Guide</a></li>
+                            <li><a href="/">Accidental Term Guide</a></li>
+                            <li><a href="/">Return of Premium Term Guide</a></li>
+                            <li><a href="/">Group Life Guide</a></li>
+                            <!--<li><a href="/guide-health.php">Health Insurance Guide</a></li>-->
+                            <!--<li><a href="#" style="color:lightgray;pointer-events:none; cursor:default;">Home Insurance Guide</a></li>-->
+                            <!--<li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Auto Insurance Guide</a></li>-->
+                            <!--<li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Disability Insurance Guide</a></li>-->
                         </ul>
-                        <ul>
-                            <li><b>Helpful Resources</b></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Advice</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Health Insurance Marketplace</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Obamacare</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Calculator</a></li>
-                        </ul>                        
+                        <!--<ul>-->
+                        <!--    <li><b>Insurance Product Advice</b></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Insurance Advice</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Advice</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Work Advice</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Money Advice</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Parenting Advice</a></li>-->
+                        <!--</ul>                        -->
+                        <!--<ul>-->
+                        <!--    <li><b>Helpful Resources</b></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Advice</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Health Insurance Marketplace</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Obamacare</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Insurance Calculator</a></li>-->
+                        <!--</ul>                        -->
                     </div>
-                    <div class="col-sm-4 col-md-3 col-md-offset-1 section3" >
+                    <div class="col-sm-4 col-md-4 section3" >
                         <ul>
-                            <li><b>Insurance Product Advice</b></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Insurance Advice</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Life Advice</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Work Advice</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Money Advice</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Parenting Advice</a></li>
+                            <li><b>Permanent Insurance Product Guides</b></li>
+                            <li><a href="/permanent/permanent-life-insurance-guide.php">Permanent Life Guide</a></li>
+                            <li><a href="">Whole Life Guide</a></li>
+                            <li><a href="">Universal Life Guide</a></li>
+                            <li><a href="">Index Universal Life Guide</a></li>
+                            <li><a href="">Variable Universal Life Guide</a></li>
+                            <li><a href="">Survivorship Universal Life Guide</a></li>
+                            <li><a href="">Cash Value Life Guide</a></li>
                         </ul>
-                        <ul>
-                            <li><b>What Other Have to Say</b></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Our Customers</a></li>
-                            <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Better Business Burrea</a></li>
-                        </ul>                                                
+                        <!--<ul>-->
+                        <!--    <li><b>What Other Have to Say</b></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Our Customers</a></li>-->
+                        <!--    <li><a href="#" style="color:lightgray;pointer-events:none;cursor: default;">Better Business Burrea</a></li>-->
+                        <!--</ul>                                                -->
                     </div>
                     <div class="col-sm-12 col-md-11 col-md-offset-1 section4">
                         <div class="col-sm-6 col-md-4 socials">

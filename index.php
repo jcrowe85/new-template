@@ -40,10 +40,12 @@ $(window).load(function(){
                                 <ul class="nav navbar-nav">
                                     <li><a id="whyus" href="/index.php">Home</a></li>
                                     <li><a id="whyus" href="/why-usurit.php">Why Usurit?</a></li>
-                                    <li class="dropdown"><a id="guide" href="#">Insurance Guides</a>
+                                    <li class="dropdown"><a id="guide" href="#">Life Insurance</a>
                                       <div class="dropdown-content">
-                                        <a href="/guide-life.php">Life Insurance</a>
-                                        <a href="/guide-health.php">Health Insurance</a>
+                                        <a href="/life-insurance-overview.php">Life Insurance Overview</a>
+                                        <a href="/life-guide.php">Guide to Buying Life Insurance</a>
+                                        <a href="/term/term-life-insurance-guide.php">When to Buy Term</a>
+                                        <a href="/permanent/permanent-life-insurance-guide.php">When to Buy Permanent</a>
                                       </div>        
                                      </li>
                                     <li><a id="about" href="#">About Us</a></li>
