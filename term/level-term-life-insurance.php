@@ -13,11 +13,13 @@
         width:70%;
     }
     #lifeguide-page h3{
-        margin-bottom:50px;
         position: relative;
         font-weight: 600;
         
         display: inline-block;
+    }
+    .underline{
+        margin-bottom:50px;
     }
     .underline:after{
     content: '';
@@ -30,7 +32,7 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     } 
-    .riders p{
+    .riders div:nth-child(n+2){
         margin-bottom:5rem;
     }
     .navbar a:link{
@@ -228,23 +230,23 @@
                      <thead>
                         <tr style="color:white; background:#73a5fb;">
                             <th style="text-align:center; padding:15px; font-size:18px;">Coverage Length</th>
-                            <th style="text-align:center; padding:15px; font-size:18px;">ROP</th>
+                            <th style="text-align:center; padding:15px; font-size:18px;">Level</th>
 
                         </tr>
                      </thead>
                      <tbody>
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">15 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$85/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$11/mo</td>
                         </tr> 
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">20 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$50/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$14/mo</td>
 
                         </tr>    
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">30 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$40/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$19/mo</td>
   
                         </tr>      
                         <tr>
@@ -261,37 +263,43 @@
             </div>            
             <div class="row riders mod-row">
                 <div style="text-align:center;">
-                    <h3 class="underline" style="text-align:center;">Level Term Insurance Riders</h3>
+                    <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
                 </div>
                 <p>These are addons that are optional, generally speaking they charge an extra fee on top of your premium for each rider.</p>
-                <h5>Acceleration of Death Benefit Rider:</h5>
-                <p>
-                The gist of this is that if you have 6, 12, or 24 months or less to live (each carrier has different time limits), the 
-                insurance carrier will actually give you a portion of your policy to you in advance. Some carriers advance 50% while others can 
-                go up to 95%. For most carriers, if there is any remaining cash value or death benefit left, it gets paid out as normal.
-                However there are a few companies that will keep the balance. 
-                </p>
-                <p>
-                Most carrier will actually offer this rider at no additional cost, but some will charge for it.
-                </p>    
-                <h5>Waiver of Premium Rider (Disability):</h5>
-                <p>
-                Waiver of premium simply means that in the case you become disabled or seriously ill and cannot work 
-                for an extended period of time (usually 6 months), the insurance carrier will waive further premium payments until 
-                you have recovered, in which case premiums will once again resume.
-                </p>
-                <h5>Accidental Death/Double Indemnity Rider</h5>
-                <p>
-                As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
-                only pay out in the case that you die from an accident and not from natural causes. 
-                </p>
-                <p>
-        
-                Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
-                a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
-                even though there was a resulting accident, the accidental claim would be denied. 
-                    
-                </p>
+                <div>
+                    <h5>Acceleration of Death Benefit Rider:</h5>
+                    <p>
+                    The gist of this is that if you have 6, 12, or 24 months or less to live (each carrier has different time limits), the 
+                    insurance carrier will actually give you a portion of your policy to you in advance. Some carriers advance 50% while others can 
+                    go up to 95%. For most carriers, if there is any remaining cash value or death benefit left, it gets paid out as normal.
+                    However there are a few companies that will keep the balance. 
+                    </p>
+                    <p>
+                    Most carrier will actually offer this rider at no additional cost, but some will charge for it.
+                    </p>  
+                </div>  
+                <div>
+                    <h5>Waiver of Premium Rider (Disability):</h5>
+                    <p>
+                    Waiver of premium simply means that in the case you become disabled or seriously ill and cannot work 
+                    for an extended period of time (usually 6 months), the insurance carrier will waive further premium payments until 
+                    you have recovered, in which case premiums will once again resume.
+                    </p>
+                </div>
+                <div>
+                    <h5>Accidental Death/Double Indemnity Rider</h5>
+                    <p>
+                    As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
+                    only pay out in the case that you die from an accident and not from natural causes. 
+                    </p>
+                    <p>
+                            
+                    Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
+                    a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
+                    even though there was a resulting accident, the accidental claim would be denied. 
+                        
+                    </p>
+                </div>
             </div>
         </div>
     <?php include_once('../footer.php') ?>

@@ -100,7 +100,7 @@
         <?php include_once('../header.php') ?>
         <div class="container-fluid"  id="title-bg" style="text-align:center;">        
             <div class="title">
-                <h1>Universal Life Insurance</h1>  
+                <h1>When to Buy Permanent Life Insurance</h1>  
                 <!--<h4 style="font-family:'AileronThin'; text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);">This is a short description of ROP This is a short description of ROP This is a short description of ROP</h4>-->
                 <form action="/life.php">
                     <button class="btn btn-primary select btn-lg" style="padding: 10px 50px; background:#73a5fb; border:none; box-shadow: 0px 5px 1px rgba(0,0,0,0.5); margin-bottom:10px;">GET QUOTES</button>   
@@ -111,165 +111,78 @@
         <div class="container">
             <div class="row mod-row">
                     <div style="text-align:center;">
-                        <h3 class="underline">What is Universal Life Insurance?</h3>
+                        <h3 class="underline">What is Permanent Life Insurance?</h3>
                     </div>
                     <p>
-                    Universal life insurance is a the most basic type of permanent life insurance. It blends the low-cost protection of term insurance and the savings element of a whole life insurance 
-                    policy, creating a buildup of cash value. The cash value can be withdrawn for any use, or kept in the policy to help pay your premums. You can alter the policy's death benefit, savings, 
-                    and premiums as your needs change.
-                    </p>       
+                    Permanent life insurance is what most people think they're buying when buying life insurance. But contrary to what people think, most people don't need to buy it or they need to buy very little of it. There are only a few cases where buying large permanent policies is a viable solution.
+                    </p>  
+                    <p>
+                    Permanent policies generally also have investment accounts that really should be a secondary reason to buy a policy. We will never recommend that you purchase a permanent policy just so that you can have an investment account.    
+                    </p>
             </div>
                 <div class="row mod-row">
-                    <div class="col-md-8 col-md-offset-2" style="padding:0px;">
+                    <div class="col-md-6" style="padding:0px;">
                         <div style="text-align:center;">
                             <h3 class="underline">Why Should You Consider It?</h3>
                         </div>
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                            You want to leave an inheritance behind for your loved ones
+                            Inheritance for your loved ones
                             </p>
                             
                         </div>
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                            You need a permanent life insurance policy but are on a budget
+                            Retirement living expenses (replacing retirement income)
                             </p>
                         </div>   
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                             For final expenses such as for funeral expenses and estate taxes
+                             Paying estate taxes
                             </p>
                         </div>             
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                             If you're over the age of 60 and are trying to search for insurance, term policies can sometimes be as expensive as permanent policies
+                             Final expenses
                             </p>
                         </div> 
-                        <div class="pros">
-                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                             If your retirement income stops when you pass away and need to protect your loved ones
-                            </p>
-                        </div>                          
                     </div>
-                </div>
-                <div class="row mod-row">
-                    <div class="col-md-8 col-md-offset-2" style="padding:0px;">
+                
+                
+                    <div class="col-md-6" style="padding:0px;">
                         <div style="text-align:center;">
                             <h3 class="underline">Why You Shouldn't Get It?</h3>
                         </div>
                         <div class="cons">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                When you’re trying to cover a need that seems long, but ends in the future (IE a 30 year mortgage)
+                                Debt obligations
                             </p>
                         </div>
                         <div class="cons">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                Wanting life insurance with cash value (even though there is cash value, it is not meant to be withdrawn)
+                                Current living expenses
                             </p>
-                        </div>            
+                        </div>     
+                        <div class="cons">
+                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                            <p>
+                               College expenses for the kids
+                            </p>
+                        </div> 
+                        <div class="cons">
+                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                            <p>
+                               Getting your family rich
+                            </p>
+                        </div>                         
                     </div>  
                 </div>    
-            <div class="row mod-row hidden-xs hidden-sm">
-                 <div style="text-align:center;">
-                     <h3 class="underline">How Much Does It Cost?</h3>
-                 </div>
-                 <div class="panel panel-default">
-                 <table class="table table-bordered" style="text-align:center;">
-                     <thead>
-                        <tr style="color:white; background:#73a5fb;">
-                            <th style="text-align:center; padding:15px; font-size:18px;">Coverage Length</th>
-                            <th style="text-align:center; padding:15px; font-size:18px;">ROP</th>
-                            <th style="text-align:center; padding:15px; font-size:18px;">Level</th>
-                            <th style="text-align:center; padding:15px; font-size:18px;">Universal Life</th>
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">15 years</td>
-                            <td style="padding:15px;">$85/mo</td>
-                            <td style="padding:15px;">$11/mo</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
-                        </tr> 
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">20 years</td>
-                            <td style="padding:15px;">$50/mo</td>
-                            <td style="padding:15px;">$14/mo</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
-                        </tr>    
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">30 years</td>
-                            <td style="padding:15px;">$40/mo</td>
-                            <td style="padding:15px;">$19/mo</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
-                        </tr>      
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">Forever</td>
-                            <td style="padding:15px; ">-</td>
-                            <td style="padding:15px;">-</td>
-                            <td style="padding:15px; background:#e6e6e6;">$90/mo</td>
-                        </tr>       
-                        <tr>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href=""></a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline; background:#e6e6e6;"><a href="">Learn More</a></td>
-                        </tr>                 
-                     </tbody>
-                 </table>
-                 </div>
-                 <caption>*Average premium (for a healthy 25 year old male)</caption>
-            </div>
-            <div class="row mod-row hidden-md hidden-lg">
-                 <div style="text-align:center;">
-                     <h3 class="underline">How Much Does It Cost?</h3>
-                 </div>
-                 <div class="panel panel-default">
-                 <table class="table table-bordered" style="text-align:center;">
-                     <thead>
-                        <tr style="color:white; background:#73a5fb;">
-                            <th style="text-align:center; padding:15px; font-size:18px;">Coverage Length</th>
-                            <th style="text-align:center; padding:15px; font-size:18px;">Universal Life</th>
-
-                        </tr>
-                     </thead>
-                     <tbody>
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">15 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
-                        </tr> 
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">20 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
-
-                        </tr>    
-                        <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">30 years</td>
-                            <td style="padding:15px; background:#e6e6e6;"></td>
-  
-                        </tr>      
-                        <tr>
-                      <tr>
-                            <th scope="row" style="text-align:center; padding:15px;">Forever</td>
-                            <td style="padding:15px; background:#e6e6e6;">$90/mo</td>
-  
-                        </tr>  
-                        </tr>       
-                        <tr>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href=""></a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline; background:#e6e6e6;"><a href="">Learn More</a></td>
-                        </tr>                 
-                     </tbody>
-                 </table>
-                 </div>
-                 <caption>*Average premium (for a healthy 25 year old male)</caption>
-            </div>            
             <div class="row riders mod-row">
                 <div style="text-align:center;">
                     <h3 class="underline" style="text-align:center;">Level Term Insurance Riders</h3>

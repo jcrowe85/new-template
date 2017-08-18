@@ -13,11 +13,12 @@
         width:70%;
     }
     #lifeguide-page h3{
-        margin-bottom:50px;
         position: relative;
         font-weight: 600;
-        
         display: inline-block;
+    }
+    .underline{
+        margin-bottom: 50px;
     }
     .underline:after{
     content: '';
@@ -30,9 +31,6 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     } 
-    .riders p{
-        margin-bottom:5rem;
-    }
     .navbar a:link{
         color:black;
     }
@@ -81,6 +79,9 @@
         text-shadow: 1px 1px 1px rgba(0,0,0, 0.5); 
         margin-bottom:25px;
     }
+    .riders div:nth-child(n+2){
+        margin-bottom:50px;
+    }
     @media screen and (max-width:768px){
         #lifeguide-page .mod-row {
             margin:0 auto;
@@ -113,10 +114,9 @@
                     </div>
                     <p>
                         <span style="font-family:'AileronSemibold';">Return of premium is a type of <a href="/term/term-life-insurance-guide.php">term life insurance</a></span> but with an added benefit of getting all 
-                        the money you put into it. The benefit will increase your premium by 3 to 5 times the cost of
-                        a traditional term insurance policy. The policy will not grow in value, so if you're looking to 
-                        earn some monies on your premiums, return of premium wouldn't be a good fit. However, if you're
-                        looking for a forced savings plans, or can't accept not seeing their premium dollars back, 
+                        the money you put into it. It's about 3 to 5 times the cost of a traditional term policy. 
+                        The policy will not grow in value, so if you're looking to earn a return on your premiums, it wouldn't be a good fit. However, if you're
+                        looking for a forced savings plan, or can't accept not seeing your premium dollars back, 
                         this my be right for you. 
                     </p>       
             </div>
@@ -254,34 +254,40 @@
                     <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
                 </div>
                 <p>These are addons that are optional, generally speaking they charge an extra fee on top of your premium for each rider.</p>
-                <h5>Acceleration of Death Benefit Rider:</h5>
-                <p>
-                The gist of this is that if you have 6, 12, or 24 months or less to live (each carrier has different time limits), the 
-                insurance carrier will actually give you a portion of your policy to you in advance. Some carriers advance 50% while others can 
-                go up to 95%. For most carriers, if there is any remaining cash value or death benefit left, it gets paid out as normal.
-                However there are a few companies that will keep the balance. 
-                </p>
-                <p>
-                Most carrier will actually offer this rider at no additional cost, but some will charge for it.
-                </p>    
-                <h5>Waiver of Premium Rider (Disability):</h5>
-                <p>
-                Waiver of premium simply means that in the case you become disabled or seriously ill and cannot work 
-                for an extended period of time (usually 6 months), the insurance carrier will waive further premium payments until 
-                you have recovered, in which case premiums will once again resume.
-                </p>
-                <h5>Accidental Death/Double Indemnity Rider</h5>
-                <p>
-                As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
-                only pay out in the case that you die from an accident and not from natural causes. 
-                </p>
-                <p>
-        
-                Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
-                a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
-                even though there was a resulting accident, the accidental claim would be denied. 
-                    
-                </p>
+                <div>
+                    <h5>Acceleration of Death Benefit Rider:</h5>
+                    <p>
+                    The gist of this is that if you have 6, 12, or 24 months or less to live (each carrier has different time limits), the 
+                    insurance carrier will actually give you a portion of your policy to you in advance. Some carriers advance 50% while others can 
+                    go up to 95%. For most carriers, if there is any remaining cash value or death benefit left, it gets paid out as normal.
+                    However there are a few companies that will keep the balance. 
+                    </p>
+                    <p>
+                    Most carrier will actually offer this rider at no additional cost, but some will charge for it.
+                    </p>  
+                </div>  
+                <div>
+                    <h5>Waiver of Premium Rider (Disability):</h5>
+                    <p>
+                    Waiver of premium simply means that in the case you become disabled or seriously ill and cannot work 
+                    for an extended period of time (usually 6 months), the insurance carrier will waive further premium payments until 
+                    you have recovered, in which case premiums will once again resume.
+                    </p>
+                </div>
+                <div>
+                    <h5>Accidental Death/Double Indemnity Rider</h5>
+                    <p>
+                    As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
+                    only pay out in the case that you die from an accident and not from natural causes. 
+                    </p>
+                    <p>
+                            
+                    Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
+                    a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
+                    even though there was a resulting accident, the accidental claim would be denied. 
+                        
+                    </p>
+                </div>
             </div>
         </div>
     <?php include_once('../footer.php') ?>
