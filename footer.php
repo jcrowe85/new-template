@@ -20,7 +20,7 @@
                             <li><a href="/">Renewable Term Guide</a></li>
                             <li><a href="/">Decreasing Term Guide</a></li>
                             <li><a href="/">Accidental Term Guide</a></li>
-                            <li><a href="/">Return of Premium Term Guide</a></li>
+                            <li><a href="/term/return-of-premium-life-insurance.php">Return of Premium Term Guide</a></li>
                             <li><a href="/">Group Life Guide</a></li>
                             <!--<li><a href="/guide-health.php">Health Insurance Guide</a></li>-->
                             <!--<li><a href="#" style="color:lightgray;pointer-events:none; cursor:default;">Home Insurance Guide</a></li>-->
