@@ -1,8 +1,36 @@
 <?php include_once('head.php') ?>   
 <?php include_once('privy.php') ?>   
+<style>
+    .navbar a:link{
+        color:black;
+    }
+    .navbar a:active{
+        color:black;
+    }  
+    .navbar a:visited{
+        color:black;
+    }      
+    .logo span{
+        color:black;
+    }
+    .header{
+        background: white;
+    }
+    .navbar-toggle{
+        border: 1px solid #fff;
+    }
+    .navbar-toggle span{
+        background: #fff;
+    }    
+</style>
+<script>
+    $(document).ready(function(){
+      $(".logo img").attr("src", "/images/logo-red.png");       
+    });
+</script>
     <body id="team-page">
         <?php include_once('header.php') ?>
-        <div class="main fluid" style="margin-top: 65px;">
+        <div class="main fluid">
             <div class="josh">
                 <img src="/images/team-josh.jpg" style="width:100%">
                 <div class="container">
