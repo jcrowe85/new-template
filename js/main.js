@@ -73,6 +73,14 @@ $(document).ready(function(){
       $(this).find(".mobile2").submit()
       });  
       
+        
+    // set homepage navbar links to white on load
+            $("#new-home-page .navbar a:link").css("color", "white");
+            $("#new-home-page .navbar a:visited").css("color", "white");
+            $("#new-home-page .dropdown-content a:link").css("color", "black");
+            $("#new-home-page .dropdown-content a:visited").css("color", "black");
+            
+      
     // add white background if mobile menu is collapsed
     $(".navbar-toggle").click(function(){
             $(".navbar a:link").css("color", "black");
@@ -86,6 +94,7 @@ $(document).ready(function(){
          if ($('.navbar-toggle').attr('aria-expanded') === "true") {
             $("#new-home-page .header").css("background", "transparent");
             $(".navbar a:link").css("color", "white");
+            $(".navbar a:visited").css("color", "white");
             $(".logo span").css("color", "white");
             $(".logo img").attr("src", "/images/logo.png"); 
             $(".navbar-toggle").css("border", "1px solid white");
@@ -246,7 +255,8 @@ $(window).scroll(function() {
                     );
                 }
         } 
-        
+            
+            
     //home page: change menu background color on scroll
     if($(this).scrollTop() != 0 && $('.navbar a').css('color') != 'rgb(0, 0, 0)'){
     
@@ -263,6 +273,8 @@ $(window).scroll(function() {
     }else if($(this).scrollTop() == 0 && $('.navbar a').css('color') == 'rgb(0, 0, 0)'){
        $('#new-home-page .header').slideUp(function(){
             $(".navbar a:link").css({'color' : 'white'});
+            $("#new-home-page .dropdown-content a:link").css("color", "black");
+            $("#new-home-page .dropdown-content a:visited").css("color", "black");            
             $(".logo span").css("color", "white");
             $(".logo img").attr("src", "/images/logo.png");     
             $(".header").css("background", "rgba(0, 0, 0, 0)");

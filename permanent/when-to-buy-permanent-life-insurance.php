@@ -120,111 +120,68 @@
                     Permanent policies generally also have investment accounts that really should be a secondary reason to buy a policy. We will never recommend that you purchase a permanent policy just so that you can have an investment account.    
                     </p>
             </div>
-                <div class="row mod-row">
-                    <div class="col-md-6" style="padding:0px;">
-                        <div style="text-align:center;">
-                            <h3 class="underline">Why Should You Consider It?</h3>
-                        </div>
-                        <div class="pros">
-                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                            Inheritance for your loved ones
-                            </p>
-                            
-                        </div>
-                        <div class="pros">
-                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                            Retirement living expenses (replacing retirement income)
-                            </p>
-                        </div>   
-                        <div class="pros">
-                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                             Paying estate taxes
-                            </p>
-                        </div>             
-                        <div class="pros">
-                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                             Final expenses
-                            </p>
-                        </div> 
+            <div class="row mod-row">
+                <div class="col-md-6" style="padding:0px;">
+                    <div style="text-align:center;">
+                        <h3 class="underline">Why Should You Consider It?</h3>
                     </div>
-                
-                
-                    <div class="col-md-6" style="padding:0px;">
-                        <div style="text-align:center;">
-                            <h3 class="underline">Why You Shouldn't Get It?</h3>
-                        </div>
-                        <div class="cons">
-                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                                Debt obligations
-                            </p>
-                        </div>
-                        <div class="cons">
-                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                                Current living expenses
-                            </p>
-                        </div>     
-                        <div class="cons">
-                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                               College expenses for the kids
-                            </p>
-                        </div> 
-                        <div class="cons">
-                            <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
-                            <p>
-                               Getting your family rich
-                            </p>
-                        </div>                         
-                    </div>  
-                </div>    
-            <div class="row riders mod-row">
-                <div style="text-align:center;">
-                    <h3 class="underline" style="text-align:center;">Level Term Insurance Riders</h3>
+                    <div class="pros">
+                        <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                        Inheritance for your loved ones
+                        </p>
+                    </div>
+                    <div class="pros">
+                        <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                        Retirement living expenses (replacing retirement income)
+                        </p>
+                    </div>   
+                    <div class="pros">
+                        <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                         Paying estate taxes
+                        </p>
+                    </div>             
+                    <div class="pros">
+                        <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                         Final expenses
+                        </p>
+                    </div> 
                 </div>
-                <p>These are addons that are optional, generally speaking they charge an extra fee on top of your premium for each rider.</p>
-<div><h5>Acceleration of Death Benefit Rider:</h5>
-    <p>
-    The gist of this is that if you have 6, 12, or 24 months or less to live (each carrier has different time limits), the 
-    insurance carrier will actually give you a portion of your policy to you in advance. Some carriers advance 50% while others can 
-    go up to 95%. For most carriers, if there is any remaining cash value or death benefit left, it gets paid out as normal.
-    However there are a few companies that will keep the balance. 
-    </p>
-    <p>
-    Most carrier will actually offer this rider at no additional cost, but some will charge for it.
-    </p> </div>   
-<div>
-    <h5>Accidental Death/Double Indemnity Rider</h5>
-    <p>
-    As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
-    only pay out in the case that you die from an accident and not from natural causes. 
-    </p>
-    <p>
-    Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
-    a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
-    even though there was a resulting accident, the accidental claim would be denied. 
-    </p>
-</div>
-<div><h5>Long-Term Care Rider</h5>
-    <p>Note: You have to go through more stricter underwriting to get this rider attached. </p>
-    <p>
-    This rider allows you to take money from your life insurance benefit in the case you experience needing long-term care. 
-    Different companies have different minimums and have different payout rates. I.E. Some can only be attached to policies of $100,000 or greater. 
-    And some payout $500/month at minimum to $5,000 at maximum. 
-    </p> </div> 
-<div><h5>Chronic Care Rider</h5>
-    <p>Note: Is not classified as a long-term care rider. </p>
-    <p>
-    This rider allows you to take money from your life insurance benefit in the case you have a long-term care event and it is chronic, meaning recurring 
-    for a long time. This functions very similarly to Long-Term Care riders, but the key difference is that people can recover from Long-Term Care events 
-    (I.E. broke a hip) but it takes awhile. Chronic Care has to be more severe and lasts longer and usually permanent (I.E. Alzheimer’s and Dementia). 
-    </p> </div>                
-            </div>
+            
+            
+                <div class="col-md-6" style="padding:0px;">
+                    <div style="text-align:center;">
+                        <h3 class="underline">Why You Shouldn't Get It?</h3>
+                    </div>
+                    <div class="cons">
+                        <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                            Debt obligations
+                        </p>
+                    </div>
+                    <div class="cons">
+                        <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                            Current living expenses
+                        </p>
+                    </div>     
+                    <div class="cons">
+                        <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                           College expenses for the kids
+                        </p>
+                    </div> 
+                    <div class="cons">
+                        <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
+                        <p>
+                           Getting your family rich
+                        </p>
+                    </div>                         
+                </div>  
+            </div>    
         </div>
     <?php include_once('../footer.php') ?>
 
