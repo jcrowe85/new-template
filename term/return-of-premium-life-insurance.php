@@ -167,31 +167,31 @@
                      <tbody>
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">15 years</td>
-                            <td style="padding:15px;">$85/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$85/mo</td>
                             <td style="padding:15px;">$11/mo</td>
                             <td style="padding:15px;">-</td>
                         </tr> 
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">20 years</td>
-                            <td style="padding:15px;">$50/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$50/mo</td>
                             <td style="padding:15px;">$14/mo</td>
                             <td style="padding:15px;">-</td>
                         </tr>    
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">30 years</td>
-                            <td style="padding:15px;">$40/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$40/mo</td>
                             <td style="padding:15px;">$19/mo</td>
                             <td style="padding:15px;">-</td>
                         </tr>      
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">Forever</td>
-                            <td style="padding:15px;">-</td>
+                            <td style="padding:15px; background:#e6e6e6;">-</td>
                             <td style="padding:15px;">-</td>
                             <td style="padding:15px;">$90/mo</td>
                         </tr>       
                         <tr>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href=""></a></td>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline; background:#e6e6e6;"><a href="">Learn More</a></td>
                             <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
                             <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
                         </tr>                 
