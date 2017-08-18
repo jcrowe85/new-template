@@ -7,7 +7,7 @@
     ol{
         padding-left: 35px;
     }
-    #lifeguide-page .row{
+    #lifeguide-page .mod-row {
         margin:0 auto;
         margin-top:100px;
         width:70%;
@@ -62,7 +62,6 @@
         display: -webkit-flex;
         display: flex;
         align-items: center;
-        justify-content: center;        
     }
     .cons{
         display: -webkit-box;
@@ -71,10 +70,11 @@
         display: -webkit-flex;
         display: flex;
         align-items: center;
-        justify-content: center;        
     }
     .title{
-        text-align:center; padding: 80px 0px;
+        margin-top:50px;
+        text-align:center; 
+        padding: 80px 0px;
     }
     .title h1{
         text-shadow: 1px 1px 1px rgba(0,0,0, 0.5); 
@@ -94,11 +94,11 @@
                 <form action="/life.php">
                     <button class="btn btn-primary select btn-lg" style="padding: 10px 50px; background:#73a5fb; border:none; box-shadow: 0px 5px 1px rgba(0,0,0,0.5); margin-bottom:10px;">GET QUOTES</button>   
                 </form>
-                <div><a href="" style="text-decoration:underline; color:white; font-family:'AileronThin'; font-size:12px;"><i class="fa fa-phone" aria-hidden="true"></i> Speak with an agent</a></div>
+                <div><a href="tel:+9494384333" style="text-decoration:underline; color:white; font-family:'AileronThin'; font-size:12px;"><i class="fa fa-phone" aria-hidden="true"></i> Speak with an agent</a></div>
             </div>
         </div>
         <div class="container">
-            <div class="row">
+            <div class="row mod-row">
                     <div style="text-align:center;">
                         <h3 class="underline">What is Return of Premium Term Life Insurance?</h3>
                     </div>
@@ -111,8 +111,8 @@
                         this my be right for you. 
                     </p>       
             </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3" style="padding:0px;">
+                <div class="row mod-row">
+                    <div class="col-md-8 col-md-offset-2" style="padding:0px;">
                         <div style="text-align:center;">
                             <h3 class="underline">Why Should You Consider It?</h3>
                         </div>
@@ -126,34 +126,31 @@
                         <div class="cons">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You don't mind paying a little more for a term policy 
-                                because you can actually get all of the money you put into the policy once it expires.
+                                You want a forced savings account that pays out at the end of the term.
                             </p>
                         </div>            
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-6 col-md-offset-3" style="padding:0px;">
+                <div class="row mod-row">
+                    <div class="col-md-8 col-md-offset-2" style="padding:0px;">
                         <div style="text-align:center;">
-                            <h3 class="underline">Why Should You Consider It?</h3>
+                            <h3 class="underline">Why You Shouldn't Get It?</h3>
                         </div>
                         <div class="pros">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You don't mind paying a little more for a term policy 
-                                because you can actually get all of the money you put into the policy once it expires.
+                                Time value of money, since it costs more could buy a normal term and invest the rest if you were a disciplined investor.
                             </p>
                         </div>
                         <div class="cons">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You don't mind paying a little more for a term policy 
-                                because you can actually get all of the money you put into the policy once it expires.
+                                You just want to have a bare bones life insurance policy.
                             </p>
                         </div>            
                     </div>  
                 </div>    
-            <div class="row">
+            <div class="row mod-row">
                  <div style="text-align:center;">
                      <h3 class="underline">How Much Does It Cost?</h3>
                  </div>
@@ -203,7 +200,7 @@
                  </div>
                  <caption>*Average premium (for a healthy 25 year old male)</caption>
             </div>
-            <div class="row riders" style="width:70%;">
+            <div class="row riders mod-row" style="width:70%;">
                 <div style="text-align:center;">
                     <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
                 </div>
