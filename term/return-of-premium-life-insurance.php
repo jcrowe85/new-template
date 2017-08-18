@@ -150,7 +150,7 @@
                         </div>            
                     </div>  
                 </div>    
-            <div class="row mod-row">
+            <div class="row mod-row hidden-xs hidden-sm">
                  <div style="text-align:center;">
                      <h3 class="underline">How Much Does It Cost?</h3>
                  </div>
@@ -200,6 +200,46 @@
                  </div>
                  <caption>*Average premium (for a healthy 25 year old male)</caption>
             </div>
+            <div class="row mod-row hidden-md hidden-lg">
+                 <div style="text-align:center;">
+                     <h3 class="underline">How Much Does It Cost?</h3>
+                 </div>
+                 <div class="panel panel-default">
+                 <table class="table table-bordered" style="text-align:center;">
+                     <thead>
+                        <tr style="color:white; background:#73a5fb;">
+                            <th style="text-align:center; padding:15px; font-size:18px;">Coverage Length</th>
+                            <th style="text-align:center; padding:15px; font-size:18px;">ROP</th>
+
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                            <th scope="row" style="text-align:center; padding:15px;">15 years</td>
+                            <td style="padding:15px; background:#e6e6e6;">$85/mo</td>
+                        </tr> 
+                        <tr>
+                            <th scope="row" style="text-align:center; padding:15px;">20 years</td>
+                            <td style="padding:15px; background:#e6e6e6;">$50/mo</td>
+
+                        </tr>    
+                        <tr>
+                            <th scope="row" style="text-align:center; padding:15px;">30 years</td>
+                            <td style="padding:15px; background:#e6e6e6;">$40/mo</td>
+  
+                        </tr>      
+                        <tr>
+
+                        </tr>       
+                        <tr>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href=""></a></td>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline; background:#e6e6e6;"><a href="">Learn More</a></td>
+                        </tr>                 
+                     </tbody>
+                 </table>
+                 </div>
+                 <caption>*Average premium (for a healthy 25 year old male)</caption>
+            </div>            
             <div class="row riders mod-row" style="width:70%;">
                 <div style="text-align:center;">
                     <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
