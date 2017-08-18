@@ -98,7 +98,7 @@
         <?php include_once('../header.php') ?>
         <div class="container-fluid"  id="title-bg" style="text-align:center;">        
             <div class="title">
-                <h1>Return of Premium (ROP)</h1>  
+                <h1>Universal Life Insurance</h1>  
                 <!--<h4 style="font-family:'AileronThin'; text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);">This is a short description of ROP This is a short description of ROP This is a short description of ROP</h4>-->
                 <form action="/life.php">
                     <button class="btn btn-primary select btn-lg" style="padding: 10px 50px; background:#73a5fb; border:none; box-shadow: 0px 5px 1px rgba(0,0,0,0.5); margin-bottom:10px;">GET QUOTES</button>   
@@ -109,15 +109,12 @@
         <div class="container">
             <div class="row mod-row">
                     <div style="text-align:center;">
-                        <h3 class="underline">What is Return of Premium Term Life Insurance?</h3>
+                        <h3 class="underline">What is Universal Life Insurance?</h3>
                     </div>
                     <p>
-                        <span style="font-family:'AileronSemibold';">Return of premium is a type of <a href="/term/term-life-insurance-guide.php">term life insurance</a></span> but with an added benefit of getting all 
-                        the money you put into it. The benefit will increase your premium by 3 to 5 times the cost of
-                        a traditional term insurance policy. The policy will not grow in value, so if you're looking to 
-                        earn some monies on your premiums, return of premium wouldn't be a good fit. However, if you're
-                        looking for a forced savings plans, or can't accept not seeing their premium dollars back, 
-                        this my be right for you. 
+                    Universal life insurance is a the most basic type of permanent life insurance. It blends the low-cost protection of term insurance and the savings element of a whole life insurance 
+                    policy, creating a buildup of cash value. The cash value can be withdrawn for any use, or kept in the policy to help pay your premums. You can alter the policy's death benefit, savings, 
+                    and premiums as your needs change.
                     </p>       
             </div>
                 <div class="row mod-row">
@@ -128,16 +125,34 @@
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You don't mind paying a little more for a term policy 
-                                because you can actually get all of the money you put into the policy once it expires.
+                            You want to leave an inheritance behind for your loved ones
                             </p>
+                            
                         </div>
                         <div class="pros">
                             <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You want a forced savings account that pays out at the end of the term.
+                            You need a permanent life insurance policy but are on a budget
                             </p>
-                        </div>            
+                        </div>   
+                        <div class="pros">
+                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                            <p>
+                             For final expenses such as for funeral expenses and estate taxes
+                            </p>
+                        </div>             
+                        <div class="pros">
+                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                            <p>
+                             If you're over the age of 60 and are trying to search for insurance, term policies can sometimes be as expensive as permanent policies
+                            </p>
+                        </div> 
+                        <div class="pros">
+                            <img src="/images/green-thumbs-up.png" style="width:10%;padding-right:10px;"></img>
+                            <p>
+                             If your retirement income stops when you pass away and need to protect your loved ones
+                            </p>
+                        </div>                          
                     </div>
                 </div>
                 <div class="row mod-row">
@@ -148,13 +163,13 @@
                         <div class="cons">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                Time value of money, since it costs more could buy a normal term and invest the rest if you were a disciplined investor.
+                                When you’re trying to cover a need that seems long, but ends in the future (IE a 30 year mortgage)
                             </p>
                         </div>
                         <div class="cons">
                             <img src="/images/red-thumbs-down.png" style="width:10%;padding-right:10px;"></img>
                             <p>
-                                You just want to have a bare bones life insurance policy.
+                                Wanting life insurance with cash value (even though there is cash value, it is not meant to be withdrawn)
                             </p>
                         </div>            
                     </div>  
@@ -176,33 +191,33 @@
                      <tbody>
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">15 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$85/mo</td>
+                            <td style="padding:15px;">$85/mo</td>
                             <td style="padding:15px;">$11/mo</td>
-                            <td style="padding:15px;">-</td>
+                            <td style="padding:15px; background:#e6e6e6;">-</td>
                         </tr> 
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">20 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$50/mo</td>
+                            <td style="padding:15px;">$50/mo</td>
                             <td style="padding:15px;">$14/mo</td>
-                            <td style="padding:15px;">-</td>
+                            <td style="padding:15px; background:#e6e6e6;">-</td>
                         </tr>    
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">30 years</td>
-                            <td style="padding:15px; background:#e6e6e6;">$40/mo</td>
+                            <td style="padding:15px;">$40/mo</td>
                             <td style="padding:15px;">$19/mo</td>
-                            <td style="padding:15px;">-</td>
+                            <td style="padding:15px; background:#e6e6e6;">-</td>
                         </tr>      
                         <tr>
                             <th scope="row" style="text-align:center; padding:15px;">Forever</td>
-                            <td style="padding:15px; background:#e6e6e6;">-</td>
+                            <td style="padding:15px; ">-</td>
                             <td style="padding:15px;">-</td>
-                            <td style="padding:15px;">$90/mo</td>
+                            <td style="padding:15px; background:#e6e6e6;">$90/mo</td>
                         </tr>       
                         <tr>
                             <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href=""></a></td>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
+                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
                             <td style="padding:15px; font-size:12px; text-decoration:underline; background:#e6e6e6;"><a href="">Learn More</a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
-                            <td style="padding:15px; font-size:12px; text-decoration:underline;"><a href="">Learn More</a></td>
                         </tr>                 
                      </tbody>
                  </table>
@@ -251,7 +266,7 @@
             </div>            
             <div class="row riders mod-row">
                 <div style="text-align:center;">
-                    <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
+                    <h3 class="underline" style="text-align:center;">Level Term Insurance Riders</h3>
                 </div>
                 <p>These are addons that are optional, generally speaking they charge an extra fee on top of your premium for each rider.</p>
                 <h5>Acceleration of Death Benefit Rider:</h5>
@@ -264,24 +279,30 @@
                 <p>
                 Most carrier will actually offer this rider at no additional cost, but some will charge for it.
                 </p>    
-                <h5>Waiver of Premium Rider (Disability):</h5>
-                <p>
-                Waiver of premium simply means that in the case you become disabled or seriously ill and cannot work 
-                for an extended period of time (usually 6 months), the insurance carrier will waive further premium payments until 
-                you have recovered, in which case premiums will once again resume.
-                </p>
                 <h5>Accidental Death/Double Indemnity Rider</h5>
                 <p>
                 As the name suggests, you can increase your death benefit for a very small extra charge, but the rider will 
                 only pay out in the case that you die from an accident and not from natural causes. 
                 </p>
                 <p>
-        
                 Be warned, insurance carriers will not pay the Accidental Death claim if a natural cause happened first. I.E. While driving,
                 a person suffers a heart attack and passes away, the car then crashes into another vehicle. The cause of death was natural, 
                 even though there was a resulting accident, the accidental claim would be denied. 
-                    
                 </p>
+                <h5>Long-Term Care Rider</h5>
+                <p>Note: You have to go through more stricter underwriting to get this rider attached. </p>
+                <p>
+                This rider allows you to take money from your life insurance benefit in the case you experience needing long-term care. 
+                Different companies have different minimums and have different payout rates. I.E. Some can only be attached to policies of $100,000 or greater. 
+                And some payout $500/month at minimum to $5,000 at maximum. 
+                </p>  
+                <h5>Chronic Care Rider</h5>
+                <p>Note: Is not classified as a long-term care rider. </p>
+                <p>
+                This rider allows you to take money from your life insurance benefit in the case you have a long-term care event and it is chronic, meaning recurring 
+                for a long time. This functions very similarly to Long-Term Care riders, but the key difference is that people can recover from Long-Term Care events 
+                (I.E. broke a hip) but it takes awhile. Chronic Care has to be more severe and lasts longer and usually permanent (I.E. Alzheimer’s and Dementia). 
+                </p>                 
             </div>
         </div>
     <?php include_once('../footer.php') ?>
