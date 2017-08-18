@@ -13,11 +13,12 @@
         width:70%;
     }
     #lifeguide-page h3{
-        
         position: relative;
         font-weight: 600;
-        
         display: inline-block;
+    }
+    .underline{
+        margin-bottom: 50px;
     }
     .underline:after{
     content: '';
@@ -30,9 +31,6 @@
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
     } 
-    .riders p{
-        margin-bottom:5rem;
-    }
     .navbar a:link{
         color:black;
     }
@@ -144,7 +142,7 @@
                     </p>  
                     <h3>Whole Life</h3>
                     <p>
-                    The oldest type of life insurance policy, it's probably what your parents had and their parents had as well. It is the most expensive life insurance policy in the market. Simply because it's not only a life insurance policy, but a forced savings account as well. Whole life policies give out dividends, and these dividends increase as you put in more money into the policy. Generally speaking, these dividends can range anywhere between 1-4%. And the selling point is that you can actually take out these dividends in the future, you can use them to pay off future premiums, in effect making the policy â€œpaid upâ€, you can withdraw those dividends for your own use, or you can take a loan out against the cash value of those dividends. However, these whole life policies have huge stipulations in terms of getting the dividend, and in some cases, it could be 25-30 years before you have access to the cash.                
+                    The oldest type of life insurance policy, it's probably what your parents had and their parents had as well. It is the most expensive life insurance policy in the market. Simply because it's not only a life insurance policy, but a forced savings account as well. Whole life policies give out dividends, and these dividends increase as you put in more money into the policy. Generally speaking, these dividends can range anywhere between 1-4%. And the selling point is that you can actually take out these dividends in the future, you can use them to pay off future premiums, in effect making the policy "paid up", you can withdraw those dividends for your own use, or you can take a loan out against the cash value of those dividends. However, these whole life policies have huge stipulations in terms of getting the dividend, and in some cases, it could be 25-30 years before you have access to the cash.                
                     </p>  
                     <h3>Universal Life</h3>
                     <p>

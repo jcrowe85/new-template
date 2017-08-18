@@ -205,9 +205,9 @@ input::-webkit-contacts-auto-fill-button {
     display: none; 
     position:absolute;
     min-width: 300px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0, 0.2);
     z-index: 1; /* <-- Added */
-    background-color:rgba(255,255,255, .8);
+    background-color:rgba(255,255,255, .9);
 }
 .dropdown-content a {
     color: black;

@@ -13,11 +13,13 @@
         width:70%;
     }
     #lifeguide-page h3{
-        margin-bottom:50px;
         position: relative;
         font-weight: 600;
         
         display: inline-block;
+    }
+    .underline{
+        margin-bottom:50px;
     }
     .underline:after{
     content: '';

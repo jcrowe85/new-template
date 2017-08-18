@@ -29,10 +29,10 @@
                                       <div class="dropdown-content">
                                         <a href="/life-insurance-overview.php">Life Insurance Overview</a>
                                         <a href="/life-guide.php">Guide to Buying Life Insurance</a>
-                                        <a href="/term/term-life-insurance-guide.php">When to Buy Term</a>
+                                        <a href="/term/when-to-buy-term-life-insurance.php">When to Buy Term</a>
                                         <a href="/term/level-term-life-insurance.php">Level Term</a>
                                         <a href="/term/return-of-premium-life-insurance.php">Return of Premium Term</a>
-                                        <a href="/permanent/permanent-life-insurance-guide.php">When to Buy Permanent</a>
+                                        <a href="/permanent/when-to-buy-permanent-life-insurance.php">When to Buy Permanent</a>
                                         <a href="/permanent/universal-life-insurance.php">Universal Life</a>
                                       </div>        
                                      </li>
