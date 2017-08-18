@@ -80,6 +80,13 @@
         text-shadow: 1px 1px 1px rgba(0,0,0, 0.5); 
         margin-bottom:25px;
     }
+    @media screen and (max-width:768px){
+        #lifeguide-page .mod-row {
+            margin:0 auto;
+            margin-top:100px;
+            width:90%;
+        }
+    }
 </style>
 <script>
     $(document).ready(function(){
@@ -240,7 +247,7 @@
                  </div>
                  <caption>*Average premium (for a healthy 25 year old male)</caption>
             </div>            
-            <div class="row riders mod-row" style="width:70%;">
+            <div class="row riders mod-row">
                 <div style="text-align:center;">
                     <h3 class="underline" style="text-align:center;">Return of Premium Riders</h3>
                 </div>
