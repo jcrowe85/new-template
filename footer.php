@@ -16,7 +16,7 @@
                         <ul>
                             <li><b>Term Insurance Product Guides</b></li>
                             <li><a href="/term/term-life-insurance-guide.php">Term Guide</a></li>
-                            <li><a href="/">Level Term Guide</a></li>
+                            <li><a href="/term/level-term-life-insurance.php">Level Term Guide</a></li>
                             <li><a href="/">Renewable Term Guide</a></li>
                             <li><a href="/">Decreasing Term Guide</a></li>
                             <li><a href="/">Accidental Term Guide</a></li>
