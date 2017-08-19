@@ -7,11 +7,6 @@
     ol{
         padding-left: 35px;
     }
-    #lifeguide-page .mod-row {
-        margin:0 auto;
-        margin-top:100px;
-        width:70%;
-    }
     #lifeguide-page h3{
         position: relative;
         font-weight: 600;
