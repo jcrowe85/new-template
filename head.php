@@ -74,6 +74,9 @@
         <meta property="og:description" content="Making Insurance Easy to Learn, and Easy to Buy."/>
         <meta property="og:url" content="www.usurit.com/" />     
         
+        <!-- google webmaster tools -->
+        <meta name="google-site-verification" content="0pEvhF_9--4g-M_80Ei1HbvMc1qk9l0383563Oyrm1c" />
+        
         <!-- Begin Inspectlet Embed Code -->
         <script type="text/javascript" id="inspectletjs">
         window.__insp = window.__insp || [];
