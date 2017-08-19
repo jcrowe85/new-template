@@ -1626,6 +1626,11 @@ label.error,div.error{
     /*background-color:#ed2428; */
     /*border-top:5px solid #be1d20;   */    
 }
+#lifeguide-page .mod-row {
+    margin:0 auto;
+    margin-top:50px;
+    width:70%;
+}
 /*  --------------------------- health guide page  -------------------------------- */
 #healthguide-page .title{
     margin-bottom:50px;
