@@ -32,7 +32,7 @@
                                                     or permanent for long-term - We Can Help!
                                                     </h5>
                                                 <form action="/life.php">
-                                                    <button class="btn btn-primary select btn-lg" style="margin-top:50px; padding: 10px 50px; background:#73a5fb; border:none; box-shadow: 0px 5px 1px rgba(0,0,0,0.5); margin-bottom:10px;">GET QUOTES</button>   
+                                                    <button class="btn btn-primary select btn-lg" style="margin-top:50px; padding: 10px 50px; background:#00c9fd; border:none; box-shadow: 0px 5px 1px rgba(0,0,0,0.5); margin-bottom:10px;">GET QUOTES</button>   
                                                 </form>
                                                 </div>
                                                 <div class="col-md-8">
