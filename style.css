@@ -201,11 +201,14 @@ input::-webkit-contacts-auto-fill-button {
 }
 .getHelp{
     border-radius:18px;
-    font-family: 'AileronThin';
+    font-family: 'AileronRegular';
     letter-spacing: .09em;
-    background-color: #6293fc;
+    background-color: #00c9fd;
     font-size: 12px;
     outline:none;
+}
+.getHelp:hover{
+    background: #0ea4c5; 
 }
 .nav-2 button:hover{
     margin-top:1px;
@@ -1710,12 +1713,17 @@ label.error,div.error{
     align-items: center; 
 }
 .myForm button{
-    background:red; 
+    background: #00c9fd; 
     color:white;
     padding:10px;
+    width: 75%;
     border-radius: 5px;
-    box-shadow: 0px 5px 0px rgba(0,0,0,.5);
-    font-size:25px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,.3);
+    font-size: 1.2em;
+}
+.myForm button:hover{
+    color:white;
+    background: #0ea4c5; 
 }
 #new-home-page .header{
     padding-top:0px;

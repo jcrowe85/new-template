@@ -26,8 +26,8 @@ $(window).load(function(){
                         </div>  
                         <div class="get-started">
                             <form name="" id="myForm" class="myForm">
-                                <select name="menu" id="menu">
-                                    <!--<option value="/life.php" selected="selected">Life Insurance</option>-->
+                                <select name="menu" id="menu" style="display:none;">
+                                    <option value="/life.php" selected="selected">Life Insurance</option>
                                     <option style="background-color:#808080;" value="/life.php">$50,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$75,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$100,000</option>
@@ -55,12 +55,12 @@ $(window).load(function(){
                                     <option style="background-color:#808080;" value="/life.php">$1,500,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$1,750,000</option>
                                     <option style="background-color:#808080;" value="/life.php">$2,000,000</option>
-                                    <!--<option value="" data-popup-open="popup-1">Health Insurance</option>-->
-                                    <!--<option value="" data-popup-open="popup-1">Home Insurance</option>-->
-                                    <!--<option value="" data-popup-open="popup-1">Auto Insurance</option>-->
-                                    <!--<option value="" data-popup-open="popup-1">Disability Insurance</option>-->
+                                    <option value="" data-popup-open="popup-1">Health Insurance</option>
+                                    <option value="" data-popup-open="popup-1">Home Insurance</option>
+                                    <option value="" data-popup-open="popup-1">Auto Insurance</option>
+                                    <option value="" data-popup-open="popup-1">Disability Insurance</option>
                                 </select>
-                                <button type="button" onClick="getStarted();" class="btn" style="">Get Quote</button>
+                                <button type="button" onClick="getStarted();" class="btn" style="">Start a quote</button>
                             </form>                               
                         </div>
                     </div>
