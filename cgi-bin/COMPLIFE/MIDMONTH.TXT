@@ -1,149 +1,212 @@
-The following changes have been made to the June 2017  
+The following changes have been made to the September 2017  
 edition of the Compulife Quotation System:
 
-1.  Independent Order of Foresters - correction
+1.  Minnesota Life - state approval
 
-June 1st - We had a problem with the new "Your Term"
-products for Foresters Life.  We were quoting "band 2"
-for $500,000 and up, when in fact band 2 is for $1,000,000
-and up.
+September 13th - Minnesota Life's new term rates
+are now approved in CA.
 
-The company made us aware of the issue this afternoon,
-and this update has the fix.
 
 
 
 ================================================================
 
 The following changes were made and were included with the 
-June 2017 monthly update of the Compulife Quotation System:
+September 2017 monthly update of the Compulife Quotation System:
+
+19.  Lincoln National Life - state approval
+
+August 28th (2nd) - Lincoln's new LifeElement term rates
+are now approved in HI.
 
 
-8.  United of Omaha - new rates
+18.  Principal Life (and National) - new rates
 
-June Monthly Update - United of Omaha has 
-introduced new rates for its Term Life Answers
-10, 15, 20 and 30 year term, and has introduced
-new rates for its Guaranteed Universal Life 
-products.  
+August 28th - Principal has introduced new rates for
+their Universal Life Protector IV series of UL products.
 
+Compnay quotes these for premiums and level coverage to:
 
-7.  Newest Windows Program - bug repair
+age 90
+age 95
+age 100
+age 105
+age 121
 
-June Monthly Update - When doing an "annual 
-and monthly" premium comparison, with waivers 
-added, the annual total was showing the annual 
-basic plus the monthly waiver as the total.  
+From time to time we are asked by customers why we 
+do not have other level periods or payment options
+for a given company.  The reason is quite simple, that
+company did not give us rates for those other periods
+and coverages.
 
-Simple mistake - now fixed.
-
-Our thanks to the subscriber who reported it.
-
-
-6.  United Farm / United Home - minimum face
-
-May 26th - Compulife did not have the minimum face
-for Simpler Term 20 and 30 set to $25,000.  This has
-been corrected.
+NOTE:  We ONLY quote limited pay variations for level
+to age 121.
 
 
-5.  John Hancock Life - state approvala
+17.  Independent Order of Foresters - state approval
 
-May 22 - John Hancock's new Vitality Term 
-rates are now approved in PA.
-
-
-4.  Lincoln National Life - new term rate
-
-May 15th - Lincoln's 2017 term rates have
-been repriced, and are not approved in all
-states.
-
-Lincoln's Life Element new 2017 rates are
-not approved in AR, MD, MO, OR and WA.  The
-old 2017 rates are still in those states.
-
-We have identifed the OLD 2017 rates as
-
-(01-2017)
-
-Just to make it confusing, the 2016 rates
-are still used in AK, HI, MA, PR, VA and VI.
-
-So, 3 generations of rates, depending on the
-state.
-
-TermAccel is a little simpler.  The new
-2017 rates are approved in all statements
-except OR and WA.  We have identified the
-old rates as:
-
-(OR&WA)
-
-No changes in NY.
+August 28th - Foresters "Your Term" series of term
+policies is now approved in NY.  That has been turned
+on and the "Lifefirst" term plans removed.
 
 
-3.  Newest Windows Program - unisex renewal bug
+16.  Banner Life and William Penn - my apologies
 
-May 12th - We have had a series of bugs that 
-flowed originally from a waiver premium renewal
-issue for unisex quotes (Montana).
+August 28th - The new rates which were provided
+by Banner Life and William Penn, were actually the
+second batch.  We have received an earlier batch
+of rates and told those would be rolled out August
+21st.  Having entered those, and ready to go on 
+August 21st, we were then told those were being 
+replaced by a second set of rates and were then 
+provided those which were entered - ready to go.
 
-That fix led to a bug, the next fix to another
-bug, and so on - you get the idea.
+My goof, and it was my goof, was that the second
+batch were delayed release for a week, and I missed
+that and let them go on August 21st, rather than 
+the 28th.
 
-The latest bug was that renewals for unisex (not
-waiver), where the unisex renewal was the same as 
-male, were not displaying.  Like a dog chasing
-its tail.
+After rolling out the rates a week early, I was then
+in Florida preparing for the copyright infringement
+lawsuit(s), the first two of which will commence in 
+October.  I was not made aware of my Banner error 
+until Wednesday, and then too late for the company 
+to confirm the error and for me to deal with it.
 
-Anyway, this is now fixed.  
+I was then tied up until I got home for the weekend.
 
-I am confident, with the analysis of the code, 
-that that should be the last of it.
+Good news - not all rates changed.  However, if you 
+sold a Banner policy last week, based upon a quote 
+from our software, please double check it to ensure 
+it is old or new rates and coordinate with the 
+company the correct dating of the policy.
 
-Thanks to the customer who turned up the mistake,
-and a 10% coupon has been issued.
-
-On a side note, this is WHY we need the overhaul
-that we are working on.  In software, you build a 
-foundation, and then over time there are changes
-that need to be made, to accomodate things you
-did not anticipate when you designed the foundation.
-
-This leads to a patchwork of change over time
-and eventually you need to take what you have 
-learned from that, redesign the foundation to
-clean it up and create a new structure that 
-eliminates the patchwork.  
-
-
-2.  United Farm / United Home - product added
-
-May 9th - One of our subscriber asked us to add
-the Simple Term 20 DLX product for these companies.
-
-The product is priced for the insulin dependent, 
-diabetic market.  
+I again apologize for any inconvenience this may
+be for our customers.  
 
 
-1.  Transamerica Life Insurance - new rates
+15.  Banner Life Insurance - new term rates
 
-May 6th - Transamerica has introduced new rate
-for its Trendsetter Super and LB products.  There
-are other changes.
+August 21st - Banner Life has introduced new rates 
+for their 10, 15, 20, 25 and 30 year level Opterm 
+term products.
 
-There are NO changes in NY.  The following apply
-to non-NY products.
 
-The new Trendsetter Super rates are based on 
-actual age, NOT nearest.
+14.  William Penn Life Insurance - new term rates
 
-The company is no longer offering product in PR.
+August 21st - William Penn has introduced new rates 
+for their 10, 15, 20, 25 and 30 year level Opterm 
+term products.
 
-The Trendsetter YRT has been withdrawn.
 
-The new rates are NOT available in CA.  The products
-in CA remain as is.
+13.  Protective Life & Annuity - company/products added
 
-The new LB rates are NOT available in VI.  
+August 21st - Protective's NY company is now offering 
+the new term series called Protective Classic Choice 
+Term in the state of NY.  The rates are different from
+the rest of the country.
+
+Waiver of prmium is NOT available in NY.
+
+
+12.  North American Company - new rates/changes
+
+August 21st - Compulife has now completed entry of the
+corrected rates that the company has give us for the 
+85, 90 and 95 categories.  
+
+
+11.  Midland National Life - new rates/changes
+
+August 21st - Compulife has now completed entry of the
+corrected rates that the company has give us for the 
+85, 90 and 95 categories.  
+
+
+10.  Protective Life Insurance - waivers added
+
+August 18th - Protective has now introduced a waiver 
+of premium option to its new series called Protective 
+Classic Choice Term.  
+
+The waivers are NOT available in CA or NJ.
+
+
+9.  John Hancock Life Insurance - state approvals
+
+August 16th - John Hancock's newest Vitality products
+are now approved in all states except ND and NY.
+
+
+8.  Pacific Life Insurance - new term rates
+
+August 14th - Pacific Life has introduced new rates 
+for their 10, 15, 20, 25 and 30 year level Promise 
+term products.
+
+
+7.  Sagicor Life Insurance - new term rates
+
+August 12th - Sagicor Life has introduced new rates 
+for their 10, 15 and 20 year level term products.
+
+
+6.  North American Company - new rates/changes
+
+August 10th - The company has informed us that the 
+rates that they gave us for the 85, 90 and 95 categories
+were wrong.  They have asked us to pull the products
+from those categories, until the corrected rates can
+be entered and corrected.
+
+We apologize for any problems this has caused.
+
+
+5.  Midland National Life - new rates/changes
+
+August 10th - The company has informed us that the 
+rates that they gave us for the 85, 90 and 95 categories
+were wrong.  They have asked us to pull the products
+from those categories, until the corrected rates can
+be entered and corrected.
+
+We apologize for any problems this has caused.
+
+
+
+4.  Protective Life Insurance - health category fixed
+
+August 7th (2) - When I added the new products for 
+Protective, I neglected to add the new codes to the
+Preferred Health Analyzer record.
+
+This was yet another demonstration that I am human.
+
+Many thanks to the astute Compulife subscriber who 
+reported it.  A 10% coupon has been awarded.
+
+
+3.  Protective Life Insurance - new term product
+
+August 7th - Protective has introduced a new term 
+series called Protective Classic Choice Term.  The
+product is available in 10, 15, 20, 25 and 30 year 
+level periods.  
+
+The term/UL products remain available as well.
+
+
+2.  Pruco Life - state approval
+
+August 7th - Pruco's new YRT renewals are now approved 
+in CT.
+
+
+
+1.  Changes to forms and ratings
+
+August 3rd - there are no rate changes in this update, 
+only changes to A.M. Best ratings and life insurance
+company forms, which we do not document individually.
+
+There will be a rate change on Monday, August 7th. 

@@ -1,0 +1,149 @@
+The following changes have been made to the June 2017  
+edition of the Compulife Quotation System:
+
+1.  Independent Order of Foresters - correction
+
+June 1st - We had a problem with the new "Your Term"
+products for Foresters Life.  We were quoting "band 2"
+for $500,000 and up, when in fact band 2 is for $1,000,000
+and up.
+
+The company made us aware of the issue this afternoon,
+and this update has the fix.
+
+
+
+================================================================
+
+The following changes were made and were included with the 
+June 2017 monthly update of the Compulife Quotation System:
+
+
+8.  United of Omaha - new rates
+
+June Monthly Update - United of Omaha has 
+introduced new rates for its Term Life Answers
+10, 15, 20 and 30 year term, and has introduced
+new rates for its Guaranteed Universal Life 
+products.  
+
+
+7.  Newest Windows Program - bug repair
+
+June Monthly Update - When doing an "annual 
+and monthly" premium comparison, with waivers 
+added, the annual total was showing the annual 
+basic plus the monthly waiver as the total.  
+
+Simple mistake - now fixed.
+
+Our thanks to the subscriber who reported it.
+
+
+6.  United Farm / United Home - minimum face
+
+May 26th - Compulife did not have the minimum face
+for Simpler Term 20 and 30 set to $25,000.  This has
+been corrected.
+
+
+5.  John Hancock Life - state approvala
+
+May 22 - John Hancock's new Vitality Term 
+rates are now approved in PA.
+
+
+4.  Lincoln National Life - new term rate
+
+May 15th - Lincoln's 2017 term rates have
+been repriced, and are not approved in all
+states.
+
+Lincoln's Life Element new 2017 rates are
+not approved in AR, MD, MO, OR and WA.  The
+old 2017 rates are still in those states.
+
+We have identifed the OLD 2017 rates as
+
+(01-2017)
+
+Just to make it confusing, the 2016 rates
+are still used in AK, HI, MA, PR, VA and VI.
+
+So, 3 generations of rates, depending on the
+state.
+
+TermAccel is a little simpler.  The new
+2017 rates are approved in all statements
+except OR and WA.  We have identified the
+old rates as:
+
+(OR&WA)
+
+No changes in NY.
+
+
+3.  Newest Windows Program - unisex renewal bug
+
+May 12th - We have had a series of bugs that 
+flowed originally from a waiver premium renewal
+issue for unisex quotes (Montana).
+
+That fix led to a bug, the next fix to another
+bug, and so on - you get the idea.
+
+The latest bug was that renewals for unisex (not
+waiver), where the unisex renewal was the same as 
+male, were not displaying.  Like a dog chasing
+its tail.
+
+Anyway, this is now fixed.  
+
+I am confident, with the analysis of the code, 
+that that should be the last of it.
+
+Thanks to the customer who turned up the mistake,
+and a 10% coupon has been issued.
+
+On a side note, this is WHY we need the overhaul
+that we are working on.  In software, you build a 
+foundation, and then over time there are changes
+that need to be made, to accomodate things you
+did not anticipate when you designed the foundation.
+
+This leads to a patchwork of change over time
+and eventually you need to take what you have 
+learned from that, redesign the foundation to
+clean it up and create a new structure that 
+eliminates the patchwork.  
+
+
+2.  United Farm / United Home - product added
+
+May 9th - One of our subscriber asked us to add
+the Simple Term 20 DLX product for these companies.
+
+The product is priced for the insulin dependent, 
+diabetic market.  
+
+
+1.  Transamerica Life Insurance - new rates
+
+May 6th - Transamerica has introduced new rate
+for its Trendsetter Super and LB products.  There
+are other changes.
+
+There are NO changes in NY.  The following apply
+to non-NY products.
+
+The new Trendsetter Super rates are based on 
+actual age, NOT nearest.
+
+The company is no longer offering product in PR.
+
+The Trendsetter YRT has been withdrawn.
+
+The new rates are NOT available in CA.  The products
+in CA remain as is.
+
+The new LB rates are NOT available in VI.  

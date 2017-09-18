@@ -41,11 +41,13 @@ CINN|WD|Worksite Disability
 CINN|AC|Agent Contracting and Information
 GRAN|TB|Term Life
 JOHU|T*|============  Term  =============
+JOHU|TD|JH Drop Ticket - Term
 JOHU|TM|Single Life Term
 JOHU|TV|Single Life Term with Vitality
 JOHU|S*|======  Survivorship Term  ======
 JOHU|ST|Survivorship Term
 JOHU|U*|=============  UL  ==============
+JOHU|DU|JH Drop Ticket - UL
 JOHU|AU|Accumulation UL
 JOHU|PU|Performance UL
 JOHU|TU|Protection UL
@@ -58,6 +60,7 @@ JOHU|PS|Protection SUL
 JOHU|FS|Peformance SUL
 JOHU|SG|SUL-G
 JOHU|X*|========= Variable Life =========
+JOHU|DV|JH Drop Ticket - VUL
 JOHU|AV|Accumulation VUL
 JOHU|PV|Protection VUL
 JOHU|V*|======  Survivorship VUL  =======
